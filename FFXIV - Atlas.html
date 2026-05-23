@@ -123,6 +123,45 @@
   .category-head .cat-count { color: var(--text-dim); font-size: 11px; font-weight: 500; letter-spacing: 0.2em; }
   .category-head .cat-tag { color: var(--text-dim); font-size: 10px; font-style: italic; margin-left: 8px; letter-spacing: 0.1em; text-transform: none; font-weight: 400; }
 
+  .exp-content-stack { display: block; }
+  .exp-content-stack > .category { margin-top: 22px; }
+  .exp-content-stack > .category:first-child { margin-top: 0; }
+  .exp-content-stack > .role-label { margin-top: 22px; }
+  .category-with-hunt { display: grid; grid-template-columns: 1fr 1fr; column-gap: 24px; }
+  .category-with-hunt .category-head { grid-column: 1 / -1; }
+  .job-class-col, .job-hunt-col { min-width: 0; }
+  .hunt-col-head {
+    font-family: 'Cormorant Garamond', serif; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--text-dim); font-weight: 600; padding: 4px 0; border-bottom: 1px solid var(--rule);
+    margin-bottom: 2px;
+  }
+  @media (max-width: 720px) { .category-with-hunt { grid-template-columns: 1fr; } }
+
+  /* ── Gil Tracker ─────────────────────────────────────────────────────── */
+  .gil-input-row { display: flex; gap: 8px; margin: 16px 0 12px; }
+  .gil-input {
+    flex: 1; background: rgba(255,250,236,0.5); border: 1px solid var(--card-border);
+    border-radius: 1px; padding: 7px 10px; font-family: 'Lora', serif; font-size: 13px;
+    color: var(--text); outline: none;
+  }
+  .gil-input:focus { border-color: var(--ew); }
+  .gil-input::placeholder { color: var(--text-dim); }
+  .gil-log-btn {
+    background: transparent; border: 1px solid var(--ew); color: var(--ew); cursor: pointer;
+    border-radius: 1px; font-family: 'Cormorant Garamond', serif; font-size: 12px;
+    letter-spacing: 0.14em; text-transform: uppercase; padding: 7px 14px; white-space: nowrap;
+  }
+  .gil-log-btn:hover { background: var(--ew); color: var(--bg); }
+  .gil-range-row { display: flex; gap: 4px; margin-bottom: 14px; flex-wrap: wrap; }
+  .gil-range-btn {
+    background: transparent; border: 1px solid var(--card-border); color: var(--text-soft);
+    cursor: pointer; border-radius: 1px; font-family: 'Cormorant Garamond', serif;
+    font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; padding: 4px 10px;
+  }
+  .gil-range-btn:hover { border-color: var(--ew); color: var(--ew); }
+  .gil-range-btn.active { border-color: var(--ew); color: var(--ew); background: rgba(177,136,42,0.08); }
+  .gil-graph { display: block; width: 100%; border-radius: 1px; margin-top: 4px; }
+
   .section { margin-top: 14px; }
   .section-head {
     display: flex; align-items: center; gap: 12px; cursor: pointer;
@@ -166,6 +205,33 @@
   .quest-title { flex: 1; color: var(--text); font-size: 15px; }
   .quest-title-hidden { color: var(--text-dim); letter-spacing: 0.08em; }
   .quest-date { margin-left: auto; }
+  .quest-unlock {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-left: 8px;
+    font-size: 12px;
+    color: var(--arr);
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  .unlock-pill {
+    display: inline-block;
+    padding: 1px 6px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    font-size: 11px;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+  }
+  .unlock-dungeon { color: #7a4a18; background: rgba(168,121,48,0.16); border-color: rgba(168,121,48,0.35); }
+  .unlock-trial   { color: #5b3b70; background: rgba(123,88,180,0.14); border-color: rgba(123,88,180,0.35); }
+  .unlock-raid    { color: #7a2418; background: rgba(122,36,24,0.14); border-color: rgba(122,36,24,0.35); }
+  .unlock-feature { color: #1a5475; background: rgba(26,84,117,0.12); border-color: rgba(26,84,117,0.30); }
+  .unlock-hunt    { color: #3d5c1a; background: rgba(61,92,26,0.12);  border-color: rgba(61,92,26,0.30);  }
+  .unlock-unknown { color: var(--text-soft); background: rgba(42,29,16,0.08); border-color: rgba(42,29,16,0.2); }
   .quest-aside { color: var(--text-soft); font-size: 13px; font-style: italic; margin-left: 6px; }
   .quest-tag { color: var(--text-dim); font-size: 12px; font-style: italic; margin-left: 8px; font-family: 'Cormorant Garamond', serif; }
   li.quest[data-checked="true"] .quest-title { color: var(--text-soft); text-decoration: line-through; text-decoration-color: rgba(122, 36, 24, 0.4); }
@@ -215,7 +281,7 @@
   .horizon p { font-family: 'Cormorant Garamond', serif; font-style: italic; color: var(--text-soft); font-size: 16px; }
   .horizon .future-name { color: var(--ew); font-weight: 600; letter-spacing: 0.04em; font-style: normal; font-size: 18px; }
 
-  /* Save/Load button accent colours */
+  /* Legacy sidebar Save/Load colours */
   #save-progress { border-color: var(--ew); color: var(--ew); }
   #save-progress:hover { background: var(--ew); color: var(--bg); border-color: var(--ew); }
   #load-progress { border-color: var(--hw); color: var(--hw); }
@@ -256,6 +322,11 @@
     text-transform: uppercase; color: var(--text-dim);
     padding: 4px 20px;
   }
+  .sidebar-nav-placeholder {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 11px; font-style: italic; color: var(--text-dim);
+    padding: 2px 20px; opacity: 0.6;
+  }
   .sidebar-link {
     display: flex; align-items: center; gap: 10px;
     padding: 3px 20px;
@@ -278,6 +349,10 @@
     background: var(--link-accent); flex-shrink: 0; opacity: 0.6;
   }
   .sidebar-link.active .sidebar-dot { opacity: 1; }
+  .sidebar-link-value {
+    margin-left: auto; font-family: 'Cormorant Garamond', serif;
+    font-size: 11px; color: var(--text-dim); letter-spacing: 0.04em;
+  }
   .sidebar-link-stub {
     display: flex; align-items: center; gap: 10px;
     padding: 3px 20px;
@@ -333,6 +408,17 @@
     text-align: left;
   }
   .sidebar-btn:hover { background: var(--text); color: var(--bg); border-color: var(--text); }
+  .sidebar-btn-row {
+    display: flex;
+    gap: 6px;
+  }
+  .sidebar-btn-row .sidebar-btn {
+    flex: 1;
+    text-align: center;
+    letter-spacing: 0.14em;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
   .autosave-status {
     font-family: 'Cormorant Garamond', serif;
     font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
@@ -378,6 +464,77 @@
   #toast.show {
     opacity: 1; transform: translateX(-50%) translateY(0);
   }
+
+  /* Settings panel */
+  #settings-overlay {
+    position: fixed; inset: 0;
+    background: rgba(20, 14, 8, 0.45);
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 9998;
+  }
+  #settings-overlay.open { opacity: 1; pointer-events: auto; }
+  #settings-panel {
+    position: fixed;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%) scale(0.98);
+    width: min(420px, calc(100vw - 28px));
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-left: 3px solid var(--arr);
+    border-radius: 2px;
+    box-shadow: 0 10px 36px rgba(42,29,16,0.2);
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 9999;
+  }
+  #settings-panel.open { opacity: 1; pointer-events: auto; transform: translate(-50%, -50%) scale(1); }
+  .settings-head {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 14px 16px 10px; border-bottom: 1px solid var(--rule);
+  }
+  .settings-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--text);
+  }
+  .settings-close {
+    background: transparent; border: 1px solid var(--rule); color: var(--text-soft);
+    font-family: 'Cormorant Garamond', serif; font-size: 11px; letter-spacing: 0.12em;
+    text-transform: uppercase; padding: 4px 10px; cursor: pointer; border-radius: 1px;
+  }
+  .settings-close:hover { background: var(--text); color: var(--bg); border-color: var(--text); }
+  .settings-body { padding: 14px 16px 16px; }
+  .settings-note {
+    margin-bottom: 12px; color: var(--text-soft);
+    font-size: 14px; font-style: italic; font-family: 'Cormorant Garamond', serif;
+  }
+  .settings-option {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 10px; padding: 8px 0 12px; border-bottom: 1px dotted var(--rule);
+    margin-bottom: 12px;
+  }
+  .settings-option-label {
+    color: var(--text); font-size: 14px;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  .settings-option input[type="checkbox"] {
+    width: 16px; height: 16px; cursor: pointer;
+    accent-color: #a87930;
+  }
+  .settings-actions { display: flex; justify-content: center; gap: 8px; }
+  .settings-actions button {
+    background: transparent; border: 1px solid; cursor: pointer; border-radius: 1px;
+    font-family: 'Cormorant Garamond', serif; font-size: 12px; letter-spacing: 0.14em;
+    text-transform: uppercase; padding: 7px 12px;
+  }
+  .settings-actions button:hover { color: var(--bg); }
+  #settings-save { border-color: var(--ew); color: var(--ew); }
+  #settings-save:hover { background: var(--ew); border-color: var(--ew); }
+  #settings-load { border-color: var(--hw); color: var(--hw); }
+  #settings-load:hover { background: var(--hw); border-color: var(--hw); }
+  #settings-reset { border-color: var(--crimson); color: var(--crimson); }
+  #settings-reset:hover { background: var(--crimson); border-color: var(--crimson); }
 
   .note { text-align: center; margin-top: 24px; font-size: 13px; font-style: italic; color: var(--text-dim); font-family: 'Cormorant Garamond', serif; }
 
@@ -454,10 +611,7 @@
       <span class="dt-date"></span>
       <span class="dt-time"></span>
     </div>
-    <button id="save-progress" class="sidebar-btn">💾 Save Progress</button>
-    <button id="load-progress" class="sidebar-btn">📂 Load Progress</button>
-
-    <button id="reset-all" class="sidebar-btn">Reset Progress</button>
+    <button id="options-btn" class="sidebar-btn">Options</button>
   </div>
 </aside>
 
@@ -485,8 +639,28 @@
     Then: <span class="future-name">Evercold</span> — the Godless Realms saga begins</p>
   </div>
 
-  <p class="note">Click any item to mark complete · "Mark all" bulk-checks a section · Use 💾 Save / 📂 Load to keep progress across browser clears</p>
+  <p class="note">Click any item to mark complete · "Mark all" bulk-checks a section · Use Save Data / Load Data in Options to keep progress across browser clears</p>
 </div>
+</div>
+
+<div id="settings-overlay" aria-hidden="true"></div>
+<div id="settings-panel" role="dialog" aria-modal="true" aria-labelledby="settings-title" aria-hidden="true">
+  <div class="settings-head">
+    <div id="settings-title" class="settings-title">Settings</div>
+    <button id="settings-close" class="settings-close" type="button">Close</button>
+  </div>
+  <div class="settings-body">
+    <p class="settings-note">Manage app controls and maintenance actions.</p>
+    <label class="settings-option" for="settings-show-all-quests">
+      <span class="settings-option-label">Show all MSQ quests</span>
+      <input id="settings-show-all-quests" type="checkbox" />
+    </label>
+    <div class="settings-actions">
+      <button id="settings-save" type="button">Save Data</button>
+      <button id="settings-load" type="button">Load Data</button>
+      <button id="settings-reset" type="button">Reset Data</button>
+    </div>
+  </div>
 </div>
 
 <!-- Toast notification -->
@@ -2896,7 +3070,7 @@ const GLD_SECTIONS = [
     { name: 'The Face of Thal',             tag: 'Lv 20' },
     { name: 'On Holy Ground',               tag: 'Lv 25' },
     { name: 'The Rematch',                  tag: 'Lv 30 · → Paladin' },
-  ]}
+  ]},
 ];
 
 const PLD_SECTIONS = [
@@ -2939,7 +3113,7 @@ const MRD_SECTIONS = [
     { name: 'Rude Awakening',                                   tag: 'Lv 20' },
     { name: 'Worthy of His Back',                               tag: 'Lv 25' },
     { name: 'Pride and Duty (Will Take You from the Mountain)', tag: 'Lv 30 · → Warrior' },
-  ]}
+  ]},
 ];
 const WAR_SECTIONS = [
   { id: 'job-war-arr', title: 'Warrior — A Realm Reborn', note: 'Lv 30–50', quests: [
@@ -3018,7 +3192,7 @@ const CNJ_SECTIONS = [
     { name: 'A Hero in the Making',                             tag: 'Lv 20' },
     { name: 'Austerities of Earth',                             tag: 'Lv 25' },
     { name: "In Nature's Embrace",                              tag: 'Lv 30 · → White Mage' },
-  ]}
+  ]},
 ];
 const WHM_SECTIONS = [
   { id: 'job-whm-arr', title: 'White Mage — A Realm Reborn', note: 'Lv 30–50', quests: [
@@ -3058,7 +3232,7 @@ const ACN_SECTIONS = [
     { name: 'Big Catch',                                        tag: 'Lv 20' },
     { name: 'The Things We Do for Cheese',                      tag: 'Lv 25' },
     { name: 'Sinking Doesmaga',                                 tag: 'Lv 30 · → Scholar / Summoner' },
-  ]}
+  ]},
 ];
 
 // ─── SCHOLAR ──────────────────────────────────────────────────────────────
@@ -3139,7 +3313,7 @@ const PGL_SECTIONS = [
     { name: 'The Middle Path',                                  tag: 'Lv 20' },
     { name: 'Guts Over Gil',                                    tag: 'Lv 25' },
     { name: 'Brother from Another Mother',                      tag: 'Lv 30 · → Monk' },
-  ]}
+  ]},
 ];
 const MNK_SECTIONS = [
   { id: 'job-mnk-arr', title: 'Monk — A Realm Reborn', note: 'Lv 30–50', quests: [
@@ -3179,7 +3353,7 @@ const LNC_SECTIONS = [
     { name: 'A Matter of Vengeance',                            tag: 'Lv 20' },
     { name: 'Fading Light',                                     tag: 'Lv 25' },
     { name: 'Friends Forever',                                  tag: 'Lv 30 · → Dragoon' },
-  ]}
+  ]},
 ];
 const DRG_SECTIONS = [
   { id: 'job-drg-arr', title: 'Dragoon — A Realm Reborn', note: 'Lv 30–50', quests: [
@@ -3219,7 +3393,7 @@ const ROG_SECTIONS = [
     { name: 'Quicker than the Eye',                             tag: 'Lv 20' },
     { name: 'House of Knives',                                  tag: 'Lv 25' },
     { name: 'Underneath the Masked Rose',                       tag: 'Lv 30 · → Ninja' },
-  ]}
+  ]},
 ];
 const NIN_SECTIONS = [
   { id: 'job-nin-arr', title: 'Ninja — A Realm Reborn', note: 'Lv 30–50', quests: [
@@ -3300,7 +3474,7 @@ const ARC_SECTIONS = [
     { name: 'Preparations of War',                              tag: 'Lv 20' },
     { name: 'Gathering Resolve',                                tag: 'Lv 25' },
     { name: 'A Song of Bards and Bowmen',                       tag: 'Lv 30 · → Bard' },
-  ]}
+  ]},
 ];
 const BRD_SECTIONS = [
   { id: 'job-brd-arr', title: 'Bard — A Realm Reborn', note: 'Lv 30–50', quests: [
@@ -3379,7 +3553,7 @@ const THM_SECTIONS = [
     { name: 'Playing with Fire',                                tag: 'Lv 20' },
     { name: 'The Threat of Accessories',                        tag: 'Lv 25' },
     { name: 'Taking the Black',                                 tag: 'Lv 30 · → Black Mage' },
-  ]}
+  ]},
 ];
 const BLM_SECTIONS = [
   { id: 'job-blm-arr', title: 'Black Mage — A Realm Reborn', note: 'Lv 30–50', quests: [
@@ -3852,11 +4026,707 @@ const CUL_SECTIONS = [
   ]},
 ];
 
+// ═══════════════════════════════════════════════════════════════════════════
+// HUNTING LOG DATA
+// ═══════════════════════════════════════════════════════════════════════════
+const GLD_HUNT = [
+  { id: 'hunt-gld-r1', title: 'Rank 1', note: 'Lv 1–15', quests: [
+    { name: 'Little Ladybug',         tag: '×3' },
+    { name: 'Star Marmot',            tag: '×3' },
+    { name: 'Cactuar',                tag: '×3' },
+    { name: 'Snapping Shrew',         tag: '×3' },
+    { name: 'Hammer Beak',            tag: '×3' },
+    { name: 'Antling Worker',         tag: '×3' },
+    { name: 'Earth Sprite',           tag: '×3' },
+    { name: 'Spriggan Graverobber',   tag: '×3' },
+    { name: 'Qiqirn Shellsweeper',    tag: '×3' },
+    { name: 'Antling Soldier',        tag: '×3' },
+    { name: 'Dusty Mongrel',          tag: '×3' },
+  ]},
+  { id: 'hunt-gld-r2', title: 'Rank 2', note: 'Lv 15–25', quests: [
+    { name: 'Bomb',                   tag: '×3' },
+    { name: 'Copper Coblyn',          tag: '×3' },
+    { name: 'Cochineal Cactuar',      tag: '×3' },
+    { name: 'Quiveron Guard',         tag: '×3' },
+    { name: 'Giant Tortoise',         tag: '×3' },
+    { name: 'Thickshell',             tag: '×3' },
+    { name: 'Scaphite',               tag: '×3' },
+    { name: 'Tuco-tuco',              tag: '×3' },
+    { name: 'Myotragus Billy',        tag: '×3' },
+    { name: 'Vandalous Imp',          tag: '×3' },
+    { name: 'Rotting Noble',          tag: '×3' },
+    { name: 'Bloated Bogy',           tag: '×3' },
+  ]},
+  { id: 'hunt-gld-r3', title: 'Rank 3', note: 'Lv 25–35', quests: [
+    { name: 'Stoneshell',             tag: '×4' },
+    { name: 'Kedtrap',                tag: '×3' },
+    { name: 'Lead Coblyn',            tag: '×4' },
+    { name: 'Overgrown Offering',     tag: '×4' },
+    { name: 'Coeurl Pup',             tag: '×4' },
+    { name: 'Balloon',                tag: '×4' },
+    { name: 'Sabotender',             tag: '×4' },
+    { name: 'Qiqirn Roerunner',       tag: '×4' },
+    { name: 'Goblin Thug',            tag: '×4' },
+    { name: 'Coeurlclaw Cutter',      tag: '×4' },
+    { name: 'Apkallu',                tag: '×4' },
+    { name: 'Pteroc',                 tag: '×3' },
+  ]},
+  { id: 'hunt-gld-r4', title: 'Rank 4', note: 'Lv 35–45', quests: [
+    { name: 'Floating Eye',           tag: '×4' },
+    { name: 'Mamool Ja Sophist',      tag: '×3' },
+    { name: 'Uragnite',               tag: '×4' },
+    { name: 'Adamantoise',            tag: '×3' },
+    { name: 'Sandworm',               tag: '×4' },
+    { name: 'Deathgaze',              tag: '×4' },
+    { name: 'Velociraptor',           tag: '×4' },
+    { name: 'Fallen Wizard',          tag: '×4' },
+    { name: 'Snow Wolf Pup',          tag: '×4' },
+    { name: 'Treant',                 tag: '×4' },
+    { name: 'Vodoriga',               tag: '×4' },
+    { name: 'Hippocerf',              tag: '×4' },
+    { name: 'Grenade',                tag: '×3' },
+  ]},
+  { id: 'hunt-gld-r5', title: 'Rank 5', note: 'Lv 45–50', quests: [
+    { name: 'Preying Mantis',         tag: '×5' },
+    { name: 'Lammergeyer',            tag: '×2' },
+    { name: 'Oldgrowth Treant',       tag: '×5' },
+    { name: '3rd Cohort Eques',       tag: '×2' },
+    { name: "Dead Man's Moan",        tag: '×5' },
+    { name: 'Morbol',                 tag: '×2' },
+    { name: 'Mudpuppy',               tag: '×5' },
+    { name: 'Lake Cobra',             tag: '×5' },
+    { name: 'Giant Lugger',           tag: '×3' },
+    { name: 'Tempered Orator',        tag: '×5' },
+    { name: 'Dullahan',               tag: '×5' },
+    { name: 'Basilisk',               tag: '×5' },
+    { name: 'Gigas Bhikkhu',          tag: '×5' },
+    { name: '2nd Cohort Hoplomachus', tag: '×5' },
+  ]},
+];
+
+const MRD_HUNT = [
+  { id: 'hunt-mrd-r1', title: 'Rank 1', note: 'Lv 1–15', quests: [
+    { name: 'Little Ladybug',     tag: '×3' },
+    { name: 'Wharf Rat',          tag: '×3' },
+    { name: 'Aurelia',            tag: '×3' },
+    { name: 'Bee Cloud',          tag: '×3' },
+    { name: 'Wild Dodo',          tag: '×3' },
+    { name: 'Tiny Mandragora',    tag: '×3' },
+    { name: 'Bogy',               tag: '×3' },
+    { name: 'Wounded Aurochs',    tag: '×3' },
+    { name: 'Grounded Raider',    tag: '×3' },
+    { name: 'Megalocrab',         tag: '×3' },
+  ]},
+  { id: 'hunt-mrd-r2', title: 'Rank 2', note: 'Lv 15–25', quests: [
+    { name: 'Firefly',            tag: '×4' },
+    { name: 'Mossless Goobbue',   tag: '×4' },
+    { name: 'Fat Dodo',           tag: '×4' },
+    { name: 'Moraby Mole',        tag: '×4' },
+    { name: 'Qiqirn Eggdigger',   tag: '×4' },
+    { name: 'Rhotano Buccaneer',  tag: '×4' },
+    { name: 'Dusk Bat',           tag: '×4' },
+    { name: 'Puk Hatchling',      tag: '×3' },
+    { name: 'Hedgemole',          tag: '×2' },
+    { name: 'Rothlyt Pelican',    tag: '×4' },
+    { name: 'Killer Mantis',      tag: '×4' },
+    { name: 'Wild Wolf',          tag: '×4' },
+  ]},
+  { id: 'hunt-mrd-r3', title: 'Rank 3', note: 'Lv 25–35', quests: [
+    { name: 'Stoneshell',         tag: '×4' },
+    { name: 'Diseased Treant',    tag: '×4' },
+    { name: 'Yarzon Scavenger',   tag: '×4' },
+    { name: 'Redbelly Larcener',  tag: '×4' },
+    { name: 'Shroud Hare',        tag: '×4' },
+    { name: 'Sabotender',         tag: '×4' },
+    { name: 'Balloon',            tag: '×4' },
+    { name: 'Phurble',            tag: '×3' },
+    { name: 'Sandskin Peiste',    tag: '×2' },
+    { name: 'Axe Beak',           tag: '×4' },
+    { name: 'Toadstool',          tag: '×4' },
+    { name: 'Floating Eye',       tag: '×4' },
+  ]},
+  { id: 'hunt-mrd-r4', title: 'Rank 4', note: 'Lv 35–45', quests: [
+    { name: 'Stroper',            tag: '×4' },
+    { name: 'Adamantoise',        tag: '×4' },
+    { name: 'Smoke Bomb',         tag: '×3' },
+    { name: 'Grass Raptor',       tag: '×2' },
+    { name: 'Snipper',            tag: '×4' },
+    { name: 'Bloodshore Bell',    tag: '×4' },
+    { name: 'Jungle Coeurl',      tag: '×4' },
+    { name: 'Snow Wolf Pup',      tag: '×4' },
+    { name: 'Redhorn Ogre',       tag: '×2' },
+    { name: 'Ornery Karakul',     tag: '×4' },
+    { name: 'Highland Goobbue',   tag: '×3' },
+    { name: 'Downy Aevis',        tag: '×4' },
+    { name: 'Snowstorm Goobbue',  tag: '×4' },
+    { name: 'Grenade',            tag: '×4' },
+  ]},
+  { id: 'hunt-mrd-r5', title: 'Rank 5', note: 'Lv 45–50', quests: [
+    { name: 'Molted Ziz',         tag: '×5' },
+    { name: 'Quartz Doblyn',      tag: '×5' },
+    { name: "Dead Man's Moan",    tag: '×3' },
+    { name: 'Morbol',             tag: '×2' },
+    { name: 'Crater Golem',       tag: '×1' },
+    { name: 'Wild Hog',           tag: '×5' },
+    { name: 'Biast',              tag: '×5' },
+    { name: '5th Cohort Signifer',  tag: '×5' },
+    { name: 'Synthetic Doblyn',   tag: '×5' },
+    { name: 'Watchwolf',          tag: '×3' },
+    { name: 'Iron Tortoise',      tag: '×2' },
+    { name: 'Milkroot Cluster',   tag: '×5' },
+    { name: '4th Cohort Secutor', tag: '×5' },
+    { name: '2nd Cohort Laquearius', tag: '×5' },
+  ]},
+];
+
+const CNJ_HUNT = [
+  { id: 'hunt-cnj-r1', title: 'Rank 1', note: 'Lv 1–15', quests: [
+    { name: 'Little Ladybug',     tag: '×3' },
+    { name: 'Ground Squirrel',    tag: '×3' },
+    { name: 'Forest Funguar',     tag: '×3' },
+    { name: 'Miteling',           tag: '×3' },
+    { name: 'Chigoe',             tag: '×3' },
+    { name: 'Water Sprite',       tag: '×3' },
+    { name: 'Midge Swarm',        tag: '×3' },
+    { name: 'Microchu',           tag: '×3' },
+    { name: 'Syrphid Swarm',      tag: '×3' },
+    { name: 'Northern Vulture',   tag: '×3' },
+  ]},
+  { id: 'hunt-cnj-r2', title: 'Rank 2', note: 'Lv 15–25', quests: [
+    { name: 'Tree Slug',          tag: '×3' },
+    { name: 'Arbor Buzzard',      tag: '×3' },
+    { name: 'Goblin Hunter',      tag: '×2' },
+    { name: 'Firefly',            tag: '×3' },
+    { name: 'Mandragora',         tag: '×3' },
+    { name: 'Boring Weevil',      tag: '×3' },
+    { name: 'Faerie Funguar',     tag: '×3' },
+    { name: 'Giant Gnat',         tag: '×3' },
+    { name: 'Wolf Poacher',       tag: '×3' },
+    { name: 'Qiqirn Beater',      tag: '×3' },
+    { name: 'Black Bat',          tag: '×3' },
+  ]},
+  { id: 'hunt-cnj-r3', title: 'Rank 3', note: 'Lv 25–35', quests: [
+    { name: 'Stoneshell',         tag: '×3' },
+    { name: 'Laughing Toad',      tag: '×2' },
+    { name: 'Diseased Treant',    tag: '×3' },
+    { name: 'Lead Coblyn',        tag: '×2' },
+    { name: 'Bark Eft',           tag: '×3' },
+    { name: 'Glowfly',            tag: '×3' },
+    { name: 'Antelope Stag',      tag: '×3' },
+    { name: 'Sabotender',         tag: '×3' },
+    { name: 'Qiqirn Roerunner',   tag: '×3' },
+    { name: 'Goblin Thug',        tag: '×3' },
+    { name: 'Toadstool',          tag: '×3' },
+    { name: 'Apkallu',            tag: '×3' },
+  ]},
+  { id: 'hunt-cnj-r4', title: 'Rank 4', note: 'Lv 35–45', quests: [
+    { name: 'Lindwurm',           tag: '×4' },
+    { name: 'Gigantoad',          tag: '×2' },
+    { name: 'Bigmouth Orobon',    tag: '×4' },
+    { name: 'Mamool Ja Infiltrator', tag: '×2' },
+    { name: 'Sandworm',           tag: '×1' },
+    { name: 'Revenant',           tag: '×4' },
+    { name: 'Bloodshore Bell',    tag: '×4' },
+    { name: 'Ornery Karakul',     tag: '×4' },
+    { name: 'Deepvoid Deathmouse', tag: '×4' },
+    { name: 'Dryad',              tag: '×4' },
+    { name: 'Downy Aevis',        tag: '×4' },
+    { name: "Will-o'-the-wisp",   tag: '×4' },
+    { name: 'Dragonfly',          tag: '×4' },
+  ]},
+  { id: 'hunt-cnj-r5', title: 'Rank 5', note: 'Lv 45–50', quests: [
+    { name: 'Golden Fleece',          tag: '×4' },
+    { name: 'Grenade',                tag: '×4' },
+    { name: 'Hippocerf',              tag: '×2' },
+    { name: 'Lammergeyer',            tag: '×2' },
+    { name: "Dead Man's Moan",        tag: '×1' },
+    { name: '3rd Cohort Hoplomachus', tag: '×2' },
+    { name: 'Lesser Kalong',          tag: '×4' },
+    { name: 'Snow Wolf',              tag: '×4' },
+    { name: '5th Cohort Eques',       tag: '×4' },
+    { name: 'Sea Wasp',               tag: '×4' },
+    { name: 'Sylph Bonnet',           tag: '×4' },
+    { name: 'Ahriman',                tag: '×4' },
+    { name: '2nd Cohort Vanguard',    tag: '×4' },
+  ]},
+];
+
+const ACN_HUNT = [
+  { id: 'hunt-acn-r1', title: 'Rank 1', note: 'Lv 1–15', quests: [
+    { name: 'Little Ladybug',     tag: '×3' },
+    { name: 'Wharf Rat',          tag: '×3' },
+    { name: 'Lost Lamb',          tag: '×3' },
+    { name: 'Wind Sprite',        tag: '×3' },
+    { name: 'Puk Hatchling',      tag: '×3' },
+    { name: 'Nesting Buzzard',    tag: '×3' },
+    { name: 'Bogy',               tag: '×3' },
+    { name: 'Cave Bat',           tag: '×3' },
+    { name: 'Galago',             tag: '×3' },
+    { name: 'Grounded Pirate',    tag: '×3' },
+    { name: 'Lightning Sprite',   tag: '×3' },
+  ]},
+  { id: 'hunt-acn-r2', title: 'Rank 2', note: 'Lv 15–25', quests: [
+    { name: 'Sewer Mole',         tag: '×3' },
+    { name: 'Mossless Goobbue',   tag: '×3' },
+    { name: 'Fat Dodo',           tag: '×3' },
+    { name: 'Arbor Buzzard',      tag: '×3' },
+    { name: 'Qiqirn Eggdigger',   tag: '×3' },
+    { name: 'Dusk Bat',           tag: '×3' },
+    { name: 'Puk Hatchling',      tag: '×3' },
+    { name: 'Hedgemole',          tag: '×3' },
+    { name: 'Rothlyt Pelican',    tag: '×3' },
+    { name: 'Killer Mantis',      tag: '×3' },
+    { name: 'Bumble Beetle',      tag: '×3' },
+  ]},
+  { id: 'hunt-acn-r3', title: 'Rank 3', note: 'Lv 25–35', quests: [
+    { name: 'Overgrown Ivy',      tag: '×4' },
+    { name: 'Lead Coblyn',        tag: '×4' },
+    { name: 'Kedtrap',            tag: '×4' },
+    { name: 'Coeurl Pup',         tag: '×4' },
+    { name: 'Antelope Stag',      tag: '×4' },
+    { name: 'Balloon',            tag: '×4' },
+    { name: 'Chasm Buzzard',      tag: '×2' },
+    { name: 'Axe Beak',           tag: '×4' },
+    { name: 'Clay Golem',         tag: '×4' },
+    { name: 'Sandstone Golem',    tag: '×2' },
+    { name: 'Brood Ziz',          tag: '×4' },
+    { name: 'Lindwurm',           tag: '×4' },
+  ]},
+  { id: 'hunt-acn-r4', title: 'Rank 4', note: 'Lv 35–45', quests: [
+    { name: 'Qiqirn Gullroaster', tag: '×4' },
+    { name: 'Grass Raptor',       tag: '×4' },
+    { name: 'Gigantoad',          tag: '×4' },
+    { name: 'Sundrake',           tag: '×4' },
+    { name: 'Colibri',            tag: '×4' },
+    { name: 'Coeurl',             tag: '×4' },
+    { name: 'Mildewed Goobbue',   tag: '×1' },
+    { name: 'Snow Wolf Pup',      tag: '×4' },
+    { name: 'Feral Croc',         tag: '×4' },
+    { name: 'Dryad',              tag: '×2' },
+    { name: 'Taurus',             tag: '×4' },
+    { name: 'Molted Ziz',         tag: '×4' },
+  ]},
+  { id: 'hunt-acn-r5', title: 'Rank 5', note: 'Lv 45–50', quests: [
+    { name: 'Quartz Doblyn',          tag: '×4' },
+    { name: 'Lammergeyer',            tag: '×4' },
+    { name: '3rd Cohort Laquearius',  tag: '×2' },
+    { name: 'Nix',                    tag: '×4' },
+    { name: 'Mudpuppy',               tag: '×2' },
+    { name: 'Wild Hog',               tag: '×4' },
+    { name: 'Watchwolf',              tag: '×4' },
+    { name: '5th Cohort Laquearius',  tag: '×2' },
+    { name: 'Snow Wolf',              tag: '×4' },
+    { name: 'Natalan Watchwolf',      tag: '×4' },
+    { name: 'Axolotl',               tag: '×2' },
+    { name: 'Zahar\'ak Battle Drake', tag: '×4' },
+    { name: '4th Cohort Vanguard',    tag: '×4' },
+  ]},
+];
+
+const PGL_HUNT = [
+  { id: 'hunt-pgl-r1', title: 'Rank 1', note: 'Lv 1–15', quests: [
+    { name: 'Huge Hornet',          tag: '×4' },
+    { name: 'Star Marmot',          tag: '×4' },
+    { name: 'Cactuar',              tag: '×4' },
+    { name: 'Snapping Shrew',       tag: '×4' },
+    { name: 'Orobon',               tag: '×4' },
+    { name: 'Nesting Buzzard',      tag: '×4' },
+    { name: 'Spriggan Graverobber', tag: '×4' },
+    { name: 'Goblin Mugger',        tag: '×4' },
+    { name: 'Sandtoad',             tag: '×4' },
+    { name: 'Eft',                  tag: '×2' },
+    { name: 'Sun Midge Swarm',      tag: '×2' },
+    { name: 'Desert Peiste',        tag: '×2' },
+  ]},
+  { id: 'hunt-pgl-r2', title: 'Rank 2', note: 'Lv 15–25', quests: [
+    { name: 'Bomb',               tag: '×4' },
+    { name: 'Cochineal Cactuar',  tag: '×4' },
+    { name: 'Antling Sentry',     tag: '×4' },
+    { name: 'Giant Tortoise',     tag: '×4' },
+    { name: 'Arbor Buzzard',      tag: '×2' },
+    { name: 'Scaphite',           tag: '×2' },
+    { name: 'Thickshell',         tag: '×2' },
+    { name: 'Tuco-tuco',          tag: '×4' },
+    { name: 'Myotragus Nanny',    tag: '×4' },
+    { name: 'Blowfly Swarm',      tag: '×4' },
+    { name: 'Vandalous Imp',      tag: '×4' },
+    { name: 'Bloated Bogy',       tag: '×2' },
+    { name: 'Rotting Corpse',     tag: '×2' },
+    { name: 'Rotting Noble',      tag: '×2' },
+  ]},
+  { id: 'hunt-pgl-r3', title: 'Rank 3', note: 'Lv 25–35', quests: [
+    { name: 'Overgrown Ivy',                 tag: '×5' },
+    { name: 'Smallmouth Orobon',             tag: '×5' },
+    { name: 'Forest Yarzon',                 tag: '×5' },
+    { name: 'Coeurl Pup',                    tag: '×5' },
+    { name: 'Shroud Hare',                   tag: '×3' },
+    { name: 'Bark Eft',                      tag: '×3' },
+    { name: 'Fallen Mage',                   tag: '×3' },
+    { name: 'Ziz',                           tag: '×5' },
+    { name: 'Corpse Brigade Knuckledancer',  tag: '×5' },
+    { name: 'Clay Golem',                    tag: '×5' },
+    { name: 'Coeurlclaw Hunter',             tag: '×5' },
+    { name: 'Lindwurm',                      tag: '×3' },
+    { name: 'Bigmouth Orobon',               tag: '×3' },
+    { name: 'Apkallu',                       tag: '×3' },
+  ]},
+  { id: 'hunt-pgl-r4', title: 'Rank 4', note: 'Lv 35–45', quests: [
+    { name: 'Mamool Ja Breeder',  tag: '×5' },
+    { name: 'Russet Yarzon',      tag: '×5' },
+    { name: 'Smoke Bomb',         tag: '×5' },
+    { name: 'Deathgaze',          tag: '×5' },
+    { name: 'Jungle Coeurl',      tag: '×3' },
+    { name: 'Goobbue',            tag: '×3' },
+    { name: 'Basalt Golem',       tag: '×3' },
+    { name: 'Velociraptor',       tag: '×5' },
+    { name: 'Highland Goobbue',   tag: '×5' },
+    { name: 'Feral Croc',         tag: '×5' },
+    { name: 'Redhorn Ogre',       tag: '×5' },
+    { name: 'Ochu',               tag: '×3' },
+    { name: 'Molted Ziz',         tag: '×3' },
+    { name: 'Snowstorm Goobbue',  tag: '×3' },
+  ]},
+  { id: 'hunt-pgl-r5', title: 'Rank 5', note: 'Lv 45–50', quests: [
+    { name: 'Quartz Doblyn',              tag: '×6' },
+    { name: "Dead Man's Moan",            tag: '×6' },
+    { name: '3rd Cohort Signifer',        tag: '×2' },
+    { name: 'Wild Hog',                   tag: '×6' },
+    { name: 'Raging Harrier',             tag: '×3' },
+    { name: 'Biast',                      tag: '×3' },
+    { name: 'Gigas Shramana',             tag: '×3' },
+    { name: 'Snow Wolf',                  tag: '×6' },
+    { name: '5th Cohort Hoplomachus',     tag: '×6' },
+    { name: 'Dreamtoad',                  tag: '×6' },
+    { name: 'Hapalit',                    tag: '×6' },
+    { name: "Zahar'ak Battle Drake",      tag: '×3' },
+    { name: 'Basilisk',                   tag: '×3' },
+    { name: 'Shelfclaw Reaver',           tag: '×4' },
+  ]},
+];
+
+const LNC_HUNT = [
+  { id: 'hunt-lnc-r1', title: 'Rank 1', note: 'Lv 1–15', quests: [
+    { name: 'Little Ladybug',   tag: '×3' },
+    { name: 'Ground Squirrel',  tag: '×3' },
+    { name: 'Forest Funguar',   tag: '×3' },
+    { name: 'Miteling',         tag: '×3' },
+    { name: 'Opo-opo',          tag: '×3' },
+    { name: 'Microchu',         tag: '×3' },
+    { name: 'Black Eft',        tag: '×3' },
+    { name: 'Bog Yarzon',       tag: '×3' },
+    { name: 'Hoglet',           tag: '×3' },
+    { name: 'Anole',            tag: '×3' },
+    { name: 'Diremite',         tag: '×3' },
+    { name: 'Tree Slug',        tag: '×3' },
+  ]},
+  { id: 'hunt-lnc-r2', title: 'Rank 2', note: 'Lv 15–25', quests: [
+    { name: 'Arbor Buzzard',    tag: '×3' },
+    { name: 'Treant Sapling',   tag: '×3' },
+    { name: 'Mandragora',       tag: '×3' },
+    { name: 'Wild Hoglet',      tag: '×3' },
+    { name: 'Lemur',            tag: '×3' },
+    { name: 'Boring Weevil',    tag: '×3' },
+    { name: 'Faerie Funguar',   tag: '×3' },
+    { name: 'Giant Gnat',       tag: '×3' },
+    { name: 'Boar Poacher',     tag: '×3' },
+    { name: 'Ziz Gorlin',       tag: '×3' },
+    { name: 'Black Bat',        tag: '×3' },
+    { name: 'Qiqirn Beater',    tag: '×3' },
+    { name: 'Antelope Doe',     tag: '×3' },
+  ]},
+  { id: 'hunt-lnc-r3', title: 'Rank 3', note: 'Lv 25–35', quests: [
+    { name: 'Stoneshell',                tag: '×4' },
+    { name: 'Smallmouth Orobon',         tag: '×4' },
+    { name: 'Yarzon Scavenger',          tag: '×4' },
+    { name: 'Redbelly Lookout',          tag: '×4' },
+    { name: 'Antelope Stag',             tag: '×4' },
+    { name: 'Moondrip Piledriver',       tag: '×3' },
+    { name: 'Sabotender',                tag: '×4' },
+    { name: 'Goblin Thug',               tag: '×3' },
+    { name: 'Sandskin Peiste',           tag: '×4' },
+    { name: 'Corpse Brigade Firedancer', tag: '×4' },
+    { name: 'Coeurlclaw Poacher',        tag: '×4' },
+    { name: 'Apkallu',                   tag: '×3' },
+    { name: 'Midland Condor',            tag: '×4' },
+  ]},
+  { id: 'hunt-lnc-r4', title: 'Rank 4', note: 'Lv 35–45', quests: [
+    { name: 'Floating Eye',     tag: '×4' },
+    { name: 'Large Buffalo',    tag: '×4' },
+    { name: 'Smoke Bomb',       tag: '×3' },
+    { name: 'Sundrake',         tag: '×4' },
+    { name: 'Spriggan',         tag: '×4' },
+    { name: 'Basalt Golem',     tag: '×3' },
+    { name: 'Ringtail',         tag: '×4' },
+    { name: 'Ornery Karakul',   tag: '×4' },
+    { name: 'Lesser Kalong',    tag: '×3' },
+    { name: 'Snow Wolf Pup',    tag: '×4' },
+    { name: 'Dryad',            tag: '×4' },
+    { name: 'Bateleur',         tag: '×3' },
+    { name: 'Downy Aevis',      tag: '×4' },
+    { name: 'Mirrorknight',     tag: '×4' },
+  ]},
+  { id: 'hunt-lnc-r5', title: 'Rank 5', note: 'Lv 45–50', quests: [
+    { name: 'Dragonfly',              tag: '×5' },
+    { name: 'Baritine Croc',          tag: '×4' },
+    { name: "Dead Man's Moan",        tag: '×5' },
+    { name: '3rd Cohort Signifer',    tag: '×2' },
+    { name: 'Morbol',                 tag: '×5' },
+    { name: 'Wild Hog',               tag: '×5' },
+    { name: 'Daring Harrier',         tag: '×4' },
+    { name: 'Lake Cobra',             tag: '×5' },
+    { name: 'Snow Wolf',              tag: '×5' },
+    { name: 'Sea Wasp',               tag: '×5' },
+    { name: '5th Cohort Vanguard',    tag: '×4' },
+    { name: 'Natalan Watchwolf',      tag: '×5' },
+    { name: 'Sylphlands Sentinel',    tag: '×5' },
+    { name: 'Basilisk',               tag: '×4' },
+    { name: '2nd Cohort Eques',       tag: '×5' },
+  ]},
+];
+
+const ROG_HUNT = [
+  { id: 'hunt-rog-r1', title: 'Rank 1', note: 'Lv 1–15', quests: [
+    { name: 'Wharf Rat',        tag: '×3' },
+    { name: 'Lost Lamb',        tag: '×3' },
+    { name: 'Aurelia',          tag: '×3' },
+    { name: 'Wild Dodo',        tag: '×3' },
+    { name: 'Pugil',            tag: '×3' },
+    { name: 'Goblin Fisher',    tag: '×1' },
+    { name: 'Tiny Mandragora',  tag: '×3' },
+    { name: 'Cave Bat',         tag: '×3' },
+    { name: 'Galago',           tag: '×3' },
+    { name: 'Grounded Pirate',  tag: '×1' },
+    { name: 'Grounded Raider',  tag: '×1' },
+    { name: 'Megalocrab',       tag: '×3' },
+  ]},
+  { id: 'hunt-rog-r2', title: 'Rank 2', note: 'Lv 15–25', quests: [
+    { name: 'Wild Jackal',      tag: '×3' },
+    { name: 'Roseling',         tag: '×1' },
+    { name: 'Sewer Mole',       tag: '×2' },
+    { name: 'Fat Dodo',         tag: '×3' },
+    { name: 'Moraby Mole',      tag: '×3' },
+    { name: 'Qiqirn Eggdigger', tag: '×3' },
+    { name: 'Puk Hatchling',    tag: '×3' },
+    { name: 'Rothlyt Pelican',  tag: '×3' },
+    { name: 'Killer Mantis',    tag: '×2' },
+    { name: 'Hedgemole',        tag: '×1' },
+    { name: 'Wild Wolf',        tag: '×3' },
+    { name: 'Bumble Beetle',    tag: '×3' },
+  ]},
+  { id: 'hunt-rog-r3', title: 'Rank 3', note: 'Lv 25–35', quests: [
+    { name: 'Black Bat',                     tag: '×3' },
+    { name: 'Gall Gnat',                     tag: '×3' },
+    { name: 'Overgrown Ivy',                 tag: '×3' },
+    { name: 'Bark Eft',                      tag: '×3' },
+    { name: 'Redbelly Lookout',              tag: '×2' },
+    { name: 'Redbelly Larcener',             tag: '×2' },
+    { name: 'Antelope Stag',                 tag: '×3' },
+    { name: 'River Yarzon',                  tag: '×3' },
+    { name: 'Corpse Brigade Knuckledancer',  tag: '×2' },
+    { name: 'Corpse Brigade Firedancer',     tag: '×2' },
+    { name: 'Coeurlclaw Hunter',             tag: '×2' },
+    { name: 'Coeurlclaw Cutter',             tag: '×2' },
+    { name: 'Sandstone Golem',               tag: '×3' },
+  ]},
+  { id: 'hunt-rog-r4', title: 'Rank 4', note: 'Lv 35–45', quests: [
+    { name: 'Large Buffalo',      tag: '×3' },
+    { name: 'Grass Raptor',       tag: '×3' },
+    { name: 'Qiqirn Gullroaster', tag: '×2' },
+    { name: 'Colibri',            tag: '×2' },
+    { name: 'Coeurl',             tag: '×1' },
+    { name: 'Highland Condor',    tag: '×2' },
+    { name: 'Basalt Golem',       tag: '×3' },
+    { name: 'Velociraptor',       tag: '×4' },
+    { name: 'Feral Croc',         tag: '×2' },
+    { name: 'Highland Goobbue',   tag: '×2' },
+    { name: 'Redhorn Ogre',       tag: '×3' },
+    { name: 'Taurus',             tag: '×3' },
+    { name: 'Bateleur',           tag: '×2' },
+    { name: 'Chinchilla',         tag: '×2' },
+  ]},
+  { id: 'hunt-rog-r5', title: 'Rank 5', note: 'Lv 45–50', quests: [
+    { name: 'Golden Fleece',      tag: '×4' },
+    { name: 'Quartz Doblyn',      tag: '×4' },
+    { name: 'Nix',                tag: '×4' },
+    { name: 'Mudpuppy',           tag: '×4' },
+    { name: 'Daring Harrier',     tag: '×2' },
+    { name: 'Raging Harrier',     tag: '×2' },
+    { name: 'Gigas Shramana',     tag: '×2' },
+    { name: 'Gigas Sozu',         tag: '×2' },
+    { name: 'Hippogryph',         tag: '×4' },
+    { name: 'Hapalit',            tag: '×4' },
+    { name: '2nd Cohort Eques',   tag: '×2' },
+    { name: '2nd Cohort Signifer', tag: '×2' },
+    { name: '2nd Cohort Secutor', tag: '×2' },
+    { name: '2nd Cohort Vanguard', tag: '×2' },
+  ]},
+];
+
+const ARC_HUNT = [
+  { id: 'hunt-arc-r1', title: 'Rank 1', note: 'Lv 1–15', quests: [
+    { name: 'Little Ladybug',   tag: '×4' },
+    { name: 'Ground Squirrel',  tag: '×4' },
+    { name: 'Forest Funguar',   tag: '×4' },
+    { name: 'Miteling',         tag: '×4' },
+    { name: 'Midge Swarm',      tag: '×4' },
+    { name: 'Water Sprite',     tag: '×4' },
+    { name: 'Black Eft',        tag: '×4' },
+    { name: 'Anole',            tag: '×4' },
+    { name: 'Trickster Imp',    tag: '×4' },
+    { name: 'Roselet',          tag: '×4' },
+  ]},
+  { id: 'hunt-arc-r2', title: 'Rank 2', note: 'Lv 15–25', quests: [
+    { name: 'Hornet Swarm',     tag: '×4' },
+    { name: 'Arbor Buzzard',    tag: '×4' },
+    { name: 'Magicked Bones',   tag: '×1' },
+    { name: 'Treant Sapling',   tag: '×1' },
+    { name: 'Goblin Hunter',    tag: '×1' },
+    { name: 'Mandragora',       tag: '×1' },
+    { name: 'Wild Hoglet',      tag: '×4' },
+    { name: 'Lemur',            tag: '×4' },
+    { name: 'Faerie Funguar',   tag: '×4' },
+    { name: 'Giant Gnat',       tag: '×4' },
+    { name: 'Raptor Poacher',   tag: '×3' },
+    { name: 'Antelope Doe',     tag: '×4' },
+    { name: 'Wild Boar',        tag: '×4' },
+  ]},
+  { id: 'hunt-arc-r3', title: 'Rank 3', note: 'Lv 25–35', quests: [
+    { name: 'Stoneshell',          tag: '×5' },
+    { name: 'Diseased Treant',     tag: '×5' },
+    { name: 'Overgrown Offering',  tag: '×2' },
+    { name: 'Yarzon Scavenger',    tag: '×2' },
+    { name: 'Forest Yarzon',       tag: '×2' },
+    { name: 'Jumping Djigga',      tag: '×2' },
+    { name: 'Redbelly Sharpeye',   tag: '×5' },
+    { name: 'Banemite',            tag: '×5' },
+    { name: 'Chasm Buzzard',       tag: '×5' },
+    { name: 'Sandskin Peiste',     tag: '×5' },
+    { name: 'Ziz',                 tag: '×5' },
+    { name: 'Toadstool',           tag: '×5' },
+    { name: 'Apkallu',             tag: '×5' },
+  ]},
+  { id: 'hunt-arc-r4', title: 'Rank 4', note: 'Lv 35–45', quests: [
+    { name: 'Floating Eye',     tag: '×5' },
+    { name: 'Sandworm',         tag: '×5' },
+    { name: 'Russet Yarzon',    tag: '×2' },
+    { name: 'Giant Pelican',    tag: '×2' },
+    { name: 'Smoke Bomb',       tag: '×2' },
+    { name: 'Spriggan',         tag: '×2' },
+    { name: 'Bloodshore Bell',  tag: '×5' },
+    { name: 'Jungle Coeurl',    tag: '×5' },
+    { name: 'Ringtail',         tag: '×2' },
+    { name: 'Highland Condor',  tag: '×2' },
+    { name: 'Salamander',       tag: '×2' },
+    { name: 'Fallen Pikeman',   tag: '×2' },
+    { name: 'Ice Sprite',       tag: '×5' },
+    { name: 'Feral Croc',       tag: '×5' },
+    { name: 'Vodoriga',         tag: '×5' },
+    { name: 'Baritine Croc',    tag: '×5' },
+  ]},
+  { id: 'hunt-arc-r5', title: 'Rank 5', note: 'Lv 45–50', quests: [
+    { name: 'Hippocerf',            tag: '×5' },
+    { name: 'Dragonfly',            tag: '×5' },
+    { name: 'Oldgrowth Treant',     tag: '×2' },
+    { name: 'Lammergeyer',          tag: '×2' },
+    { name: "Dead Man's Moan",      tag: '×2' },
+    { name: 'Morbol',               tag: '×2' },
+    { name: 'Mudpuppy',             tag: '×5' },
+    { name: 'Lesser Kalong',        tag: '×5' },
+    { name: 'Giant Reader',         tag: '×2' },
+    { name: 'Hippogryph',           tag: '×2' },
+    { name: '5th Cohort Secutor',   tag: '×2' },
+    { name: 'Tempered Gladiator',   tag: '×2' },
+    { name: 'Sylphlands Condor',    tag: '×5' },
+    { name: 'Milkroot Sapling',     tag: '×5' },
+    { name: 'Ahriman',              tag: '×5' },
+    { name: 'Shelfeye Reaver',      tag: '×5' },
+  ]},
+];
+
+const THM_HUNT = [
+  { id: 'hunt-thm-r1', title: 'Rank 1', note: 'Lv 1–15', quests: [
+    { name: 'Little Ladybug',       tag: '×3' },
+    { name: 'Huge Hornet',          tag: '×3' },
+    { name: 'Cactuar',              tag: '×3' },
+    { name: 'Snapping Shrew',       tag: '×3' },
+    { name: 'Syrphid Cloud',        tag: '×3' },
+    { name: 'Yarzon Feeder',        tag: '×3' },
+    { name: 'Rusty Coblyn',         tag: '×3' },
+    { name: 'Spriggan Graverobber', tag: '×3' },
+    { name: 'Qiqirn Shellsweeper',  tag: '×3' },
+    { name: 'Sun Bat',              tag: '×3' },
+  ]},
+  { id: 'hunt-thm-r2', title: 'Rank 2', note: 'Lv 15–25', quests: [
+    { name: 'Copper Coblyn',        tag: '×2' },
+    { name: 'Bomb',                 tag: '×3' },
+    { name: 'Cochineal Cactuar',    tag: '×3' },
+    { name: 'Quiveron Attendant',   tag: '×2' },
+    { name: 'Giant Tortoise',       tag: '×2' },
+    { name: 'Antling Sentry',       tag: '×3' },
+    { name: 'Thickshell',           tag: '×3' },
+    { name: 'Toxic Toad',           tag: '×3' },
+    { name: 'Tuco-tuco',            tag: '×3' },
+    { name: 'Myotragus Nanny',      tag: '×3' },
+    { name: 'Blowfly Swarm',        tag: '×3' },
+    { name: 'Rotting Corpse',       tag: '×3' },
+    { name: 'Bloated Bogy',         tag: '×3' },
+  ]},
+  { id: 'hunt-thm-r3', title: 'Rank 3', note: 'Lv 25–35', quests: [
+    { name: 'Kedtrap',                       tag: '×2' },
+    { name: 'Overgrown Ivy',                 tag: '×4' },
+    { name: 'Yarzon Scavenger',              tag: '×2' },
+    { name: 'Forest Yarzon',                 tag: '×4' },
+    { name: 'Laughing Toad',                 tag: '×4' },
+    { name: 'Bark Eft',                      tag: '×2' },
+    { name: 'Jumping Djigga',                tag: '×4' },
+    { name: 'Glowfly',                       tag: '×2' },
+    { name: 'River Yarzon',                  tag: '×4' },
+    { name: 'Potter Wasp Swarm',             tag: '×4' },
+    { name: 'Phurble',                       tag: '×4' },
+    { name: 'Corpse Brigade Knuckledancer',  tag: '×4' },
+    { name: 'Fire Sprite',                   tag: '×4' },
+    { name: 'Stroper',                       tag: '×4' },
+  ]},
+  { id: 'hunt-thm-r4', title: 'Rank 4', note: 'Lv 35–45', quests: [
+    { name: 'Adamantoise',          tag: '×2' },
+    { name: 'Mamool Ja Executioner', tag: '×5' },
+    { name: 'Revenant',             tag: '×2' },
+    { name: 'Russet Yarzon',        tag: '×5' },
+    { name: 'Smoke Bomb',           tag: '×5' },
+    { name: 'Dung Midge Swarm',     tag: '×2' },
+    { name: 'Gigantoad',            tag: '×5' },
+    { name: 'Spriggan',             tag: '×2' },
+    { name: 'Salamander',           tag: '×5' },
+    { name: 'Plasmoid',             tag: '×5' },
+    { name: 'Ice Sprite',           tag: '×5' },
+    { name: 'Feral Croc',           tag: '×5' },
+    { name: "Will-o'-the-wisp",     tag: '×5' },
+    { name: 'Golden Fleece',        tag: '×5' },
+  ]},
+  { id: 'hunt-thm-r5', title: 'Rank 5', note: 'Lv 45–50', quests: [
+    { name: 'Oldgrowth Treant',         tag: '×2' },
+    { name: 'Dragonfly',                tag: '×6' },
+    { name: 'Crater Golem',             tag: '×1' },
+    { name: "Dead Man's Moan",          tag: '×6' },
+    { name: '3rd Cohort Secutor',       tag: '×2' },
+    { name: 'Morbol',                   tag: '×6' },
+    { name: 'Nix',                      tag: '×6' },
+    { name: 'Lesser Kalong',            tag: '×2' },
+    { name: 'Gigas Sozu',               tag: '×2' },
+    { name: 'Giant Logger',             tag: '×3' },
+    { name: 'Iron Tortoise',            tag: '×6' },
+    { name: 'Synthetic Doblyn',         tag: '×6' },
+    { name: 'Ked',                      tag: '×6' },
+    { name: '4th Cohort Hoplomachus',   tag: '×6' },
+    { name: '2nd Cohort Signifer',      tag: '×6' },
+  ]},
+];
+
 // ─── TANK REGISTRY ────────────────────────────────────────────────────────
 const TANK_QUESTS = [
   { role: null, jobs: [
-    { id: 'pld', label: 'Paladin',      sections: [...GLD_SECTIONS, ...PLD_SECTIONS] },
-    { id: 'war', label: 'Warrior',      sections: [...MRD_SECTIONS, ...WAR_SECTIONS] },
+    { id: 'pld', label: 'Paladin',      sections: [...GLD_SECTIONS, ...PLD_SECTIONS], huntSections: GLD_HUNT },
+    { id: 'war', label: 'Warrior',      sections: [...MRD_SECTIONS, ...WAR_SECTIONS], huntSections: MRD_HUNT },
     { id: 'drk', label: 'Dark Knight',  sections: DRK_SECTIONS },
     { id: 'gnb', label: 'Gunbreaker',   sections: GNB_SECTIONS },
   ]},
@@ -3865,8 +4735,8 @@ const TANK_QUESTS = [
 // ─── HEALER REGISTRY ──────────────────────────────────────────────────────
 const HEALER_QUESTS = [
   { role: null, jobs: [
-    { id: 'whm', label: 'White Mage',   sections: [...CNJ_SECTIONS, ...WHM_SECTIONS] },
-    { id: 'acn', label: 'Arcanist',     sections: ACN_SECTIONS },
+    { id: 'whm', label: 'White Mage',   sections: [...CNJ_SECTIONS, ...WHM_SECTIONS], huntSections: CNJ_HUNT },
+    { id: 'acn', label: 'Arcanist',     sections: ACN_SECTIONS, huntSections: ACN_HUNT },
     { id: 'sch', label: 'Scholar',      sections: SCH_SECTIONS },
     { id: 'ast', label: 'Astrologian',  sections: AST_SECTIONS },
     { id: 'sge', label: 'Sage',         sections: SGE_SECTIONS },
@@ -3876,18 +4746,18 @@ const HEALER_QUESTS = [
 // ─── DPS REGISTRY ─────────────────────────────────────────────────────────
 const DPS_QUESTS = [
   { role: 'Melee', jobs: [
-    { id: 'mnk', label: 'Monk',         sections: [...PGL_SECTIONS, ...MNK_SECTIONS] },
-    { id: 'drg', label: 'Dragoon',      sections: [...LNC_SECTIONS, ...DRG_SECTIONS] },
-    { id: 'nin', label: 'Ninja',        sections: [...ROG_SECTIONS, ...NIN_SECTIONS] },
+    { id: 'mnk', label: 'Monk',         sections: [...PGL_SECTIONS, ...MNK_SECTIONS], huntSections: PGL_HUNT },
+    { id: 'drg', label: 'Dragoon',      sections: [...LNC_SECTIONS, ...DRG_SECTIONS], huntSections: LNC_HUNT },
+    { id: 'nin', label: 'Ninja',        sections: [...ROG_SECTIONS, ...NIN_SECTIONS], huntSections: ROG_HUNT },
     { id: 'sam', label: 'Samurai',      sections: SAM_SECTIONS },
     { id: 'rpr', label: 'Reaper',       sections: RPR_SECTIONS },
     { id: 'vpr', label: 'Viper',        sections: VPR_SECTIONS },
   ]},
   { role: 'Ranged', jobs: [
-    { id: 'brd', label: 'Bard',         sections: [...ARC_SECTIONS, ...BRD_SECTIONS] },
+    { id: 'brd', label: 'Bard',         sections: [...ARC_SECTIONS, ...BRD_SECTIONS], huntSections: ARC_HUNT },
     { id: 'mch', label: 'Machinist',    sections: MCH_SECTIONS },
     { id: 'dnc', label: 'Dancer',       sections: DNC_SECTIONS },
-    { id: 'blm', label: 'Black Mage',   sections: [...THM_SECTIONS, ...BLM_SECTIONS] },
+    { id: 'blm', label: 'Black Mage',   sections: [...THM_SECTIONS, ...BLM_SECTIONS], huntSections: THM_HUNT },
     { id: 'smn', label: 'Summoner',     sections: SMN_SECTIONS },
     { id: 'rdm', label: 'Red Mage',     sections: RDM_SECTIONS },
     { id: 'blu', label: 'Blue Mage',    sections: BLU_SECTIONS },
@@ -4158,7 +5028,7 @@ const ROLE_QUESTS = [
 const HILDEBRAND_QUESTS = [
   { role: 'A Realm Reborn', jobs: [
     { id: 'hildi-arr', label: 'Hildibrand Adventures', sections: [
-      { id: 'hildi-arr-main', title: 'ARR (2.1-2.55)', note: 'Core arc', quests: [
+      { id: 'hildi-arr-main', title: 'A Realm Reborn (2.1–2.55)', note: 'Core arc', quests: [
         { name: 'The Rise and Fall of Gentlemen', tag: '2.1 unlock' },
         { name: 'Back in the Saddle', tag: '2.1' },
         { name: 'After Her Own Heart', tag: '2.1' },
@@ -4185,7 +5055,7 @@ const HILDEBRAND_QUESTS = [
   ]},
   { role: 'Heavensward', jobs: [
     { id: 'hildi-hw', label: 'Further Hildibrand Adventures', sections: [
-      { id: 'hildi-hw-main', title: 'HW (3.1-3.5)', note: 'Core arc', quests: [
+      { id: 'hildi-hw-main', title: 'Heavensward (3.1–3.5)', note: 'Core arc', quests: [
         { name: 'A Gentleman Falls, Rather than Flies', tag: '3.2 unlock' },
         { name: 'Don\'t Call It a Comeback', tag: '3.2' },
         { name: 'The Gigi Situation', tag: '3.3' },
@@ -4199,7 +5069,7 @@ const HILDEBRAND_QUESTS = [
   ]},
   { role: 'Stormblood', jobs: [
     { id: 'hildi-sb', label: 'Even Further Hildibrand Adventures', sections: [
-      { id: 'hildi-sb-main', title: 'SB (4.1-4.56)', note: 'Core arc', quests: [
+      { id: 'hildi-sb-main', title: 'Stormblood (4.1–4.56)', note: 'Core arc', quests: [
         { name: 'A Hingan Tale: Nashu Goes East', tag: '4.1 unlock' },
         { name: 'Life Imitates Art Imitates Life', tag: '4.25' },
         { name: 'Of Wolves and Gentlemen', tag: '4.25' },
@@ -4214,7 +5084,7 @@ const HILDEBRAND_QUESTS = [
   ]},
   { role: 'Endwalker', jobs: [
     { id: 'hildi-ew', label: 'Somehow Further Hildibrand Adventures', sections: [
-      { id: 'hildi-ew-main', title: 'EW (6.15-6.55)', note: 'Manderville weapons prerequisite', quests: [
+      { id: 'hildi-ew-main', title: 'Endwalker (6.15–6.55)', note: 'Manderville weapons prerequisite', quests: [
         { name: 'The Sleeping Gentleman', tag: 'Unlock' },
         { name: 'A Soulful Reunion', tag: '6.15' },
         { name: 'Lunar Conspiracy', tag: '6.25' },
@@ -4230,7 +5100,7 @@ const HILDEBRAND_QUESTS = [
   ]},
   { role: 'Dawntrail', jobs: [
     { id: 'hildi-dt', label: 'Inconceivably Further Hildibrand Adventures', sections: [
-      { id: 'hildi-dt-main', title: 'DT (7.x)', note: 'Ongoing', quests: [
+      { id: 'hildi-dt-main', title: 'Dawntrail (7.x)', note: 'Ongoing', quests: [
         { name: 'The Case of the Displaced Inspector', tag: '7.15' },
         { name: 'Wizened Testimony', tag: '7.25' },
         { name: 'The Case of the Fiendish Fugitives', tag: '7.25' },
@@ -4246,7 +5116,7 @@ const HILDEBRAND_QUESTS = [
 const RELIC_WEAPONS = [
   { role: 'A Realm Reborn', jobs: [
     { id: 'relic-arr', label: 'Zodiac Weapons', sections: [
-      { id: 'relic-arr-main', title: 'ARR (2.x)', note: 'Zodiac chain', quests: [
+      { id: 'relic-arr-main', title: 'A Realm Reborn (2.x)', note: 'Zodiac chain', quests: [
         { name: 'The Weaponsmith of Legend', tag: 'Unlock' },
         { name: 'A Relic Reborn (job-specific)', tag: 'Base relic quest' },
         { name: 'Up in Arms', tag: 'Atma stage' },
@@ -4270,7 +5140,7 @@ const RELIC_WEAPONS = [
   ]},
   { role: 'Heavensward', jobs: [
     { id: 'relic-hw', label: 'Anima Weapons', sections: [
-      { id: 'relic-hw-main', title: 'HW (3.x)', note: 'Anima chain', quests: [
+      { id: 'relic-hw-main', title: 'Heavensward (3.x)', note: 'Anima chain', quests: [
         { name: 'An Unexpected Proposal', tag: 'Unlock' },
         { name: 'Soul without Life', tag: 'Animated stage' },
         { name: 'Toughening Up', tag: 'Awoken stage' },
@@ -4289,7 +5159,7 @@ const RELIC_WEAPONS = [
   ]},
   { role: 'Stormblood', jobs: [
     { id: 'relic-sb', label: 'Eureka Weapons', sections: [
-      { id: 'relic-sb-main', title: 'SB (4.x)', note: 'Eureka progression', quests: [
+      { id: 'relic-sb-main', title: 'Stormblood (4.x)', note: 'Eureka progression', quests: [
         { name: 'And We Shall Call It Eureka', tag: 'Anemos unlock' },
         { name: 'And We Shall Call It Pagos', tag: 'Pagos unlock' },
         { name: 'And We Shall Call It Pyros', tag: 'Pyros unlock' },
@@ -4300,7 +5170,7 @@ const RELIC_WEAPONS = [
   ]},
   { role: 'Shadowbringers', jobs: [
     { id: 'relic-shb', label: 'Resistance Weapons', sections: [
-      { id: 'relic-shb-main', title: 'ShB (5.x)', note: 'Bozja progression', quests: [
+      { id: 'relic-shb-main', title: 'Shadowbringers (5.x)', note: 'Bozja progression', quests: [
         { name: 'Hail to the Queen', tag: 'Unlock path' },
         { name: 'Path to the Past', tag: 'Gangos unlock' },
         { name: 'The Bozja Incident', tag: 'Story' },
@@ -4346,7 +5216,7 @@ const RELIC_WEAPONS = [
   ]},
   { role: 'Endwalker', jobs: [
     { id: 'relic-ew', label: 'Manderville Weapons', sections: [
-      { id: 'relic-ew-main', title: 'EW (6.x)', note: 'Requires Hildibrand', quests: [
+      { id: 'relic-ew-main', title: 'Endwalker (6.x)', note: 'Requires Hildibrand', quests: [
         { name: 'Make It a Manderville', tag: 'Unlock' },
         { name: 'Make Another Manderville', tag: 'Repeatable base' },
         { name: 'Well-oiled', tag: 'Amazing stage' },
@@ -4360,7 +5230,7 @@ const RELIC_WEAPONS = [
   ]},
   { role: 'Dawntrail', jobs: [
     { id: 'relic-dt', label: 'Phantom Weapons', sections: [
-      { id: 'relic-dt-main', title: 'DT (7.x)', note: 'Ongoing', quests: [
+      { id: 'relic-dt-main', title: 'Dawntrail (7.x)', note: 'Ongoing', quests: [
         { name: 'Arcane Artistry', tag: 'Penumbrae stage' },
         { name: 'Forging the Phantasmal', tag: 'Penumbrae stage' },
         { name: 'Keeping the Old Ways Alive', tag: 'Umbrae stage' },
@@ -4429,14 +5299,311 @@ const STATE_KEY    = 'ffxiv-msq-atlas-v6';
 const UI_KEY       = 'ffxiv-msq-atlas-ui-v6';
 const DATES_KEY    = 'ffxiv-msq-atlas-dates-v1';
 const ACTIVITY_KEY = 'ffxiv-atlas-activity-v1';
+const GIL_KEY      = 'ffxiv-atlas-gil-v1';
+const MGP_KEY      = 'ffxiv-atlas-mgp-v1';
+const VENTURE_KEY  = 'ffxiv-atlas-venture-v1';
 let checked = {};
 let ui = { open: {} };
 let dates = {};
 let activityData = {};
+let gilData = [];
+let mgpData = [];
+let ventureData = [];
 
-// Serialise checked, UI, and completion dates into one save object
+const MSQ_UNLOCK_MARKERS = {
+    "A Fresh Start":  [
+                          "Malikah\u0027s Well"
+                      ],
+    "A Grand Adventure":  [
+                              "The Grand Cosmos"
+                          ],
+    "A Grave Presentiment":  [
+                                 "The Unmaking"
+                             ],
+    "A Knight\u0027s Calling":  [
+                                    "The Vault"
+                                ],
+    "A Terminal Invitation":  [
+                                  "The Meso Terminal",
+                                  "The Ageless Necropolis"
+                              ],
+    "Abyssal Dark":  [
+                         "The Voidcast Dais"
+                     ],
+    "Acht-la Ormh Inn":  [
+                             "The Dancing Plague"
+                         ],
+    "All Aboard":  [
+                       "Vanguard"
+                   ],
+    "Alzadaal\u0027s Legacy":  [
+                                   "Alzadaal\u0027s Legacy"
+                               ],
+    "An End to the Song":  [
+                               "The Final Steps of Faith"
+                           ],
+    "An Uninvited Ascian":  [
+                                "The Chrysalis"
+                            ],
+    "Beneath the Surface":  [
+                                "Anamnesis Anyder"
+                            ],
+    "Beyond the Mountains":  [
+                                 "Mistwake"
+                             ],
+    "Bolt, Chain, and Island":  [
+                                    "The Limitless Blue (Hard)"
+                                ],
+    "Caging the Messenger":  [
+                                 "Ktisis Hyperboreia"
+                             ],
+    "Dawntrail":  [
+                      "Alexandria",
+                      "The Interphos"
+                  ],
+    "Descent to the Foundation":  [
+                                      "The Underkeep",
+                                      "Recollection"
+                                  ],
+    "Desires Untold":  [
+                           "Mount Ordeals"
+                       ],
+    "Down in the Dark":  [
+                             "The Lunar Subterrane",
+                             "The Abyssal Fracture"
+                         ],
+    "Endwalker":  [
+                      "The Dead Ends",
+                      "The Final Day"
+                  ],
+    "Extinguishing the Last Light":  [
+                                         "Mt. Gulg",
+                                         "The Crown of the Immaculate"
+                                     ],
+    "Feel the Burn":  [
+                          "The Burn"
+                      ],
+    "Fire in the Gloom":  [
+                              "The Tam-Tara Deepcroft"
+                          ],
+    "For All Turali":  [
+                           "Ihuykatumu"
+                       ],
+    "Forbidden Knowledge":  [
+                                "The Great Gubal Library"
+                            ],
+    "Gateway of the Gods":  [
+                                "The Tower of Babil"
+                            ],
+    "Going Haam":  [
+                       "The Aetherfont"
+                   ],
+    "Griffin, Griffin on the Wall":  [
+                                         "Baelsar\u0027s Wall"
+                                     ],
+    "Heavensward":  [
+                        "The Aetherochemical Research Facility",
+                        "The Singularity Reactor"
+                    ],
+    "Her Children, One and All":  [
+                                      "The Mothercrystal",
+                                      "The Aitiascope"
+                                  ],
+    "Hope\u0027s Confluence":  [
+                                   "The Seat of Sacrifice"
+                               ],
+    "In Pursuit of the Past":  [
+                                   "The Stone Vigil"
+                               ],
+    "In Search of Azdaja":  [
+                                "The Fell Court of Troia"
+                            ],
+    "In Search of the Past":  [
+                                  "Yuweyawata Field Station"
+                              ],
+    "In the Dark of the Tower":  [
+                                     "The Tower of Zot"
+                                 ],
+    "In the Footsteps of Bardam the Brave":  [
+                                                 "Bardam\u0027s Mettle"
+                                             ],
+    "Into a Copper Hell":  [
+                               "Copperbell Mines"
+                           ],
+    "Into the Aery":  [
+                          "The Aery"
+                      ],
+    "Into the Beast\u0027s Maw":  [
+                                      "The Thousand Maws of Toto-Rak"
+                                  ],
+    "It\u0027s Probably Pirates":  [
+                                       "Sastasha"
+                                   ],
+    "King of the Mountain":  [
+                                 "Lapis Manalis"
+                             ],
+    "Lady of the Vortex":  [
+                               "The Howling Eye"
+                           ],
+    "Levin an Impression":  [
+                                "The Striking Tree (Hard)"
+                            ],
+    "Like Master, Like Pupil":  [
+                                    "Matoya\u0027s Relict"
+                                ],
+    "Lord of Crags":  [
+                          "The Navel"
+                      ],
+    "Lord of the Hive":  [
+                             "Thok ast Thok (Hard)"
+                         ],
+    "Lord of the Inferno":  [
+                                "The Bowl of Embers"
+                            ],
+    "Lord of the Whorl":  [
+                              "The Whorleater (Hard)"
+                          ],
+    "Mourn in Passing":  [
+                             "Sohm Al"
+                         ],
+    "Not without Incident":  [
+                                 "The Sirensong Sea"
+                             ],
+    "Road to the Golden City":  [
+                                    "The Skydeep Cenote"
+                                ],
+    "Rock the Castrum":  [
+                             "Castrum Meridianum"
+                         ],
+    "Shadowbringers":  [
+                           "Amaurot",
+                           "The Dying Gasp"
+                       ],
+    "Shadows of the First":  [
+                                 "Xelphatol"
+                             ],
+    "Skeletons in Her Closet":  [
+                                    "Haukke Manor"
+                                ],
+    "Skies Aflame":  [
+                         "Vanaspati"
+                     ],
+    "Stormblood":  [
+                       "Ala Mhigo",
+                       "The Royal Menagerie"
+                   ],
+    "The Burden of Knowledge":  [
+                                    "The Qitana Ravel"
+                                ],
+    "The Converging Light":  [
+                                 "The Heroes\u0027 Gauntlet"
+                             ],
+    "The Die Is Cast":  [
+                            "Doma Castle"
+                        ],
+    "The Face of War":  [
+                            "The Ghimlyt Dark"
+                        ],
+    "The Flames of War":  [
+                              "Paglth\u0027an"
+                          ],
+    "The High Luminary":  [
+                              "Worqor Zormor"
+                          ],
+    "The Instruments of Our Deliverance":  [
+                                               "The Akh Afah Amphitheatre (Hard)"
+                                           ],
+    "The Key to the Castle":  [
+                                  "Dohn Mheg"
+                              ],
+    "The Lady of Bliss":  [
+                              "Emanation"
+                          ],
+    "The Lightwardens":  [
+                             "Holminster Switch"
+                         ],
+    "The Lord of the Revel":  [
+                                  "The Pool of Tribute"
+                              ],
+    "The Mad King\u0027s Trove":  [
+                                      "The Drowned City of Skalla"
+                                  ],
+    "The Martyr":  [
+                       "The Dark Inside"
+                   ],
+    "The Path of the Righteous":  [
+                                      "Snowcloak"
+                                  ],
+    "The Price of Freedom":  [
+                                 "Castrum Abania"
+                             ],
+    "The Primary Agreement":  [
+                                  "Castrum Fluminis"
+                              ],
+    "The Resilient Son":  [
+                              "Origenics",
+                              "Everkeep"
+                          ],
+    "The Rising Chorus":  [
+                              "The Keeper of the Lake"
+                          ],
+    "The Skyruin":  [
+                        "Worqor Lar Dor"
+                    ],
+    "The Things We Do for Cheese":  [
+                                        "Brayflox\u0027s Longstop"
+                                    ],
+    "The Ultimate Weapon":  [
+                                "The Praetorium",
+                                "The Porta Decumana"
+                            ],
+    "The Wind Rises":  [
+                           "Storm\u0027s Crown"
+                       ],
+    "The Word of the Mother":  [
+                                   "The Antitower"
+                               ],
+    "Two Worlds Entwined":  [
+                                "The Clyteum"
+                            ],
+    "Where We Call Home":  [
+                               "Hell on Rails"
+                           ],
+    "Winning Over the Wyrm":  [
+                                  "Sohr Khai"
+                              ],
+    "You Have Selected Regicide":  [
+                                       "Thornmarch (Hard)"
+                                   ]
+};
+
+const CLASS_UNLOCK_MARKERS = {
+  'Way of the Gladiator':   [{ name: 'Gladiator Hunting Log',   type: 'hunt' }],
+  'Way of the Marauder':    [{ name: 'Marauder Hunting Log',    type: 'hunt' }],
+  'Way of the Pugilist':    [{ name: 'Pugilist Hunting Log',    type: 'hunt' }],
+  'Way of the Lancer':      [{ name: 'Lancer Hunting Log',      type: 'hunt' }],
+  'Way of the Rogue':       [{ name: 'Rogue Hunting Log',       type: 'hunt' }],
+  'Way of the Archer':      [{ name: 'Archer Hunting Log',      type: 'hunt' }],
+  'Way of the Conjurer':    [{ name: 'Conjurer Hunting Log',    type: 'hunt' }],
+  'Way of the Thaumaturge': [{ name: 'Thaumaturge Hunting Log', type: 'hunt' }],
+  'Way of the Arcanist':    [{ name: 'Arcanist Hunting Log',    type: 'hunt' }],
+};
+
+const MSQ_FEATURE_MARKERS = {
+  "The Ul'dahn Envoy":              [{ name: 'Gold Saucer',             type: 'feature' }],
+  'The Scions of the Seventh Dawn': [{ name: 'Retainers',               type: 'feature' }],
+  'A Hero in the Making':           [{ name: 'Grand Company',           type: 'feature' }],
+  'The Company You Keep':           [{ name: 'Chocobo Mount',           type: 'feature' }],
+  'Divine Intervention':            [{ name: 'Flying Mounts',           type: 'feature' }],
+  'Litany of Peace':                [{ name: 'Ishgardian Restoration',  type: 'feature' }],
+  'Elation and Trepidation':        [{ name: 'Doman Enclave',           type: 'feature' }],
+  'Endwalker':                      [{ name: 'Island Sanctuary',        type: 'feature' }],
+};
+
+
+// Serialise checked, UI, completion dates, and activity data into one save object
 function buildSavePayload() {
-  return JSON.stringify({ version: 1, checked, ui, dates }, null, 2);
+  return JSON.stringify({ version: 1, checked, ui, dates, activityData, gilData, mgpData, ventureData }, null, 2);
 }
 
 // ── Save: writes beside the HTML when possible (fallback: download) ──────────────────────────────────────
@@ -4503,6 +5670,22 @@ function loadFromFile() {
           if (data.ui) ui = data.ui;
           if (!ui.open) ui.open = {};
           if (data.dates) dates = data.dates;
+          if (data.activityData) {
+            activityData = data.activityData;
+            localStorage.setItem(ACTIVITY_KEY, JSON.stringify(activityData));
+          }
+          if (data.gilData) {
+            gilData = data.gilData;
+            store.set(GIL_KEY, JSON.stringify(gilData));
+          }
+          if (data.mgpData) {
+            mgpData = data.mgpData;
+            store.set(MGP_KEY, JSON.stringify(mgpData));
+          }
+          if (data.ventureData) {
+            ventureData = data.ventureData;
+            store.set(VENTURE_KEY, JSON.stringify(ventureData));
+          }
         } else {
           // Fallback: treat the whole file as a checked map
           checked = data;
@@ -4513,6 +5696,19 @@ function loadFromFile() {
         });
         syncDates();
         render();
+        renderActivityGraph();
+        const activeGilBtn = document.querySelector('#exp-gil .gil-range-btn.active');
+        renderGilGraph(activeGilBtn ? activeGilBtn.dataset.range : '30d');
+        const activeMgpBtn = document.querySelector('#exp-mgp .gil-range-btn.active');
+        renderMgpGraph(activeMgpBtn ? activeMgpBtn.dataset.range : '30d');
+        const activeVentureBtn = document.querySelector('#exp-venture .gil-range-btn.active');
+        renderVentureGraph(activeVentureBtn ? activeVentureBtn.dataset.range : '30d');
+        const gilSidebar = document.getElementById('sidebar-gil-amount');
+        if (gilSidebar && gilData.length) gilSidebar.textContent = formatGil(gilData[gilData.length - 1].amount);
+        const mgpSidebar = document.getElementById('sidebar-mgp-amount');
+        if (mgpSidebar && mgpData.length) mgpSidebar.textContent = formatGil(mgpData[mgpData.length - 1].amount);
+        const ventureSidebar = document.getElementById('sidebar-venture-amount');
+        if (ventureSidebar && ventureData.length) ventureSidebar.textContent = ventureData[ventureData.length - 1].amount.toLocaleString();
         showToast('✦ Progress loaded successfully');
       } catch {
         showToast('✦ Could not read save file — is it the correct format?');
@@ -4547,6 +5743,12 @@ async function loadState() {
   if (!ui.open) ui.open = {};
   const dRaw = await store.get(DATES_KEY);
   if (dRaw) { try { dates = JSON.parse(dRaw); } catch { dates = {}; } }
+  const gilRaw = await store.get(GIL_KEY);
+  if (gilRaw) { try { gilData = JSON.parse(gilRaw); } catch { gilData = []; } }
+  const mgpRaw = await store.get(MGP_KEY);
+  if (mgpRaw) { try { mgpData = JSON.parse(mgpRaw); } catch { mgpData = []; } }
+  const ventureRaw = await store.get(VENTURE_KEY);
+  if (ventureRaw) { try { ventureData = JSON.parse(ventureRaw); } catch { ventureData = []; } }
 }
 let autosaveTimer = null;
 function flashAutosave() {
@@ -4606,32 +5808,47 @@ function renderActivityGraph() {
   const start = new Date(today);
   start.setDate(today.getDate() - today.getDay() - 16 * 7);
 
-  const ACTIVITY_SCALE_MAX = 100;
+  const ACTIVITY_SCALE_FLOOR = 20;
+  const ACTIVITY_SCALE_CEIL = 200;
   const ACTIVITY_COLORS = [
-    '#f1e4c8', // 1
-    '#ead19f', // 2-3
-    '#e2bb78', // 4-6
-    '#d8a255', // 7-10
-    '#cc8840', // 11-16
-    '#be7032', // 17-25
-    '#ad5a2a', // 26-40
-    '#9a4724', // 41-60
-    '#86351e', // 61-80
-    '#7a2418'  // 81-100+
+    '#f1e4c8',
+    '#ead19f',
+    '#e2bb78',
+    '#d8a255',
+    '#cc8840',
+    '#be7032',
+    '#ad5a2a',
+    '#9a4724',
+    '#86351e',
+    '#7a2418'
   ];
+  const recentCounts = [];
+  for (let i = 0; i < 56; i++) {
+    const d = new Date(today);
+    d.setDate(today.getDate() - i);
+    const c = activityData[localDateStr(d)] || 0;
+    if (c > 0) recentCounts.push(c);
+  }
+
+  const quantile = (vals, q) => {
+    if (!vals.length) return 0;
+    const sorted = [...vals].sort((a, b) => a - b);
+    const pos = Math.floor((sorted.length - 1) * q);
+    return sorted[pos];
+  };
+  const avg = recentCounts.length ? (recentCounts.reduce((s, v) => s + v, 0) / recentCounts.length) : 0;
+  const p85 = quantile(recentCounts, 0.85);
+  const adaptiveRaw = Math.max(avg * 3, p85 * 1.25, ACTIVITY_SCALE_FLOOR);
+  const ACTIVITY_SCALE_MAX = Math.max(
+    ACTIVITY_SCALE_FLOOR,
+    Math.min(ACTIVITY_SCALE_CEIL, Math.ceil(adaptiveRaw / 5) * 5)
+  );
+
   const colorForCount = count => {
     if (count <= 0) return 'rgba(42,29,16,0.10)';
     const c = Math.min(count, ACTIVITY_SCALE_MAX);
-    if (c === 1)  return ACTIVITY_COLORS[0];
-    if (c <= 3)   return ACTIVITY_COLORS[1];
-    if (c <= 6)   return ACTIVITY_COLORS[2];
-    if (c <= 10)  return ACTIVITY_COLORS[3];
-    if (c <= 16)  return ACTIVITY_COLORS[4];
-    if (c <= 25)  return ACTIVITY_COLORS[5];
-    if (c <= 40)  return ACTIVITY_COLORS[6];
-    if (c <= 60)  return ACTIVITY_COLORS[7];
-    if (c <= 80)  return ACTIVITY_COLORS[8];
-    return ACTIVITY_COLORS[9];
+    const bucket = Math.max(1, Math.min(10, Math.ceil((c / ACTIVITY_SCALE_MAX) * 10)));
+    return ACTIVITY_COLORS[bucket - 1];
   };
 
   let html = '';
@@ -4651,7 +5868,7 @@ function renderActivityGraph() {
       const ring  = isToday ? ` stroke="#a87930" stroke-width="1.5"` : '';
       const scaleCount = Math.min(count, ACTIVITY_SCALE_MAX);
       const plus = count > ACTIVITY_SCALE_MAX ? '+' : '';
-      const label = isFuture ? '' : `<title>${dateStr} · ${count} check${count !== 1 ? 's' : ''} · scale ${scaleCount}${plus}/100</title>`;
+      const label = isFuture ? '' : `<title>${dateStr} · ${count} check${count !== 1 ? 's' : ''} · scale ${scaleCount}${plus}/${ACTIVITY_SCALE_MAX}</title>`;
       html += `<rect x="${x}" y="${y}" width="${CELL}" height="${CELL}" rx="1.5" fill="${fill}"${ring}>${label}</rect>`;
     }
   }
@@ -4661,7 +5878,8 @@ function renderActivityGraph() {
   if (streakEl) {
     const s = calcStreak();
     streakEl.textContent = s > 0 ? `${s}d streak` : '';
-    streakEl.title = s > 0 ? `${s}-day streak` : '';
+    const scaleNote = `adaptive scale max ${ACTIVITY_SCALE_MAX}`;
+    streakEl.title = s > 0 ? `${s}-day streak · ${scaleNote}` : scaleNote;
   }
 }
 
@@ -4692,6 +5910,22 @@ async function resetWeeklyTasks() {
   showToast('✦ Weekly tasks reset');
 }
 
+function scheduleDailyReset() {
+  const now = new Date();
+  const next = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 15, 0, 0, 0));
+  if (now >= next) next.setUTCDate(next.getUTCDate() + 1);
+  setTimeout(async () => { await resetDailyTasks(); scheduleDailyReset(); }, next - now);
+}
+
+function scheduleWeeklyReset() {
+  const now = new Date();
+  const next = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 8, 0, 0, 0));
+  const daysUntilTue = (2 - next.getUTCDay() + 7) % 7;
+  next.setUTCDate(next.getUTCDate() + daysUntilTue);
+  if (now >= next) next.setUTCDate(next.getUTCDate() + 7);
+  setTimeout(async () => { await resetWeeklyTasks(); scheduleWeeklyReset(); }, next - now);
+}
+
 // ═══════════════════════════════════════════════════════════════════════════
 // BUILDERS
 // ═══════════════════════════════════════════════════════════════════════════
@@ -4719,8 +5953,82 @@ function el(tag, attrs, ...children) {
 // ─── DATE HELPERS ─────────────────────────────────────────────────────────
 function formatDate(iso) {
   if (!iso) return '';
-  const d = new Date(iso + 'T00:00:00');
-  return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+  const hasTime = iso.length > 10 && iso.includes('T');
+  const d = hasTime ? new Date(iso) : new Date(iso + 'T00:00:00');
+  const dateStr = d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+  if (!hasTime) return dateStr;
+  const timeStr = d.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
+  return `${dateStr}, ${timeStr}`;
+}
+
+function localDateTimeStr(d = new Date()) {
+  return `${localDateStr(d)}T${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
+}
+
+function normalizeQuestKey(name) {
+  return String(name || '').trim().replace(/\s+\((Quest|Duty)\)$/i, '');
+}
+
+function isProgressiveRevealEnabled() {
+  return !ui.showAllQuests;
+}
+
+let dutyTypeByName = null;
+function ensureDutyTypeIndex() {
+  if (dutyTypeByName) return;
+  dutyTypeByName = {};
+
+  const typeForSection = sec => {
+    const sid = String(sec.id || '').toLowerCase();
+    const title = String(sec.title || '').toLowerCase();
+    if (sid.includes('-tri-') || title.includes('trial')) return 'trial';
+    if (sid.includes('-rai-') || title.includes('raid')) return 'raid';
+    return 'dungeon';
+  };
+
+  ATLAS.forEach(exp => {
+    if (exp.patchOnly) return;
+    exp.categories.forEach(cat => {
+      if (cat.isMsq) return;
+      cat.sections.forEach(sec => {
+        const t = typeForSection(sec);
+        sec.quests.forEach(q => {
+          const name = normalizeQuestKey(q.name || q);
+          if (name && !dutyTypeByName[name]) dutyTypeByName[name] = t;
+        });
+      });
+    });
+  });
+}
+
+function dutyTypeForName(name) {
+  ensureDutyTypeIndex();
+  return dutyTypeByName[normalizeQuestKey(name)] || 'unknown';
+}
+
+function classUnlocks(name) {
+  const all = CLASS_UNLOCK_MARKERS[normalizeQuestKey(name)] || [];
+  return all.length ? all : null;
+}
+
+function questUnlocks(name) {
+  const key = normalizeQuestKey(name);
+  const all = [
+    ...(MSQ_UNLOCK_MARKERS[key] || []),
+    ...(MSQ_FEATURE_MARKERS[key] || []),
+  ];
+  return all.length ? all : null;
+}
+
+function buildUnlockMarker(unlocks) {
+  if (!unlocks || !unlocks.length) return null;
+  const wrap = el('span', { class: 'quest-unlock' }, '↳ unlocks:');
+  unlocks.forEach(entry => {
+    const name = typeof entry === 'string' ? entry : entry.name;
+    const t    = typeof entry === 'string' ? dutyTypeForName(name) : entry.type;
+    wrap.appendChild(el('span', { class: `unlock-pill unlock-${t}` }, name));
+  });
+  return wrap;
 }
 
 function buildDateChip(key) {
@@ -4861,7 +6169,7 @@ function buildCategory(expId, cat) {
   wrap.appendChild(head);
   cat.sections.forEach(sec => wrap.appendChild(buildSection(sec, !!cat.structured, {
     showItemDates: true,
-    progressiveReveal: !!cat.isMsq
+    progressiveReveal: !!cat.isMsq && isProgressiveRevealEnabled()
   })));
   return wrap;
 }
@@ -4902,9 +6210,10 @@ function buildSection(sec, structured, opts = {}) {
     const id = `${sec.id}-${i}`;
     const prevId = i > 0 ? `${sec.id}-${i - 1}` : null;
     const hideTitle = progressiveReveal && i > 0 && !checked[prevId];
+    const unlocks = progressiveReveal ? questUnlocks(q) : null;
     list.appendChild(structured
       ? buildStructuredLi(id, q.name, q.tag, showItemDates)
-      : buildQuestLi(id, String(i + 1), q, showItemDates, hideTitle));
+      : buildQuestLi(id, String(i + 1), q, showItemDates, hideTitle, unlocks));
   });
   body.appendChild(list);
   wrap.appendChild(body);
@@ -4918,6 +6227,8 @@ function buildStructuredLi(id, title, tag, showItemDate = true) {
   li.appendChild(el('div', { class: 'check' }));
   const t = el('span', { class: 'quest-title' }, title);
   if (tag) t.appendChild(el('span', { class: 'quest-tag' }, ` · ${tag}`));
+  const cu = classUnlocks(title);
+  if (cu) t.appendChild(buildUnlockMarker(cu));
   li.appendChild(t);
   if (showItemDate) li.appendChild(el('span', { class: 'quest-date' }, buildDateChip(`date-item-${id}`)));
   li.onclick = async () => {
@@ -4928,7 +6239,7 @@ function buildStructuredLi(id, title, tag, showItemDate = true) {
     } else {
       checked[id] = true;
       logActivity(1);
-      if (showItemDate && !dates[`date-item-${id}`]) dates[`date-item-${id}`] = localDateStr();
+      if (showItemDate && !dates[`date-item-${id}`]) dates[`date-item-${id}`] = localDateTimeStr();
       render();
       await Promise.all([saveState(), saveDates()]);
     }
@@ -4936,11 +6247,13 @@ function buildStructuredLi(id, title, tag, showItemDate = true) {
   return li;
 }
 
-function buildQuestLi(id, num, title, showItemDate = true, hideTitle = false) {
+function buildQuestLi(id, num, title, showItemDate = true, hideTitle = false, unlocks = null) {
   const li = el('li', { class: 'quest', 'data-id': id });
   li.appendChild(el('div', { class: 'check' }));
   if (num) li.appendChild(el('span', { class: 'quest-num' }, num));
-  li.appendChild(el('span', { class: hideTitle ? 'quest-title quest-title-hidden' : 'quest-title' }, hideTitle ? '?????' : title));
+  const titleEl = el('span', { class: hideTitle ? 'quest-title quest-title-hidden' : 'quest-title' }, hideTitle ? '?????' : title);
+  if (unlocks && unlocks.length) titleEl.appendChild(buildUnlockMarker(unlocks));
+  li.appendChild(titleEl);
   if (showItemDate && !hideTitle) li.appendChild(el('span', { class: 'quest-date' }, buildDateChip(`date-item-${id}`)));
   li.onclick = async () => {
     if (checked[id]) {
@@ -4950,7 +6263,7 @@ function buildQuestLi(id, num, title, showItemDate = true, hideTitle = false) {
     } else {
       checked[id] = true;
       logActivity(1);
-      if (showItemDate && !dates[`date-item-${id}`]) dates[`date-item-${id}`] = localDateStr();
+      if (showItemDate && !dates[`date-item-${id}`]) dates[`date-item-${id}`] = localDateTimeStr();
       render();
       await Promise.all([saveState(), saveDates()]);
     }
@@ -5027,7 +6340,8 @@ function buildGuideCard(cardId, guideLabel, cardTitle, tagline, sections) {
 function buildQuestGroupCard(cardId, accentVar, titleHtml, tagline, roleGroups, colSplitFn) {
   const total = roleGroups.reduce((s, rg) =>
     s + rg.jobs.reduce((s2, j) =>
-      s2 + j.sections.reduce((s3, sec) => s3 + sec.quests.length, 0), 0), 0);
+      s2 + j.sections.reduce((s3, sec) => s3 + sec.quests.length, 0)
+         + (j.huntSections || []).reduce((s3, sec) => s3 + sec.quests.length, 0), 0), 0);
 
   const card = el('div', { class: 'expansion', id: `exp-${cardId}`, 'data-exp': cardId, style: `--accent: var(--${accentVar});` });
 
@@ -5047,28 +6361,59 @@ function buildQuestGroupCard(cardId, accentVar, titleHtml, tagline, roleGroups, 
   card.appendChild(el('p', { class: 'exp-tagline' }, tagline));
 
   const content = el('div', { class: 'exp-content' });
-  const leftCol  = el('div', { class: 'col-left' });
-  const rightCol = el('div', { class: 'col-right' });
+  const hasHuntJobs = roleGroups.some(rg => rg.jobs.some(j => j.huntSections));
 
-  roleGroups.forEach((roleGroup, idx) => {
-    const col = colSplitFn(roleGroup, idx) ? leftCol : rightCol;
-    if (roleGroup.role) col.appendChild(el('div', { class: 'role-label' }, roleGroup.role));
-    if (roleGroup.summary) col.appendChild(el('p', { class: 'future-note' }, roleGroup.summary));
-    roleGroup.jobs.forEach(job => {
-      const jobTotal = job.sections.reduce((s, sec) => s + sec.quests.length, 0);
-      const catEl = el('div', { class: 'category', id: `job-${job.id}` });
-      catEl.appendChild(el('div', { class: 'category-head' },
-        job.label,
-        el('span', { style: 'flex:1' }),
-        el('span', { class: 'cat-count', id: `${cardId}-${job.id}-count` }, `0 / ${jobTotal}`)
-      ));
-      const showItemDates = cardId !== 'deep';
-      job.sections.forEach(sec => catEl.appendChild(buildSection(sec, true, { showItemDates })));
-      col.appendChild(catEl);
+  if (hasHuntJobs) {
+    content.classList.add('exp-content-stack');
+    roleGroups.forEach(roleGroup => {
+      if (roleGroup.role) content.appendChild(el('div', { class: 'role-label' }, roleGroup.role));
+      if (roleGroup.summary) content.appendChild(el('p', { class: 'future-note' }, roleGroup.summary));
+      roleGroup.jobs.forEach(job => {
+        const jobTotal = job.sections.reduce((s, sec) => s + sec.quests.length, 0)
+                       + (job.huntSections || []).reduce((s, sec) => s + sec.quests.length, 0);
+        const catEl = el('div', { class: 'category' + (job.huntSections ? ' category-with-hunt' : ''), id: `job-${job.id}` });
+        catEl.appendChild(el('div', { class: 'category-head' },
+          job.label,
+          el('span', { style: 'flex:1' }),
+          el('span', { class: 'cat-count', id: `${cardId}-${job.id}-count` }, `0 / ${jobTotal}`)
+        ));
+        const showItemDates = cardId !== 'deep';
+        if (job.huntSections) {
+          const classCol = el('div', { class: 'job-class-col' });
+          const huntCol  = el('div', { class: 'job-hunt-col' });
+          job.sections.forEach(sec => classCol.appendChild(buildSection(sec, true, { showItemDates })));
+          huntCol.appendChild(el('div', { class: 'hunt-col-head' }, 'Hunting Log'));
+          job.huntSections.forEach(sec => huntCol.appendChild(buildSection(sec, true, { showItemDates })));
+          catEl.append(classCol, huntCol);
+        } else {
+          job.sections.forEach(sec => catEl.appendChild(buildSection(sec, true, { showItemDates })));
+        }
+        content.appendChild(catEl);
+      });
     });
-  });
+  } else {
+    const leftCol  = el('div', { class: 'col-left' });
+    const rightCol = el('div', { class: 'col-right' });
+    roleGroups.forEach((roleGroup, idx) => {
+      const col = colSplitFn(roleGroup, idx) ? leftCol : rightCol;
+      if (roleGroup.role) col.appendChild(el('div', { class: 'role-label' }, roleGroup.role));
+      if (roleGroup.summary) col.appendChild(el('p', { class: 'future-note' }, roleGroup.summary));
+      roleGroup.jobs.forEach(job => {
+        const jobTotal = job.sections.reduce((s, sec) => s + sec.quests.length, 0);
+        const catEl = el('div', { class: 'category', id: `job-${job.id}` });
+        catEl.appendChild(el('div', { class: 'category-head' },
+          job.label,
+          el('span', { style: 'flex:1' }),
+          el('span', { class: 'cat-count', id: `${cardId}-${job.id}-count` }, `0 / ${jobTotal}`)
+        ));
+        const showItemDates = cardId !== 'deep';
+        job.sections.forEach(sec => catEl.appendChild(buildSection(sec, true, { showItemDates })));
+        col.appendChild(catEl);
+      });
+    });
+    content.append(leftCol, rightCol);
+  }
 
-  content.append(leftCol, rightCol);
   card.appendChild(content);
   return card;
 }
@@ -5195,6 +6540,557 @@ function buildDailyWeeklyCard() {
   return card;
 }
 
+function formatGil(n) {
+  if (n >= 1e9) return (n / 1e9).toFixed(2).replace(/\.?0+$/, '') + 'B';
+  if (n >= 1e6) return (n / 1e6).toFixed(2).replace(/\.?0+$/, '') + 'M';
+  if (n >= 1e3) return (n / 1e3).toFixed(1).replace(/\.?0+$/, '') + 'k';
+  return n.toLocaleString();
+}
+
+function renderGilGraph(range) {
+  const canvas = document.getElementById('gil-graph');
+  if (!canvas) return;
+
+  const dpr = window.devicePixelRatio || 1;
+  const W   = canvas.clientWidth || canvas.parentElement?.clientWidth || 600;
+  const H   = 220;
+  canvas.width  = W * dpr;
+  canvas.height = H * dpr;
+  canvas.style.height = H + 'px';
+
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+
+  const accent    = '#b1882a';
+  const accentRgb = '177,136,42';
+  const textDim   = '#a89a7d';
+  const ruleColor = 'rgba(42,29,16,0.10)';
+
+  ctx.clearRect(0, 0, W, H);
+
+  const cutoffs = { '7d': Date.now() - 7*864e5, '30d': Date.now() - 30*864e5, '1y': Date.now() - 365*864e5, 'all': 0 };
+  const cutoff  = cutoffs[range] ?? 0;
+  const pts = [...gilData]
+    .filter(p => new Date(p.date).getTime() >= cutoff)
+    .sort((a, b) => new Date(a.date) - new Date(b.date));
+
+  if (pts.length === 0) {
+    ctx.fillStyle = textDim;
+    ctx.font = `italic 13px 'Lora', Georgia, serif`;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('No entries for this period — log a gil balance below.', W / 2, H / 2);
+    return;
+  }
+
+  const amounts = pts.map(p => p.amount);
+  const times   = pts.map(p => new Date(p.date).getTime());
+  const minAmt  = Math.min(...amounts);
+  const maxAmt  = Math.max(...amounts);
+  const minT    = times[0];
+  const maxT    = times[times.length - 1];
+  const tSpan   = maxT - minT || 1;
+  const yPad    = (maxAmt - minAmt) * 0.12 || maxAmt * 0.1 || 1000;
+  const yMin    = Math.max(0, minAmt - yPad);
+  const yMax    = maxAmt + yPad;
+  const ySpan   = yMax - yMin || 1;
+
+  const pad = { top: 16, right: 16, bottom: 36, left: 66 };
+  const cW  = W - pad.left - pad.right;
+  const cH  = H - pad.top  - pad.bottom;
+
+  const toX = t => pad.left + ((t - minT) / tSpan) * cW;
+  const toY = v => pad.top  + cH - ((v - yMin) / ySpan) * cH;
+
+  // Y grid + labels
+  const yTicks = 5;
+  ctx.font = `11px 'Cormorant Garamond', serif`;
+  ctx.textBaseline = 'middle';
+  for (let i = 0; i <= yTicks; i++) {
+    const v = yMin + (ySpan / yTicks) * i;
+    const y = toY(v);
+    ctx.strokeStyle = ruleColor;
+    ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(pad.left, y); ctx.lineTo(pad.left + cW, y); ctx.stroke();
+    ctx.fillStyle = textDim;
+    ctx.textAlign = 'right';
+    ctx.fillText(formatGil(Math.round(v)), pad.left - 6, y);
+  }
+
+  // X labels — pick up to 7 evenly spaced points
+  const maxLabels = Math.min(pts.length, 7);
+  const step = Math.max(1, Math.floor((pts.length - 1) / (maxLabels - 1 || 1)));
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'top';
+  for (let i = 0; i < pts.length; i += step) {
+    const d = new Date(pts[i].date);
+    const label = (range === '1y' || range === 'all')
+      ? d.toLocaleDateString('en-GB', { month: 'short', year: '2-digit' })
+      : d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+    const x = toX(times[i]);
+    ctx.fillStyle = textDim;
+    ctx.fillText(label, x, pad.top + cH + 6);
+    ctx.strokeStyle = ruleColor;
+    ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(x, pad.top + cH); ctx.lineTo(x, pad.top + cH + 4); ctx.stroke();
+  }
+
+  if (pts.length === 1) {
+    ctx.beginPath(); ctx.arc(toX(times[0]), toY(amounts[0]), 5, 0, Math.PI * 2);
+    ctx.fillStyle = accent; ctx.fill();
+    return;
+  }
+
+  // Area fill
+  const grad = ctx.createLinearGradient(0, pad.top, 0, pad.top + cH);
+  grad.addColorStop(0, `rgba(${accentRgb},0.20)`);
+  grad.addColorStop(1, `rgba(${accentRgb},0.01)`);
+  ctx.beginPath();
+  ctx.moveTo(toX(times[0]), toY(amounts[0]));
+  for (let i = 1; i < pts.length; i++) ctx.lineTo(toX(times[i]), toY(amounts[i]));
+  ctx.lineTo(toX(times[times.length - 1]), pad.top + cH);
+  ctx.lineTo(toX(times[0]), pad.top + cH);
+  ctx.closePath();
+  ctx.fillStyle = grad;
+  ctx.fill();
+
+  // Line
+  ctx.beginPath();
+  ctx.moveTo(toX(times[0]), toY(amounts[0]));
+  for (let i = 1; i < pts.length; i++) ctx.lineTo(toX(times[i]), toY(amounts[i]));
+  ctx.strokeStyle = accent;
+  ctx.lineWidth = 2;
+  ctx.lineJoin = 'round';
+  ctx.lineCap = 'round';
+  ctx.stroke();
+
+  // Points
+  pts.forEach((p, i) => {
+    ctx.beginPath(); ctx.arc(toX(times[i]), toY(p.amount), 3.5, 0, Math.PI * 2);
+    ctx.fillStyle = accent; ctx.fill();
+    ctx.strokeStyle = '#f5efe1'; ctx.lineWidth = 1.5; ctx.stroke();
+  });
+}
+
+function renderMgpGraph(range) {
+  const canvas = document.getElementById('mgp-graph');
+  if (!canvas) return;
+
+  const dpr = window.devicePixelRatio || 1;
+  const W   = canvas.clientWidth || canvas.parentElement?.clientWidth || 600;
+  const H   = 220;
+  canvas.width  = W * dpr;
+  canvas.height = H * dpr;
+  canvas.style.height = H + 'px';
+
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+
+  const accent    = '#7b4fab';
+  const accentRgb = '123,79,171';
+  const textDim   = '#a89a7d';
+  const ruleColor = 'rgba(42,29,16,0.10)';
+
+  ctx.clearRect(0, 0, W, H);
+
+  const cutoffs = { '7d': Date.now() - 7*864e5, '30d': Date.now() - 30*864e5, '1y': Date.now() - 365*864e5, 'all': 0 };
+  const cutoff  = cutoffs[range] ?? 0;
+  const pts = [...mgpData]
+    .filter(p => new Date(p.date).getTime() >= cutoff)
+    .sort((a, b) => new Date(a.date) - new Date(b.date));
+
+  if (pts.length === 0) {
+    ctx.fillStyle = textDim;
+    ctx.font = `italic 13px 'Lora', Georgia, serif`;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('No entries for this period — log an MGP balance below.', W / 2, H / 2);
+    return;
+  }
+
+  const amounts = pts.map(p => p.amount);
+  const times   = pts.map(p => new Date(p.date).getTime());
+  const minAmt  = Math.min(...amounts);
+  const maxAmt  = Math.max(...amounts);
+  const minT    = times[0];
+  const maxT    = times[times.length - 1];
+  const tSpan   = maxT - minT || 1;
+  const yPad    = (maxAmt - minAmt) * 0.12 || maxAmt * 0.1 || 1000;
+  const yMin    = Math.max(0, minAmt - yPad);
+  const yMax    = maxAmt + yPad;
+  const ySpan   = yMax - yMin || 1;
+
+  const pad = { top: 16, right: 16, bottom: 36, left: 66 };
+  const cW  = W - pad.left - pad.right;
+  const cH  = H - pad.top  - pad.bottom;
+
+  const toX = t => pad.left + ((t - minT) / tSpan) * cW;
+  const toY = v => pad.top  + cH - ((v - yMin) / ySpan) * cH;
+
+  const yTicks = 5;
+  ctx.font = `11px 'Cormorant Garamond', serif`;
+  ctx.textBaseline = 'middle';
+  for (let i = 0; i <= yTicks; i++) {
+    const v = yMin + (ySpan / yTicks) * i;
+    const y = toY(v);
+    ctx.strokeStyle = ruleColor; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(pad.left, y); ctx.lineTo(pad.left + cW, y); ctx.stroke();
+    ctx.fillStyle = textDim; ctx.textAlign = 'right';
+    ctx.fillText(formatGil(Math.round(v)), pad.left - 6, y);
+  }
+
+  const maxLabels = Math.min(pts.length, 7);
+  const step = Math.max(1, Math.floor((pts.length - 1) / (maxLabels - 1 || 1)));
+  ctx.textAlign = 'center'; ctx.textBaseline = 'top';
+  for (let i = 0; i < pts.length; i += step) {
+    const d = new Date(pts[i].date);
+    const label = (range === '1y' || range === 'all')
+      ? d.toLocaleDateString('en-GB', { month: 'short', year: '2-digit' })
+      : d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+    const x = toX(times[i]);
+    ctx.fillStyle = textDim; ctx.fillText(label, x, pad.top + cH + 6);
+    ctx.strokeStyle = ruleColor; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(x, pad.top + cH); ctx.lineTo(x, pad.top + cH + 4); ctx.stroke();
+  }
+
+  if (pts.length === 1) {
+    ctx.beginPath(); ctx.arc(toX(times[0]), toY(amounts[0]), 5, 0, Math.PI * 2);
+    ctx.fillStyle = accent; ctx.fill();
+    return;
+  }
+
+  const grad = ctx.createLinearGradient(0, pad.top, 0, pad.top + cH);
+  grad.addColorStop(0, `rgba(${accentRgb},0.20)`);
+  grad.addColorStop(1, `rgba(${accentRgb},0.01)`);
+  ctx.beginPath();
+  ctx.moveTo(toX(times[0]), toY(amounts[0]));
+  for (let i = 1; i < pts.length; i++) ctx.lineTo(toX(times[i]), toY(amounts[i]));
+  ctx.lineTo(toX(times[times.length - 1]), pad.top + cH);
+  ctx.lineTo(toX(times[0]), pad.top + cH);
+  ctx.closePath();
+  ctx.fillStyle = grad; ctx.fill();
+
+  ctx.beginPath();
+  ctx.moveTo(toX(times[0]), toY(amounts[0]));
+  for (let i = 1; i < pts.length; i++) ctx.lineTo(toX(times[i]), toY(amounts[i]));
+  ctx.strokeStyle = accent; ctx.lineWidth = 2;
+  ctx.lineJoin = 'round'; ctx.lineCap = 'round'; ctx.stroke();
+
+  pts.forEach((p, i) => {
+    ctx.beginPath(); ctx.arc(toX(times[i]), toY(p.amount), 3.5, 0, Math.PI * 2);
+    ctx.fillStyle = accent; ctx.fill();
+    ctx.strokeStyle = '#f5efe1'; ctx.lineWidth = 1.5; ctx.stroke();
+  });
+}
+
+function renderVentureGraph(range) {
+  const canvas = document.getElementById('venture-graph');
+  if (!canvas) return;
+
+  const dpr = window.devicePixelRatio || 1;
+  const W   = canvas.clientWidth || canvas.parentElement?.clientWidth || 600;
+  const H   = 220;
+  canvas.width  = W * dpr;
+  canvas.height = H * dpr;
+  canvas.style.height = H + 'px';
+
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+
+  const accent    = '#2e7d6e';
+  const accentRgb = '46,125,110';
+  const textDim   = '#a89a7d';
+  const ruleColor = 'rgba(42,29,16,0.10)';
+
+  ctx.clearRect(0, 0, W, H);
+
+  const cutoffs = { '7d': Date.now() - 7*864e5, '30d': Date.now() - 30*864e5, '1y': Date.now() - 365*864e5, 'all': 0 };
+  const cutoff  = cutoffs[range] ?? 0;
+  const pts = [...ventureData]
+    .filter(p => new Date(p.date).getTime() >= cutoff)
+    .sort((a, b) => new Date(a.date) - new Date(b.date));
+
+  if (pts.length === 0) {
+    ctx.fillStyle = textDim;
+    ctx.font = `italic 13px 'Lora', Georgia, serif`;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('No entries for this period — log a Venture balance below.', W / 2, H / 2);
+    return;
+  }
+
+  const amounts = pts.map(p => p.amount);
+  const times   = pts.map(p => new Date(p.date).getTime());
+  const minAmt  = Math.min(...amounts);
+  const maxAmt  = Math.max(...amounts);
+  const minT    = times[0];
+  const maxT    = times[times.length - 1];
+  const tSpan   = maxT - minT || 1;
+  const yPad    = (maxAmt - minAmt) * 0.12 || maxAmt * 0.1 || 10;
+  const yMin    = Math.max(0, minAmt - yPad);
+  const yMax    = maxAmt + yPad;
+  const ySpan   = yMax - yMin || 1;
+
+  const pad = { top: 16, right: 16, bottom: 36, left: 66 };
+  const cW  = W - pad.left - pad.right;
+  const cH  = H - pad.top  - pad.bottom;
+
+  const toX = t => pad.left + ((t - minT) / tSpan) * cW;
+  const toY = v => pad.top  + cH - ((v - yMin) / ySpan) * cH;
+
+  const yTicks = 5;
+  ctx.font = `11px 'Cormorant Garamond', serif`;
+  ctx.textBaseline = 'middle';
+  for (let i = 0; i <= yTicks; i++) {
+    const v = yMin + (ySpan / yTicks) * i;
+    const y = toY(v);
+    ctx.strokeStyle = ruleColor; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(pad.left, y); ctx.lineTo(pad.left + cW, y); ctx.stroke();
+    ctx.fillStyle = textDim; ctx.textAlign = 'right';
+    ctx.fillText(Math.round(v).toLocaleString(), pad.left - 6, y);
+  }
+
+  const maxLabels = Math.min(pts.length, 7);
+  const step = Math.max(1, Math.floor((pts.length - 1) / (maxLabels - 1 || 1)));
+  ctx.textAlign = 'center'; ctx.textBaseline = 'top';
+  for (let i = 0; i < pts.length; i += step) {
+    const d = new Date(pts[i].date);
+    const label = (range === '1y' || range === 'all')
+      ? d.toLocaleDateString('en-GB', { month: 'short', year: '2-digit' })
+      : d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+    const x = toX(times[i]);
+    ctx.fillStyle = textDim; ctx.fillText(label, x, pad.top + cH + 6);
+    ctx.strokeStyle = ruleColor; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(x, pad.top + cH); ctx.lineTo(x, pad.top + cH + 4); ctx.stroke();
+  }
+
+  if (pts.length === 1) {
+    ctx.beginPath(); ctx.arc(toX(times[0]), toY(amounts[0]), 5, 0, Math.PI * 2);
+    ctx.fillStyle = accent; ctx.fill();
+    return;
+  }
+
+  const grad = ctx.createLinearGradient(0, pad.top, 0, pad.top + cH);
+  grad.addColorStop(0, `rgba(${accentRgb},0.20)`);
+  grad.addColorStop(1, `rgba(${accentRgb},0.01)`);
+  ctx.beginPath();
+  ctx.moveTo(toX(times[0]), toY(amounts[0]));
+  for (let i = 1; i < pts.length; i++) ctx.lineTo(toX(times[i]), toY(amounts[i]));
+  ctx.lineTo(toX(times[times.length - 1]), pad.top + cH);
+  ctx.lineTo(toX(times[0]), pad.top + cH);
+  ctx.closePath();
+  ctx.fillStyle = grad; ctx.fill();
+
+  ctx.beginPath();
+  ctx.moveTo(toX(times[0]), toY(amounts[0]));
+  for (let i = 1; i < pts.length; i++) ctx.lineTo(toX(times[i]), toY(amounts[i]));
+  ctx.strokeStyle = accent; ctx.lineWidth = 2;
+  ctx.lineJoin = 'round'; ctx.lineCap = 'round'; ctx.stroke();
+
+  pts.forEach((p, i) => {
+    ctx.beginPath(); ctx.arc(toX(times[i]), toY(p.amount), 3.5, 0, Math.PI * 2);
+    ctx.fillStyle = accent; ctx.fill();
+    ctx.strokeStyle = '#f5efe1'; ctx.lineWidth = 1.5; ctx.stroke();
+  });
+}
+
+function buildVentureCard() {
+  const card = el('div', { class: 'expansion', id: 'exp-venture', 'data-exp': 'venture', style: '--accent: var(--dt)' });
+
+  const latest = ventureData.length ? ventureData[ventureData.length - 1].amount : null;
+
+  const header = el('div', { class: 'exp-header' });
+  header.append(
+    el('div', { class: 'exp-title' },
+      el('div', { class: 'exp-num' }, 'Currency Tracker'),
+      el('div', { class: 'exp-name', html: 'Venture <em>History</em>' })
+    ),
+    el('div', {},
+      el('div', { class: 'exp-count', id: 'venture-current-display' },
+        latest !== null ? latest.toLocaleString() : '—'
+      ),
+      el('span', { class: 'exp-count-mini' }, latest !== null ? 'current balance' : 'no entries yet')
+    )
+  );
+  card.appendChild(header);
+  card.appendChild(el('p', { class: 'exp-tagline' }, 'Log your Venture count to track retainer currency over time.'));
+
+  const inputRow = el('div', { class: 'gil-input-row' });
+  const input    = el('input', { type: 'number', id: 'venture-amount-input', class: 'gil-input', placeholder: 'Enter current Ventures…', min: '0', max: '65535' });
+  const logBtn   = el('button', { type: 'button', class: 'gil-log-btn', style: 'border-color: var(--dt); color: var(--dt)' }, 'Log Entry');
+  logBtn.addEventListener('mouseover', () => { logBtn.style.background = 'var(--dt)'; logBtn.style.color = 'var(--bg)'; });
+  logBtn.addEventListener('mouseout',  () => { logBtn.style.background = ''; logBtn.style.color = 'var(--dt)'; });
+  inputRow.append(input, logBtn);
+  card.appendChild(inputRow);
+
+  const rangeRow = el('div', { class: 'gil-range-row' });
+  let activeRange = '30d';
+  [['7d','7 Days'],['30d','30 Days'],['1y','1 Year'],['all','All Time']].forEach(([r, label]) => {
+    const btn = el('button', { type: 'button', class: 'gil-range-btn' + (r === activeRange ? ' active' : ''), 'data-range': r }, label);
+    btn.addEventListener('click', () => {
+      activeRange = r;
+      rangeRow.querySelectorAll('.gil-range-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderVentureGraph(r);
+    });
+    rangeRow.appendChild(btn);
+  });
+  card.appendChild(rangeRow);
+
+  card.appendChild(el('canvas', { id: 'venture-graph', class: 'gil-graph' }));
+
+  logBtn.addEventListener('click', () => {
+    const val = parseInt(input.value, 10);
+    if (isNaN(val) || val < 0) { input.focus(); return; }
+    ventureData.push({ date: new Date().toISOString(), amount: val });
+    store.set(VENTURE_KEY, JSON.stringify(ventureData));
+    input.value = '';
+    const display = document.getElementById('venture-current-display');
+    if (display) display.firstChild.nodeValue = val.toLocaleString();
+    const sidebarAmt = document.getElementById('sidebar-venture-amount');
+    if (sidebarAmt) sidebarAmt.textContent = val.toLocaleString();
+    renderVentureGraph(activeRange);
+  });
+
+  input.addEventListener('keydown', e => { if (e.key === 'Enter') logBtn.click(); });
+
+  requestAnimationFrame(() => renderVentureGraph(activeRange));
+  return card;
+}
+
+function buildMgpCard() {
+  const card = el('div', { class: 'expansion', id: 'exp-mgp', 'data-exp': 'mgp', style: '--accent: var(--shb)' });
+
+  const latestMgp = mgpData.length ? mgpData[mgpData.length - 1].amount : null;
+
+  const header = el('div', { class: 'exp-header' });
+  header.append(
+    el('div', { class: 'exp-title' },
+      el('div', { class: 'exp-num' }, 'Currency Tracker'),
+      el('div', { class: 'exp-name', html: 'MGP <em>History</em>' })
+    ),
+    el('div', {},
+      el('div', { class: 'exp-count', id: 'mgp-current-display' },
+        latestMgp !== null ? formatGil(latestMgp) : '—'
+      ),
+      el('span', { class: 'exp-count-mini' }, latestMgp !== null ? 'current balance' : 'no entries yet')
+    )
+  );
+  card.appendChild(header);
+  card.appendChild(el('p', { class: 'exp-tagline' }, 'Log your Manderville Gold Saucer Points to track earnings over time.'));
+
+  const inputRow = el('div', { class: 'gil-input-row' });
+  const input    = el('input', { type: 'number', id: 'mgp-amount-input', class: 'gil-input', placeholder: 'Enter current MGP…', min: '0', max: '9999999' });
+  const logBtn   = el('button', { type: 'button', class: 'gil-log-btn', style: 'border-color: var(--shb); color: var(--shb)' }, 'Log Entry');
+  logBtn.addEventListener('mouseover', () => { logBtn.style.background = 'var(--shb)'; logBtn.style.color = 'var(--bg)'; });
+  logBtn.addEventListener('mouseout',  () => { logBtn.style.background = ''; logBtn.style.color = 'var(--shb)'; });
+  inputRow.append(input, logBtn);
+  card.appendChild(inputRow);
+
+  const rangeRow = el('div', { class: 'gil-range-row' });
+  const ranges   = [['7d', '7 Days'], ['30d', '30 Days'], ['1y', '1 Year'], ['all', 'All Time']];
+  let activeRange = '30d';
+  ranges.forEach(([r, label]) => {
+    const btn = el('button', { type: 'button', class: 'gil-range-btn' + (r === activeRange ? ' active' : ''), 'data-range': r }, label);
+    btn.addEventListener('click', () => {
+      activeRange = r;
+      rangeRow.querySelectorAll('.gil-range-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderMgpGraph(r);
+    });
+    rangeRow.appendChild(btn);
+  });
+  card.appendChild(rangeRow);
+
+  card.appendChild(el('canvas', { id: 'mgp-graph', class: 'gil-graph' }));
+
+  logBtn.addEventListener('click', () => {
+    const val = parseInt(input.value, 10);
+    if (isNaN(val) || val < 0) { input.focus(); return; }
+    mgpData.push({ date: new Date().toISOString(), amount: val });
+    store.set(MGP_KEY, JSON.stringify(mgpData));
+    input.value = '';
+    const display = document.getElementById('mgp-current-display');
+    if (display) display.firstChild.nodeValue = formatGil(val);
+    const sidebarAmt = document.getElementById('sidebar-mgp-amount');
+    if (sidebarAmt) sidebarAmt.textContent = formatGil(val);
+    renderMgpGraph(activeRange);
+  });
+
+  input.addEventListener('keydown', e => { if (e.key === 'Enter') logBtn.click(); });
+
+  requestAnimationFrame(() => renderMgpGraph(activeRange));
+  return card;
+}
+
+function buildGilCard() {
+  const card = el('div', { class: 'expansion', id: 'exp-gil', 'data-exp': 'gil', style: '--accent: var(--ew)' });
+
+  const latestGil = gilData.length ? gilData[gilData.length - 1].amount : null;
+
+  const header = el('div', { class: 'exp-header' });
+  header.append(
+    el('div', { class: 'exp-title' },
+      el('div', { class: 'exp-num' }, 'Currency Tracker'),
+      el('div', { class: 'exp-name', html: 'Gil <em>History</em>' })
+    ),
+    el('div', {},
+      el('div', { class: 'exp-count', id: 'gil-current-display' },
+        latestGil !== null ? formatGil(latestGil) : '—'
+      ),
+      el('span', { class: 'exp-count-mini' }, latestGil !== null ? 'current balance' : 'no entries yet')
+    )
+  );
+  card.appendChild(header);
+  card.appendChild(el('p', { class: 'exp-tagline' }, 'Log your gil balance to track wealth over time.'));
+
+  // Input row
+  const inputRow = el('div', { class: 'gil-input-row' });
+  const input    = el('input', { type: 'number', id: 'gil-amount-input', class: 'gil-input', placeholder: 'Enter current gil…', min: '0', max: '999999999' });
+  const logBtn   = el('button', { type: 'button', class: 'gil-log-btn' }, 'Log Entry');
+  inputRow.append(input, logBtn);
+  card.appendChild(inputRow);
+
+  // Range row
+  const rangeRow = el('div', { class: 'gil-range-row' });
+  const ranges   = [['7d', '7 Days'], ['30d', '30 Days'], ['1y', '1 Year'], ['all', 'All Time']];
+  let activeRange = '30d';
+  ranges.forEach(([r, label]) => {
+    const btn = el('button', { type: 'button', class: 'gil-range-btn' + (r === activeRange ? ' active' : ''), 'data-range': r }, label);
+    btn.addEventListener('click', () => {
+      activeRange = r;
+      rangeRow.querySelectorAll('.gil-range-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderGilGraph(r);
+    });
+    rangeRow.appendChild(btn);
+  });
+  card.appendChild(rangeRow);
+
+  // Canvas
+  card.appendChild(el('canvas', { id: 'gil-graph', class: 'gil-graph' }));
+
+  // Log handler
+  logBtn.addEventListener('click', () => {
+    const val = parseInt(input.value, 10);
+    if (isNaN(val) || val < 0) { input.focus(); return; }
+    gilData.push({ date: new Date().toISOString(), amount: val });
+    store.set(GIL_KEY, JSON.stringify(gilData));
+    input.value = '';
+    const display = document.getElementById('gil-current-display');
+    if (display) display.firstChild.nodeValue = formatGil(val);
+    const sidebarAmt = document.getElementById('sidebar-gil-amount');
+    if (sidebarAmt) sidebarAmt.textContent = formatGil(val);
+    renderGilGraph(activeRange);
+  });
+
+  // Also allow Enter key in the input
+  input.addEventListener('keydown', e => { if (e.key === 'Enter') logBtn.click(); });
+
+  requestAnimationFrame(() => renderGilGraph(activeRange));
+  return card;
+}
+
 function build() {
   root.innerHTML = '';
   ATLAS.forEach(exp => root.appendChild(buildExpansion(exp)));
@@ -5277,6 +7173,9 @@ function build() {
   root.appendChild(buildGuideCard('guide-dt-dungeons', 'Guides — Dawntrail',      'Dungeons', 'Boss mechanics and key tips for every DT dungeon.',  DT_DUNGEON_GUIDES));
   root.appendChild(buildGuideCard('guide-dt-trials',   'Guides — Dawntrail',      'Trials',   'Boss mechanics and key tips for every DT trial.',    DT_TRIAL_GUIDES));
   root.appendChild(buildGuideCard('guide-dt-raids',    'Guides — Dawntrail',      'Raids',    'Boss mechanics and key tips for every DT raid.',     DT_RAID_GUIDES));
+  root.appendChild(buildGilCard());
+  root.appendChild(buildMgpCard());
+  root.appendChild(buildVentureCard());
 }
 
 // ═══════════════════════════════════════════════════════════════════════════
@@ -5287,7 +7186,8 @@ function renderQuestGroupCounts(cardId, roleGroups) {
   roleGroups.forEach(rg => {
     rg.jobs.forEach(job => {
       let jobDone = 0, jobTotal = 0;
-      job.sections.forEach(sec => {
+      const allSections = [...job.sections, ...(job.huntSections || [])];
+      allSections.forEach(sec => {
         const ids = sec.quests.map((_, i) => `${sec.id}-${i}`);
         const done = ids.filter(id => checked[id]).length;
         jobDone += done; jobTotal += ids.length;
@@ -5306,6 +7206,7 @@ function renderQuestGroupCounts(cardId, roleGroups) {
 }
 
 function updateMsqProgressiveReveal() {
+  const progressiveReveal = isProgressiveRevealEnabled();
   ATLAS.forEach(exp => {
     if (exp.patchOnly) return;
     exp.categories.forEach(cat => {
@@ -5319,9 +7220,11 @@ function updateMsqProgressiveReveal() {
           if (!titleEl) return;
 
           const prevId = i > 0 ? `${sec.id}-${i - 1}` : null;
-          const hideTitle = i > 0 && !checked[prevId];
+          const hideTitle = progressiveReveal && i > 0 && !checked[prevId];
+          const unlocks = questUnlocks(q);
           titleEl.classList.toggle('quest-title-hidden', hideTitle);
           titleEl.textContent = hideTitle ? '?????' : q;
+          if (unlocks && unlocks.length) titleEl.appendChild(buildUnlockMarker(unlocks));
 
           const dateWrap = li.querySelector('.quest-date');
           if (hideTitle && dateWrap) {
@@ -5441,16 +7344,44 @@ function render() {
   setInterval(tick, 1000);
 })();
 
-document.getElementById('save-progress').onclick = () => saveToFile();
+document.getElementById('settings-save').onclick = () => saveToFile();
 
-document.getElementById('load-progress').onclick = () => loadFromFile();
+document.getElementById('settings-load').onclick = () => loadFromFile();
 
+function openSettingsPanel() {
+  const revealToggle = document.getElementById('settings-show-all-quests');
+  if (revealToggle) revealToggle.checked = !!ui.showAllQuests;
+  document.getElementById('settings-overlay').classList.add('open');
+  document.getElementById('settings-panel').classList.add('open');
+  document.getElementById('settings-overlay').setAttribute('aria-hidden', 'false');
+  document.getElementById('settings-panel').setAttribute('aria-hidden', 'false');
+}
 
-document.getElementById('reset-all').onclick = async () => {
+function closeSettingsPanel() {
+  document.getElementById('settings-overlay').classList.remove('open');
+  document.getElementById('settings-panel').classList.remove('open');
+  document.getElementById('settings-overlay').setAttribute('aria-hidden', 'true');
+  document.getElementById('settings-panel').setAttribute('aria-hidden', 'true');
+}
+
+document.getElementById('options-btn').onclick = () => openSettingsPanel();
+document.getElementById('settings-close').onclick = () => closeSettingsPanel();
+document.getElementById('settings-overlay').onclick = () => closeSettingsPanel();
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeSettingsPanel();
+});
+document.getElementById('settings-show-all-quests').addEventListener('change', async e => {
+  ui.showAllQuests = !!e.target.checked;
+  await saveUI();
+  render();
+});
+
+document.getElementById('settings-reset').onclick = async () => {
   if (!confirm('Reset all progress? This cannot be undone — consider saving first.')) return;
   checked = {};
   render();
   await saveState();
+  closeSettingsPanel();
   showToast('✦ Progress reset');
 };
 
@@ -5691,6 +7622,36 @@ function buildSidebarNav() {
     wrapper.appendChild(children);
     nav.appendChild(wrapper);
   });
+
+  const sepCurrency = document.createElement('div');
+  sepCurrency.className = 'sidebar-section-label';
+  sepCurrency.style.marginTop = '10px';
+  sepCurrency.textContent = 'Currency Tracker';
+  nav.appendChild(sepCurrency);
+
+  const gilLink = makeSidebarLink('#exp-gil', '--ew', 'Gil');
+  const gilSidebarAmt = document.createElement('span');
+  gilSidebarAmt.id = 'sidebar-gil-amount';
+  gilSidebarAmt.className = 'sidebar-link-value';
+  gilSidebarAmt.textContent = gilData.length ? formatGil(gilData[gilData.length - 1].amount) : '';
+  gilLink.appendChild(gilSidebarAmt);
+  nav.appendChild(gilLink);
+
+  const ventureLink = makeSidebarLink('#exp-venture', '--dt', 'Ventures');
+  const ventureSidebarAmt = document.createElement('span');
+  ventureSidebarAmt.id = 'sidebar-venture-amount';
+  ventureSidebarAmt.className = 'sidebar-link-value';
+  ventureSidebarAmt.textContent = ventureData.length ? ventureData[ventureData.length - 1].amount.toLocaleString() : '';
+  ventureLink.appendChild(ventureSidebarAmt);
+  nav.appendChild(ventureLink);
+
+  const mgpLink = makeSidebarLink('#exp-mgp', '--shb', 'MGP');
+  const mgpSidebarAmt = document.createElement('span');
+  mgpSidebarAmt.id = 'sidebar-mgp-amount';
+  mgpSidebarAmt.className = 'sidebar-link-value';
+  mgpSidebarAmt.textContent = mgpData.length ? formatGil(mgpData[mgpData.length - 1].amount) : '';
+  mgpLink.appendChild(mgpSidebarAmt);
+  nav.appendChild(mgpLink);
 }
 
 function initScrollSpy() {
@@ -5713,6 +7674,8 @@ function initScrollSpy() {
   await loadState();
   loadActivity();
   checkAutoReset();
+  scheduleDailyReset();
+  scheduleWeeklyReset();
   build();
   buildSidebarNav();
   syncDates();
@@ -5723,6 +7686,7 @@ function initScrollSpy() {
 </script>
 </body>
 </html>
+
 
 
 
