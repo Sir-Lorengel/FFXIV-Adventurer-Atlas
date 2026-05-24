@@ -2,6 +2,53 @@
 
 ---
 
+## v1.3.0 — 24 May 2026
+
+### New
+
+#### Right Side Menu
+A new side menu has been added to the right of the screen, consolidating key controls and information into one fixed panel. The panel width matches its widest element, keeping the layout tight and consistent.
+
+- **Title** sits at the top of the panel
+- **Date & Time** display sits beneath the title
+- **Activity Tracker** has been moved into the right panel
+- **Options button** is accessible from the right panel
+- **Expand All** button — expands every category in the main view at once
+- **Collapse All** button — collapses every category in the main view at once
+
+#### MSQ Tracker Expansion Colours
+The overall Main Scenario Quest tracker is now colour-coded by expansion, making it easy to see at a glance which era of the story each quest belongs to.
+
+#### Allagan Tomestones in Currency Tracker
+Three Allagan Tomestone currencies have been added under the Currency section, each with their own cap displayed.
+
+- **Poetics** — cap: 2,000
+- **Mathematics** — cap: 2,000
+- **Mnemonics** — cap: 2,000
+
+#### PvP in Currency Tracker
+PvP currencies are now tracked under the Currency section.
+
+- **Wolf Mark** — cap: 20,000
+- **Trophy Crystal** — cap: 20,000
+
+### Improved
+
+#### Search Now Filters the Main Body
+The search function now works across both the side menu and the main content area. When a search term is active, categories in the main body that contain no matching items are hidden, keeping results focused and uncluttered.
+
+#### Timestamp Behaviour on Uncheck
+Unchecking an item now also clears its saved date and timestamp, keeping completion records accurate if progress is reversed.
+
+#### Auto-fill Timestamps on Category Completion
+When the final item in a category is checked, the category's date and timestamp are automatically filled with the current date and time — no manual entry needed.
+
+### Under the Hood
+
+- Codebase refactored into a modular structure, removing needless duplications and separating concerns across dedicated files for improved maintainability.
+
+---
+
 ## v1.2.5 — 24 May 2026
 
 ### New

@@ -1,0 +1,17976 @@
+// AUTO-GENERATED — do not edit by hand. Run: node build.js
+// Source: ffxiv-data.json
+'use strict';
+const FFXIV_DATA = {
+  "atlas": [
+    {
+      "id": "arr",
+      "accent": "arr",
+      "num": "2.0 — The Calamity Reborn",
+      "emName": "A Realm <em>Reborn</em>",
+      "tagline": "Where every Warrior of Light begins.",
+      "categories": [
+        {
+          "id": "arr-cat-msq",
+          "label": "Quests",
+          "sections": [
+            {
+              "id": "arr-uld",
+              "title": "Levels 1–15",
+              "note": "Ul'dahn Path",
+              "quests": [
+                "Close to Home",
+                "We Must Rebuild",
+                "Nothing to See Here",
+                "Underneath the Sultantree",
+                "Step Nine",
+                "Prudence at This Junction",
+                "Out of House and Home",
+                "Way Down in the Hole",
+                "Takin' What They're Givin'",
+                "Supply and Demands",
+                "Give It to Me Raw",
+                "The Perfect Swarm",
+                "Last Letter to Lost Hope",
+                "Heir Today, Gone Tomorrow",
+                "Passing the Blade",
+                "Following Footfalls",
+                "Storms on the Horizon",
+                "Oh Captain, My Captain",
+                "Secrets and Lies",
+                "Duty, Honor, Country",
+                "A Matter of Tradition",
+                "A Royal Reception",
+                "The Ul'dahn Envoy",
+                "Call of the Sea"
+              ]
+            },
+            {
+              "id": "arr-l15",
+              "title": "Levels 15–20",
+              "note": "Order of the Twin Adder",
+              "quests": [
+                "It's Probably Pirates",
+                "Call of the Forest",
+                "Fire in the Gloom",
+                "Call of the Desert",
+                "Into a Copper Hell",
+                "The Scions of the Seventh Dawn",
+                "A Wild Rose by Any Other Name",
+                "Unsolved Mystery",
+                "What Poor People Think",
+                "A Proper Burial",
+                "For the Children",
+                "Amalj'aa Wrong Places",
+                "Dressed to Deceive",
+                "Life, Materia and Everything",
+                "Lord of the Inferno",
+                "A Hero in the Making",
+                "The Company You Keep",
+                "Wood's Will Be Done",
+                "Sylph-management",
+                "We Come in Peace",
+                "Sylphic Studies",
+                "First Impressions"
+              ]
+            },
+            {
+              "id": "arr-l21",
+              "title": "Levels 21–30",
+              "quests": [
+                "First Contact",
+                "Dance Dance Diplomacy",
+                "Forest Friend",
+                "Presence of the Enemy",
+                "Brotherly Love",
+                "Spirited Away",
+                "Druthers House Rules",
+                "Never Forget",
+                "Microbrewing",
+                "Like Fine Wine",
+                "Sylphish Concerns",
+                "Nouveau Riche",
+                "Into the Beast's Maw",
+                "A Simple Gift",
+                "Believe in Your Sylph",
+                "Back from the Wood",
+                "Shadow of Darkness",
+                "Highbridge Times",
+                "Where There Is Smoke",
+                "On to Little Ala Mhigo",
+                "Tea for Three",
+                "Foot in the Door",
+                "Meeting with the Resistance",
+                "Killing Him Softly",
+                "Helping Horn",
+                "He Ain't Heavy",
+                "Come Highly Recommended",
+                "The Bear and the Young'uns' Cares",
+                "Wilred Wants You",
+                "Big Trouble in Little Ala Mhigo",
+                "Back to Square One",
+                "Terror at Fallgourd",
+                "Ziz Is So Ridiculous",
+                "Seeing Eye to Winged Eye",
+                "Rock of Rancor",
+                "Power of Deduction",
+                "Secret of the White Lily",
+                "Skeletons in Her Closet",
+                "Wrath of the Titan",
+                "Tales from the Tidus Slayer",
+                "Hungry Hungry Goobbues",
+                "The Lominsan Way",
+                "Nix That",
+                "A Modest Proposal",
+                "Trial by Turtle"
+              ]
+            },
+            {
+              "id": "arr-l31",
+              "title": "Levels 31–40",
+              "quests": [
+                "The Perfect Prey",
+                "When the Worm Turns",
+                "There and Back Again",
+                "The Things We Do for Cheese",
+                "What Do You Mean You Forgot the Wine",
+                "An Offer You Can Refuse",
+                "It Won't Work",
+                "Give a Man a Drink",
+                "That Weight",
+                "Battle Scars",
+                "It Was a Very Good Year",
+                "In the Company of Heroes",
+                "As You Wish",
+                "Lord of Crags",
+                "All Good Things",
+                "You Can't Take It with You",
+                "Bringing out the Dead",
+                "Bury Me Not on the Lone Prairie",
+                "Eyes on Me",
+                "He Who Waited Behind",
+                "Cold Reception",
+                "The Unending War",
+                "Men of Honor",
+                "Three for Three",
+                "The Rose and the Unicorn",
+                "The Talk of Coerthas",
+                "Road to Redemption",
+                "Following the Evidence",
+                "In the Eyes of Gods and Men",
+                "The Final Flight of the Enterprise",
+                "Ye of Little Faith",
+                "Factual Folklore",
+                "The Best Inventions",
+                "Influencing Inquisitors",
+                "By the Lights of Ishgard",
+                "Blood for Blood",
+                "The Heretic among Us"
+              ]
+            },
+            {
+              "id": "arr-l41",
+              "title": "Levels 41–50: The Ultimate Weapon",
+              "quests": [
+                "In Pursuit of the Past",
+                "Into the Eye of the Storm",
+                "Sealed with Science",
+                "With the Utmost Care",
+                "A Promising Prospect",
+                "It's Probably Not Pirates",
+                "Representing the Representative",
+                "The Reluctant Researcher",
+                "Sweet Somethings",
+                "History Repeating",
+                "The Curious Case of Giggity",
+                "Better Late than Never",
+                "Lady of the Vortex",
+                "Reclamation",
+                "Casing the Castrum",
+                "Eyes on the Empire",
+                "Footprints in the Snow",
+                "Monumental Hopes",
+                "Notorious Biggs",
+                "Come-Into-My-Castrum",
+                "Getting Even with Garlemald",
+                "Drowning Out the Voices",
+                "Acting the Part",
+                "Dressed for Conquest",
+                "Fool Me Twice",
+                "Every Little Thing She Does Is Magitek",
+                "Escape from Castrum Centri",
+                "The Black Wolf's Ultimatum",
+                "Operation Archon",
+                "A Hero in Need",
+                "Hearts on Fire",
+                "Rock the Castrum",
+                "The Ultimate Weapon"
+              ]
+            },
+            {
+              "id": "arr-21",
+              "title": "Patch 2.1 — A Realm Awoken",
+              "quests": [
+                "The Price of Principles",
+                "Moving On",
+                "All Things in Time",
+                "Laying the Foundation",
+                "It's Possibly a Primal",
+                "Hail to the King, Kupo",
+                "You Have Selected Regicide",
+                "On the Properties of Primals",
+                "The Gifted",
+                "Build on the Stone"
+              ]
+            },
+            {
+              "id": "arr-22",
+              "title": "Patch 2.2 — Through the Maelstrom",
+              "quests": [
+                "Still Waters",
+                "A Final Temptation",
+                "The Mother of Exiles",
+                "Promises to Keep",
+                "Yugiri's Game",
+                "Why We Adventure",
+                "All Due Respect",
+                "The Sea Rises",
+                "Scouts in Distress",
+                "The Gift of Eternity",
+                "Into the Heart of the Whorl",
+                "Lord of the Whorl",
+                "When Yugiri Met the Fraternity",
+                "Through the Maelstrom"
+              ]
+            },
+            {
+              "id": "arr-23",
+              "title": "Patch 2.3 — Defenders of Eorzea",
+              "quests": [
+                "The Great Divide",
+                "Desperate Times",
+                "Shock and Awe",
+                "Reap the Whirlwind",
+                "Revolution",
+                "Stories We Tell",
+                "Lord of Levin",
+                "Levin an Impression",
+                "What Little Gods Are Made Of",
+                "Guardian of Eorzea",
+                "Recruiting the Realm",
+                "Heretical Harassment",
+                "When the Cold Sets In",
+                "Brave New Companions"
+              ]
+            },
+            {
+              "id": "arr-24",
+              "title": "Patch 2.4 — Dreams of Ice",
+              "quests": [
+                "Traitor in the Midst",
+                "Back and Fourth",
+                "Coming to Terms",
+                "The Intercession of Saints",
+                "Strength in Unity",
+                "Dark Words, Dark Deeds",
+                "First Blood",
+                "The Path of the Righteous",
+                "For the Greater Good",
+                "Tendrils of Intrigue",
+                "Chasing Ivy",
+                "In Flagrante Delicto",
+                "A Simple Plan",
+                "The Instruments of Our Deliverance",
+                "The Road Less Traveled",
+                "Eyes Unclouded",
+                "The Reason Roaille",
+                "Let Us Cling Together"
+              ]
+            },
+            {
+              "id": "arr-25",
+              "title": "Patch 2.5 — Before the Fall, Part I",
+              "quests": [
+                "Good Intentions",
+                "Bait and Switch",
+                "Best Laid Schemes",
+                "The Rising Chorus",
+                "Aether on Demand",
+                "On the Counteroffensive",
+                "An Uninvited Ascian",
+                "In Memory of Moenbryda"
+              ]
+            },
+            {
+              "id": "arr-255",
+              "title": "Patch 2.55 — Before the Fall, Part II",
+              "quests": [
+                "Mask of Grief",
+                "Defenders for Ishgard",
+                "The Wyrm's Roar",
+                "Committed to the Cause",
+                "Volunteer Dragonslayers",
+                "An Allied Perspective",
+                "The Steps of Faith",
+                "Administrative Decision",
+                "An Unexpected Ambition",
+                "Ancient Ways, Timeless Wants",
+                "Where We Are Needed",
+                "The Least among Us",
+                "A Time to Every Purpose",
+                "Come, but Not Gone",
+                "The Parting Glass",
+                "Before the Dawn"
+              ]
+            }
+          ],
+          "isMsq": true
+        },
+        {
+          "id": "arr-cat-dun",
+          "label": "Dungeons",
+          "sections": [
+            {
+              "id": "arr-dun-lvl",
+              "title": "Leveling Dungeons (15–47)",
+              "quests": [
+                {
+                  "name": "Sastasha",
+                  "tag": "Lv 15 · MSQ"
+                },
+                {
+                  "name": "The Tam-Tara Deepcroft",
+                  "tag": "Lv 16 · MSQ"
+                },
+                {
+                  "name": "Copperbell Mines",
+                  "tag": "Lv 17 · MSQ"
+                },
+                {
+                  "name": "Halatali",
+                  "tag": "Lv 20 · optional"
+                },
+                {
+                  "name": "The Thousand Maws of Toto-Rak",
+                  "tag": "Lv 24 · MSQ"
+                },
+                {
+                  "name": "Haukke Manor",
+                  "tag": "Lv 28 · MSQ"
+                },
+                {
+                  "name": "Brayflox's Longstop",
+                  "tag": "Lv 32 · MSQ"
+                },
+                {
+                  "name": "The Sunken Temple of Qarn",
+                  "tag": "Lv 35 · optional"
+                },
+                {
+                  "name": "Cutter's Cry",
+                  "tag": "Lv 38 · optional"
+                },
+                {
+                  "name": "The Stone Vigil",
+                  "tag": "Lv 41 · MSQ"
+                },
+                {
+                  "name": "Dzemael Darkhold",
+                  "tag": "Lv 44 · optional"
+                },
+                {
+                  "name": "The Aurum Vale",
+                  "tag": "Lv 47 · optional"
+                }
+              ]
+            },
+            {
+              "id": "arr-dun-50",
+              "title": "Level 50 Dungeons",
+              "quests": [
+                {
+                  "name": "Castrum Meridianum",
+                  "tag": "MSQ · 2.0"
+                },
+                {
+                  "name": "The Praetorium",
+                  "tag": "MSQ · 2.0"
+                },
+                {
+                  "name": "The Wanderer's Palace",
+                  "tag": "2.0"
+                },
+                {
+                  "name": "Amdapor Keep",
+                  "tag": "2.0"
+                },
+                {
+                  "name": "Copperbell Mines (Hard)",
+                  "tag": "2.1"
+                },
+                {
+                  "name": "Haukke Manor (Hard)",
+                  "tag": "2.2"
+                },
+                {
+                  "name": "Pharos Sirius",
+                  "tag": "2.2"
+                },
+                {
+                  "name": "The Lost City of Amdapor",
+                  "tag": "2.3"
+                },
+                {
+                  "name": "Halatali (Hard)",
+                  "tag": "2.3"
+                },
+                {
+                  "name": "Brayflox's Longstop (Hard)",
+                  "tag": "2.4"
+                },
+                {
+                  "name": "Hullbreaker Isle",
+                  "tag": "2.4"
+                },
+                {
+                  "name": "The Wanderer's Palace (Hard)",
+                  "tag": "2.4"
+                },
+                {
+                  "name": "Snowcloak",
+                  "tag": "MSQ · 2.4"
+                },
+                {
+                  "name": "The Sunken Temple of Qarn (Hard)",
+                  "tag": "2.5"
+                },
+                {
+                  "name": "The Tam-Tara Deepcroft (Hard)",
+                  "tag": "2.5"
+                },
+                {
+                  "name": "Sastasha (Hard)",
+                  "tag": "2.5"
+                },
+                {
+                  "name": "Amdapor Keep (Hard)",
+                  "tag": "2.5"
+                },
+                {
+                  "name": "The Stone Vigil (Hard)",
+                  "tag": "2.5"
+                },
+                {
+                  "name": "The Keeper of the Lake",
+                  "tag": "MSQ · 2.55"
+                }
+              ]
+            }
+          ],
+          "structured": true
+        },
+        {
+          "id": "arr-cat-tri",
+          "label": "Trials",
+          "sections": [
+            {
+              "id": "arr-tri-msq",
+              "title": "Story Trials",
+              "quests": [
+                {
+                  "name": "The Bowl of Embers",
+                  "tag": "Ifrit · Lv 20 · MSQ"
+                },
+                {
+                  "name": "The Navel",
+                  "tag": "Titan · Lv 34 · MSQ"
+                },
+                {
+                  "name": "The Howling Eye",
+                  "tag": "Garuda · Lv 44 · MSQ"
+                },
+                {
+                  "name": "Cape Westwind",
+                  "tag": "MSQ · now solo instance"
+                },
+                {
+                  "name": "The Porta Decumana",
+                  "tag": "Ultima Weapon · MSQ · final boss"
+                },
+                {
+                  "name": "The Chrysalis",
+                  "tag": "Nabriales · MSQ · 2.5"
+                },
+                {
+                  "name": "The Steps of Faith",
+                  "tag": "Vishap · MSQ · 2.55 · now solo"
+                }
+              ]
+            },
+            {
+              "id": "arr-tri-hard",
+              "title": "Hard Mode (8-player)",
+              "quests": [
+                {
+                  "name": "The Bowl of Embers (Hard)",
+                  "tag": "Ifrit Hard · 2.0"
+                },
+                {
+                  "name": "The Howling Eye (Hard)",
+                  "tag": "Garuda Hard · 2.0"
+                },
+                {
+                  "name": "The Navel (Hard)",
+                  "tag": "Titan Hard · 2.0"
+                },
+                {
+                  "name": "Thornmarch (Hard)",
+                  "tag": "Moggle Mog · 2.1"
+                },
+                {
+                  "name": "A Relic Reborn: The Chimera",
+                  "tag": "relic quest · 2.0"
+                },
+                {
+                  "name": "A Relic Reborn: The Hydra",
+                  "tag": "relic quest · 2.0"
+                },
+                {
+                  "name": "The Whorleater (Hard)",
+                  "tag": "Leviathan · 2.2"
+                },
+                {
+                  "name": "Battle on the Big Bridge",
+                  "tag": "Gilgamesh · 2.2"
+                },
+                {
+                  "name": "The Striking Tree (Hard)",
+                  "tag": "Ramuh · 2.3"
+                },
+                {
+                  "name": "The Akh Afah Amphitheatre (Hard)",
+                  "tag": "Shiva · 2.4"
+                },
+                {
+                  "name": "The Dragon's Neck",
+                  "tag": "Ultros & Typhon · 2.5"
+                },
+                {
+                  "name": "Battle in the Big Keep",
+                  "tag": "Gilgamesh · 2.5"
+                },
+                {
+                  "name": "Urth's Fount",
+                  "tag": "Odin · 2.5"
+                }
+              ]
+            },
+            {
+              "id": "arr-tri-ex",
+              "title": "Extreme Trials",
+              "quests": [
+                {
+                  "name": "The Minstrel's Ballad: Ultima's Bane",
+                  "tag": "Ultima EX · 2.1"
+                },
+                {
+                  "name": "The Howling Eye (Extreme)",
+                  "tag": "Garuda EX · 2.1"
+                },
+                {
+                  "name": "The Navel (Extreme)",
+                  "tag": "Titan EX · 2.1"
+                },
+                {
+                  "name": "The Bowl of Embers (Extreme)",
+                  "tag": "Ifrit EX · 2.1"
+                },
+                {
+                  "name": "Thornmarch (Extreme)",
+                  "tag": "Moggle Mog EX · 2.1"
+                },
+                {
+                  "name": "The Whorleater (Extreme)",
+                  "tag": "Leviathan EX · 2.2"
+                },
+                {
+                  "name": "The Striking Tree (Extreme)",
+                  "tag": "Ramuh EX · 2.3"
+                },
+                {
+                  "name": "The Akh Afah Amphitheatre (Extreme)",
+                  "tag": "Shiva EX · 2.4"
+                }
+              ]
+            }
+          ],
+          "structured": true
+        },
+        {
+          "id": "arr-cat-rai",
+          "label": "Raids",
+          "sections": [
+            {
+              "id": "arr-rai-ct",
+              "title": "Crystal Tower (Alliance)",
+              "note": "gateway to Heavensward",
+              "quests": [
+                {
+                  "name": "Labyrinth of the Ancients",
+                  "tag": "24-player · 2.1"
+                },
+                {
+                  "name": "Syrcus Tower",
+                  "tag": "24-player · 2.3"
+                },
+                {
+                  "name": "The World of Darkness",
+                  "tag": "24-player · 2.5"
+                }
+              ]
+            },
+            {
+              "id": "arr-rai-coil",
+              "title": "The Coils of Bahamut (8-player)",
+              "quests": [
+                {
+                  "name": "Binding Coil of Bahamut — Turn 1",
+                  "tag": "2.0"
+                },
+                {
+                  "name": "Binding Coil of Bahamut — Turn 2",
+                  "tag": "2.0"
+                },
+                {
+                  "name": "Binding Coil of Bahamut — Turn 3",
+                  "tag": "2.0"
+                },
+                {
+                  "name": "Binding Coil of Bahamut — Turn 4",
+                  "tag": "2.0"
+                },
+                {
+                  "name": "Binding Coil of Bahamut — Turn 5",
+                  "tag": "Twintania · 2.0"
+                },
+                {
+                  "name": "Second Coil of Bahamut — Turn 1",
+                  "tag": "2.2"
+                },
+                {
+                  "name": "Second Coil of Bahamut — Turn 2",
+                  "tag": "2.2"
+                },
+                {
+                  "name": "Second Coil of Bahamut — Turn 3",
+                  "tag": "2.2"
+                },
+                {
+                  "name": "Second Coil of Bahamut — Turn 4",
+                  "tag": "Nael deus Darnus · 2.2"
+                },
+                {
+                  "name": "Final Coil of Bahamut — Turn 1",
+                  "tag": "2.4"
+                },
+                {
+                  "name": "Final Coil of Bahamut — Turn 2",
+                  "tag": "2.4"
+                },
+                {
+                  "name": "Final Coil of Bahamut — Turn 3",
+                  "tag": "2.4"
+                },
+                {
+                  "name": "Final Coil of Bahamut — Turn 4",
+                  "tag": "Bahamut Prime · 2.4"
+                }
+              ]
+            }
+          ],
+          "structured": true
+        }
+      ]
+    },
+    {
+      "id": "hw",
+      "accent": "hw",
+      "num": "3.0 — Dragonsong",
+      "emName": "Heavens<em>ward</em>",
+      "tagline": "Ishgard, and a thousand-year war with dragons.",
+      "categories": [
+        {
+          "id": "hw-cat-msq",
+          "label": "Quests",
+          "sections": [
+            {
+              "id": "hw-base-p1",
+              "title": "Heavensward (3.0) — Part 1",
+              "note": "Lv 50 → 53",
+              "branchSpec": {
+                "preCount": 3,
+                "branches": [
+                  {
+                    "label": "Artoirel's Chain",
+                    "count": 7
+                  },
+                  {
+                    "label": "Emmanellain's Chain",
+                    "count": 7
+                  }
+                ]
+              },
+              "quests": [
+                "Coming to Ishgard",
+                "Taking in the Sights",
+                "The Better Half",
+                "Over the Wall",
+                "Work in Progress",
+                "The First and Foremost",
+                "From on High",
+                "Reconnaissance Lost",
+                "At the End of Our Hope",
+                "Knights Be Not Proud",
+                "Onwards and Upwards",
+                "An Indispensable Ally",
+                "Meeting the Neighbors",
+                "Sense of Urgency",
+                "Hope Springs Eternal",
+                "A Series of Unfortunate Events",
+                "A Reward Long in Coming",
+                "Divine Intervention",
+                "Disclosure",
+                "Flame General Affairs",
+                "In Search of Raubahn",
+                "Keeping the Flame Alive",
+                "To Siege or Not to Siege",
+                "Alphinaud's Way",
+                "In Search of Iceheart",
+                "From One Heretic to Another",
+                "Sounding Out the Amphitheatre",
+                "Camp of the Convictors",
+                "Purple Flame, Purple Flame",
+                "Where the Chocobos Roam",
+                "Worse than Dragons",
+                "The Trine Towers",
+                "Gifts for the Outcasts",
+                "The Nonmind",
+                "A Gnathic Deity",
+                "Breaking into Hives",
+                "Lord of the Hive",
+                "Mourn in Passing",
+                "Beyond the Clouds",
+                "Mountaintop Diplomacy",
+                "Moghan's Trial",
+                "Mogwin's Trial",
+                "Mogmug's Trial",
+                "Moglin's Judgement",
+                "Leaving Moghome",
+                "The Road to Zenith",
+                "Waiting for the Wind to Change",
+                "Heart of Ice"
+              ]
+            },
+            {
+              "id": "hw-base-p2",
+              "title": "Heavensward (3.0) — Part 2",
+              "note": "Lv 53 → 60",
+              "quests": [
+                "The Wyrm's Lair",
+                "New Winds, Old Friends",
+                "A General Summons",
+                "Awakening in Ul'dah",
+                "A Brave Resolution",
+                "Ready to Fly",
+                "Into the Aery",
+                "The Song Begins",
+                "Unrest in Ishgard",
+                "He Who Would Not Be Denied",
+                "Ill-weather Friends",
+                "The Spice of Life",
+                "Noble Indiscretions",
+                "A Child Apart",
+                "Bloodlines",
+                "Fire and Blood",
+                "A Knight's Calling",
+                "The Sins of Antiquity",
+                "In Search of the Soleil",
+                "Into the Blue",
+                "Familiar Faces",
+                "Devourer of Worlds",
+                "Black and the White",
+                "Bolt, Chain, and Island",
+                "A Difference of Opinion",
+                "One Good Turn",
+                "An Engineering Enterprise",
+                "Aetherial Trail",
+                "Lost in the Lifestream",
+                "Tataru's Surprise",
+                "Onward to Sharlayan",
+                "A Great New Nation",
+                "Golems Begone",
+                "An Illuminati Incident",
+                "Leaving Idyllshire",
+                "Matoya's Cave",
+                "Forbidden Knowledge",
+                "An Eye for Aether",
+                "Hour of Departure",
+                "The First Flight of the Excelsior",
+                "Systematic Exploration",
+                "In Node We Trust",
+                "Chimerical Maintenance",
+                "Close Encounters of the VIth Kind",
+                "Fetters of Lament",
+                "Heavensward"
+              ]
+            },
+            {
+              "id": "hw-31",
+              "title": "Patch 3.1 — As Goes Light, So Goes Darkness",
+              "quests": [
+                "An Uncertain Future",
+                "Breaking the Cycle",
+                "Another Time, Another Place",
+                "In the Eye of the Beholder",
+                "A Little Slow, a Little Late",
+                "Dreams of the Lost",
+                "Against the Dying of the Light",
+                "As Goes Light, So Goes Darkness"
+              ]
+            },
+            {
+              "id": "hw-32",
+              "title": "Patch 3.2 — The Gears of Change",
+              "quests": [
+                "As It Once Was",
+                "The Word of the Mother",
+                "This War of Ours",
+                "Staunch Conviction",
+                "Once More, a Favor",
+                "For Those We Have Lost",
+                "Consequences",
+                "Choices",
+                "A Spectacle for the Ages",
+                "For Those We Can Yet Save",
+                "Causes and Costs"
+              ]
+            },
+            {
+              "id": "hw-33",
+              "title": "Patch 3.3 — Revenge of the Horde",
+              "quests": [
+                "The Man Within",
+                "An Ally for Ishgard",
+                "Winning Over the Wyrm",
+                "An End to the Song",
+                "Heroes of the Hour",
+                "Litany of Peace"
+              ]
+            },
+            {
+              "id": "hw-34",
+              "title": "Patch 3.4 — Soul Surrender",
+              "quests": [
+                "Promises Kept",
+                "Shadows of the First",
+                "Two Sides of a Coin",
+                "Unlikely Allies",
+                "The Beast That Mourned at the Heart of the Mountain",
+                "Beneath a Star-Filled Sky",
+                "When We Were Free",
+                "Honorable Heroes",
+                "One Life for One World",
+                "An Ending to Mark a New Beginning"
+              ]
+            },
+            {
+              "id": "hw-35",
+              "title": "Patch 3.5 / 3.56 — The Far Edge of Fate",
+              "quests": [
+                "Tidings from Gyr Abania",
+                "An Envoy for Ishgard",
+                "An Allied Decision",
+                "Griffin, Griffin on the Wall",
+                "Louisoix's Finest Student",
+                "The Obvious Solution",
+                "The Greater Obeisance",
+                "Fly Free, My Pretty",
+                "The Far Edge of Fate"
+              ]
+            }
+          ],
+          "isMsq": true
+        },
+        {
+          "id": "hw-cat-dun",
+          "label": "Dungeons",
+          "sections": [
+            {
+              "id": "hw-dun-lvl",
+              "title": "Leveling Dungeons (51–59)",
+              "quests": [
+                {
+                  "name": "The Dusk Vigil",
+                  "tag": "Lv 51 · optional"
+                },
+                {
+                  "name": "Sohm Al",
+                  "tag": "Lv 53 · MSQ"
+                },
+                {
+                  "name": "The Aery",
+                  "tag": "Lv 55 · MSQ"
+                },
+                {
+                  "name": "The Vault",
+                  "tag": "Lv 57 · MSQ"
+                },
+                {
+                  "name": "The Great Gubal Library",
+                  "tag": "Lv 59 · MSQ"
+                }
+              ]
+            },
+            {
+              "id": "hw-dun-60",
+              "title": "Level 60 Dungeons",
+              "quests": [
+                {
+                  "name": "The Aetherochemical Research Facility",
+                  "tag": "MSQ · 3.0"
+                },
+                {
+                  "name": "Neverreap",
+                  "tag": "optional · 3.0"
+                },
+                {
+                  "name": "The Fractal Continuum",
+                  "tag": "optional · 3.0"
+                },
+                {
+                  "name": "Saint Mocianne's Arboretum",
+                  "tag": "3.1"
+                },
+                {
+                  "name": "Pharos Sirius (Hard)",
+                  "tag": "3.1"
+                },
+                {
+                  "name": "The Antitower",
+                  "tag": "MSQ · 3.2"
+                },
+                {
+                  "name": "The Lost City of Amdapor (Hard)",
+                  "tag": "3.2"
+                },
+                {
+                  "name": "Sohr Khai",
+                  "tag": "MSQ · 3.3"
+                },
+                {
+                  "name": "Hullbreaker Isle (Hard)",
+                  "tag": "3.3"
+                },
+                {
+                  "name": "Xelphatol",
+                  "tag": "MSQ · 3.4"
+                },
+                {
+                  "name": "The Great Gubal Library (Hard)",
+                  "tag": "3.4"
+                },
+                {
+                  "name": "Baelsar's Wall",
+                  "tag": "MSQ · 3.5"
+                },
+                {
+                  "name": "Sohm Al (Hard)",
+                  "tag": "3.5"
+                }
+              ]
+            }
+          ],
+          "structured": true
+        },
+        {
+          "id": "hw-cat-tri",
+          "label": "Trials",
+          "sections": [
+            {
+              "id": "hw-tri-msq",
+              "title": "Story Trials",
+              "quests": [
+                {
+                  "name": "Thok ast Thok (Hard)",
+                  "tag": "Ravana · Lv 53 · MSQ"
+                },
+                {
+                  "name": "The Limitless Blue (Hard)",
+                  "tag": "Bismarck · Lv 57 · MSQ"
+                },
+                {
+                  "name": "The Singularity Reactor",
+                  "tag": "King Thordan · Lv 60 · MSQ"
+                },
+                {
+                  "name": "Containment Bay S1T7",
+                  "tag": "Sephirot · 3.2"
+                },
+                {
+                  "name": "The Final Steps of Faith",
+                  "tag": "Nidhogg · MSQ · 3.3"
+                },
+                {
+                  "name": "Containment Bay P1T6",
+                  "tag": "Sophia · 3.4"
+                },
+                {
+                  "name": "Containment Bay Z1T9",
+                  "tag": "Zurvan · 3.5"
+                }
+              ]
+            },
+            {
+              "id": "hw-tri-ex",
+              "title": "Extreme Trials",
+              "quests": [
+                {
+                  "name": "Thok ast Thok (Extreme)",
+                  "tag": "Ravana EX · 3.0"
+                },
+                {
+                  "name": "The Limitless Blue (Extreme)",
+                  "tag": "Bismarck EX · 3.0"
+                },
+                {
+                  "name": "The Minstrel's Ballad: Thordan's Reign",
+                  "tag": "Thordan EX · 3.1"
+                },
+                {
+                  "name": "Containment Bay S1T7 (Extreme)",
+                  "tag": "Sephirot EX · 3.2"
+                },
+                {
+                  "name": "The Minstrel's Ballad: Nidhogg's Rage",
+                  "tag": "Nidhogg EX · 3.3"
+                },
+                {
+                  "name": "Containment Bay P1T6 (Extreme)",
+                  "tag": "Sophia EX · 3.4"
+                },
+                {
+                  "name": "Containment Bay Z1T9 (Extreme)",
+                  "tag": "Zurvan EX · 3.5"
+                }
+              ]
+            }
+          ],
+          "structured": true
+        },
+        {
+          "id": "hw-cat-rai",
+          "label": "Raids",
+          "sections": [
+            {
+              "id": "hw-rai-mhach",
+              "title": "Mhach (Alliance)",
+              "quests": [
+                {
+                  "name": "The Void Ark",
+                  "tag": "24-player · 3.1"
+                },
+                {
+                  "name": "The Weeping City of Mhach",
+                  "tag": "24-player · 3.3"
+                },
+                {
+                  "name": "Dun Scaith",
+                  "tag": "24-player · 3.5"
+                }
+              ]
+            },
+            {
+              "id": "hw-rai-alex",
+              "title": "Alexander (8-player)",
+              "quests": [
+                {
+                  "name": "Alexander: The Fist of the Father",
+                  "tag": "Gordias A1 · 3.0"
+                },
+                {
+                  "name": "Alexander: The Cuff of the Father",
+                  "tag": "Gordias A2 · 3.0"
+                },
+                {
+                  "name": "Alexander: The Arm of the Father",
+                  "tag": "Gordias A3 · 3.0"
+                },
+                {
+                  "name": "Alexander: The Burden of the Father",
+                  "tag": "Gordias A4 · 3.0"
+                },
+                {
+                  "name": "Alexander: The Fist of the Son",
+                  "tag": "Midas A5 · 3.2"
+                },
+                {
+                  "name": "Alexander: The Cuff of the Son",
+                  "tag": "Midas A6 · 3.2"
+                },
+                {
+                  "name": "Alexander: The Arm of the Son",
+                  "tag": "Midas A7 · 3.2"
+                },
+                {
+                  "name": "Alexander: The Burden of the Son",
+                  "tag": "Midas A8 · 3.2"
+                },
+                {
+                  "name": "Alexander: The Eyes of the Creator",
+                  "tag": "Creator A9 · 3.4"
+                },
+                {
+                  "name": "Alexander: The Breath of the Creator",
+                  "tag": "Creator A10 · 3.4"
+                },
+                {
+                  "name": "Alexander: The Heart of the Creator",
+                  "tag": "Creator A11 · 3.4"
+                },
+                {
+                  "name": "Alexander: The Soul of the Creator",
+                  "tag": "Creator A12 · 3.4"
+                }
+              ]
+            }
+          ],
+          "structured": true
+        }
+      ]
+    },
+    {
+      "id": "sb",
+      "accent": "sb",
+      "num": "4.0 — Liberation",
+      "emName": "Storm<em>blood</em>",
+      "tagline": "The far East — Doma and Ala Mhigo, under Garlean heel.",
+      "categories": [
+        {
+          "id": "sb-cat-msq",
+          "label": "Quests",
+          "sections": [
+            {
+              "id": "sb-base-p1",
+              "title": "Stormblood (4.0) — Part 1",
+              "note": "Lv 60 → 65",
+              "branchSpec": {
+                "preCount": 5,
+                "branches": [
+                  {
+                    "label": "M'naago — Ala Mhigo",
+                    "count": 4
+                  },
+                  {
+                    "label": "Meffrid — Doma",
+                    "count": 8
+                  }
+                ]
+              },
+              "quests": [
+                "Beyond the Great Wall",
+                "Lyse Takes the Lead",
+                "The Promise of a New Beginning",
+                "A Haven for the Bold",
+                "A Bargain Struck",
+                "A Friend of a Friend in Need",
+                "Signed, Sealed, to Be Delivered",
+                "Best Served with Cold Steel",
+                "Let Fill Your Hearts with Pride",
+                "A Familiar Face Forgotten",
+                "The Prodigal Daughter",
+                "Death by a Thousand Rocks",
+                "Hard Country",
+                "A Life More Ordinary",
+                "The Color of Angry Qiqirn",
+                "The Black Wolf's Pups",
+                "Homeward Bound",
+                "Where Men Go as One",
+                "Future Rust, Future Dust",
+                "A Dash of Green",
+                "Ye Wayward Brothers",
+                "Token of Faith",
+                "Crossing the Velodyna",
+                "In Crimson It Began",
+                "The Fires Fade",
+                "Bereft of Hearth and Home",
+                "Divide and Conquer",
+                "Lies, Damn Lies, and Pirates",
+                "Tales from the Far East",
+                "Not without Incident",
+                "The Man from Ul'dah",
+                "Where the Streets are Paved with Koban",
+                "By the Grace of Lord Lolorito",
+                "A Good Samurai Is Hard to Find",
+                "It's Probably a Trap",
+                "Making the Catfish Sing",
+                "Once More, to the Ruby Sea",
+                "Open Water",
+                "Boys with Boats",
+                "To Bend with the Wind",
+                "Confederate Consternation",
+                "The Solace of the Sea",
+                "The Arrows of Misfortune",
+                "The Last Voyage",
+                "Alisaie's Stones",
+                "Under the Sea",
+                "Of Kojin and Kami",
+                "In Soroban We Trust",
+                "Forever and Ever Apart",
+                "In the Darkness the Magatama Dreams",
+                "The Whims of the Divine",
+                "Breaking and Delivering",
+                "The Lord of the Revel",
+                "Tide Goes in, Imperials Go Out",
+                "A Silence in Three Parts",
+                "Life after Doma",
+                "A Glimpse of Madness",
+                "The Stubborn Remainder",
+                "The Ones We Leave Behind",
+                "A New Ruby Tithe",
+                "The Will to Live",
+                "Daughter of the Deep",
+                "Path of No Return",
+                "The Time Between the Seconds",
+                "All the Little Angels"
+              ]
+            },
+            {
+              "id": "sb-base-p2",
+              "title": "Stormblood (4.0) — Part 2",
+              "note": "Lv 65 → 70",
+              "quests": [
+                "Here There Be Xaela",
+                "The Search for Lord Hien",
+                "A Season for War",
+                "An Impossible Dream",
+                "Stars in the Dark",
+                "A Warrior's Welcome",
+                "The Heart of Nations",
+                "A Trial Before the Trial",
+                "In the Footsteps of Bardam the Brave",
+                "The Children of Azim",
+                "The Labors of Magnai",
+                "For Love of the Moon",
+                "Sworn Enemies of the Sun",
+                "The Undying Ones",
+                "A Final Peace",
+                "As the Gods Will",
+                "Naadam",
+                "Glory to the Khagan",
+                "In Crimson They Walked",
+                "The Hour of Reckoning",
+                "The Room Where It Happened",
+                "How Tataru Got Her Groove Back",
+                "Seeds of Despair",
+                "The Limits of Our Endurance",
+                "Broken Steel, Broken Men",
+                "The Doma Within",
+                "On the Eve of Destiny",
+                "The Die is Cast",
+                "The World Turned Upside Down",
+                "A Swift and Secret Departure",
+                "While You Were Away",
+                "Rhalgr's Beacon",
+                "The Fortunes of War",
+                "Rising Fortunes, Rising Spirits",
+                "The Lure of the Dream",
+                "The Lady of Bliss",
+                "The Silence of the Gods",
+                "The First of Many",
+                "Strong and Unified",
+                "Hells Open",
+                "Heavens Weep",
+                "The Road Home",
+                "For the Living and the Dead",
+                "Above the Churning Waters",
+                "The Path Forward",
+                "With Tired Hands We Toil",
+                "Where Courage Endures",
+                "The Price of Freedom",
+                "Raubahn's Invitation",
+                "Liberty or Death",
+                "The Lady in Red",
+                "Upon the Great Loch's Shore",
+                "The Key to Victory",
+                "The Resonant",
+                "The Legacy of Our Fathers",
+                "The Measure of His Reach",
+                "Stormblood"
+              ]
+            },
+            {
+              "id": "sb-41",
+              "title": "Patch 4.1 — The Legend Returns",
+              "quests": [
+                "Arenvald's Adventure",
+                "The Darkness Below",
+                "The Mad King's Trove",
+                "The Butcher's Blood",
+                "Echoes of an Echo",
+                "A Sultana's Strings",
+                "A Sultana's Duty",
+                "A Sultana's Resolve",
+                "Securing the Saltery",
+                "A Blissful Arrival",
+                "Return of the Bull"
+              ]
+            },
+            {
+              "id": "sb-42",
+              "title": "Patch 4.2 — Rise of a New Sun",
+              "quests": [
+                "Tidings from the East",
+                "The Sword in the Stone",
+                "Hope on the Waves",
+                "Elation and Trepidation",
+                "Storm on the Horizon",
+                "His Forgotten Home",
+                "A Guilty Conscience",
+                "Rise of a New Sun"
+              ]
+            },
+            {
+              "id": "sb-43",
+              "title": "Patch 4.3 — Under the Moonlight",
+              "quests": [
+                "Gosetsu and Tsuyu",
+                "Gone Like the Morning Dew",
+                "Fruits of Her Labor",
+                "Conscripts and Contingencies",
+                "The Primary Agreement",
+                "Under the Moonlight",
+                "Emissary of the Dawn"
+              ]
+            },
+            {
+              "id": "sb-44",
+              "title": "Patch 4.4 — Prelude in Violet",
+              "quests": [
+                "Sisterly Act",
+                "Feel the Burn",
+                "Shadows in the Empire",
+                "A Power in Slumber",
+                "The Will of the Moon",
+                "The Call",
+                "Prelude in Violet"
+              ]
+            },
+            {
+              "id": "sb-45",
+              "title": "Patch 4.5 / 4.56 — A Requiem for Heroes",
+              "quests": [
+                "Soul Searching",
+                "A Defector's Tidings",
+                "Seiryu's Wall",
+                "Parley on the Front Lines",
+                "The Face of War",
+                "A Brief Reprieve",
+                "A Requiem for Heroes"
+              ]
+            }
+          ],
+          "isMsq": true
+        },
+        {
+          "id": "sb-cat-dun",
+          "label": "Dungeons",
+          "sections": [
+            {
+              "id": "sb-dun-lvl",
+              "title": "Leveling Dungeons (61–69)",
+              "quests": [
+                {
+                  "name": "The Sirensong Sea",
+                  "tag": "Lv 61 · MSQ"
+                },
+                {
+                  "name": "Shisui of the Violet Tides",
+                  "tag": "Lv 63 · MSQ"
+                },
+                {
+                  "name": "Bardam's Mettle",
+                  "tag": "Lv 65 · MSQ"
+                },
+                {
+                  "name": "Doma Castle",
+                  "tag": "Lv 67 · MSQ"
+                },
+                {
+                  "name": "Castrum Abania",
+                  "tag": "Lv 69 · MSQ"
+                }
+              ]
+            },
+            {
+              "id": "sb-dun-70",
+              "title": "Level 70 Dungeons",
+              "quests": [
+                {
+                  "name": "Ala Mhigo",
+                  "tag": "MSQ · 4.0"
+                },
+                {
+                  "name": "Kugane Castle",
+                  "tag": "4.0"
+                },
+                {
+                  "name": "The Temple of the Fist",
+                  "tag": "4.0"
+                },
+                {
+                  "name": "The Drowned City of Skalla",
+                  "tag": "4.1"
+                },
+                {
+                  "name": "Hells' Lid",
+                  "tag": "4.2"
+                },
+                {
+                  "name": "The Fractal Continuum (Hard)",
+                  "tag": "4.2"
+                },
+                {
+                  "name": "The Swallow's Compass",
+                  "tag": "4.3"
+                },
+                {
+                  "name": "The Burn",
+                  "tag": "4.4"
+                },
+                {
+                  "name": "Saint Mocianne's Arboretum (Hard)",
+                  "tag": "4.4"
+                },
+                {
+                  "name": "The Ghimlyt Dark",
+                  "tag": "MSQ · 4.5"
+                }
+              ]
+            }
+          ],
+          "structured": true
+        },
+        {
+          "id": "sb-cat-tri",
+          "label": "Trials",
+          "sections": [
+            {
+              "id": "sb-tri-msq",
+              "title": "Story Trials",
+              "quests": [
+                {
+                  "name": "The Pool of Tribute",
+                  "tag": "Susano · Lv 63 · MSQ"
+                },
+                {
+                  "name": "Emanation",
+                  "tag": "Lakshmi · Lv 67 · MSQ"
+                },
+                {
+                  "name": "The Royal Menagerie",
+                  "tag": "Shinryu · Lv 70 · MSQ · final 4.0"
+                },
+                {
+                  "name": "Castrum Fluminis",
+                  "tag": "Tsukuyomi · MSQ · 4.1"
+                },
+                {
+                  "name": "The Jade Stoa",
+                  "tag": "Byakko · 4.2"
+                },
+                {
+                  "name": "Hells' Kier",
+                  "tag": "Suzaku · 4.3"
+                },
+                {
+                  "name": "The Wreath of Snakes",
+                  "tag": "Seiryu · 4.4"
+                }
+              ]
+            },
+            {
+              "id": "sb-tri-ex",
+              "title": "Extreme Trials",
+              "quests": [
+                {
+                  "name": "The Pool of Tribute (Extreme)",
+                  "tag": "Susano EX · 4.0"
+                },
+                {
+                  "name": "Emanation (Extreme)",
+                  "tag": "Lakshmi EX · 4.0"
+                },
+                {
+                  "name": "The Minstrel's Ballad: Shinryu's Domain",
+                  "tag": "Shinryu EX · 4.1"
+                },
+                {
+                  "name": "The Minstrel's Ballad: Tsukuyomi's Pain",
+                  "tag": "Tsukuyomi EX · 4.1"
+                },
+                {
+                  "name": "The Jade Stoa (Extreme)",
+                  "tag": "Byakko EX · 4.2"
+                },
+                {
+                  "name": "Hells' Kier (Extreme)",
+                  "tag": "Suzaku EX · 4.3"
+                },
+                {
+                  "name": "The Wreath of Snakes (Extreme)",
+                  "tag": "Seiryu EX · 4.4"
+                }
+              ]
+            }
+          ],
+          "structured": true
+        },
+        {
+          "id": "sb-cat-rai",
+          "label": "Raids",
+          "sections": [
+            {
+              "id": "sb-rai-ivalice",
+              "title": "Return to Ivalice (Alliance)",
+              "quests": [
+                {
+                  "name": "The Royal City of Rabanastre",
+                  "tag": "24-player · 4.1"
+                },
+                {
+                  "name": "The Ridorana Lighthouse",
+                  "tag": "24-player · 4.3"
+                },
+                {
+                  "name": "The Orbonne Monastery",
+                  "tag": "24-player · 4.5"
+                }
+              ]
+            },
+            {
+              "id": "sb-rai-omega",
+              "title": "Omega (8-player)",
+              "quests": [
+                {
+                  "name": "Omega: Deltascape V1.0",
+                  "tag": "Alte Roite · 4.0"
+                },
+                {
+                  "name": "Omega: Deltascape V2.0",
+                  "tag": "Catastrophe · 4.0"
+                },
+                {
+                  "name": "Omega: Deltascape V3.0",
+                  "tag": "Halicarnassus · 4.0"
+                },
+                {
+                  "name": "Omega: Deltascape V4.0",
+                  "tag": "Exdeath · 4.0"
+                },
+                {
+                  "name": "Omega: Sigmascape V1.0",
+                  "tag": "Phantom Train · 4.2"
+                },
+                {
+                  "name": "Omega: Sigmascape V2.0",
+                  "tag": "4.2"
+                },
+                {
+                  "name": "Omega: Sigmascape V3.0",
+                  "tag": "4.2"
+                },
+                {
+                  "name": "Omega: Sigmascape V4.0",
+                  "tag": "Kefka · 4.2"
+                },
+                {
+                  "name": "Omega: Alphascape V1.0",
+                  "tag": "4.4"
+                },
+                {
+                  "name": "Omega: Alphascape V2.0",
+                  "tag": "4.4"
+                },
+                {
+                  "name": "Omega: Alphascape V3.0",
+                  "tag": "4.4"
+                },
+                {
+                  "name": "Omega: Alphascape V4.0",
+                  "tag": "Omega · 4.4"
+                }
+              ]
+            },
+            {
+              "id": "sb-rai-ult",
+              "title": "Ultimate Raids (high-end)",
+              "quests": [
+                {
+                  "name": "The Unending Coil of Bahamut",
+                  "tag": "UCoB · Lv 70 · 4.11"
+                },
+                {
+                  "name": "The Weapon's Refrain",
+                  "tag": "UWU · Lv 70 · 4.31"
+                }
+              ]
+            }
+          ],
+          "structured": true
+        }
+      ]
+    },
+    {
+      "id": "shb",
+      "accent": "shb",
+      "num": "5.0 — The First",
+      "emName": "Shadow<em>bringers</em>",
+      "tagline": "A reflected world drowning in light. Become its darkness.",
+      "categories": [
+        {
+          "id": "shb-cat-msq",
+          "label": "Quests",
+          "sections": [
+            {
+              "id": "shb-base-p1",
+              "title": "Shadowbringers (5.0) — Part 1",
+              "note": "Lv 70 → 76",
+              "quests": [
+                "The Syrcus Trench",
+                "City of the First",
+                "Travelers of Norvrandt",
+                "In Search of Alphinaud",
+                "A Still Tide",
+                "Open Arms, Closed Gate",
+                "A Fickle Existence",
+                "City of Final Pleasures",
+                "Free to Sightsee",
+                "A Taste of Honey",
+                "A Blessed Instrument",
+                "Emergent Splendor",
+                "In Search of Alisaie",
+                "City of the Mord",
+                "Working off the Meal",
+                "A Desert Crossing",
+                "Following in Her Footprints",
+                "Culling Their Ranks",
+                "A Purchase of Fruit",
+                "The Time Left to Us",
+                "Tears on the Sand",
+                "The Lightwardens",
+                "Warrior of Darkness",
+                "An Unwelcome Guest",
+                "The Crystarium's Resolve",
+                "Logistics of War",
+                "The Oracle of Light",
+                "Il Mheg, the Faerie Kingdom",
+                "Ys Iala's Errand",
+                "Oul Sigun's Plea",
+                "Sul Uin's Request",
+                "Unto the Truth",
+                "Courting Cooperation",
+                "The Key to the Castle",
+                "A Visit to the Nu Mou",
+                "A Fitting Payment",
+                "Spore Sweeper",
+                "The Lawless Ones",
+                "The Elder's Answer",
+                "A Resounding Roar",
+                "Memento of a Friend",
+                "Acht-la Ormh Inn",
+                "The Wheel Turns",
+                "A Party Soon Divided",
+                "A Little Faith",
+                "Into the Dark",
+                "A Day in the Neighborhood",
+                "A Helping Hand",
+                "Lost but Not Forgotten",
+                "Saying Good-bye",
+                "Stirring Up Trouble",
+                "A Beeautiful Plan",
+                "An Unwanted Proposal",
+                "Put to the Proof",
+                "Into the Wood",
+                "Top of the Tree",
+                "Look to the Stars",
+                "Mi Casa, Toupasa",
+                "Legend of the Not-so-hidden Temple",
+                "The Aftermath",
+                "In Good Faith",
+                "The Burden of Knowledge",
+                "Bearing with It",
+                "Out of the Wood"
+              ]
+            },
+            {
+              "id": "shb-base-p2",
+              "title": "Shadowbringers (5.0) — Part 2",
+              "note": "Lv 76 → 80",
+              "quests": [
+                "When It Rains",
+                "Word from On High",
+                "Small Favors",
+                "The Best Way Out",
+                "Free Trade",
+                "The Trolley Problem",
+                "Rust and Ruin",
+                "On Track",
+                "Down for Maintenance",
+                "The Truth Hurts",
+                "A Convenient Distraction",
+                "A Dirty Job",
+                "Have a Heart",
+                "Full Steam Ahead",
+                "Crossroads",
+                "A Fresh Start",
+                "More than a Hunch",
+                "Return to Eulmore",
+                "A Feast of Lies",
+                "Paradise Fallen",
+                "The Ladder",
+                "The View from Above",
+                "In Mt. Gulg's Shadow",
+                "A Gigantic Undertaking",
+                "Meet the Tholls",
+                "A-Digging We Will Go",
+                "The Duergar's Tewel",
+                "Rich Veins of Hope",
+                "That None Shall Ever Again",
+                "A Breath of Respite",
+                "Extinguishing the Last Light",
+                "Reassuring the Masses",
+                "In His Garden",
+                "The Unbroken Thread",
+                "To Storm-tossed Seas",
+                "Waiting in the Depths",
+                "City of the Ancients",
+                "The Light of Inspiration",
+                "The Illuminated Land",
+                "The End of a World",
+                "A Greater Purpose",
+                "Shadowbringers"
+              ]
+            },
+            {
+              "id": "shb-51",
+              "title": "Patch 5.1 — Vows of Virtue, Deeds of Cruelty",
+              "quests": [
+                "Shaken Resolve",
+                "A Grand Adventure",
+                "A Welcome Guest",
+                "Good for the Soul",
+                "Nowhere to Turn",
+                "A Notable Absence",
+                "For the People",
+                "Finding Good Help",
+                "Moving Forward",
+                "Vows of Virtue, Deeds of Cruelty"
+              ]
+            },
+            {
+              "id": "shb-52",
+              "title": "Patch 5.2 — Echoes of a Fallen Star",
+              "quests": [
+                "Old Enemies, New Threats",
+                "The Way Home",
+                "Seeking Counsel",
+                "Facing the Truth",
+                "A Sleep Disturbed",
+                "An Old Friend",
+                "Deep Designs",
+                "A Whale's Tale",
+                "Beneath the Surface",
+                "Echoes of a Fallen Star"
+              ]
+            },
+            {
+              "id": "shb-53",
+              "title": "Patch 5.3 — Reflections in Crystal",
+              "quests": [
+                "In the Name of the Light",
+                "Heroic Dreams",
+                "Fraying Threads",
+                "Food for the Soul",
+                "Faded Memories",
+                "Etched in the Stars",
+                "The Converging Light",
+                "Hope's Confluence",
+                "Nothing Unsaid",
+                "The Journey Continues",
+                "Unto the Morrow",
+                "Reflections in Crystal"
+              ]
+            },
+            {
+              "id": "shb-54",
+              "title": "Patch 5.4 — Futures Rewritten",
+              "quests": [
+                "Alisaie's Quest",
+                "The Wisdom of Allag",
+                "Reviving the Legacy",
+                "Forget Us Not",
+                "Like Master, Like Pupil",
+                "The Admiral's Resolve",
+                "The Search for Sicard",
+                "On Rough Seas",
+                "The Great Ship Vylbrand",
+                "Futures Rewritten"
+              ]
+            },
+            {
+              "id": "shb-55",
+              "title": "Patch 5.5 / 5.55 — Death Unto Dawn",
+              "quests": [
+                "Unto the Breach",
+                "Here Be Dragons",
+                "Righteous Indignation",
+                "For Vengeance",
+                "The Flames of War",
+                "When the Dust Settles",
+                "The Company We Keep",
+                "On Official Business",
+                "Death Unto Dawn"
+              ]
+            }
+          ],
+          "isMsq": true
+        },
+        {
+          "id": "shb-cat-dun",
+          "label": "Dungeons",
+          "sections": [
+            {
+              "id": "shb-dun-lvl",
+              "title": "Leveling Dungeons (71–79)",
+              "quests": [
+                {
+                  "name": "Holminster Switch",
+                  "tag": "Lv 71 · MSQ"
+                },
+                {
+                  "name": "Dohn Mheg",
+                  "tag": "Lv 73 · MSQ"
+                },
+                {
+                  "name": "The Qitana Ravel",
+                  "tag": "Lv 75 · MSQ"
+                },
+                {
+                  "name": "Malikah's Well",
+                  "tag": "Lv 77 · MSQ"
+                },
+                {
+                  "name": "Mt. Gulg",
+                  "tag": "Lv 79 · MSQ"
+                }
+              ]
+            },
+            {
+              "id": "shb-dun-80",
+              "title": "Level 80 Dungeons",
+              "quests": [
+                {
+                  "name": "Amaurot",
+                  "tag": "MSQ · 5.0 · final"
+                },
+                {
+                  "name": "The Twinning",
+                  "tag": "MSQ · 5.0"
+                },
+                {
+                  "name": "Akadaemia Anyder",
+                  "tag": "5.0"
+                },
+                {
+                  "name": "The Grand Cosmos",
+                  "tag": "MSQ · 5.1"
+                },
+                {
+                  "name": "Anamnesis Anyder",
+                  "tag": "5.2"
+                },
+                {
+                  "name": "The Heroes' Gauntlet",
+                  "tag": "MSQ · 5.3"
+                },
+                {
+                  "name": "Paglth'an",
+                  "tag": "MSQ · 5.4"
+                },
+                {
+                  "name": "Matoya's Relict",
+                  "tag": "5.5"
+                }
+              ]
+            }
+          ],
+          "structured": true
+        },
+        {
+          "id": "shb-cat-tri",
+          "label": "Trials",
+          "sections": [
+            {
+              "id": "shb-tri-msq",
+              "title": "Story Trials",
+              "quests": [
+                {
+                  "name": "The Dancing Plague",
+                  "tag": "Titania · Lv 77 · MSQ"
+                },
+                {
+                  "name": "The Crown of the Immaculate",
+                  "tag": "Innocence · Lv 79 · MSQ"
+                },
+                {
+                  "name": "The Dying Gasp",
+                  "tag": "Hades · Lv 80 · MSQ · final 5.0"
+                },
+                {
+                  "name": "Cinder Drift",
+                  "tag": "Ruby Weapon · 5.2"
+                },
+                {
+                  "name": "The Seat of Sacrifice",
+                  "tag": "Elidibus · MSQ · 5.3"
+                },
+                {
+                  "name": "Castrum Marinum",
+                  "tag": "Emerald Weapon · 5.4"
+                },
+                {
+                  "name": "The Cloud Deck",
+                  "tag": "Diamond Weapon · MSQ · 5.5"
+                }
+              ]
+            },
+            {
+              "id": "shb-tri-ex",
+              "title": "Extreme Trials",
+              "quests": [
+                {
+                  "name": "The Dancing Plague (Extreme)",
+                  "tag": "Titania EX · 5.0"
+                },
+                {
+                  "name": "The Crown of the Immaculate (Extreme)",
+                  "tag": "Innocence EX · 5.0"
+                },
+                {
+                  "name": "The Minstrel's Ballad: Hades's Elegy",
+                  "tag": "Hades EX · 5.1"
+                },
+                {
+                  "name": "Cinder Drift (Extreme)",
+                  "tag": "Ruby Weapon EX · 5.2"
+                },
+                {
+                  "name": "Memoria Misera (Extreme)",
+                  "tag": "Varis EX · 5.3"
+                },
+                {
+                  "name": "The Seat of Sacrifice (Extreme)",
+                  "tag": "Elidibus EX · 5.3"
+                },
+                {
+                  "name": "Castrum Marinum (Extreme)",
+                  "tag": "Emerald Weapon EX · 5.4"
+                },
+                {
+                  "name": "The Cloud Deck (Extreme)",
+                  "tag": "Diamond Weapon EX · 5.5"
+                }
+              ]
+            }
+          ],
+          "structured": true
+        },
+        {
+          "id": "shb-cat-rai",
+          "label": "Raids",
+          "sections": [
+            {
+              "id": "shb-rai-yorha",
+              "title": "YoRHa: Dark Apocalypse (Alliance)",
+              "note": "NieR crossover",
+              "quests": [
+                {
+                  "name": "The Copied Factory",
+                  "tag": "24-player · 5.1"
+                },
+                {
+                  "name": "The Puppets' Bunker",
+                  "tag": "24-player · 5.3"
+                },
+                {
+                  "name": "The Tower at Paradigm's Breach",
+                  "tag": "24-player · 5.5"
+                }
+              ]
+            },
+            {
+              "id": "shb-rai-eden",
+              "title": "Eden (8-player)",
+              "quests": [
+                {
+                  "name": "Eden's Gate: Resurrection",
+                  "tag": "E1 · 5.01"
+                },
+                {
+                  "name": "Eden's Gate: Descent",
+                  "tag": "E2 · 5.01"
+                },
+                {
+                  "name": "Eden's Gate: Inundation",
+                  "tag": "E3 · 5.01"
+                },
+                {
+                  "name": "Eden's Gate: Sepulture",
+                  "tag": "E4 · 5.01"
+                },
+                {
+                  "name": "Eden's Verse: Fulmination",
+                  "tag": "E5 · 5.2"
+                },
+                {
+                  "name": "Eden's Verse: Furor",
+                  "tag": "E6 · 5.2"
+                },
+                {
+                  "name": "Eden's Verse: Iconoclasm",
+                  "tag": "E7 · 5.2"
+                },
+                {
+                  "name": "Eden's Verse: Refulgence",
+                  "tag": "E8 · 5.2"
+                },
+                {
+                  "name": "Eden's Promise: Umbra",
+                  "tag": "E9 · 5.4"
+                },
+                {
+                  "name": "Eden's Promise: Litany",
+                  "tag": "E10 · 5.4"
+                },
+                {
+                  "name": "Eden's Promise: Anamorphosis",
+                  "tag": "E11 · 5.4"
+                },
+                {
+                  "name": "Eden's Promise: Eternity",
+                  "tag": "E12 · 5.4"
+                }
+              ]
+            },
+            {
+              "id": "shb-rai-ult",
+              "title": "Ultimate Raid (high-end)",
+              "quests": [
+                {
+                  "name": "The Epic of Alexander",
+                  "tag": "TEA · Lv 80 · 5.11"
+                }
+              ]
+            }
+          ],
+          "structured": true
+        }
+      ]
+    },
+    {
+      "id": "ew",
+      "accent": "ew",
+      "num": "6.0 — The Final Days",
+      "emName": "End<em>walker</em>",
+      "tagline": "The end of the Hydaelyn–Zodiark saga. Ten years in the making.",
+      "categories": [
+        {
+          "id": "ew-cat-msq",
+          "label": "Quests",
+          "sections": [
+            {
+              "id": "ew-base-p1",
+              "title": "Endwalker (6.0) — Part 1",
+              "note": "Lv 80 → 86",
+              "quests": [
+                "The Next Ship to Sail",
+                "Old Sharlayan, New to You",
+                "Hitting the Books",
+                "A Seat at the Last Stand",
+                "A Labyrinthine Descent",
+                "Glorified Ratcatcher",
+                "Deeper into the Maze",
+                "The Medial Circuit",
+                "The Full Report, Warts and All",
+                "A Guide of Sorts",
+                "Estate Visitor",
+                "For Thavnair Bound",
+                "On Low Tide",
+                "A Fisherman's Friend",
+                "House of Divinities",
+                "The Great Work",
+                "Shadowed Footsteps",
+                "A Boy's Errand",
+                "Tipping the Scale",
+                "The Satrap of Radz-at-Han",
+                "In the Dark of the Tower",
+                "The Jewel of Thavnair",
+                "The Color of Joy",
+                "Sound the Bell, School's In",
+                "A Capital Idea",
+                "Best of the Best",
+                "A Frosty Reception",
+                "Tracks in the Snow",
+                "How the Mighty Are Fallen",
+                "At the End of the Trail",
+                "A Way Forward",
+                "The Last Bastion",
+                "Personae non Gratae",
+                "His Park Materials",
+                "No Good Deed",
+                "Alea Iacta Est",
+                "Strange Bedfellows",
+                "In from the Cold",
+                "Gateway of the Gods",
+                "A Trip to the Moon",
+                "Sea of Sorrow",
+                "The Martyr",
+                "In Shadow's Wake",
+                "Helping Hands",
+                "A Harey Situation",
+                "A Taste of the Moon",
+                "Styled a Hero",
+                "All's Vale that Endsvale",
+                "Back to Old Tricks",
+                "Setting Things Straight",
+                "Heart of the Matter",
+                "Returning Home"
+              ]
+            },
+            {
+              "id": "ew-base-p2",
+              "title": "Endwalker (6.0) — Part 2",
+              "note": "Lv 86 → 90",
+              "quests": [
+                "Skies Aflame",
+                "The Blasphemy Unmasked",
+                "Amidst the Apocalypse",
+                "Beyond the Depths of Despair",
+                "That We Might Live",
+                "When All Hope Seems Lost",
+                "Warm Hearts, Rekindled Hopes",
+                "Simple Pleasures",
+                "Under His Wing",
+                "At World's End",
+                "Return to the Crystarium",
+                "Hope Upon a Flower",
+                "Petalouda Hunt",
+                "In Search of Hermes",
+                "Ponder, Warrant, Cherish, Welcome",
+                "Lives Apart",
+                "Their Greatest Contribution",
+                "Aether to Aether",
+                "A Sentimental Gift",
+                "Verdict and Execution",
+                "Travelers at the Crossroads",
+                "A Past, Not Yet Come to Pass",
+                "Witness to the Spectacle",
+                "Worthy of His Back",
+                "A Flower upon Your Return",
+                "Hunger in the Garden",
+                "Words without Sound",
+                "Follow, Wander, Stumble, Listen",
+                "Caging the Messenger",
+                "Thou Must Live, Die, and Know",
+                "As the Heavens Burn",
+                "Outside Help",
+                "Going Underground",
+                "No Job Too Small",
+                "Wise Guides",
+                "Agriculture Shock",
+                "Sage Council",
+                "Hither and Yarns",
+                "Once Forged",
+                "Bonds of Adamant(ite)",
+                "Her Children, One and All",
+                "A Bold Decision",
+                "Friends Gathered",
+                "Unto the Heavens",
+                "A §trαnge New World",
+                "On Burdεned ωings",
+                "Α Test of Wιll",
+                "Roads Pαved┃┃Sacri┣ice",
+                "F//εsh AbanΔon┨Δ",
+                "Where Kn∞wledge Leads",
+                "Vic┨οry, ┃̆┃┃ε Lost",
+                "┣┨̈//̈ No┨ΦounΔ•••",
+                "Hello, World",
+                "Forge Ahead",
+                "You're Not Alone",
+                "Endwalker"
+              ]
+            },
+            {
+              "id": "ew-61",
+              "title": "Patch 6.1 — Newfound Adventure",
+              "quests": [
+                "Newfound Adventure",
+                "Bountiful Ruins",
+                "Friends for the Road",
+                "Alzadaal's Legacy",
+                "A Brother's Grief",
+                "Sharing the Wealth",
+                "Bridging the Rift",
+                "Restricted Reading",
+                "Void Theory",
+                "A Satrap's Duty"
+              ]
+            },
+            {
+              "id": "ew-62",
+              "title": "Patch 6.2 — Buried Memory",
+              "quests": [
+                "In Search of Azdaja",
+                "Shadowed Remnants",
+                "Where Everything Begins",
+                "Groping in the Dark",
+                "Nowhere to Run",
+                "The Wind Rises",
+                "Return from the Void",
+                "A World with Light and Life",
+                "Buried Memory"
+              ]
+            },
+            {
+              "id": "ew-63",
+              "title": "Patch 6.3 — Gods Revel, Lands Tremble",
+              "quests": [
+                "Once More unto the Void",
+                "A Cold Reunion",
+                "Kindled Spirit",
+                "An Unforseen Bargain",
+                "King of the Mountain",
+                "A Dragon's Resolve",
+                "Paths Barred",
+                "Desires Untold",
+                "Gods Revel, Lands Tremble"
+              ]
+            },
+            {
+              "id": "ew-64",
+              "title": "Patch 6.4 — The Dark Throne",
+              "quests": [
+                "Currying Flavor",
+                "Like Fear to Flame",
+                "The Fallen Empire",
+                "Bonds of Trust",
+                "Lunar Rendezvous",
+                "The Red Side of the Moon",
+                "Abyssal Dark",
+                "The Dark Throne"
+              ]
+            },
+            {
+              "id": "ew-65",
+              "title": "Patch 6.5 — Growing Light",
+              "quests": [
+                "Seeking the Light",
+                "Appealing to the Masses",
+                "In Defiance of Fate",
+                "Back to Action",
+                "Down in the Dark",
+                "Reunited at Last",
+                "Growing Light"
+              ]
+            },
+            {
+              "id": "ew-655",
+              "title": "Patch 6.55 — The Coming Dawn",
+              "quests": [
+                "When One Door Closes...",
+                "The Game Is Afoot",
+                "The Coming Dawn"
+              ]
+            }
+          ],
+          "isMsq": true
+        },
+        {
+          "id": "ew-cat-dun",
+          "label": "Dungeons",
+          "sections": [
+            {
+              "id": "ew-dun-lvl",
+              "title": "Leveling Dungeons (81–89)",
+              "quests": [
+                {
+                  "name": "The Tower of Zot",
+                  "tag": "Lv 81 · MSQ"
+                },
+                {
+                  "name": "The Tower of Babil",
+                  "tag": "Lv 83 · MSQ"
+                },
+                {
+                  "name": "Vanaspati",
+                  "tag": "Lv 85 · MSQ"
+                },
+                {
+                  "name": "Ktisis Hyperboreia",
+                  "tag": "Lv 87 · MSQ"
+                },
+                {
+                  "name": "The Aitiascope",
+                  "tag": "Lv 89 · MSQ"
+                }
+              ]
+            },
+            {
+              "id": "ew-dun-90",
+              "title": "Level 90 Dungeons",
+              "quests": [
+                {
+                  "name": "The Dead Ends",
+                  "tag": "MSQ · 6.0 · final"
+                },
+                {
+                  "name": "Smileton",
+                  "tag": "optional · 6.0"
+                },
+                {
+                  "name": "The Stigma Dreamscape",
+                  "tag": "optional · 6.0"
+                },
+                {
+                  "name": "Alzadaal's Legacy",
+                  "tag": "MSQ · 6.1"
+                },
+                {
+                  "name": "The Fell Court of Troia",
+                  "tag": "MSQ · 6.2"
+                },
+                {
+                  "name": "Lapis Manalis",
+                  "tag": "MSQ · 6.3"
+                },
+                {
+                  "name": "The Aetherfont",
+                  "tag": "6.3"
+                },
+                {
+                  "name": "The Lunar Subterrane",
+                  "tag": "MSQ · 6.4"
+                }
+              ]
+            }
+          ],
+          "structured": true
+        },
+        {
+          "id": "ew-cat-tri",
+          "label": "Trials",
+          "sections": [
+            {
+              "id": "ew-tri-msq",
+              "title": "Story Trials",
+              "quests": [
+                {
+                  "name": "The Dark Inside",
+                  "tag": "Zodiark · Lv 83 · MSQ"
+                },
+                {
+                  "name": "The Mothercrystal",
+                  "tag": "Hydaelyn · Lv 88 · MSQ"
+                },
+                {
+                  "name": "The Final Day",
+                  "tag": "Endsinger · Lv 90 · MSQ · final 6.0"
+                },
+                {
+                  "name": "Storm's Crown",
+                  "tag": "Barbariccia · 6.2"
+                },
+                {
+                  "name": "Mount Ordeals",
+                  "tag": "Rubicante · 6.3"
+                },
+                {
+                  "name": "The Voidcast Dais",
+                  "tag": "Golbez · 6.4"
+                },
+                {
+                  "name": "The Abyssal Fracture",
+                  "tag": "Zeromus · MSQ · 6.5"
+                }
+              ]
+            },
+            {
+              "id": "ew-tri-ex",
+              "title": "Extreme Trials",
+              "quests": [
+                {
+                  "name": "The Minstrel's Ballad: Zodiark's Fall",
+                  "tag": "Zodiark EX · 6.0"
+                },
+                {
+                  "name": "The Minstrel's Ballad: Hydaelyn's Call",
+                  "tag": "Hydaelyn EX · 6.0"
+                },
+                {
+                  "name": "The Minstrel's Ballad: Endsinger's Aria",
+                  "tag": "Endsinger EX · 6.1"
+                },
+                {
+                  "name": "Storm's Crown (Extreme)",
+                  "tag": "Barbariccia EX · 6.2"
+                },
+                {
+                  "name": "Mount Ordeals (Extreme)",
+                  "tag": "Rubicante EX · 6.3"
+                },
+                {
+                  "name": "The Voidcast Dais (Extreme)",
+                  "tag": "Golbez EX · 6.4"
+                },
+                {
+                  "name": "The Abyssal Fracture (Extreme)",
+                  "tag": "Zeromus EX · 6.5"
+                }
+              ]
+            }
+          ],
+          "structured": true
+        },
+        {
+          "id": "ew-cat-rai",
+          "label": "Raids",
+          "sections": [
+            {
+              "id": "ew-rai-myth",
+              "title": "Myths of the Realm (Alliance)",
+              "note": "the Twelve",
+              "quests": [
+                {
+                  "name": "Aglaia",
+                  "tag": "24-player · 6.1"
+                },
+                {
+                  "name": "Euphrosyne",
+                  "tag": "24-player · 6.3"
+                },
+                {
+                  "name": "Thaleia",
+                  "tag": "24-player · 6.55"
+                }
+              ]
+            },
+            {
+              "id": "ew-rai-pan",
+              "title": "Pandæmonium (8-player)",
+              "quests": [
+                {
+                  "name": "Asphodelos: The First Circle",
+                  "tag": "P1 · 6.05"
+                },
+                {
+                  "name": "Asphodelos: The Second Circle",
+                  "tag": "P2 · 6.05"
+                },
+                {
+                  "name": "Asphodelos: The Third Circle",
+                  "tag": "P3 · 6.05"
+                },
+                {
+                  "name": "Asphodelos: The Fourth Circle",
+                  "tag": "P4 · Hesperos · 6.05"
+                },
+                {
+                  "name": "Abyssos: The Fifth Circle",
+                  "tag": "P5 · 6.2"
+                },
+                {
+                  "name": "Abyssos: The Sixth Circle",
+                  "tag": "P6 · 6.2"
+                },
+                {
+                  "name": "Abyssos: The Seventh Circle",
+                  "tag": "P7 · 6.2"
+                },
+                {
+                  "name": "Abyssos: The Eighth Circle",
+                  "tag": "P8 · Hephaistos · 6.2"
+                },
+                {
+                  "name": "Anabaseios: The Ninth Circle",
+                  "tag": "P9 · 6.4"
+                },
+                {
+                  "name": "Anabaseios: The Tenth Circle",
+                  "tag": "P10 · 6.4"
+                },
+                {
+                  "name": "Anabaseios: The Eleventh Circle",
+                  "tag": "P11 · 6.4"
+                },
+                {
+                  "name": "Anabaseios: The Twelfth Circle",
+                  "tag": "P12 · Athena · 6.4"
+                }
+              ]
+            },
+            {
+              "id": "ew-rai-ult",
+              "title": "Ultimate Raids (high-end)",
+              "quests": [
+                {
+                  "name": "Dragonsong's Reprise",
+                  "tag": "DSR · Lv 90 · 6.11"
+                },
+                {
+                  "name": "The Omega Protocol",
+                  "tag": "TOP · Lv 90 · 6.31"
+                }
+              ]
+            }
+          ],
+          "structured": true
+        }
+      ]
+    },
+    {
+      "id": "dt",
+      "accent": "dt",
+      "num": "7.0 — Tural",
+      "emName": "Dawn<em>trail</em>",
+      "tagline": "A new continent. A new saga. The Promise of Tomorrow.",
+      "categories": [
+        {
+          "id": "dt-cat-msq",
+          "label": "Quests",
+          "sections": [
+            {
+              "id": "dt-base-p1",
+              "title": "Dawntrail (7.0) — Part 1",
+              "note": "Lv 90 → 95",
+              "quests": [
+                "A New World to Explore",
+                "The Nation of Tuliyollal",
+                "A City of Stairs",
+                "A Saga in Stone",
+                "The Rite of Succession",
+                "To Kozama'uka",
+                "A Festive People",
+                "The Feat of Reeds",
+                "A Well-mannered Shipwright",
+                "The Lifting of Wings",
+                "Knowing the Hanuhanu",
+                "To Urqopacha",
+                "Traders of Happiness",
+                "The Feat of Gold",
+                "Mablu's Dream",
+                "A Premium Deal",
+                "Wuk Lamat in the Saddle",
+                "Knowing the Pelupelu",
+                "The Success of Others",
+                "For All Turali",
+                "A Leaking Workpot",
+                "Lending a Helphand",
+                "The Feat of Pots",
+                "A Father First",
+                "The Shape of Peace",
+                "Lost Promise",
+                "A Brother's Duty",
+                "Feeding the River",
+                "Sibling Rescue",
+                "History's Keepers",
+                "The Feat of Proof",
+                "The High Luminary",
+                "An Echo of Madness",
+                "Pointing the Way",
+                "The Skyruin",
+                "The Feat of Ice",
+                "The Promise of Peace",
+                "The Leap to Yak T'el",
+                "Village of the Hunt",
+                "A History of Violence",
+                "The Feat of Repast",
+                "A Father's Grief",
+                "Taking a Stand",
+                "Into the Traverse",
+                "City of Silence",
+                "Blessed Siblings",
+                "Scale of Trust",
+                "Mamook Speaks",
+                "The Feat of the Brotherhood",
+                "Road to the Golden City"
+              ]
+            },
+            {
+              "id": "dt-base-p2",
+              "title": "Dawntrail (7.0) — Part 2",
+              "note": "Lv 95 → 100",
+              "quests": [
+                "Dawn of a New Tomorrow",
+                "Ever Greater, Ever Brighter",
+                "The Long Road to Xak Tural",
+                "Saddled Up",
+                "Braced for Trouble",
+                "Blowing Smoke",
+                "Law of the Land",
+                "On Track",
+                "One with Nature",
+                "And the Land Would Tremble",
+                "No Time for Tears",
+                "Pick Up the Pieces",
+                "Together as One",
+                "In Yyasulani's Shadow",
+                "Putting Plans into Locomotion",
+                "A Hot Commodity",
+                "All Aboard",
+                "The Land of Levin",
+                "A Royal Welcome",
+                "A Day in the Life",
+                "On the Cloud",
+                "Gone and Forgotten",
+                "Embracing Oblivion",
+                "Solution Nine",
+                "The Queen's Tour",
+                "Her People, Her Family",
+                "Scales of Blue",
+                "Gives You Teeth",
+                "Little Footfalls",
+                "Drowned Vestiges",
+                "Memories of a Knight",
+                "At a Crossroads",
+                "The Protector and the Destroyer",
+                "A Comforting Hand",
+                "Unto the Summit",
+                "The Resilient Son",
+                "A New Family",
+                "In Pursuit of Sphene",
+                "Through the Gate of Gold",
+                "Those Who Live Forever",
+                "In Serenity and Sorrow",
+                "The Land of Dreams",
+                "A Knight of Alexandria",
+                "The Sanctuary of the Strong",
+                "The Taste of Family",
+                "Leafing through the Past",
+                "An Explorer's Delight",
+                "In Search of Discovery",
+                "A Journey Neverending",
+                "Dawntrail"
+              ]
+            },
+            {
+              "id": "dt-71",
+              "title": "Patch 7.1 — Crossroads",
+              "quests": [
+                "A Royal Invitation",
+                "Alexandria Mourns",
+                "In Search of the Past",
+                "Among the Abandoned",
+                "Guidance of the Hhetso",
+                "The Warmth of Family",
+                "Crossroads"
+              ]
+            },
+            {
+              "id": "dt-72",
+              "title": "Patch 7.2 — Seekers of Eternity",
+              "quests": [
+                "A Glimmer of the Past",
+                "Memories of a Bygone Age",
+                "In Search of Meaning",
+                "A Jewel Shattered",
+                "The Meeting",
+                "Descent to the Foundation",
+                "Shared Paths",
+                "Seekers of Eternity"
+              ]
+            },
+            {
+              "id": "dt-73",
+              "title": "Patch 7.3 — The Promise of Tomorrow",
+              "quests": [
+                "Targeted Tragedy",
+                "The Endless Choice",
+                "My Memories and Yours",
+                "A Darkness in the Heart",
+                "Preservation their Purpose",
+                "A Calculated Evolution",
+                "One of Our Own",
+                "A Terminal Invitation",
+                "Blades in Waiting",
+                "The Promise of Tomorrow"
+              ]
+            },
+            {
+              "id": "dt-74",
+              "title": "Patch 7.4 — Into the Mist",
+              "quests": [
+                "With the Winds",
+                "Through the Thunder",
+                "Beyond the Mountains",
+                "Around the City",
+                "To Work",
+                "In Her Heart",
+                "Toward Trouble",
+                "Where We Call Home",
+                "Into the Mist"
+              ]
+            },
+            {
+              "id": "dt-75",
+              "title": "Patch 7.5 — Trail to the Heavens, Part I",
+              "quests": [
+                "In Fate's Footsteps",
+                "Two Worlds Entwined",
+                "A Grave Presentiment",
+                "A Beacon from Beyond",
+                "Trail to the Heavens"
+              ]
+            }
+          ],
+          "isMsq": true
+        },
+        {
+          "id": "dt-cat-dun",
+          "label": "Dungeons",
+          "sections": [
+            {
+              "id": "dt-dun-lvl",
+              "title": "Leveling Dungeons (91–100)",
+              "quests": [
+                {
+                  "name": "Ihuykatumu",
+                  "tag": "Lv 91 · MSQ"
+                },
+                {
+                  "name": "Worqor Zormor",
+                  "tag": "Lv 93 · MSQ"
+                },
+                {
+                  "name": "The Skydeep Cenote",
+                  "tag": "Lv 95 · MSQ"
+                },
+                {
+                  "name": "Vanguard",
+                  "tag": "Lv 97 · MSQ"
+                },
+                {
+                  "name": "Origenics",
+                  "tag": "Lv 99 · MSQ"
+                }
+              ]
+            },
+            {
+              "id": "dt-dun-100",
+              "title": "Level 100 Dungeons",
+              "quests": [
+                {
+                  "name": "Alexandria",
+                  "tag": "MSQ · 7.0"
+                },
+                {
+                  "name": "The Strayborough Deadwalk",
+                  "tag": "7.0"
+                },
+                {
+                  "name": "Tender Valley",
+                  "tag": "7.0"
+                },
+                {
+                  "name": "Yuweyawata Field Station",
+                  "tag": "7.1"
+                },
+                {
+                  "name": "The Underkeep",
+                  "tag": "7.2"
+                },
+                {
+                  "name": "The Meso Terminal",
+                  "tag": "7.3"
+                },
+                {
+                  "name": "Mistwake",
+                  "tag": "7.4"
+                },
+                {
+                  "name": "The Clyteum",
+                  "tag": "7.5"
+                }
+              ]
+            }
+          ],
+          "structured": true
+        },
+        {
+          "id": "dt-cat-tri",
+          "label": "Trials",
+          "sections": [
+            {
+              "id": "dt-tri-msq",
+              "title": "Story Trials",
+              "quests": [
+                {
+                  "name": "Worqor Lar Dor",
+                  "tag": "MSQ · 7.0"
+                },
+                {
+                  "name": "Everkeep",
+                  "tag": "MSQ · 7.0"
+                },
+                {
+                  "name": "The Interphos",
+                  "tag": "MSQ · 7.0 · final"
+                },
+                {
+                  "name": "Recollection",
+                  "tag": "MSQ · 7.2"
+                },
+                {
+                  "name": "The Ageless Necropolis",
+                  "tag": "MSQ · 7.3"
+                },
+                {
+                  "name": "Hell on Rails",
+                  "tag": "MSQ · 7.4"
+                },
+                {
+                  "name": "The Unmaking",
+                  "tag": "MSQ · 7.5"
+                }
+              ]
+            },
+            {
+              "id": "dt-tri-ex",
+              "title": "Extreme Trials",
+              "quests": [
+                {
+                  "name": "Worqor Lar Dor (Extreme)",
+                  "tag": "7.0"
+                },
+                {
+                  "name": "Everkeep (Extreme)",
+                  "tag": "7.0"
+                },
+                {
+                  "name": "The Minstrel's Ballad: Sphene's Burden",
+                  "tag": "7.1"
+                },
+                {
+                  "name": "Recollection (Extreme)",
+                  "tag": "7.2"
+                },
+                {
+                  "name": "The Ageless Necropolis (Extreme)",
+                  "tag": "7.3"
+                },
+                {
+                  "name": "Hell on Rails (Extreme)",
+                  "tag": "7.4"
+                },
+                {
+                  "name": "The Unmaking (Extreme)",
+                  "tag": "7.5"
+                }
+              ]
+            }
+          ],
+          "structured": true
+        },
+        {
+          "id": "dt-cat-rai",
+          "label": "Raids",
+          "sections": [
+            {
+              "id": "dt-rai-vd",
+              "title": "Echoes of Vana'diel (Alliance)",
+              "quests": [
+                {
+                  "name": "Jeuno: The First Walk",
+                  "tag": "24-player · 7.1"
+                },
+                {
+                  "name": "San d'Oria: The Second Walk",
+                  "tag": "24-player · 7.2"
+                },
+                {
+                  "name": "Windurst: The Third Walk",
+                  "tag": "24-player · 7.3"
+                }
+              ]
+            },
+            {
+              "id": "dt-rai-aac",
+              "title": "The Arcadion — Normal (8-player)",
+              "quests": [
+                {
+                  "name": "AAC Light-heavyweight M1",
+                  "tag": "Normal · 7.0"
+                },
+                {
+                  "name": "AAC Light-heavyweight M2",
+                  "tag": "Normal · 7.0"
+                },
+                {
+                  "name": "AAC Light-heavyweight M3",
+                  "tag": "Normal · 7.0"
+                },
+                {
+                  "name": "AAC Light-heavyweight M4",
+                  "tag": "Normal · 7.0"
+                },
+                {
+                  "name": "AAC Cruiserweight M5",
+                  "tag": "Normal · 7.2"
+                },
+                {
+                  "name": "AAC Cruiserweight M6",
+                  "tag": "Normal · 7.2"
+                },
+                {
+                  "name": "AAC Cruiserweight M7",
+                  "tag": "Normal · 7.2"
+                },
+                {
+                  "name": "AAC Cruiserweight M8",
+                  "tag": "Normal · 7.2"
+                },
+                {
+                  "name": "AAC Heavyweight M9",
+                  "tag": "Normal · 7.4"
+                },
+                {
+                  "name": "AAC Heavyweight M10",
+                  "tag": "Normal · 7.4"
+                },
+                {
+                  "name": "AAC Heavyweight M11",
+                  "tag": "Normal · 7.4"
+                },
+                {
+                  "name": "AAC Heavyweight M12",
+                  "tag": "Normal · 7.4"
+                }
+              ]
+            },
+            {
+              "id": "dt-rai-sav",
+              "title": "The Arcadion — Savage (8-player)",
+              "quests": [
+                {
+                  "name": "AAC Light-heavyweight M1 (Savage)",
+                  "tag": "Savage · 7.05"
+                },
+                {
+                  "name": "AAC Light-heavyweight M2 (Savage)",
+                  "tag": "Savage · 7.05"
+                },
+                {
+                  "name": "AAC Light-heavyweight M3 (Savage)",
+                  "tag": "Savage · 7.05"
+                },
+                {
+                  "name": "AAC Light-heavyweight M4 (Savage)",
+                  "tag": "Savage · 7.05"
+                },
+                {
+                  "name": "AAC Cruiserweight M5 (Savage)",
+                  "tag": "Savage · 7.2"
+                },
+                {
+                  "name": "AAC Cruiserweight M6 (Savage)",
+                  "tag": "Savage · 7.2"
+                },
+                {
+                  "name": "AAC Cruiserweight M7 (Savage)",
+                  "tag": "Savage · 7.2"
+                },
+                {
+                  "name": "AAC Cruiserweight M8 (Savage)",
+                  "tag": "Savage · 7.2"
+                },
+                {
+                  "name": "AAC Heavyweight M9 (Savage)",
+                  "tag": "Savage · 7.4"
+                },
+                {
+                  "name": "AAC Heavyweight M10 (Savage)",
+                  "tag": "Savage · 7.4"
+                },
+                {
+                  "name": "AAC Heavyweight M11 (Savage)",
+                  "tag": "Savage · 7.4"
+                },
+                {
+                  "name": "AAC Heavyweight M12 (Savage)",
+                  "tag": "Savage · 7.4"
+                }
+              ]
+            },
+            {
+              "id": "dt-rai-ult",
+              "title": "High-end Raids",
+              "quests": [
+                {
+                  "name": "Cloud of Darkness (Chaotic)",
+                  "tag": "Chaotic · 7.1"
+                },
+                {
+                  "name": "Futures Rewritten (Ultimate)",
+                  "tag": "Ultimate · 7.2"
+                }
+              ]
+            }
+          ],
+          "structured": true
+        }
+      ]
+    }
+  ],
+  "guides": {
+    "arr": {
+      "dungeons": [
+        {
+          "id": "arr-gdun-lvl",
+          "title": "Leveling Dungeons (15–47)",
+          "dungeons": [
+            {
+              "id": "arr-gdun-0",
+              "name": "Sastasha",
+              "tag": "Lv 15 · MSQ",
+              "bosses": [
+                {
+                  "name": "Chopper",
+                  "tip": "Avoid Charged Whisker — inflicts Paralysis on hit."
+                },
+                {
+                  "name": "Captain Madison",
+                  "tip": "Fought twice; spawns adds at 50% HP in the second encounter. Sandslinger inflicts accuracy penalties."
+                },
+                {
+                  "name": "Denn the Orcatoothed",
+                  "tip": "Hydroball is a conal AoE that Silences — keep the boss faced away from the party. Adds spawn from arena grates; ignore them and focus the boss."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-1",
+              "name": "The Tam-Tara Deepcroft",
+              "tag": "Lv 16 · MSQ",
+              "bosses": [
+                {
+                  "name": "Void Soulcounter",
+                  "tip": "Encountered three times. Enthunder adds lightning damage; dodge the Dark Orb and Condemnation conal AoEs."
+                },
+                {
+                  "name": "Galvanth the Dominator",
+                  "tip": "Summons waves of adds that must be killed to make the boss vulnerable again. Mind Blast paralyses — avoid the AoE. Drain Touch heals the boss while damaging the tank."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-2",
+              "name": "Copperbell Mines",
+              "tag": "Lv 17 · MSQ",
+              "bosses": [
+                {
+                  "name": "Kottos",
+                  "tip": "Grand Slam is a tankbuster; dodge Lumbering Leap circular AoEs by moving to the arena edges."
+                },
+                {
+                  "name": "Ichorous Ire",
+                  "tip": "Splits into multiple Ichorous Drips at 50% HP — each casts Burst (circle AoE). Spread out and kill the drips quickly."
+                },
+                {
+                  "name": "Gyges the Great",
+                  "tip": "Gigantic Swing is a donut AoE — move into the boss hitbox to dodge it. Gigantic Smash adds further AoE patterns; Grand Slam is a tankbuster."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-3",
+              "name": "Halatali",
+              "tag": "Lv 20 · optional",
+              "bosses": [
+                {
+                  "name": "Firemane",
+                  "tip": "Casts two sets of four directional fire cones — watch positioning carefully and move between the gaps."
+                },
+                {
+                  "name": "Thunderclap Guivre",
+                  "tip": "Move to safe zones immediately when the water crackles with electricity to avoid the devastating room-wide AoE."
+                },
+                {
+                  "name": "Pit Peiste",
+                  "tip": "Optional boss spawned by treasure chests. Commonly skipped — spawns Rudis Beak adds."
+                },
+                {
+                  "name": "Tangata",
+                  "tip": "Destroy spawned wisps before they reach the boss or they grant a fire immunity shield. Multi-stage AoE attacks follow the shield phase."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-4",
+              "name": "The Thousand Maws of Toto-Rak",
+              "tag": "Lv 24 · MSQ",
+              "bosses": [
+                {
+                  "name": "Coeurl O' Nine Tails",
+                  "tip": "Encountered twice. Acid Mist poisons the entire party — manage the debuff carefully across both fights."
+                },
+                {
+                  "name": "Graffias",
+                  "tip": "Toxic puddles slow players; explosive pod adds spawn throughout. At 50% the tail becomes a separate target — destroying it grants temporary boss vulnerability and summons more enemies."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-5",
+              "name": "Haukke Manor",
+              "tag": "Lv 28 · MSQ",
+              "bosses": [
+                {
+                  "name": "Manor Claviger",
+                  "tip": "Sweet Steel is an untelegraphed cone AoE — tank faces boss away from party. Stun the boss to cancel the room-wide Dark Mist spell."
+                },
+                {
+                  "name": "Manor Jester & Manor Steward",
+                  "tip": "Kill the Jester first (higher damage output). Stun the Steward's large Soul Drain AoE."
+                },
+                {
+                  "name": "Lady Amandine",
+                  "tip": "Seduce debuff forces you to walk toward her while adds use gaze attacks — look away to avoid the damage. Interrupt her interruptible spells."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-6",
+              "name": "Brayflox's Longstop",
+              "tag": "Lv 32 · MSQ",
+              "bosses": [
+                {
+                  "name": "Great Yellow Pelican",
+                  "tip": "Spawns poisonous adds periodically. Cone attacks inflict paralysis — use cleanses."
+                },
+                {
+                  "name": "Inferno Drake",
+                  "tip": "An add spawns at 75% HP. Brayflox periodically enrages and performs a cleave — interrupt it."
+                },
+                {
+                  "name": "Hellbender",
+                  "tip": "Circular AoEs target random players. Party members trapped in bubbles need the add killed to be freed."
+                },
+                {
+                  "name": "Aiatar",
+                  "tip": "Tankbuster applies poison. Toxic pods grow and explode — destroy them quickly. Line AoEs target random members."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-7",
+              "name": "The Sunken Temple of Qarn",
+              "tag": "Lv 35 · optional",
+              "bosses": [
+                {
+                  "name": "Teratotaur",
+                  "tip": "Step on glowing plates when Mortal Ray (doom) is applied to remove the debuff before it kills you."
+                },
+                {
+                  "name": "Temple Guardian",
+                  "tip": "Destroy the Golem Soulstone add immediately — it stuns the boss and makes it vulnerable."
+                },
+                {
+                  "name": "Adjudicator",
+                  "tip": "Mythril Verge adds gain haste stacks — kill them quickly. Avoid Dark II conal AoEs and break free from bind chains."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-8",
+              "name": "Cutter's Cry",
+              "tag": "Lv 38 · optional",
+              "bosses": [
+                {
+                  "name": "Myrmidon Princess",
+                  "tip": "Spawns adds periodically. Dodge Stone II circle AoEs and the frontal Mandible Bite cone."
+                },
+                {
+                  "name": "Giant Tunnel Worm",
+                  "tip": "Watch for Sand Pillar ground hazards when burrowed. Bottomless Desert pulls the group when the worm resurfaces."
+                },
+                {
+                  "name": "Chimera",
+                  "tip": "Watch eye colour changes — Dragon's Voice: move in (dodge donut AoE); Ram's Voice: move away (dodge point-blank AoE). Do not rely solely on ground indicators."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-9",
+              "name": "The Stone Vigil",
+              "tag": "Lv 41 · MSQ",
+              "bosses": [
+                {
+                  "name": "Chudo-Yudo",
+                  "tip": "Stand behind the dragon at all times to avoid frontal breath attacks that inflict Silence and Pacification."
+                },
+                {
+                  "name": "Koshchei",
+                  "tip": "Reposition into safe zones to avoid tornadoes moving in straight lines — the pattern shifts after the first cast."
+                },
+                {
+                  "name": "Isgebind",
+                  "tip": "Avoid glowing blue zones during frost breath. Dodge circular AoEs and the Touchdown attack after aerial phases."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-10",
+              "name": "Dzemael Darkhold",
+              "tag": "Lv 44 · optional",
+              "bosses": [
+                {
+                  "name": "All-seeing Eye",
+                  "tip": "Dodge sequential circular AoEs — move to the centre then back out as each wave activates."
+                },
+                {
+                  "name": "Taulurd",
+                  "tip": "Untargetable adds on elevated platforms perform ranged attacks. Cone AoEs intensify as HP drops."
+                },
+                {
+                  "name": "Batraal",
+                  "tip": "Destroy crystals throughout the fight. Desolation column attacks are lethal — keep moving and prioritise crystal destruction."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-11",
+              "name": "The Aurum Vale",
+              "tag": "Lv 47 · optional",
+              "bosses": [
+                {
+                  "name": "Locksmith",
+                  "tip": "Gold Lung stacks cannot be cleansed by Esuna — interact with Morbol Fruits scattered in the arena to remove stacks."
+                },
+                {
+                  "name": "Coincounter",
+                  "tip": "One-hand attack is a cone; two-hand is a circular AoE — both can be interrupted."
+                },
+                {
+                  "name": "Miser's Mistress",
+                  "tip": "Face away from non-tanks. At 50% HP, five Morbol Fruits spawn — destroy them immediately before they hatch into adds that apply stacking debuffs."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "arr-gdun-50",
+          "title": "Level 50 Dungeons",
+          "dungeons": [
+            {
+              "id": "arr-gdun-50-0",
+              "name": "Castrum Meridianum",
+              "tag": "MSQ · 2.0",
+              "bosses": [
+                {
+                  "name": "The Black Eft",
+                  "tip": "Summons imperial soldier adds. Magitek Cannon targets random players with heavy damage."
+                },
+                {
+                  "name": "Magitek Vanguard F-1",
+                  "tip": "Hypercharge leaves only a small safe zone — reposition quickly. Overcharge inflicts Paralysis."
+                },
+                {
+                  "name": "Livia sas Junius",
+                  "tip": "Infinite Reach uses sequential line and circle AoEs — memorise the pattern. Artificial Plasma phase intensifies at low HP."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-50-1",
+              "name": "The Praetorium",
+              "tag": "MSQ · 2.0",
+              "bosses": [
+                {
+                  "name": "Mark II Magitek Colossus",
+                  "tip": "Ceruleum Vent deals unavoidable raid-wide damage — healers keep the party topped. Dodge moving circle and cone AoEs."
+                },
+                {
+                  "name": "Nero tol Scaeva",
+                  "tip": "Stay away from the electrified arena perimeter. Manage stack markers and dodge knockback attacks while handling adds."
+                },
+                {
+                  "name": "Gaius van Baelsar",
+                  "tip": "Heavy tankbusters and raid-wide damage. At low HP he summons four phantoms — burn them down. His energy bar reaching 100% is an instant party wipe."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-50-2",
+              "name": "The Wanderer's Palace",
+              "tag": "2.0",
+              "bosses": [
+                {
+                  "name": "Keeper of Halidom",
+                  "tip": "Do not stand in front — Beatdown and Moldy Sneeze hit hard. Inhale pulls players inward; manage spread carefully."
+                },
+                {
+                  "name": "Giant Bavarois",
+                  "tip": "Continuously spawns coloured adds. Purple (Paralysis) and White (Heavy) variants are most dangerous — kill quickly."
+                },
+                {
+                  "name": "Tonberry King",
+                  "tip": "Stay within melee range of the boss to avoid Scourge of Nym. Everybody's Grudge damage escalates with each Tonberry add absorbed — minimise stacks."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-50-3",
+              "name": "Amdapor Keep",
+              "tag": "2.0",
+              "bosses": [
+                {
+                  "name": "Lunatic Priest & Psycheflayer",
+                  "tip": "Psycheflayer spawns at 50% HP — dodge Void Fire II circles and kill its summoned adds immediately."
+                },
+                {
+                  "name": "Demon Wall",
+                  "tip": "Alternates column attack patterns between centre and sides. Position correctly before Repel's knockback deals heavy damage."
+                },
+                {
+                  "name": "Anantaboga",
+                  "tip": "Position at the flanks to avoid front and rear cone debuff attacks. Use environmental statues for cover against orb abilities."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-50-4",
+              "name": "Copperbell Mines (Hard)",
+              "tag": "2.1",
+              "bosses": [
+                {
+                  "name": "Hecatoncheir Mastermind",
+                  "tip": "Darkfire spawns Flambeaus every 45–60 s — kill them immediately or they explode and wipe the party."
+                },
+                {
+                  "name": "Gogmagolem & Biggy",
+                  "tip": "Use the Improved Blasting Device to place a Waymaker Bomb in the boss's path. Biggy emerges on defeat — avoid large explosive detonations."
+                },
+                {
+                  "name": "Ouranos",
+                  "tip": "When a Sand Worm appears, grab a Crystallised Rock from the arena edge and place it to distract the creature before it pulls the group."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-50-5",
+              "name": "Haukke Manor (Hard)",
+              "tag": "2.2",
+              "bosses": [
+                {
+                  "name": "Manor Jester",
+                  "tip": "Void Blizzard damages and applies Slow — cleanse debuffs and kill spawning adds while dodging ice patches."
+                },
+                {
+                  "name": "Ash",
+                  "tip": "Avoid glowing spirit-cutter cleaves. Abyssal Transfixion inflicts Paralysis."
+                },
+                {
+                  "name": "Halicarnassus",
+                  "tip": "DPS race — add absorptions at full HP trigger unavoidable lethal damage. Kill the boss before the third Beguiling Mist or the charm mechanic overwhelms the party."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-50-6",
+              "name": "Pharos Sirius",
+              "tag": "2.2",
+              "bosses": [
+                {
+                  "name": "Symond the Unsinkable",
+                  "tip": "Corrupting Crystal stacks explode at three — burn adds quickly and avoid puddle AoEs."
+                },
+                {
+                  "name": "Zu",
+                  "tip": "Only kill one egg when prompted — destroying multiple triggers a devastating bodyslam that wipes the party."
+                },
+                {
+                  "name": "Tyrant",
+                  "tip": "Tank picks up Sailor adds; AoE them alongside the boss or simply burn the boss down quickly."
+                },
+                {
+                  "name": "Siren",
+                  "tip": "Siren Song gives 12 seconds to be healed to full HP or the player turns on allies. Boss gains a healing-reduction buff at low HP — adjust output accordingly."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-50-7",
+              "name": "The Lost City of Amdapor",
+              "tag": "2.3",
+              "bosses": [
+                {
+                  "name": "Decaying Gourmand",
+                  "tip": "Devour marks and swallows a player — defeat the Voracious Maw add to free them. Cleanse poison stacks from room-wide attacks."
+                },
+                {
+                  "name": "Arioch",
+                  "tip": "Kill Ranch Wamoura adds — their Scale Flakes debuff stacks make the boss targetable. Dodge large cone and room-wide AoEs plus expanding poison puddles."
+                },
+                {
+                  "name": "Diabolos",
+                  "tip": "Open matching door pairs (matching symbols) to teleport and manage Diabolic Curse stacks. Too many stacks leads to wipes — coordinate door positioning."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-50-8",
+              "name": "Halatali (Hard)",
+              "tag": "2.3",
+              "bosses": [
+                {
+                  "name": "Pyracmon",
+                  "tip": "Pull the lever to gain the Manawall buff before the boss's 1000 Tonze Swing — without it the attack is lethal."
+                },
+                {
+                  "name": "Catoblepas",
+                  "tip": "Activate pedestals to gain the Gloam buff for Demonic Eye protection. DPS the exposed eye before it turns red and stacks debuffs on the party."
+                },
+                {
+                  "name": "Four Gladiators",
+                  "tip": "Prioritise the healer first, then the bard, then the remaining fighters while managing their individual mechanics."
+                },
+                {
+                  "name": "Mumuepo & Narasimha",
+                  "tip": "Find the lever when Mumuepo casts chains to free allies. After Mumuepo falls, Narasimha uses basic tail swipes and AoEs."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-50-9",
+              "name": "Brayflox's Longstop (Hard)",
+              "tag": "2.4",
+              "bosses": [
+                {
+                  "name": "Illuminati Commander",
+                  "tip": "Illuminati Sniper adds tether to a player and deal continuous damage — kill them fast. Dodge spiked bombs and circle AoEs."
+                },
+                {
+                  "name": "Magitek Vangob G-III",
+                  "tip": "Ceruleum puddles explode when triggered — tank positions boss away from liquid pools. Kill adds and dodge line AoEs and charge attacks."
+                },
+                {
+                  "name": "Gobmachine G-VI",
+                  "tip": "At ~75/50/25% HP the boss circles the room untargetable — kill spawned adds and disperse bombs. Resume damage when it becomes targetable again."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-50-10",
+              "name": "Hullbreaker Isle",
+              "tag": "2.4",
+              "bosses": [
+                {
+                  "name": "Sasquatch",
+                  "tip": "Feed the boss bananas from interactive trees to interrupt chest-pounding arena-wide damage. Prevent monkey adds from eating the fruit first."
+                },
+                {
+                  "name": "Sjoorm",
+                  "tip": "Get inside a protective bubble to survive the room-wide whirlpool attack. Avoid targeted water puddles between casts."
+                },
+                {
+                  "name": "Kraken",
+                  "tip": "Destroy all ten arms across multiple platforms — use waterspouts to travel between them. Players marked with tornadoes must relocate immediately to prevent massive explosions."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-50-11",
+              "name": "The Wanderer's Palace (Hard)",
+              "tag": "2.4",
+              "bosses": [
+                {
+                  "name": "Frumious Koheel Ja",
+                  "tip": "Destroy burning spears thrown into the ground immediately — they apply stacking debuffs to the whole party."
+                },
+                {
+                  "name": "Slithy Zolool Ja",
+                  "tip": "Identify which coloured totem applies which effect and claim them — unclaimed totems buff the boss."
+                },
+                {
+                  "name": "Manxome Molaa Ja Ja",
+                  "tip": "Tank constantly repositions boss away from its dropped banners (damage/defence buffs). Stay close to avoid cone AoE; spread for the rotting gas mechanic."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-50-12",
+              "name": "Snowcloak",
+              "tag": "MSQ · 2.4",
+              "bosses": [
+                {
+                  "name": "Wandil",
+                  "tip": "Frozen debuff stacks to four and causes Deep Freeze stun — destroy Frost Bombs to reduce incoming pressure."
+                },
+                {
+                  "name": "Yeti",
+                  "tip": "Updrift launches players before point-blank and donut AoEs — anticipate the follow-up pattern. Avoid the snowball breath."
+                },
+                {
+                  "name": "Fenrir",
+                  "tip": "Lunar Cry drops icicles in a diamond pattern — hide behind the correct one or it's instant death. Alternates between tankbusters and party-wide hits."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-50-13",
+              "name": "The Sunken Temple of Qarn (Hard)",
+              "tag": "2.5",
+              "bosses": [
+                {
+                  "name": "Damaged Adjudicator",
+                  "tip": "Target the bright red core — the boss breaks apart and spawns adds. Move out of sand whirlpools or be pulled beneath the floor."
+                },
+                {
+                  "name": "Sabotender Emperatriz",
+                  "tip": "Deal enough damage to interrupt her devastating room-wide cast. Eliminate adds and dodge telegraphed circle AoEs throughout."
+                },
+                {
+                  "name": "Vicegerent to the Warden",
+                  "tip": "Avoid touching mummies — four stacks mummifies you and removes control. Dodge sword strikes by running behind the boss during its cast."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-50-14",
+              "name": "The Tam-Tara Deepcroft (Hard)",
+              "tag": "2.5",
+              "bosses": [
+                {
+                  "name": "Liavinne",
+                  "tip": "Kite zombie adds but do not attack them — the marked player runs into the horde to trigger the boss's own AoE that eliminates them."
+                },
+                {
+                  "name": "Spare Body",
+                  "tip": "Protect the NPC in the centre — intercept purple energy orbs from portals before they reach it, or the boss gains strength."
+                },
+                {
+                  "name": "Avere Bravearm",
+                  "tip": "Kill zombie adds crawling from the arena edges before they reach the centre circle — each arrival strengthens the boss's final attack."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-50-15",
+              "name": "Sastasha (Hard)",
+              "tag": "2.5",
+              "bosses": [
+                {
+                  "name": "Karlabos",
+                  "tip": "Remove Slime debuffs immediately. Prey marks a player for Tail Screw — cleanse or mitigate quickly."
+                },
+                {
+                  "name": "Captain Madison",
+                  "tip": "Sustain DPS through the gunfire phase. Multiple adds spawn at low HP — manage them before the fight concludes."
+                },
+                {
+                  "name": "Kraken",
+                  "tip": "Focus the boss and arms — ignore tentacles entirely. Healers cleanse Blind from AoE attacks."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-50-16",
+              "name": "Amdapor Keep (Hard)",
+              "tag": "2.5",
+              "bosses": [
+                {
+                  "name": "Anchag",
+                  "tip": "Hide behind statues to absorb tether AoE hits. The boss destroys statues with its rushing charge if they are in the way — reposition."
+                },
+                {
+                  "name": "Boogyman",
+                  "tip": "Kill the Luminescence orb, grab the buff, and use it to reveal the invisible boss before adds spawn from reanimated corpses."
+                },
+                {
+                  "name": "Ferdiad",
+                  "tip": "Kill tethered adds to stop his expanding circular AoE from consuming the arena. Free slimed players and reposition to avoid projectiles."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-50-17",
+              "name": "The Stone Vigil (Hard)",
+              "tag": "2.5",
+              "bosses": [
+                {
+                  "name": "Gorynich",
+                  "tip": "Prevent adds from reaching the boss — their death explosions grant dangerous buffs. Swinge and Lion's Breath are frontal; Rake is a tankbuster."
+                },
+                {
+                  "name": "Cuca Fera",
+                  "tip": "Operate the four arena cannons to damage the boss. Do not fire during Diamondback (reflects damage). Use Spindly Finger to interrupt Hard Stomp."
+                },
+                {
+                  "name": "Giruveganaus",
+                  "tip": "Dodge shoulder tackle, tail swipe, and claw combos. At 60% a clone appears and the boss gains fireball and fire breath — manage both carefully."
+                }
+              ]
+            },
+            {
+              "id": "arr-gdun-50-18",
+              "name": "The Keeper of the Lake",
+              "tag": "MSQ · 2.55",
+              "bosses": [
+                {
+                  "name": "Einhander",
+                  "tip": "Avoid exploding ceruleum tank blasts — two tanks glow in sequence via line AoE. Dodge the tankbuster."
+                },
+                {
+                  "name": "Magitek Gunship",
+                  "tip": "Dodge frontal flame attacks and circular bomb patterns. Kill spawned adds and step out of fire puddles."
+                },
+                {
+                  "name": "Midgardsormr",
+                  "tip": "Wide line attacks, donut AoEs, and untargetable dragon summons throughout. Defeat adds before the enrage charge wipes the party."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "trials": [
+        {
+          "id": "arr-gtri-story",
+          "title": "Story Trials",
+          "dungeons": [
+            {
+              "id": "arr-gtri-0",
+              "name": "The Bowl of Embers",
+              "tag": "Ifrit · Lv 20 · MSQ",
+              "bosses": [
+                {
+                  "name": "Phase 1–2",
+                  "tip": "Face Ifrit away from the party to avoid Incinerate cleave. Vulcan Burst is a knockback — stay near arena edges."
+                },
+                {
+                  "name": "Phase 3",
+                  "tip": "An Infernal Nail spawns — destroy it before Hellfire casts or the party wipes."
+                },
+                {
+                  "name": "Phase 4",
+                  "tip": "Radiant Plume creates centre or edge AoEs that erupt after a delay — read the pattern and reposition."
+                }
+              ]
+            },
+            {
+              "id": "arr-gtri-1",
+              "name": "The Navel",
+              "tag": "Titan · Lv 34 · MSQ",
+              "bosses": [
+                {
+                  "name": "Phases 1–3",
+                  "tip": "Stay away from the crumbling arena edges — Landslide is a frontal column that knocks players off. Stomps deal party-wide damage."
+                },
+                {
+                  "name": "Titan's Heart",
+                  "tip": "The boss becomes invulnerable — burst down the Heart quickly. Rock Tomb encases players; teammates must break them free before Earthen Fury fires."
+                },
+                {
+                  "name": "Final Phase",
+                  "tip": "Enhanced mechanics: falling rocks, double stomps, repeated Rock Tombs. Maintain positioning and stable healing."
+                }
+              ]
+            },
+            {
+              "id": "arr-gtri-2",
+              "name": "The Howling Eye",
+              "tag": "Garuda · Lv 44 · MSQ",
+              "bosses": [
+                {
+                  "name": "Phase 1",
+                  "tip": "Protect stone pillars — their remaining HP determines Aerial Blast's damage. Kill Razor Plume adds quickly. Hide behind pillars during Mistral Song."
+                },
+                {
+                  "name": "Phase 2",
+                  "tip": "Eye of the Storm restricts the arena to a centre safe zone. Dodge Mistral Shriek (move away) and seek cover for Mistral Song."
+                }
+              ]
+            },
+            {
+              "id": "arr-gtri-3",
+              "name": "Cape Westwind",
+              "tag": "MSQ · now solo instance",
+              "bosses": [
+                {
+                  "name": "Rhitahtyn sas Arvina",
+                  "tip": "Straightforward solo instance since patch 6.1. Dodge Shield Skewer frontal attacks and Shrapnel Shell ground AoEs — no group coordination required."
+                }
+              ]
+            },
+            {
+              "id": "arr-gtri-4",
+              "name": "The Porta Decumana",
+              "tag": "Ultima Weapon · MSQ · final boss",
+              "bosses": [
+                {
+                  "name": "Phase 1 — Titan",
+                  "tip": "Geocrush and Landslide are proximity and frontal AoEs — stay mid-range and dodge. Earthen Fury deals heavy raid damage; heal through it."
+                },
+                {
+                  "name": "Phase 1 — Garuda",
+                  "tip": "Stay in the arena centre to avoid Aerial Blast donut AoEs. Dodge her point-blank circle AoE placement."
+                },
+                {
+                  "name": "Phase 1 — Ifrit",
+                  "tip": "Hellfire and scattered circle AoEs — keep moving. Vulcan Burst knocks the tank; position away from the party."
+                },
+                {
+                  "name": "Phase 2 — Ultima Weapon",
+                  "tip": "Boss resets with new mechanics: homing lasers and multi-directional line AoEs. At ~30% use a tank Limit Break combined with the Neurolink puddle to survive the 'Ultima' wipe cast."
+                }
+              ]
+            },
+            {
+              "id": "arr-gtri-5",
+              "name": "The Chrysalis",
+              "tag": "Nabriales · MSQ · 2.5",
+              "bosses": [
+                {
+                  "name": "Phases 1–3",
+                  "tip": "Spread to absorb orbs and build vulnerability stacks on the boss. Tank swap during Double/Triple Spark phases — use Provoke and Shirk to share the damage."
+                },
+                {
+                  "name": "Meteor Phase",
+                  "tip": "Enter a new room with continuously falling meteors — only tanks intercept them. DPS must immediately destroy the spawning tear before the massive meteor wipes the party."
+                }
+              ]
+            },
+            {
+              "id": "arr-gtri-6",
+              "name": "The Steps of Faith",
+              "tag": "Vishap · MSQ · 2.55 · now solo",
+              "bosses": [
+                {
+                  "name": "First & Second Wards",
+                  "tip": "Defeat dragon adds while Vishap is untargetable. Avoid flame attacks down the arena centre and Earth Shaker frontal cones. Exaflares are untelegraphed line AoEs — keep moving."
+                },
+                {
+                  "name": "Third Ward",
+                  "tip": "Defeat Vishap before the Knights' Resolve gauge depletes. Earth Shaker now spawns three cones covering the full arena — position in previously safe zones."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "arr-gtri-hard",
+          "title": "Hard Mode",
+          "dungeons": [
+            {
+              "id": "arr-gtri-h0",
+              "name": "The Bowl of Embers (Hard)",
+              "tag": "Ifrit Hard · 2.0",
+              "bosses": [
+                {
+                  "name": "Phase 1–2",
+                  "tip": "Interrupt Eruption before it fires. Dodge Searing Wind (placed on healers) and Radiant Plume circle AoEs."
+                },
+                {
+                  "name": "Phase 3 — Nails",
+                  "tip": "Four Infernal Nails must all be destroyed before Hellfire — failing wipes the party."
+                },
+                {
+                  "name": "Phase 4",
+                  "tip": "Crimson Cyclone clones dash across the arena. Seven nails spawn; destroy all before the next Hellfire. Healer maintains Searing Wind positioning throughout."
+                }
+              ]
+            },
+            {
+              "id": "arr-gtri-h1",
+              "name": "The Howling Eye (Hard)",
+              "tag": "Garuda Hard · 2.0",
+              "bosses": [
+                {
+                  "name": "Phase 1",
+                  "tip": "Protect pillars from Friction and Wicked Wheel. Kill Razor Plumes to preserve pillar HP before Aerial Blast at 50%."
+                },
+                {
+                  "name": "Phase 2",
+                  "tip": "Kill Suparna and Chirada — priority the one with the green healing beam first, then the red damage-boosting beam. Eliminate the Satin Plume (Sleep caster); ignore regular Razor Plumes."
+                }
+              ]
+            },
+            {
+              "id": "arr-gtri-h2",
+              "name": "The Navel (Hard)",
+              "tag": "Titan Hard · 2.0",
+              "bosses": [
+                {
+                  "name": "Phases 1–3",
+                  "tip": "Landslide is a frontal column that knocks players off the arena — critical to dodge. Granite Gaol: DPS stand under Titan while healers run to the edges."
+                },
+                {
+                  "name": "Heart Phase",
+                  "tip": "Destroy Titan's Heart before the third Weight of the Land or wipe. Manage five-directional Landslide, Weight of the Land, and Bomb Boulder patterns simultaneously."
+                }
+              ]
+            },
+            {
+              "id": "arr-gtri-h3",
+              "name": "Thornmarch (Hard)",
+              "tag": "Moggle Mog · 2.1",
+              "bosses": [
+                {
+                  "name": "Mooglesguard",
+                  "tip": "Kill the healer (Kupli Kipp) and bard (Puksi Piko) first. Pukla Puki (BLM) summons meteors that must be intercepted. Pukna Pako (ROG) delivers tankbusters."
+                },
+                {
+                  "name": "Good King Moggle Mog XII",
+                  "tip": "The king summons untargetable Mooglesguard for devastating combo attacks. He can revive minions twice using his own HP — burn him down through the add waves."
+                }
+              ]
+            },
+            {
+              "id": "arr-gtri-h4",
+              "name": "A Relic Reborn: The Chimera",
+              "tag": "relic quest · 2.0",
+              "bosses": [
+                {
+                  "name": "Dhorme Chimera",
+                  "tip": "Dragon's Voice: move in (dodge donut AoE). Ram's Voice: move away (dodge point-blank AoE). Same mechanic as Cutter's Cry but in 8-player. Spread for Cacophony electrical AoEs."
+                }
+              ]
+            },
+            {
+              "id": "arr-gtri-h5",
+              "name": "A Relic Reborn: The Hydra",
+              "tag": "relic quest · 2.0",
+              "bosses": [
+                {
+                  "name": "Hydra",
+                  "tip": "Triumvirate is a massive frontal — both tanks must stack to share the damage. Stack close to the boss for Fear Itself to avoid the fear debuff. Avoid Mean Thrash rear AoE."
+                }
+              ]
+            },
+            {
+              "id": "arr-gtri-h6",
+              "name": "The Whorleater (Hard)",
+              "tag": "Leviathan · 2.2",
+              "bosses": [
+                {
+                  "name": "Phase 1",
+                  "tip": "Casters attack the head; ranged DPS attack the tail. Activate the Elemental Converter before Tidal Wave. Kill Wavespine Sahagins and Gyre Spumes."
+                },
+                {
+                  "name": "Phase 2",
+                  "tip": "Leviathan jumps the ship unpredictably. Wavetooth Sahagins cast dangerous AoE debuffs — kill them quickly. Maintain the head/tail targeting split."
+                }
+              ]
+            },
+            {
+              "id": "arr-gtri-h7",
+              "name": "Battle on the Big Bridge",
+              "tag": "Gilgamesh · 2.2",
+              "bosses": [
+                {
+                  "name": "Phase 1",
+                  "tip": "Toad turns players into toads chased by Enkidu. Minimum applies a heavy movement penalty. Confusion effects cause allies to attack each other — manage debuffs carefully."
+                },
+                {
+                  "name": "Phase 2",
+                  "tip": "Waves of adds between arenas — group and burn quickly before moving on."
+                },
+                {
+                  "name": "Phase 3",
+                  "tip": "Status effects now hit 2–8 players simultaneously. Giga Jump is a targeted leap. Avoid Whirlwinds on the ground while managing stacking debuffs."
+                }
+              ]
+            },
+            {
+              "id": "arr-gtri-h8",
+              "name": "The Striking Tree (Hard)",
+              "tag": "Ramuh · 2.3",
+              "bosses": [
+                {
+                  "name": "Ramuh",
+                  "tip": "Kill all three Grey Arbiter adds before Judgment Bolt wipes the party. Chaotic Strike immobilises — teammates break it by stepping into the AoE. Manage Rolling Thunder tether pairs."
+                }
+              ]
+            },
+            {
+              "id": "arr-gtri-h9",
+              "name": "The Akh Afah Amphitheatre (Hard)",
+              "tag": "Shiva · 2.4",
+              "bosses": [
+                {
+                  "name": "Phase 1",
+                  "tip": "Shiva cycles Sword/Staff/Unarmed stances. Sword: two tanks share Icebrand. Staff: spread for Hailstorm AoEs. Unarmed: face boss away — auto-attacks cleave."
+                },
+                {
+                  "name": "Ice Soldiers",
+                  "tip": "Stack the four adds centrally and AoE them down before Diamond Dust. Any survivors when it fires is a wipe."
+                },
+                {
+                  "name": "Phase 2",
+                  "tip": "Arena edges freeze players into boulders — allies destroy them. Permafrost freezes the floor — stop all movement. Icicle Impact v2: dodge into each new telegraph as the previous explodes."
+                }
+              ]
+            },
+            {
+              "id": "arr-gtri-h10",
+              "name": "The Dragon's Neck",
+              "tag": "Ultros & Typhon · 2.5",
+              "bosses": [
+                {
+                  "name": "Initial Phase",
+                  "tip": "Tank bosses separately. Ultros: dodge Megavolt (circle) and Aqua Breath (cone). Typhon: Grind is an untelegraphed tankbuster; knockback cones can push players off the arena."
+                },
+                {
+                  "name": "Imp Phases",
+                  "tip": "DPS transform into Imps — get hit by Aqua Breath twice for stacks, then punch Typhon to remove his Invigorate buff before Severe Snort fires a massive knockback. Repeat for the second Imp Phase."
+                },
+                {
+                  "name": "Final Phase",
+                  "tip": "No more transformations. Typhon uses FUNGAH (knockup) and a multi-hit Snort sequence. Ultros spawns tentacles doing line AoEs or cone knockbacks — watch both simultaneously."
+                }
+              ]
+            },
+            {
+              "id": "arr-gtri-h11",
+              "name": "Battle in the Big Keep",
+              "tag": "Gilgamesh · 2.5",
+              "bosses": [
+                {
+                  "name": "Phase 1 — Gilgamesh & Enkidu",
+                  "tip": "Focus Enkidu while tanks separate the pair — Enkidu heals Gilgamesh with White Wind if left alive. Chickened players run through Mini Tornadoes to clear them."
+                },
+                {
+                  "name": "Phase 2 — Gilgamesh Solo",
+                  "tip": "Kill three Dragon's Head adds before Dragonstrike hits. Move away during Giga Jump to avoid the Masamune follow-up charge. Move through him during Sword Dance to reduce damage."
+                }
+              ]
+            },
+            {
+              "id": "arr-gtri-h12",
+              "name": "Urth's Fount",
+              "tag": "Odin · 2.5",
+              "bosses": [
+                {
+                  "name": "Odin",
+                  "tip": "Position around the perimeter to avoid overlapping Hall of Stone AoEs. Cleanse Slow debuffs promptly. Tank swap on Sanngetall. Defeat Odin before Shin-Zantetsuken at ~15% HP or 6 minutes — it's a guaranteed wipe."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "arr-gtri-ex",
+          "title": "Extreme Trials",
+          "dungeons": [
+            {
+              "id": "arr-gtri-ex0",
+              "name": "The Minstrel's Ballad: Ultima's Bane",
+              "tag": "Ultima EX · 2.1",
+              "bosses": [
+                {
+                  "name": "Primal Phases",
+                  "tip": "Three sequential phases — dodge Garuda's Eye of the Storm, stack for Titan's Tank Purge, and dodge Ifrit's eruption runners and Crimson Cyclone charges."
+                },
+                {
+                  "name": "Aetheric Boon Phases",
+                  "tip": "Multiple orb phases — walk into designated orbs without letting them collide. Phase 3 requires two players per side to touch both orbs simultaneously or wipe."
+                },
+                {
+                  "name": "Magitek Phases",
+                  "tip": "Magitek Bits spam lasers while airships strike from cardinal directions — destroy bits from the safe centre zone before impacts land."
+                },
+                {
+                  "name": "Enrage",
+                  "tip": "Defeat Ultima before the 10-minute timer. Ultima wipes the entire party when the cast completes."
+                }
+              ]
+            },
+            {
+              "id": "arr-gtri-ex1",
+              "name": "The Howling Eye (Extreme)",
+              "tag": "Garuda EX · 2.1",
+              "bosses": [
+                {
+                  "name": "Phase 1",
+                  "tip": "Kill Satin Plume first — it Sleeps the entire party. Position behind pillars for Mistral Song."
+                },
+                {
+                  "name": "Phase 2",
+                  "tip": "Kill Chirada first, then Suparna. Stack centre for Reckoning. Too many destroyed pillars = wipe."
+                },
+                {
+                  "name": "Phases 3–4",
+                  "tip": "Kill Razor Plumes but keep the Spiny Plume alive — it applies Thermal Low stacks. Tank swap at two stacks (three stacks wipes the tank). Manage whirlwinds from safe corner positions."
+                }
+              ]
+            },
+            {
+              "id": "arr-gtri-ex2",
+              "name": "The Navel (Extreme)",
+              "tag": "Titan EX · 2.1",
+              "bosses": [
+                {
+                  "name": "Phases 1–2",
+                  "tip": "Tank at arena edge while party stacks for Weight of the Land. Landslide is lethal — face it away. Three-directional Landslides appear in Phase 2."
+                },
+                {
+                  "name": "Heart Phase",
+                  "tip": "Destroy the Heart before the third Weight of the Land. Dodge five-directional Landslide and Bomb Boulders simultaneously."
+                },
+                {
+                  "name": "Phase 4",
+                  "tip": "Kill Granite Gaoler adds while managing all previous mechanics. 10-minute soft enrage via escalating Upheaval knockbacks."
+                }
+              ]
+            },
+            {
+              "id": "arr-gtri-ex3",
+              "name": "The Bowl of Embers (Extreme)",
+              "tag": "Ifrit EX · 2.1",
+              "bosses": [
+                {
+                  "name": "Phase 1",
+                  "tip": "Keep healer with Searing Wind away from the party. Destroy four nails before Hellfire."
+                },
+                {
+                  "name": "Phase 2",
+                  "tip": "Seven nails. Navigate Crimson Cyclone clone dashes. Infernal Fetters link a DPS and off-tank."
+                },
+                {
+                  "name": "Phase 3",
+                  "tip": "Thirteen nails including one large central nail — may require LB3 to clear all before Hellfire."
+                },
+                {
+                  "name": "Phase 4",
+                  "tip": "No more nails. Burn Ifrit before the final Hellfire completes — guaranteed wipe."
+                }
+              ]
+            },
+            {
+              "id": "arr-gtri-ex4",
+              "name": "Thornmarch (Extreme)",
+              "tag": "Moggle Mog EX · 2.1",
+              "bosses": [
+                {
+                  "name": "Phase 1",
+                  "tip": "Learn the king's mechanics at reduced output — cone attacks drain MP; laser charges are telegraphed."
+                },
+                {
+                  "name": "Phases 2–3",
+                  "tip": "Interrupt the BLM Pukla Puki immediately to prevent a party wipe. Archer Kupqu Kogi has no enmity table — DPS must manage its floor AoEs. The king can revive minions twice."
+                },
+                {
+                  "name": "Enrage",
+                  "tip": "All enemies must die before the king completes Momento — instant party wipe if it finishes."
+                }
+              ]
+            },
+            {
+              "id": "arr-gtri-ex5",
+              "name": "The Whorleater (Extreme)",
+              "tag": "Leviathan EX · 2.2",
+              "bosses": [
+                {
+                  "name": "Phase 1",
+                  "tip": "Head reflects magic (Veil of the Whorl); tail reflects physical ranged (Mantle of the Whorl) — assign correct damage types. Briny Mirror stacks a healing-range restriction on one tank."
+                },
+                {
+                  "name": "Phase 2",
+                  "tip": "Platform railings break — Body Slam and Spinning Dive knockbacks are now lethal. Stay near the centre."
+                },
+                {
+                  "name": "Phase 3",
+                  "tip": "Additional enemy spawns. Maintain DPS to avoid soft enrage."
+                }
+              ]
+            },
+            {
+              "id": "arr-gtri-ex6",
+              "name": "The Striking Tree (Extreme)",
+              "tag": "Ramuh EX · 2.3",
+              "bosses": [
+                {
+                  "name": "Phase 1",
+                  "tip": "Dodge Thunderstorm AoE patterns. Chaotic Strike immobilises affected players — teammates break it by stepping into the AoE."
+                },
+                {
+                  "name": "Phase 2",
+                  "tip": "Six Grey Arbiter adds spawn — burst them immediately. Rolling Thunder tether pairs must collect lightning orbs to break the connection before damage becomes lethal."
+                }
+              ]
+            },
+            {
+              "id": "arr-gtri-ex7",
+              "name": "The Akh Afah Amphitheatre (Extreme)",
+              "tag": "Shiva EX · 2.4",
+              "bosses": [
+                {
+                  "name": "Phase 1",
+                  "tip": "All Hard mode stances plus new Bow Form. Staff tank gathers Ice Soldier adds centrally for AoE before Diamond Dust at 60 seconds."
+                },
+                {
+                  "name": "Phase 2",
+                  "tip": "Arena edges freeze players into boulders. Thin Ice causes uncontrolled sliding — stop all movement when it appears. Hard enrages at 11 Damage Up stacks."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "raids": [
+        {
+          "id": "arr-grai-ct",
+          "title": "Crystal Tower (Alliance)",
+          "dungeons": [
+            {
+              "id": "arr-grai-ct0",
+              "name": "Labyrinth of the Ancients",
+              "tag": "24-player · 2.1",
+              "bosses": [
+                {
+                  "name": "Bone Dragon",
+                  "tip": "Kill skeleton adds before they reach the boss — each arrival deals significant damage. The boss must be killed three times before it stays dead."
+                },
+                {
+                  "name": "Thanatos",
+                  "tip": "The party needs the Astral Realignment buff to damage the boss — tank swaps occur when the buff changes hands. Kill spawning adds throughout."
+                },
+                {
+                  "name": "King Behemoth",
+                  "tip": "Cover each glowing tower with one ranged DPS or healer. Hide behind meteors during Ecliptic Meteor — standing in the open means instant death."
+                },
+                {
+                  "name": "Phlegethon",
+                  "tip": "When Ancient Flare casts (~40–50% HP), each group moves immediately to its assigned platform — barriers form to block the damage. Insufficient players causes a wipe."
+                }
+              ]
+            },
+            {
+              "id": "arr-grai-ct1",
+              "name": "Syrcus Tower",
+              "tag": "24-player · 2.3",
+              "bosses": [
+                {
+                  "name": "Scylla",
+                  "tip": "Direct elemental balls (lightning/ice/flame) to the correct pillars. Stand in water puddles for fire resistance during Ancient Flare."
+                },
+                {
+                  "name": "Glasya Labolas",
+                  "tip": "Intercept power lines from Clockwork adds. Survive Deathstream and clear the outer platforms in the intermission phase."
+                },
+                {
+                  "name": "Amon",
+                  "tip": "Kill adds marching toward the boss. Hide behind frozen players during Curtain Call — being caught in the open is lethal."
+                },
+                {
+                  "name": "Xande",
+                  "tip": "Stand in the radius of golden orbs to safely detonate them. Two intermission meteor phases require careful positioning. Phase 2: float in gravity zones to nullify Ancient Quaga."
+                }
+              ]
+            },
+            {
+              "id": "arr-grai-ct2",
+              "name": "The World of Darkness",
+              "tag": "24-player · 2.5",
+              "bosses": [
+                {
+                  "name": "Angra Mainyu",
+                  "tip": "Alternate between red and white AoE floor zones to manage stacking debuffs. Avoid Doom by looking away or standing on lit platforms. Kill four hourglasses during the Roulette mechanic."
+                },
+                {
+                  "name": "Five-headed Dragon",
+                  "tip": "Manage expanding ice puddles. Kill poison slimes before they silence the raid. Stack on marked players to split damage. During Heatwave all actions deal self-damage — stand completely still."
+                },
+                {
+                  "name": "Cerberus",
+                  "tip": "A group takes the Mini debuff and gets swallowed to kill stomach adds. Players outside re-chain the boss using tethers while keeping enough members in the raid to prevent a wipe."
+                },
+                {
+                  "name": "Cloud of Darkness",
+                  "tip": "Tanks targeted with beams kite away from the raid. Stand in comet towers to absorb damage. Eliminate dark clouds before the boss absorbs them for escalating damage stacks."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "arr-grai-coil",
+          "title": "The Coils of Bahamut (8-player)",
+          "dungeons": [
+            {
+              "id": "arr-grai-c1",
+              "name": "Binding Coil — Turn 1",
+              "tag": "2.0",
+              "bosses": [
+                {
+                  "name": "ADS",
+                  "tip": "Defeat within four minutes or it self-destructs and wipes the party. Interrupt High Voltage to prevent Paralysis. Keep spawning nodes away from the boss — reaching it heals ADS."
+                },
+                {
+                  "name": "Caduceus",
+                  "tip": "Keep slime spawns off the boss — they heal Caduceus on contact. At 68% the boss splits into two copies; balance damage evenly between them."
+                }
+              ]
+            },
+            {
+              "id": "arr-grai-c2",
+              "name": "Binding Coil — Turn 2",
+              "tag": "2.0",
+              "bosses": [
+                {
+                  "name": "Nodes (selection phase)",
+                  "tip": "Selectively defeat nodes before the final boss — each removed node eliminates its attack from ADS but buffs remaining nodes. Attacking the Monitoring Node starts a 10-minute enrage timer."
+                },
+                {
+                  "name": "ADS (final boss)",
+                  "tip": "ADS inherits all attacks and resistances of surviving nodes. Power escalates at 75/50/25% HP based on which nodes were left alive."
+                }
+              ]
+            },
+            {
+              "id": "arr-grai-c3",
+              "name": "Binding Coil — Turn 3",
+              "tag": "2.0",
+              "bosses": [
+                {
+                  "name": "Platforming Only",
+                  "tip": "No boss — this turn is a jump-pad maze through trash mobs (Mantis, Dreadguard, Golems, Slugs, Aurelia). Unique in FFXIV in that it awards no tomestone for completion."
+                }
+              ]
+            },
+            {
+              "id": "arr-grai-c4",
+              "name": "Binding Coil — Turn 4",
+              "tag": "2.0",
+              "bosses": [
+                {
+                  "name": "Clockwork Dreadnaught",
+                  "tip": "Hits extremely hard — pop defensive cooldowns and burn it down before it consumes adds and amplifies its own damage."
+                },
+                {
+                  "name": "Clockwork Knight",
+                  "tip": "Reflects all magic damage — only physical DPS can attack safely."
+                },
+                {
+                  "name": "Clockwork Soldier",
+                  "tip": "Stoneskin negates all physical damage — only magical DPS can attack."
+                },
+                {
+                  "name": "Spinner-rook",
+                  "tip": "POX reduces players' maximum HP by ~1,000 per hit — face it away from the raid during its cast."
+                },
+                {
+                  "name": "Clockwork Bug",
+                  "tip": "Drains player HP while self-healing — priority target for AoE elimination."
+                }
+              ]
+            },
+            {
+              "id": "arr-grai-c5",
+              "name": "Binding Coil — Turn 5",
+              "tag": "Twintania · 2.0",
+              "bosses": [
+                {
+                  "name": "Twintania",
+                  "tip": "Fireball is a stack marker — coordinate to split damage. Conflagration domes stun and must be destroyed by allies. Divebombs require precise arena positioning. Twister is a proximity landmine — keep moving. Hatch orbs chase marked players toward designated safe zones."
+                }
+              ]
+            },
+            {
+              "id": "arr-grai-c6",
+              "name": "Second Coil — Turn 1",
+              "tag": "2.2",
+              "bosses": [
+                {
+                  "name": "Rafflesia",
+                  "tip": "Thorn Whip fires spread tethers — break them by increasing distance. Briary Growth spawns movement-restricting puddles. Kill Dark Matter Slugs and Acidic Honey adds while managing stacking poison debuffs."
+                }
+              ]
+            },
+            {
+              "id": "arr-grai-c7",
+              "name": "Second Coil — Turn 2",
+              "tag": "2.2",
+              "bosses": [
+                {
+                  "name": "Melusine",
+                  "tip": "Use petrified Renaud adds as line-of-sight shields against Cursed Shriek. Cursed Voice must NOT be shielded — distinguish between the two debuffs carefully or you die."
+                }
+              ]
+            },
+            {
+              "id": "arr-grai-c8",
+              "name": "Second Coil — Turn 3",
+              "tag": "2.2",
+              "bosses": [
+                {
+                  "name": "The Avatar",
+                  "tip": "Manage four biotowers around the arena — allow controlled charging to prevent the boss from gaining buffs or enraging. Phase 2 adds Ballistic Missile stack markers. Phase 3 Allagan Field: affected players separate from the group to avoid reflecting damage onto allies."
+                }
+              ]
+            },
+            {
+              "id": "arr-grai-c9",
+              "name": "Second Coil — Turn 4",
+              "tag": "Nael deus Darnus · 2.2",
+              "bosses": [
+                {
+                  "name": "Nael deus Darnus",
+                  "tip": "Phase 1: position comets carefully to avoid chaining explosions. Phase 2: three golems absorb projectiles — use them to intercept. Phase 3: tower knockbacks and debuff mechanics. Phase 4: simultaneous dragon attacks with elemental status effects."
+                }
+              ]
+            },
+            {
+              "id": "arr-grai-c10",
+              "name": "Final Coil — Turn 1",
+              "tag": "2.4",
+              "bosses": [
+                {
+                  "name": "Imdugud",
+                  "tip": "Five-phase fight with combining mechanics. Manage Wild Charge stack positioning and Erratic Blaster shield mechanics as the arena progressively shrinks. Handle add spawns in intermission phases."
+                }
+              ]
+            },
+            {
+              "id": "arr-grai-c11",
+              "name": "Final Coil — Turn 2",
+              "tag": "2.4",
+              "bosses": [
+                {
+                  "name": "Kaliya",
+                  "tip": "Resonate is a shared tankbuster cleave — both tanks must stack for it. Off-tank provoking during Secondary Head is critical to prevent lethal damage. Phase 2: three nodes must stay separated. Phase 3: tether mechanics restrict movement."
+                }
+              ]
+            },
+            {
+              "id": "arr-grai-c12",
+              "name": "Final Coil — Turn 3",
+              "tag": "2.4",
+              "bosses": [
+                {
+                  "name": "Phoenix",
+                  "tip": "Brand of Purgatory debuff must be passed between players before it kills. Blackfire landmines — place safely around the arena. Kill Bennu adds before they revive and buff each other. Fountain of Fire: designated players absorb tether damage while managing Cloak of Death stacks."
+                }
+              ]
+            },
+            {
+              "id": "arr-grai-c13",
+              "name": "Final Coil — Turn 4",
+              "tag": "Bahamut Prime · 2.4",
+              "bosses": [
+                {
+                  "name": "Bahamut Prime",
+                  "tip": "Flare Breath is a frontal cleave — face away from the party. Megaflare: stack markers with varying patterns. Earth Shaker: two marked players move to arena edges while others stack behind the boss. Tempest Wing tethers splash damage onto nearby allies."
+                },
+                {
+                  "name": "Teraflare",
+                  "tip": "Requires a tank LB3 and standing in the Neurolink puddle to survive. 14-minute hard enrage. Akh Morn gains additional hits with each use in the final phase — escalating mitigation required."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hw": {
+      "dungeons": [
+        {
+          "id": "hw-gdun-lvl",
+          "title": "Leveling Dungeons (51–59)",
+          "dungeons": [
+            {
+              "id": "hw-gdun-0",
+              "name": "The Dusk Vigil",
+              "tag": "Lv 51 · optional",
+              "bosses": [
+                {
+                  "name": "Towering Oliphant",
+                  "tip": "Trunk Tawse is a telegraphed tankbuster — use cooldowns. Prehistoric Trumpet deals party-wide damage. Rock of Ages knocks players back — position to roll toward open space."
+                },
+                {
+                  "name": "Ser Yuhelmeric",
+                  "tip": "Keep adds away from the boss — red-weapon adds buff his damage, blue-weapon adds grant haste. Brain Drain is party-wide damage; Death Spiral is a donut AoE — move into the boss hitbox. Kill adds before they reach Yuhelmeric."
+                },
+                {
+                  "name": "Opinicus",
+                  "tip": "Golden Talons is a telegraphed tankbuster. Alpine Draft fires line AoEs at random players — spread to reduce chaining. Whirling Gaol pushes players inward; use environmental rubble as cover against Freefall landing AoEs."
+                }
+              ]
+            },
+            {
+              "id": "hw-gdun-1",
+              "name": "Sohm Al",
+              "tag": "Lv 53 · MSQ",
+              "bosses": [
+                {
+                  "name": "Raskovnik",
+                  "tip": "Acid Rain places AoE circles on all players — spread out immediately. Sweet Scent spawns adds that must be killed before they reach the boss and buff Flower Devour's circle AoE."
+                },
+                {
+                  "name": "Myath",
+                  "tip": "Primordial Roar spawns coloured blobs — red blobs require stacking, blue blobs require spread. Kill the third blob type the moment it appears or it buffs all remaining adds."
+                },
+                {
+                  "name": "Tioman",
+                  "tip": "Abyssic Buster is a wide frontal cone — stay at the flanks. Chaos Blast fires multidirectional lines. At 50% HP Tioman becomes invincible and her wings separate into destructible targets — destroy both while surviving Heavensfall cluster attacks."
+                }
+              ]
+            },
+            {
+              "id": "hw-gdun-2",
+              "name": "The Aery",
+              "tag": "Lv 55 · MSQ",
+              "bosses": [
+                {
+                  "name": "Rangda",
+                  "tip": "Electric Cachexia targets players outside melee range — stay close. Transfer the Prey debuff to arena pillars before it expires. Kill Leyak adds as they spawn."
+                },
+                {
+                  "name": "Gyascutus",
+                  "tip": "Proximity Pyre is a point-blank circle — move out. Ashen Ouroboros is a donut AoE — move in close. Crippling Blow is a tankbuster; Body Slam knocks players back — stay away from arena edges."
+                },
+                {
+                  "name": "Nidhogg",
+                  "tip": "Hot Tail and Hot Wing cover the rear or flanks in large directional lines — position accordingly. Cauterize is a diving AoE; dodge perpendicular to his path. At ~50% HP Massacre begins — adds spawn around the arena while Horrid Roar stack markers require the party to group."
+                }
+              ]
+            },
+            {
+              "id": "hw-gdun-3",
+              "name": "The Vault",
+              "tag": "Lv 57 · MSQ",
+              "bosses": [
+                {
+                  "name": "Ser Adelphel Brightblade",
+                  "tip": "Defeat the three low-health adds before engaging. Holiest of Holy is unavoidable room-wide damage. At ~30% HP Adelphel knocks everyone back and charges the arena leaving light orb trails — avoid the trails and dodge his crash landing on a targeted player."
+                },
+                {
+                  "name": "Ser Grinnaux de Bruys",
+                  "tip": "Hyperdimensional Slash creates AoE lines that leave persistent Aetherial Tear puddles — avoid both the cast and the puddles. Faith Unmoving is a room-wide knockback — position away from the tears or you will be pushed into one."
+                },
+                {
+                  "name": "Ser Charibert",
+                  "tip": "Holy Chain links two players — run apart to break the tether before Altar Pyre fires its room-wide blast. Heavensflame drops rings on the floor. At 50% HP Charibert summons Dawn Knight and Dusk Knight adds alongside Holy Flames that must be destroyed quickly."
+                }
+              ]
+            },
+            {
+              "id": "hw-gdun-4",
+              "name": "The Great Gubal Library",
+              "tag": "Lv 59 · MSQ",
+              "bosses": [
+                {
+                  "name": "Demon Tome",
+                  "tip": "Disclosure forces every player to move to the boss's rear instantly or die — watch for the cast. Words of Winter causes directional sliding. Dark Blizzard III is a circle AoE targeting random players."
+                },
+                {
+                  "name": "Byblos",
+                  "tip": "Byblos becomes invincible at the arena centre — pick up tethers from defeated adds and drag them into the boss to break the shield. Gale Cut is frontal; Tail Swipe covers the rear — stay at the flanks."
+                },
+                {
+                  "name": "The Everliving Bibliotaph",
+                  "tip": "Three Void Summon phases at roughly 85%, 55%, and 25% HP — stand on illuminated platforms (1–3 players per platform matching the light count) or voidsent adds spawn. Avoid purple void spark AoEs that leave stacking Vulnerability Up."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hw-gdun-60",
+          "title": "Level 60 Dungeons",
+          "dungeons": [
+            {
+              "id": "hw-gdun-60-0",
+              "name": "The Aetherochemical Research Facility",
+              "tag": "MSQ · 3.0",
+              "bosses": [
+                {
+                  "name": "Regula van Hydrus",
+                  "tip": "Magitek Spread is a 270-degree conal — reposition to the rear. He stuns random party members before firing untelegraphed shots. Destroy turrets before they self-destruct and deal party-wide damage."
+                },
+                {
+                  "name": "Harmachis",
+                  "tip": "Weighing of the Heart cycles between four forms — Anti-Naga form triggers a petrification gaze (look away); Anti-Machina form fires missile stack markers. Adapt positioning to each form change."
+                },
+                {
+                  "name": "Lahabrea & Igeyorhm",
+                  "tip": "Health equalises between both bosses — keep damage balanced. Dark Fire II requires spread; End of Days is a line stack requiring the party to group. After one dies the survivor merges into Ascian Prime."
+                },
+                {
+                  "name": "Ascian Prime",
+                  "tip": "Universal Manipulation inflicts five simultaneous debuffs — resolve each in sequence. Dualstar combines fire and ice orbs that collide; use positional awareness to avoid the combined explosion. Ancient Eruption drops targeted AoE circles — keep moving."
+                }
+              ]
+            },
+            {
+              "id": "hw-gdun-60-1",
+              "name": "Neverreap",
+              "tag": "optional · 3.0",
+              "bosses": [
+                {
+                  "name": "Nunyenunc",
+                  "tip": "The boss vanishes into mist — locate and destroy Nunyenunc's Shadow before it reforms. Kill spawned feathers quickly; they explode on contact and inflict stacking Vulnerability Up."
+                },
+                {
+                  "name": "Canu Vanu",
+                  "tip": "Morrowcloud inflicts a persistent Bleed — Esuna promptly. Sacred Totem marks players who drop totems; move all totems out of the purple circle before Totem Chant completes or they become immune-granting adds."
+                },
+                {
+                  "name": "Waukkeon",
+                  "tip": "Kill all Divine Gale adds before the final Turbine knockback, then stack near the boss with the largest open area behind you to avoid falling off the platform edge. Tornadoes spawn periodically and deal contact damage."
+                }
+              ]
+            },
+            {
+              "id": "hw-gdun-60-2",
+              "name": "The Fractal Continuum",
+              "tag": "optional · 3.0",
+              "bosses": [
+                {
+                  "name": "Phantom Ray",
+                  "tip": "Double Sever fans two conal AoEs directly forward and behind — stay at the flanks. Rapid Sever is a heavy tankbuster; use defensive cooldowns."
+                },
+                {
+                  "name": "Minotaur",
+                  "tip": "111-Tonze Swing is a 360-degree cleave with knockback — maintain distance or use knockback immunity. When 1111-Tonze Swipe casts, click the Biomass Incubator tubes to spawn adds that interrupt the room-wide attack."
+                },
+                {
+                  "name": "The Curator",
+                  "tip": "Kill Clockwork Alarum adds immediately on spawn. Aetherochemical Explosive is a heavy DoT — healers Esuna at once. Floor tiles light up in patterns before exploding — reposition to unlighted sections."
+                }
+              ]
+            },
+            {
+              "id": "hw-gdun-60-3",
+              "name": "Saint Mocianne's Arboretum",
+              "tag": "3.1",
+              "bosses": [
+                {
+                  "name": "Rose Garden",
+                  "tip": "Spinning breath attacks rotate clockwise or counterclockwise — keep moving in the opposite direction. Destroy Rose Hip balloon adds quickly before they explode for raid-wide damage."
+                },
+                {
+                  "name": "Queen Hawk",
+                  "tip": "Bees at the arena edges fire unmarked column AoEs — watch the perimeter, not just the boss. Ally gathers two bee groups for a double unmarked column AoE — move to the centre. Kill Knight Hawk adds tethered to the boss before their channel escalates."
+                },
+                {
+                  "name": "Belladonna",
+                  "tip": "Large room-wide AoE requires standing next to the boss to survive. Look away during Frond Fatale to avoid being charmed into Bulb AoE puddles that stack magic vulnerability. Kill summoned adds quickly."
+                }
+              ]
+            },
+            {
+              "id": "hw-gdun-60-4",
+              "name": "Pharos Sirius (Hard)",
+              "tag": "3.1",
+              "bosses": [
+                {
+                  "name": "Ghrah Luminary",
+                  "tip": "Corruption tethers mark players with Prey — run to one of the passive circling mobs to transfer the debuff before the cast finishes. Transferred mobs turn aggressive but have minimal HP."
+                },
+                {
+                  "name": "8th Order Patriarch Be Gu",
+                  "tip": "Room-wide AoEs open floor fissures. Pull Corrupted Gel adds onto aether plumes to seal them. Destroy Alchemy Engine adds immediately — they tether to the boss and grant a damage buff."
+                },
+                {
+                  "name": "Progenitrix & Progenitor",
+                  "tip": "Progenitrix: destroy Grey bombs around the perimeter immediately. After she falls, Progenitor summons Remedy bombs that slowly tether to Grey bombs — hit Remedy bombs to push them away and create space to destroy Grey bombs safely."
+                }
+              ]
+            },
+            {
+              "id": "hw-gdun-60-5",
+              "name": "The Antitower",
+              "tag": "MSQ · 3.2",
+              "bosses": [
+                {
+                  "name": "Zuro Roggo",
+                  "tip": "Frog Song transforms two players into frogs while continuous water attacks land — manage the debuffs carefully. Odious Croak is a persistent frontal cone; Toy Hammer is an untelegraphed tankbuster that inflicts Concussion."
+                },
+                {
+                  "name": "Ziggy",
+                  "tip": "Jittering Jounce tethers and marks a player — hide behind summoned rocks to avoid the damage. Mystic Light is a point-blank AoE from the rocks; Jittering Glare is a telegraphed frontal cone targeting a random player."
+                },
+                {
+                  "name": "Calcabrina",
+                  "tip": "Six smaller dolls open the fight — keep them grouped for AoE cleave. Look away from Terrifying Glance to avoid Confusion. When Brace activates, three barriers appear and the boss is only vulnerable from the empty side — reposition quickly."
+                }
+              ]
+            },
+            {
+              "id": "hw-gdun-60-6",
+              "name": "The Lost City of Amdapor (Hard)",
+              "tag": "3.2",
+              "bosses": [
+                {
+                  "name": "Achamoth",
+                  "tip": "Neura Squamae spawns ghost copies of players at their current positions that cast Enthrallment frontal cones — move away from where you stood when the copies form. Toxic Squamae creates a tethered cloud leaving persistent puddles; drag it to a safe corner."
+                },
+                {
+                  "name": "Winged Lion",
+                  "tip": "Ancient Holy makes the boss untargetable — destroy the Arcane Sphere immediately or the phase resets. Ancient Stone and Ancient Aero drop expanding orbs that must be detonated away from the group."
+                },
+                {
+                  "name": "Kuribu",
+                  "tip": "Reverse flips healing effects to harmful — in phase 2, Regen becomes a damaging ground AoE and Cure IV becomes proximity damage. Watch for the Reverse cast to know when each spell inverts. Decoy spawns adds whose behaviour changes with the boss's current stance."
+                }
+              ]
+            },
+            {
+              "id": "hw-gdun-60-7",
+              "name": "Sohr Khai",
+              "tag": "MSQ · 3.3",
+              "bosses": [
+                {
+                  "name": "Chieftain Moglin",
+                  "tip": "Kill moogle adds quickly and knock their corpses out of purple revival circles — revived adds return at full HP. Captain Mogsun tethers to the boss and makes him invincible while alive; prioritise Mogsun above all else."
+                },
+                {
+                  "name": "Poqhiraj",
+                  "tip": "Arena walls are destructible and expose electrified pools when broken — avoid breaking them unnecessarily. Cloud Call pulses damage on a marked player — move them away from the group. Charge attacks knock back; brace against intact walls."
+                },
+                {
+                  "name": "Hraesvelgr",
+                  "tip": "Hallowed Wings cleaves one arena half — read left or right and reposition immediately. Hallowed Dive fires line AoEs followed by moving circles along the path. Akh Morn is a stack marker — group tightly. Diamond Storm freezes the floor; slide into safe zones rather than stopping."
+                }
+              ]
+            },
+            {
+              "id": "hw-gdun-60-8",
+              "name": "Hullbreaker Isle (Hard)",
+              "tag": "3.3",
+              "bosses": [
+                {
+                  "name": "Battle Coeurl & Sanguine Sirens",
+                  "tip": "A coeurl spawns tethered to the healer applying a healing-down and damage-up debuff — kill it immediately. Dodge cannon fire from offshore while managing the enemy waves."
+                },
+                {
+                  "name": "Ymir",
+                  "tip": "Megavolt marks players with red flags — step into slime spots for lightning immunity. Flash Freeze makes the arena slippery and creates icebergs. Blanket Thunder fires lightning tethers between players — increase distance to break them."
+                },
+                {
+                  "name": "Grand Storm Marshal Slafyrsyn & Mistbeard",
+                  "tip": "Phase 2: Poison Mist inflicts lethal poison — locate chests containing blue antidote potions immediately. Bullet Hell is a heavy room-wide AoE; Grenado Shot applies a crippling debuff — Esuna without delay. Firesand Kegs can be attacked to reposition them."
+                }
+              ]
+            },
+            {
+              "id": "hw-gdun-60-9",
+              "name": "Xelphatol",
+              "tag": "MSQ · 3.4",
+              "bosses": [
+                {
+                  "name": "Nuzal Hueloc",
+                  "tip": "Airstones tether to turrets — destroy the turrets first. Hot Air launches players airborne; position directly under the boss to bring it back to earth. Air Raid is unavoidable party-wide damage."
+                },
+                {
+                  "name": "Dotoli Ciloc",
+                  "tip": "On High is a party-wide knockback — stand against barriers to avoid falling into spike pits. Swiftfeather makes the next On Low (frontal cleave) nearly instant and impossible to sidestep. Stormcoming hits barriers and spawns persistent wind AoE zones."
+                },
+                {
+                  "name": "Tozol Huatotl",
+                  "tip": "Hawk resolves as either a stack or a spread marker — read the indicator and react immediately. Summon Garuda calls an untargetable Garuda that fires room-wide AoEs with safe zones; green crystal markers require spread positioning simultaneously."
+                }
+              ]
+            },
+            {
+              "id": "hw-gdun-60-10",
+              "name": "The Great Gubal Library (Hard)",
+              "tag": "3.4",
+              "bosses": [
+                {
+                  "name": "Demon of the Tome",
+                  "tip": "Watch for narrow AoE markers near the arena edge — a large follow-up erupts shortly after. Primarily a positioning check; stay mobile and track all ground indicators."
+                },
+                {
+                  "name": "Liquid Flame",
+                  "tip": "Ferrofluid marks players with + or − symbols matching the boss's own marker — same signs move close together, opposite signs move apart. Slosh tethers a player who must run away. Seal of Night and Day sends players to matching floor sigils."
+                },
+                {
+                  "name": "Strix",
+                  "tip": "Check Out spawns three coloured circles: white grants Levitation (avoids the stun from Quakes), black grants Leaden (prevents knockback from Tornados), green toggles Imp status (imps take extra damage from Thunder III). Manage the correct buff for each mechanic cycle. Ecliptic Meteor at the end requires hiding behind rocks."
+                }
+              ]
+            },
+            {
+              "id": "hw-gdun-60-11",
+              "name": "Baelsar's Wall",
+              "tag": "MSQ · 3.5",
+              "bosses": [
+                {
+                  "name": "Magitek Predator",
+                  "tip": "Magitek Ray is a linear AoE — reposition to the sides. Magitek Missile marks players with proximity explosions — move away from allies before detonation. Kill spawning adds before they add further AoE pressure."
+                },
+                {
+                  "name": "Armored Weapon",
+                  "tip": "Do not take any actions or movement during Dynamic Sensory Jammer — any action deals damage to yourself. Launcher reduces current HP by 50% party-wide. Destroy Magitek Bit adds in the checkerboard pattern and kill Distress Beacon reinforcements quickly."
+                },
+                {
+                  "name": "The Griffin",
+                  "tip": "Lionshead summons destructible swords — destroy the central sword to prevent a devastating explosion. Look away during Flash Powder to avoid the stun. Restraint Collar immobilises the healer; maintain proximity. Sanguine Blade is a heavy cleave — tank faces the boss away from the party."
+                }
+              ]
+            },
+            {
+              "id": "hw-gdun-60-12",
+              "name": "Sohm Al (Hard)",
+              "tag": "3.5",
+              "bosses": [
+                {
+                  "name": "The Leightonward",
+                  "tip": "Spore Sac spawns untargetable sacs that erupt in AoE patterns — subsequent casts add larger proximity sacs. Excretion inflicts Heavy on a single player; Inflammable Fumes is unavoidable party-wide damage."
+                },
+                {
+                  "name": "Gowrow",
+                  "tip": "Volcanic Howl is unavoidable but grants the boss a Damage Up buff — all subsequent attacks except Volcanic Howl inflict an uncleansable Infirmity debuff. Ripper Claw is a dodgeable frontal cleave that spawns tornadoes when the boss is buffed. Tail Smash covers the rear with knockback."
+                },
+                {
+                  "name": "Lava Scorpion",
+                  "tip": "Molten Silk is a 270-degree close-range cleave with a safe zone directly behind — stay behind the boss at all times. Hiss summons 2–4 scorpion adds that create lava puddles; kill them to preserve movement space. Deadly Thrust is a single-target tankbuster — use cooldowns."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "trials": [
+        {
+          "id": "hw-gtri-story",
+          "title": "Story Trials",
+          "dungeons": [
+            {
+              "id": "hw-gtri-0",
+              "name": "Thok ast Thok (Hard)",
+              "tag": "Ravana · Lv 53 · MSQ",
+              "bosses": [
+                {
+                  "name": "Phase 1",
+                  "tip": "Prelude to Slaughter creates telegraphed AoE sequences with safe gaps — read the pattern. Surpanakha fires a linear AoE toward a marked player. Pillars of Heaven is raid-wide damage with knockback risk — maintain arena position."
+                },
+                {
+                  "name": "Phase 2 & Ultimate",
+                  "tip": "Swift Slaughter marks several players with white icons — spread immediately. At 60% HP Chandrahas summons adds that must be killed before their casts complete. Bloodlust stacks on the boss as a soft enrage — maintain steady damage output."
+                }
+              ]
+            },
+            {
+              "id": "hw-gtri-1",
+              "name": "The Limitless Blue (Hard)",
+              "tag": "Bismarck · Lv 57 · MSQ",
+              "bosses": [
+                {
+                  "name": "Phase 1",
+                  "tip": "Activate the shield device during Cetacean Rage to protect the platform. Fire harpoon cannons after defeating the initial adds to chain Bismarck and expose the Chitin Carapace — the party must stand on his back to deal damage, incurring a minor DoT."
+                },
+                {
+                  "name": "Phases 2–3",
+                  "tip": "Phase 2: separate the two sanuwa adds to prevent vulnerability buff stacking. Phase 3: during thunder weather, killing Vapor Bubble adds triggers lightning strikes on random players — wait for rain phase before destroying them. The platform has a health bar — keep it above ~24% or the raid wipes."
+                }
+              ]
+            },
+            {
+              "id": "hw-gtri-2",
+              "name": "The Singularity Reactor",
+              "tag": "King Thordan · Lv 60 · MSQ",
+              "bosses": [
+                {
+                  "name": "Phase 1",
+                  "tip": "Lightning Storm marks four players — spread out immediately. Ascalon's Mercy fires multiple line AoEs with gaps between them. At 80% HP untargetable Knights of the Round attack; at 55% The Dragon's Eye activates a gaze — look away to avoid Terror."
+                },
+                {
+                  "name": "Phase 2 — Knights",
+                  "tip": "Each knight has a distinct mechanic: Charibert/Hermenost use tower circles; Zephirin casts Sacred Cross (DPS check); Vellguine charges columns. Clearing the knights quickly reduces the damage of Ultimate End at the end of this phase."
+                },
+                {
+                  "name": "Phase 3",
+                  "tip": "Thordan returns weakened — simply defeat him. Use this window to top the party and restore resources before any remaining DoT effects expire."
+                }
+              ]
+            },
+            {
+              "id": "hw-gtri-3",
+              "name": "Containment Bay S1T7",
+              "tag": "Sephirot · 3.2",
+              "bosses": [
+                {
+                  "name": "Phase 1",
+                  "tip": "Fiendish Rage marks a player with arrows — the rest of the party stacks to share damage. Ratzon marks ~6 players with small AoEs — spread out. Ain is a 180-degree frontal blast — stack behind Sephirot to avoid it."
+                },
+                {
+                  "name": "Phase 2",
+                  "tip": "Kill the Storm of Words add immediately — Revelation is an instant party wipe. Pillar of Mercy circles knock players back; stand adjacent to the interior edge to avoid falling off the platform. Gevurah/Chesed cover half the arena — stand in the matching-buff zone."
+                }
+              ]
+            },
+            {
+              "id": "hw-gtri-4",
+              "name": "The Final Steps of Faith",
+              "tag": "Nidhogg · MSQ · 3.3",
+              "bosses": [
+                {
+                  "name": "Phase 1",
+                  "tip": "Hot Wings and Hot Tail cover large directional swaths — read the telegraph and find the remaining safe zone. Deafening Bellow is unavoidable party damage cast twice in sequence."
+                },
+                {
+                  "name": "Phase 2 — Adds",
+                  "tip": "Strict DPS check: defeat all adds before Nidhogg counterattacks. Tank the middle add with its cone facing away; position the two side adds' cones outward toward the arena walls."
+                },
+                {
+                  "name": "Phases 3–4",
+                  "tip": "Humanoid form: Geirskogul fires line AoEs; Akh Morn is a tankbuster. Phase 4 dragon form: Akh Morn becomes multi-hit — stack and stay stacked until all hits resolve. Fireballs erupt in plus patterns. Hot Wings and Hot Tail now alternate rapidly."
+                }
+              ]
+            },
+            {
+              "id": "hw-gtri-5",
+              "name": "Containment Bay P1T6",
+              "tag": "Sophia · 3.4",
+              "bosses": [
+                {
+                  "name": "Phase 1",
+                  "tip": "Thunder II is a frontal cone — sidestep. Thunder III is a donut AoE — move into the boss. Aero II knocks back from the arena centre. Daughter attacks fire straight-line projectiles from the arena edges — dodge toward clear zones."
+                },
+                {
+                  "name": "Demiurges Phase",
+                  "tip": "All players receive a ticking Eternal Doom debuff — defeat all three adds within 80 seconds. Kill The Second (White Mage) first to remove its healing; look away from its gaze attack to avoid Confusion."
+                },
+                {
+                  "name": "Phase 2",
+                  "tip": "Quasar tethers to scales causing directional knockback — the heavier side fires, so balance player positioning. Sin & Punishment pairs ring mechanics requiring stack coordination. Arena edges become lethal fall zones."
+                }
+              ]
+            },
+            {
+              "id": "hw-gtri-6",
+              "name": "Containment Bay Z1T9",
+              "tag": "Zurvan · 3.5",
+              "bosses": [
+                {
+                  "name": "Phases 1–2",
+                  "tip": "Platform quadrants fall counterclockwise — maintain safe footing. Biting Halberd is a 270-degree frontal — position directly behind Zurvan. Ciclicle is a donut AoE — move close. Tail End is a centre-wide AoE — move to the edges."
+                },
+                {
+                  "name": "Adds Phase",
+                  "tip": "Three waves spawn. Kill the Execrated Wit caster first — Meracydian Meteor is an instant party wipe if it completes. Look away from the Execrated Wile gaze attack to avoid Fear."
+                },
+                {
+                  "name": "Phase 3",
+                  "tip": "Broken Seal assigns fire/ice debuffs — soak matching-colour meteors. Tyrfing gains one additional hit each cast — escalate mitigation accordingly. Infinite Fire & Ice tethers paired players who must stay close."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hw-gtri-ex",
+          "title": "Extreme Trials",
+          "dungeons": [
+            {
+              "id": "hw-gtri-ex0",
+              "name": "Thok ast Thok (Extreme)",
+              "tag": "Ravana EX · 3.0",
+              "bosses": [
+                {
+                  "name": "Phase 1 — Dragonfly",
+                  "tip": "The Seeing X places barriers on three sides — avoid them. Tapasya is a triple-hit frontal cone; Warlord Shell is a damage-absorbing shield that must be broken through with sustained DPS."
+                },
+                {
+                  "name": "Phases 2–3 — Scorpion & Ultimate",
+                  "tip": "Liberation: stack behind the boss, then dodge his charge. Swift Liberation marks four players — move to assigned waymarks. Phase 3 adds Spirit Gana and Moon Gana adds that must die before Falling Laughter casts or the party wipes."
+                },
+                {
+                  "name": "Phases 4–8",
+                  "tip": "Beetle phase: Pillars of Heaven is a raid-wide knockback. Rose of Conviction tethers an orb — use ranged attacks to manage it. Phases 5–8 repeat earlier stance patterns at escalating damage — maintain mitigation rotation and beat the soft enrage from accumulating Bloodlust stacks."
+                }
+              ]
+            },
+            {
+              "id": "hw-gtri-ex1",
+              "name": "The Limitless Blue (Extreme)",
+              "tag": "Bismarck EX · 3.0",
+              "bosses": [
+                {
+                  "name": "Phase 1",
+                  "tip": "Use the Magitek Field Generator during Cetacean Rage to protect the island. After firing cannons board Bismarck — Turbulence stacks while on his back; dismount before reaching 3 stacks or take lethal damage."
+                },
+                {
+                  "name": "Phase 2 — Sanuwa",
+                  "tip": "Players receive Will of the Wind or Will of the Water — attack the opposite-coloured sanuwa to avoid damage reflection. Both must die within a tight timer or the raid wipes."
+                },
+                {
+                  "name": "Phase 3",
+                  "tip": "Kill Nat'maii Vundu add before boarding. Weather cycles between wind and water AoE patterns. Jump off Bismarck manually when he shakes to avoid death. Use melee Limit Break on the Corona target for optimal damage."
+                }
+              ]
+            },
+            {
+              "id": "hw-gtri-ex2",
+              "name": "The Minstrel's Ballad: Thordan's Reign",
+              "tag": "Thordan EX · 3.1",
+              "bosses": [
+                {
+                  "name": "Phase 1",
+                  "tip": "The Dragon's Gaze is a room-wide gaze — look away or suffer Hysteria. Heavenly Heel is a heavy tankbuster. The Dragon's Rage is a stack marker — group up for shared damage. Lightning Storm marks players — spread immediately."
+                },
+                {
+                  "name": "Phase 2 — Knights (5 sub-phases)",
+                  "tip": "Burning Chains tether pairs — run apart. Conviction towers require occupation. Hiemal Storm marks five players for frost patches. Spiral Pierce charges at unmarked players. Holy Meteor circles must be destroyed. Clearing knights quickly reduces Ultimate End damage."
+                },
+                {
+                  "name": "Phase 3 — Reunion",
+                  "tip": "Ser Zephirin's Sacred Cross tethers to Thordan making him invulnerable — kill other knights first. Conviction towers now combine with simultaneous gaze and knockback mechanics across five escalating sub-phases. Hard enrage follows the final round."
+                }
+              ]
+            },
+            {
+              "id": "hw-gtri-ex3",
+              "name": "Containment Bay S1T7 (Extreme)",
+              "tag": "Sephirot EX · 3.2",
+              "bosses": [
+                {
+                  "name": "Phase 1",
+                  "tip": "Ein Sof growing circles inflict Vulnerability stacks — move out immediately. Chesed is a no-cast-bar tankbuster. Fiendish Rage stack markers arrive with knockback debuffs on the healer and DPS — pre-coordinate stacking positions."
+                },
+                {
+                  "name": "Adds Phase",
+                  "tip": "Two Cochma and four waves of Binah adds spawn while the boss charges a Limit Break. Tanks split responsibilities by add type — all deaths trigger party-wide Genesis damage."
+                },
+                {
+                  "name": "Phase 3",
+                  "tip": "Force Field splits the party by buff type for half-arena Gevurah/Chesed attacks — position on the matching side. Fiendish Wail towers deal massive damage if empty — assign in advance. Da'at sends five circles with four interceptable tethers — coordinate intercept roles. Malkuth knockback spawns adds including a dangerous caster."
+                }
+              ]
+            },
+            {
+              "id": "hw-gtri-ex4",
+              "name": "The Minstrel's Ballad: Nidhogg's Rage",
+              "tag": "Nidhogg EX · 3.3",
+              "bosses": [
+                {
+                  "name": "Phase 1",
+                  "tip": "Cauterize dives across the arena — dodge perpendicular to the path. Horrid Roar (Sky/Floor) drops AoE puddles on random players. Hot Wing and Hot Tail cover large directional areas — constantly read safe-zone changes."
+                },
+                {
+                  "name": "Phase 2 — Adds",
+                  "tip": "Kill Shadow Brobinyak first (applies physical vulnerability), then Shadow Falak (magic vulnerability). Shadow Dragon cannot be tanked — kite it until the other two are dead. Complete within ~90 seconds or a raid-wide wipe triggers."
+                },
+                {
+                  "name": "Phases 3–5",
+                  "tip": "Phase 3: Soul Tether fires interceptable purple tethers at healers — tanks step in front. Phase 4: four Darkdragon towers must be occupied simultaneously. Phase 5: Akh Morn gains one hit per cast (starting at 4); Bitter Hate stacks on the main tank — swap at 7 stacks. Hard enrage at 11 minutes."
+                }
+              ]
+            },
+            {
+              "id": "hw-gtri-ex5",
+              "name": "Containment Bay P1T6 (Extreme)",
+              "tag": "Sophia EX · 3.4",
+              "bosses": [
+                {
+                  "name": "Phase 1",
+                  "tip": "Aion Teleos summons clones that memorise attack patterns — they all fire simultaneously; track them carefully. Gnosis is a massive knockback that can be resisted with defensive cooldowns. Arms of Wisdom is a knockback tankbuster."
+                },
+                {
+                  "name": "Demiurges Phase",
+                  "tip": "The First (Paladin) has directional parry mechanics — attack from the correct flank. Kill The Second (White Mage) first; it heals allies and its gaze causes Confusion. Failure causes Zombification inflicting uncontrolled attacks on allies."
+                },
+                {
+                  "name": "Phase 3",
+                  "tip": "Quasar tethers to scales — the heavier side fires a directional knockback; balance player count on each side. Dischordant Cleansing requires pairing opposite-colour debuff markers. Cintamani deals unavoidable party damage three times in rapid succession — use mitigation."
+                }
+              ]
+            },
+            {
+              "id": "hw-gtri-ex6",
+              "name": "Containment Bay Z1T9 (Extreme)",
+              "tag": "Zurvan EX · 3.5",
+              "bosses": [
+                {
+                  "name": "Caged Phase & Phase 1",
+                  "tip": "Zurvan destroys arena quadrants sequentially while chained — stay in surviving sections. Wave Cannon is an unmarked line AoE on a player — sidestepping required. Demonic Dive with Cool Flame splits healing responsibilities."
+                },
+                {
+                  "name": "Phase 2",
+                  "tip": "Southern Cross fires delayed AoE explosions requiring the group to rotate around the arena. Biting Halberd covers 270 degrees — stay directly behind the boss. Tail End is arena-wide from centre — move to the very edge."
+                },
+                {
+                  "name": "Adds Phase & Phase 3",
+                  "tip": "Kill the Wit caster first — Meracydian Meteor is an instant wipe. Phase 3: Broken Seal assigns fire/ice — soak the matching meteor colour. Tyrfing gains one additional hit per cast — assign escalating tank cooldowns. Infinite Fire & Ice tethers require paired players to stay close."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "raids": [
+        {
+          "id": "hw-grai-mhach",
+          "title": "Mhach (Alliance)",
+          "dungeons": [
+            {
+              "id": "hw-grai-va",
+              "name": "The Void Ark",
+              "tag": "24-player · 3.1",
+              "bosses": [
+                {
+                  "name": "Cetus",
+                  "tip": "Hydrocore separates alliances with barriers and spawns adds — each alliance handles its own group. Body Slam targets players with circle AoEs; Immersion deals party-wide damage with water orbs."
+                },
+                {
+                  "name": "Forward Port Ventilator",
+                  "tip": "Groups must stand on buttons on either side of the arena to suppress the boss while killing adds. Destroy The Pagan's Knots to prevent lethal poison clouds."
+                },
+                {
+                  "name": "Irminsul & Sawtooth",
+                  "tip": "The pair are permanently tethered — keep them separated to prevent damage amplification. Hide behind Irminsul during Shockwave Stomp. Sawtooth's Feeds summons adds that cause parasite infections on contact."
+                },
+                {
+                  "name": "Cuchulainn",
+                  "tip": "All players begin with a permanent Bleeding debuff. Bile Below is an instant-kill floor hazard — use nearby platforms for safety. Idol of Impurity creates towers that stack Bleeding; Void Pact spawns Stoneskin adds."
+                },
+                {
+                  "name": "Echidna",
+                  "tip": "Petrifaction is a gaze attack — look away. During the add phase the boss separates into three targets requiring tank management; keep them spaced to prevent vulnerability stacking. Sickle Strike is a heavy tankbuster."
+                }
+              ]
+            },
+            {
+              "id": "hw-grai-wcm",
+              "name": "The Weeping City of Mhach",
+              "tag": "24-player · 3.3",
+              "bosses": [
+                {
+                  "name": "Arachne Eve",
+                  "tip": "Widow's Kiss pulls players to the centre — reposition away from web hazards. Players caught in webs during the puzzle phase must be freed by allies. Fond Affeared is a gaze attack — look away."
+                },
+                {
+                  "name": "Forgall",
+                  "tip": "Players must obtain a specific debuff before Mega Death fires or face instant death — read the required debuff and apply it. Tower mechanics require players to stand on pillars; Evil Mist and Hell Wind are unavoidable room-wide damage."
+                },
+                {
+                  "name": "Ozma",
+                  "tip": "The boss cycles through Sphere, Pyramid, and Cube forms — each has distinct mechanics and AoE shapes. Ozmashade is a mandatory DPS check phase. The arena edge is lethal; maintain arena positioning throughout all transitions."
+                },
+                {
+                  "name": "Calofisteri",
+                  "tip": "Bijou adds spawn and buff Calofisteri's attacks — kill them as they appear. Your facing direction relative to the boss affects knockback direction — position the boss away from arena edges."
+                }
+              ]
+            },
+            {
+              "id": "hw-grai-ds",
+              "name": "Dun Scaith",
+              "tag": "24-player · 3.5",
+              "bosses": [
+                {
+                  "name": "Deathgaze Hollow",
+                  "tip": "Void Death pulls players toward the centre — resist and reposition. Void Aero III uses proximity damage near walls — move to the centre. The boss alternates sides and creates knockback patterns."
+                },
+                {
+                  "name": "Ferdiad Hollow",
+                  "tip": "Wormhole is a tether-based positioning puzzle — coordinate alliance positions before it resolves. At 60% HP adds spawn with petrification gaze attacks — look away from affected adds immediately."
+                },
+                {
+                  "name": "Proto Ultima",
+                  "tip": "Destroy Allagan Dreadnaught and Proto Bit adds during DPS phases. Magitek Ray telegraphs a laser grid — identify safe columns. Supernova is an enrage cast — maintain damage output throughout."
+                },
+                {
+                  "name": "Scathach",
+                  "tip": "Shadespin creates a wing-shaped hourglass AoE — stand in the narrow safe zone between the wings. Shadow Links grabs moving players — stop all movement on application. At 50% HP a cocoon phase with tower mechanics begins."
+                },
+                {
+                  "name": "Diabolos",
+                  "tip": "Look away during Nightmare to avoid the sleep gaze. Phase 2: defeat Lifegates to expose Diabolos. Phase 3 (Hollow): Hollow Camisado is a lethal tankbuster requiring full mitigation. Portal mechanics require killing adds inside the portal before returning."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hw-grai-alex",
+          "title": "Alexander (8-player)",
+          "dungeons": [
+            {
+              "id": "hw-grai-a1",
+              "name": "Alexander: The Fist of the Father",
+              "tag": "Gordias A1 · 3.0",
+              "bosses": [
+                {
+                  "name": "Faust",
+                  "tip": "Off-tank manages spawning adds while DPS focuses Faust. Keep adds away from the raid — their cleave attacks hit anything nearby."
+                },
+                {
+                  "name": "The Oppressor",
+                  "tip": "Phase 1: Hydrothermal Missile drops several missiles on a marked player; Resin Bomb places circle AoEs under four players — spread. Phase 2: a second Oppressor spawns — keep them separated. Kill both simultaneously during Self Destruct or wipe. During 3000-Onze Missile, kill the Alarum underneath the laser beam to reduce its damage."
+                }
+              ]
+            },
+            {
+              "id": "hw-grai-a2",
+              "name": "Alexander: The Cuff of the Father",
+              "tag": "Gordias A2 · 3.0",
+              "bosses": [
+                {
+                  "name": "Enemy Waves",
+                  "tip": "Kill in priority order: Boomtype Magitek Gobwalkers (red suits), then Jagd Dolls, then Gordian Hardhelms/Hardminds, then Gordian Soldiers and Snipers. Bombs have wide explosion radii — use the mountable blue magitek robot to drag bombs away from the raid."
+                }
+              ]
+            },
+            {
+              "id": "hw-grai-a3",
+              "name": "Alexander: The Arm of the Father",
+              "tag": "Gordias A3 · 3.0",
+              "bosses": [
+                {
+                  "name": "Living Liquid — Human & Hand forms",
+                  "tip": "Human form: Protean Wave fires outward conal AoEs — spread around the boss. Sluice marks four players who must spread while additional circles land. Hand form: Wash Away knocks all players randomly; off-tank picks up the Liquid Limb add and positions away from the raid."
+                },
+                {
+                  "name": "Living Liquid — Tornado & Final",
+                  "tip": "Tornado form: boss is invincible — kill Gear and Piston Lubricant adds before they reach the arena edge. Magnetic tether debuffs: red + players stack together, blue − players spread apart. Final form repeats all previous mechanics — maintain the Cascade tank swap at 4–5 stacks of Blunt Resistance Down."
+                }
+              ]
+            },
+            {
+              "id": "hw-grai-a4",
+              "name": "Alexander: The Burden of the Father",
+              "tag": "Gordias A4 · 3.0",
+              "bosses": [
+                {
+                  "name": "The Manipulator — Leg Phases",
+                  "tip": "Leg 1: blue orbs float toward players — tanks absorb most; DPS/healers take 1–2 max. Leg 2: three laser adds fire orange lines — at least two must be intercepted by another player. Kill three Jagd Dolls quickly; four stacks of their debuff is instant death."
+                },
+                {
+                  "name": "The Manipulator — Final Phase",
+                  "tip": "All prior mechanics return simultaneously. Judgement Nisi places blue and red five-stack debuffs on both healers. Discoid drops AoE markers on four players twice, followed by a tankbuster — maintain mitigation throughout."
+                }
+              ]
+            },
+            {
+              "id": "hw-grai-a5",
+              "name": "Alexander: The Fist of the Son",
+              "tag": "Midas A5 · 3.2",
+              "bosses": [
+                {
+                  "name": "Ratfinx Twinkledinks",
+                  "tip": "When the boss transforms and applies 4 Concussion stacks to the main tank, off-tank provokes immediately to intercept the devastating follow-up. Red puddle transforms players into gorillas — use the knockback ability to push bombs into corners. Violet puddle transforms players into birds to survive the multi-hit Boost ground pound."
+                }
+              ]
+            },
+            {
+              "id": "hw-grai-a6",
+              "name": "Alexander: The Cuff of the Son",
+              "tag": "Midas A6 · 3.2",
+              "bosses": [
+                {
+                  "name": "Blaster → Brawler → Swindler → Vortexer",
+                  "tip": "Blaster: spread in a line so each charging copy hits only one player. Brawler: single drill is a proximity line AoE, single laser solos the tank, double laser requires stacking. Swindler: stand on the floor elevation opposite your high/low debuff. Vortexer: freeze water sprites with Shiva ice rings to create a boulder for Ultra Flash protection — Ultra Flash wipes the party without it."
+                }
+              ]
+            },
+            {
+              "id": "hw-grai-a7",
+              "name": "Alexander: The Arm of the Son",
+              "tag": "Midas A7 · 3.2",
+              "bosses": [
+                {
+                  "name": "Quickthinx Allthoughts",
+                  "tip": "Cage mechanics send players to four distinct corners — Red: stand still (Pyretic); Purple: kill the Alarum before the timer expires; White: avoid Deep Freeze wall attacks while fighting a Gobwalker; Green: stand in the gas vent. Outside: kill Panzer-Doll and Sturm-Doll adds; interrupt Sturm-Doll's Kugelblitz. Destroy True Heart adds during the Shanoa phase before they heal the boss."
+                }
+              ]
+            },
+            {
+              "id": "hw-grai-a8",
+              "name": "Alexander: The Burden of the Son",
+              "tag": "Midas A8 · 3.2",
+              "bosses": [
+                {
+                  "name": "Onslaughter",
+                  "tip": "Perpetual Ray applies magic vulnerability — tank swap after each cast. Mega Beam is a heavy frontal with knockback. Discoid sends tethered orbs toward players — tanks absorb the hits."
+                },
+                {
+                  "name": "Brawler & Vortexer / Swindler & Blaster",
+                  "tip": "Both pairs are fought simultaneously. Swindler's Arithmeticks debuffs require standing on the opposite floor elevation. Enumeration circles require exactly the correct number of players inside — coordinate assignments. Brawler's single/double laser pattern requires the tank to solo or the party to stack accordingly."
+                },
+                {
+                  "name": "Brute Justice",
+                  "tip": "Double Rocket Punch is a shared tankbuster — stack both tanks together. Long Needle drops four AoE markers plus a stack marker simultaneously. Apocalyptic Ray is a persistent rotating laser — move behind the boss. Super Jump targets a random player with splash; Flarethrower is a frontal cone. J Kick is unavoidable raid-wide damage from arena centre."
+                }
+              ]
+            },
+            {
+              "id": "hw-grai-a9",
+              "name": "Alexander: The Eyes of the Creator",
+              "tag": "Creator A9 · 3.4",
+              "bosses": [
+                {
+                  "name": "Refurbisher 0",
+                  "tip": "Off-tank moves Power Generators adjacent to fallen enemies to revive and then kill them. Lava consumes quadrants NW→NE→SW→SE in sequence — keep adds clear. Scrap Burst marks players with meteors; hide behind the meteors to avoid the Bleeding debuff. Scrapline is a 270-degree frontal — move behind the boss."
+                },
+                {
+                  "name": "Full Metal Faust Phase",
+                  "tip": "Refurbisher 0 becomes invulnerable and a Full Metal Faust spawns NW with proximity damage. Off-tank kites it to the SE quadrant (last safe zone) while the group kills it before lava reaches it — Faust contacting lava is an instant raid wipe."
+                }
+              ]
+            },
+            {
+              "id": "hw-grai-a10",
+              "name": "Alexander: The Breath of the Creator",
+              "tag": "Creator A10 · 3.4",
+              "bosses": [
+                {
+                  "name": "Lamebrix Strikebocks",
+                  "tip": "Three arena-centre buttons trigger spike, falling ball, and side-spike effects as the boss jumps to them. Single Charge is either a close circle (move out) or a donut (move in) — read the telegraph. When the boss jumps to the map end, defeat the Steamroller before it reaches him. Prey targets a player with a proximity line AoE — move away from the party."
+                }
+              ]
+            },
+            {
+              "id": "hw-grai-a11",
+              "name": "Alexander: The Heart of the Creator",
+              "tag": "Creator A11 · 3.4",
+              "bosses": [
+                {
+                  "name": "Cruise Chaser — Phase 1",
+                  "tip": "Optical Sight varies: green circles spread out, giant centre circle moves outward, clockwise circles wait in the middle then move to cleared arc. Stand behind round objects during Propeller Wind to avoid Confusion. GA-100 targets the off-tank with heavy splash — group distance reduces party damage."
+                },
+                {
+                  "name": "Cruise Chaser — Transformation",
+                  "tip": "At ~50% HP the boss becomes untargetable and transforms — click one of four ducts within the time limit or the entire party wipes. Phase 2: Plasma Shield requires positioning in front of the shield to deal damage. Eternal Darkness is room-wide bleed — any surviving Lapis Lazuli Orbs cause a wipe; destroy them immediately."
+                }
+              ]
+            },
+            {
+              "id": "hw-grai-a12",
+              "name": "Alexander: The Soul of the Creator",
+              "tag": "Creator A12 · 3.4",
+              "bosses": [
+                {
+                  "name": "Alexander Prime — Phases 1 & 2",
+                  "tip": "Sacrament fires cross-pattern line AoEs — dodge to the diagonal safe spots. Blazing Scourge marks two players with delayed explosions — spread before detonation. Phase 2 waves: six Lanner adds, then two General's Might (tank separately, face away), then four General's Wing. Judgement at the end requires a Tank Limit Break or the party instantly wipes."
+                },
+                {
+                  "name": "Alexander Prime — Phase 3",
+                  "tip": "Temporal Stasis freezes all players for ~9 seconds — pre-position for the mechanic that resolves during the freeze. Plaint of Solidarity is a stack marker; Plaint of Severity marks two players for spread. Four Time Gate portals each require a solo player. Summon Alexander fires Communion laser beams — avoid the puddle hazards they leave behind."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "sb": {
+      "dungeons": [
+        {
+          "id": "sb-gdun-lvl",
+          "title": "Leveling Dungeons (61-69)",
+          "dungeons": [
+            {
+              "id": "sb-gdun-sirensong",
+              "name": "The Sirensong Sea",
+              "tag": "Lv 61 - MSQ",
+              "bosses": [
+                {
+                  "name": "Lugat",
+                  "tip": "Dodge Hydroball and frontal cleaves. Move away during Amorphous Applause and keep water AoEs from overlapping the party."
+                },
+                {
+                  "name": "The Governor",
+                  "tip": "Kill adds quickly and avoid line and circle AoEs during possession sequences."
+                },
+                {
+                  "name": "Lorelei",
+                  "tip": "Virgin Tears leaves dangerous puddles. Morbid Advance and Morbid Retreat force movement, so pre-position away from hazards."
+                }
+              ]
+            },
+            {
+              "id": "sb-gdun-shisui",
+              "name": "Shisui of the Violet Tides",
+              "tag": "Lv 63 - MSQ",
+              "bosses": [
+                {
+                  "name": "Amikiri",
+                  "tip": "Kill the leg target to free trapped players and avoid large conal attacks."
+                },
+                {
+                  "name": "Ruby Princess",
+                  "tip": "Hide inside treasure coffers during Seduce to avoid charm, then dodge fans and spread markers."
+                },
+                {
+                  "name": "Shisui Yohi",
+                  "tip": "Avoid line AoEs and water puddles. Handle targeted circles away from the group and clear adds promptly."
+                }
+              ]
+            },
+            {
+              "id": "sb-gdun-bardam",
+              "name": "Bardam's Mettle",
+              "tag": "Lv 65 - MSQ",
+              "bosses": [
+                {
+                  "name": "Garula",
+                  "tip": "Hide behind pillars for Rush, spread marked attacks, and avoid charge paths."
+                },
+                {
+                  "name": "Bardam",
+                  "tip": "Mechanics trial: watch the ground, move through sequential safe zones, and focus on survival rather than damage."
+                },
+                {
+                  "name": "Yol",
+                  "tip": "Dodge Feathercut, line dives, and wing attacks by watching boss orientation."
+                }
+              ]
+            },
+            {
+              "id": "sb-gdun-doma",
+              "name": "Doma Castle",
+              "tag": "Lv 67 - MSQ",
+              "bosses": [
+                {
+                  "name": "Magitek Rearguard",
+                  "tip": "Avoid missile circles, rotating line fire, and targeted bombardments."
+                },
+                {
+                  "name": "Magitek Hexadrone",
+                  "tip": "Dodge rotating wall and laser patterns while keeping mines and adds under control."
+                },
+                {
+                  "name": "Hypertuned Grynewaht",
+                  "tip": "Spread for explosives, dodge chainsaw lines, and kill adds before fire patches crowd the arena."
+                }
+              ]
+            },
+            {
+              "id": "sb-gdun-abania",
+              "name": "Castrum Abania",
+              "tag": "Lv 69 - MSQ",
+              "bosses": [
+                {
+                  "name": "Magna Roader",
+                  "tip": "Use cannons to interrupt charge phases. Avoid tunnel rushes and line AoEs."
+                },
+                {
+                  "name": "Number XXIV",
+                  "tip": "Read the elemental field and move to the safe zone before each spell resolves."
+                },
+                {
+                  "name": "Inferno",
+                  "tip": "Dodge frontal and side cleaves, destroy bits, and avoid missile patterns."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sb-gdun-70",
+          "title": "Level 70 Dungeons",
+          "dungeons": [
+            {
+              "id": "sb-gdun-ala",
+              "name": "Ala Mhigo",
+              "tag": "4.0 - MSQ",
+              "bosses": [
+                {
+                  "name": "Magitek Scorpion",
+                  "tip": "Avoid tail lasers, mines, and missile AoEs. Move behind or beside the boss for wide frontal attacks."
+                },
+                {
+                  "name": "Aulus mal Asina",
+                  "tip": "When separated from your body, return before the timer expires. Dodge hand lasers and targeted circles."
+                },
+                {
+                  "name": "Zenos yae Galvus",
+                  "tip": "Dodge sword phase patterns, then resolve stack and spread markers between heavy raid-wide hits."
+                }
+              ]
+            },
+            {
+              "id": "sb-gdun-kugane",
+              "name": "Kugane Castle",
+              "tag": "4.0",
+              "bosses": [
+                {
+                  "name": "Zuiko-maru",
+                  "tip": "Avoid bomb explosions and line attacks. Clear adds before the arena becomes crowded."
+                },
+                {
+                  "name": "Dojun-maru",
+                  "tip": "Watch wide cleaves and summoned weapon patterns. Keep the boss faced away from the party."
+                },
+                {
+                  "name": "Yojimbo",
+                  "tip": "Collect coins before the boss does, avoid Daigoro, and dodge large sword arcs."
+                }
+              ]
+            },
+            {
+              "id": "sb-gdun-fist",
+              "name": "The Temple of the Fist",
+              "tag": "4.0",
+              "bosses": [
+                {
+                  "name": "Coeurl Sruti",
+                  "tip": "Spread for lightning, avoid frontal swipes, and clear adds quickly."
+                },
+                {
+                  "name": "Arbuda",
+                  "tip": "Move out for point-blank attacks and in for donut patterns. Watch mirrored AoEs."
+                },
+                {
+                  "name": "Ivon Coeurlfist",
+                  "tip": "Dodge martial arts patterns and clone line charges by identifying the safe lane early."
+                }
+              ]
+            },
+            {
+              "id": "sb-gdun-skalla",
+              "name": "The Drowned City of Skalla",
+              "tag": "4.1",
+              "bosses": [
+                {
+                  "name": "Kelpie",
+                  "tip": "Aim knockbacks away from water hazards and avoid whirlpools and puddles."
+                },
+                {
+                  "name": "The Old One",
+                  "tip": "Use the transformation action to survive and clear obstacles, then spread after returning to normal."
+                },
+                {
+                  "name": "Hrodric Poisontongue",
+                  "tip": "Look away from gaze attacks, dodge tail swipes, and place poison puddles at the edges."
+                }
+              ]
+            },
+            {
+              "id": "sb-gdun-hells-lid",
+              "name": "Hells' Lid",
+              "tag": "4.2",
+              "bosses": [
+                {
+                  "name": "Otake-maru",
+                  "tip": "Avoid fiery circles and knockbacks while clearing add waves."
+                },
+                {
+                  "name": "Kamaitachi",
+                  "tip": "Wind AoEs and tornadoes control the arena. Reposition early for knockbacks."
+                },
+                {
+                  "name": "Genbu",
+                  "tip": "Stack for shared damage, avoid water puddles, and defeat adds quickly."
+                }
+              ]
+            },
+            {
+              "id": "sb-gdun-fractal-hard",
+              "name": "The Fractal Continuum (Hard)",
+              "tag": "4.2",
+              "bosses": [
+                {
+                  "name": "Motherbit",
+                  "tip": "Bits fire laser grids across the arena. Stand in gaps and avoid overlapping targeted AoEs."
+                },
+                {
+                  "name": "The Ultima Warrior",
+                  "tip": "Dodge primal-inspired patterns and handle stack markers cleanly."
+                },
+                {
+                  "name": "The Ultima Beast",
+                  "tip": "Avoid large frontal swipes and targeted AoEs. Save mitigation for repeated raid damage."
+                }
+              ]
+            },
+            {
+              "id": "sb-gdun-swallow",
+              "name": "The Swallow's Compass",
+              "tag": "4.3",
+              "bosses": [
+                {
+                  "name": "Otengu",
+                  "tip": "Avoid fan and line AoEs while staying clear of tornado paths."
+                },
+                {
+                  "name": "Daidarabotchi",
+                  "tip": "Watch the raised hand and move to the lane that will remain safe."
+                },
+                {
+                  "name": "Qitian Dasheng",
+                  "tip": "Clone attacks and staff lines resolve in sequence. Move again after the first hit."
+                }
+              ]
+            },
+            {
+              "id": "sb-gdun-burn",
+              "name": "The Burn",
+              "tag": "4.4",
+              "bosses": [
+                {
+                  "name": "Hedetet",
+                  "tip": "Hide behind crystals for major attacks and avoid sand puddles."
+                },
+                {
+                  "name": "Defective Drone",
+                  "tip": "Dodge line lasers and rotating drone attacks from the arena edge."
+                },
+                {
+                  "name": "Mist Dragon",
+                  "tip": "Break ice prisons, avoid sweeping breath, and track the dragon during fog phases."
+                }
+              ]
+            },
+            {
+              "id": "sb-gdun-arboretum-hard",
+              "name": "Saint Mocianne's Arboretum (Hard)",
+              "tag": "4.4",
+              "bosses": [
+                {
+                  "name": "Nullchu",
+                  "tip": "Avoid frontal attacks and exploding plant hazards. Kill adds before poison effects spread."
+                },
+                {
+                  "name": "Lakhamu",
+                  "tip": "Move early for mud and water AoEs, and spread targeted circles away from the party."
+                },
+                {
+                  "name": "Tokkapchi",
+                  "tip": "Use safe lanes between large AoEs and avoid stacking poison puddles."
+                }
+              ]
+            },
+            {
+              "id": "sb-gdun-ghimlyt",
+              "name": "The Ghimlyt Dark",
+              "tag": "4.5 - MSQ",
+              "bosses": [
+                {
+                  "name": "Mark III-B Magitek Colossus",
+                  "tip": "Dodge cannon lines, proximity explosions, and artillery fire."
+                },
+                {
+                  "name": "Prometheus",
+                  "tip": "Watch trench direction when the boss dives underground and avoid emerging line attacks."
+                },
+                {
+                  "name": "Annia and Julia quo Soranus",
+                  "tip": "Dodge synchronized gunblade attacks while resolving stack, spread, and line markers cleanly."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "trials": [
+        {
+          "id": "sb-gtri-story",
+          "title": "Story and Optional Trials",
+          "dungeons": [
+            {
+              "id": "sb-gtri-susano",
+              "name": "The Pool of Tribute",
+              "tag": "Susano - Lv 63 - MSQ",
+              "bosses": [
+                {
+                  "name": "Susano",
+                  "tip": "Dodge expanding lightning and line AoEs. During Ame-no-Murakumo, one tank blocks the sword while the party destroys it."
+                }
+              ]
+            },
+            {
+              "id": "sb-gtri-lakshmi",
+              "name": "Emanation",
+              "tag": "Lakshmi - Lv 67 - MSQ",
+              "bosses": [
+                {
+                  "name": "Lakshmi",
+                  "tip": "Use Vril before major attacks. Spread for targeted circles, stack for shared damage, and refresh Vril from orbs."
+                }
+              ]
+            },
+            {
+              "id": "sb-gtri-shinryu",
+              "name": "The Royal Menagerie",
+              "tag": "Shinryu - Lv 70 - MSQ",
+              "bosses": [
+                {
+                  "name": "Shinryu",
+                  "tip": "Watch platform damage, tail slams, and elemental tells. Kill the tail when targetable and mitigate repeated raid hits."
+                }
+              ]
+            },
+            {
+              "id": "sb-gtri-tsukuyomi",
+              "name": "Castrum Fluminis",
+              "tag": "Tsukuyomi - 4.3 MSQ",
+              "bosses": [
+                {
+                  "name": "Tsukuyomi",
+                  "tip": "Balance moonlight and darkness stacks during the transition. Handle fans, spears, stack markers, and add priority."
+                }
+              ]
+            },
+            {
+              "id": "sb-gtri-bykko",
+              "name": "The Jade Stoa",
+              "tag": "Byakko - 4.2",
+              "bosses": [
+                {
+                  "name": "Byakko",
+                  "tip": "Avoid tiger charges, stack for shared damage, and dodge orbs during the falling phase."
+                }
+              ]
+            },
+            {
+              "id": "sb-gtri-suzaku",
+              "name": "Hells' Kier",
+              "tag": "Suzaku - 4.4",
+              "bosses": [
+                {
+                  "name": "Suzaku",
+                  "tip": "Handle phoenix adds and stand in the correct rune during the song phase. Dodge rotating line patterns later."
+                }
+              ]
+            },
+            {
+              "id": "sb-gtri-seiryu",
+              "name": "The Wreath of Snakes",
+              "tag": "Seiryu - 4.5",
+              "bosses": [
+                {
+                  "name": "Seiryu",
+                  "tip": "Dodge line charges and water eruptions, then handle add waves before the arena changes."
+                }
+              ]
+            },
+            {
+              "id": "sb-gtri-rathalos",
+              "name": "The Great Hunt",
+              "tag": "Rathalos - 4.36 optional",
+              "bosses": [
+                {
+                  "name": "Rathalos",
+                  "tip": "Limited healing trial. Avoid tail swipes and charges, use the duty action carefully, and sever the tail when possible."
+                }
+              ]
+            },
+            {
+              "id": "sb-gtri-kugane-ohashi",
+              "name": "Kugane Ohashi",
+              "tag": "Yojimbo - 4.56 optional",
+              "bosses": [
+                {
+                  "name": "Yojimbo",
+                  "tip": "Collect coins, dodge Daigoro, and avoid large sword arcs and arena tricks."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sb-gtri-ex",
+          "title": "Extreme Trials",
+          "dungeons": [
+            {
+              "id": "sb-gtri-susano-ex",
+              "name": "The Pool of Tribute (Extreme)",
+              "tag": "Susano EX - 4.0",
+              "bosses": [
+                {
+                  "name": "Susano",
+                  "tip": "Assign sword blocks, lightning positions, and orb soaks. Loose spreading is the main danger."
+                }
+              ]
+            },
+            {
+              "id": "sb-gtri-lakshmi-ex",
+              "name": "Emanation (Extreme)",
+              "tag": "Lakshmi EX - 4.0",
+              "bosses": [
+                {
+                  "name": "Lakshmi",
+                  "tip": "Plan Vril usage for Divine Denial and major raid hits. Charm and add phases require quick target swaps."
+                }
+              ]
+            },
+            {
+              "id": "sb-gtri-shinryu-ex",
+              "name": "The Minstrel's Ballad: Shinryu's Domain",
+              "tag": "Shinryu EX - 4.1",
+              "bosses": [
+                {
+                  "name": "Shinryu",
+                  "tip": "Assign positions for tail, wings, elemental platforms, and Akh Morn sequences."
+                }
+              ]
+            },
+            {
+              "id": "sb-gtri-tsukuyomi-ex",
+              "name": "The Minstrel's Ballad: Tsukuyomi's Pain",
+              "tag": "Tsukuyomi EX - 4.3",
+              "bosses": [
+                {
+                  "name": "Tsukuyomi",
+                  "tip": "Assign meteor and moon phase positions. Final fans and spears require disciplined movement."
+                }
+              ]
+            },
+            {
+              "id": "sb-gtri-bykko-ex",
+              "name": "The Jade Stoa (Extreme)",
+              "tag": "Byakko EX - 4.2",
+              "bosses": [
+                {
+                  "name": "Byakko",
+                  "tip": "Coordinate tiger baits, stack positions, falling-phase orb dodges, and tank swaps."
+                }
+              ]
+            },
+            {
+              "id": "sb-gtri-suzaku-ex",
+              "name": "Hells' Kier (Extreme)",
+              "tag": "Suzaku EX - 4.4",
+              "bosses": [
+                {
+                  "name": "Suzaku",
+                  "tip": "Assign colors and movement for the song transition. Later rotations combine runes, birds, stacks, and knockbacks."
+                }
+              ]
+            },
+            {
+              "id": "sb-gtri-seiryu-ex",
+              "name": "The Wreath of Snakes (Extreme)",
+              "tag": "Seiryu EX - 4.5",
+              "bosses": [
+                {
+                  "name": "Seiryu",
+                  "tip": "Plan add assignments, knockback mitigation, and line bait positions."
+                }
+              ]
+            },
+            {
+              "id": "sb-gtri-rathalos-ex",
+              "name": "The Great Hunt (Extreme)",
+              "tag": "Rathalos EX - 4.36",
+              "bosses": [
+                {
+                  "name": "Rathalos",
+                  "tip": "Four-player encounter with limited healing. Avoidable damage is the core check."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "raids": [
+        {
+          "id": "sb-grai-ivalice",
+          "title": "Return to Ivalice (Alliance)",
+          "dungeons": [
+            {
+              "id": "sb-grai-rabanastre",
+              "name": "The Royal City of Rabanastre",
+              "tag": "24-player - 4.1",
+              "bosses": [
+                {
+                  "name": "Mateus, the Corrupt",
+                  "tip": "Free players from ice blocks and avoid water/ice overlaps. Adds and frozen safe zones control positioning."
+                },
+                {
+                  "name": "Hashmal, Bringer of Order",
+                  "tip": "Avoid earth towers, line cleaves, and falling pillars. Hide behind the correct rubble for room-wide attacks."
+                },
+                {
+                  "name": "Rofocale",
+                  "tip": "Dodge charge lanes and chariot attacks. Keep alliance positions stable when the boss crosses the arena."
+                },
+                {
+                  "name": "Argath Thadalfus",
+                  "tip": "Obey or disobey command debuffs as indicated. Masks, gaze attacks, and adds punish automatic movement."
+                }
+              ]
+            },
+            {
+              "id": "sb-grai-ridorana",
+              "name": "The Ridorana Lighthouse",
+              "tag": "24-player - 4.3",
+              "bosses": [
+                {
+                  "name": "Famfrit, the Darkening Cloud",
+                  "tip": "Watch the water jug orientation to identify unsafe quadrants. Spread, stack, and avoid knockbacks into blasts."
+                },
+                {
+                  "name": "Belias, the Gigas",
+                  "tip": "Time bomb and clock mechanics require correct floor positions. Kill adds before their casts complete."
+                },
+                {
+                  "name": "Construct 7",
+                  "tip": "Math mechanics require matching your HP result to floor circles. Stop moving for acceleration bombs."
+                },
+                {
+                  "name": "Yiazmat",
+                  "tip": "Avoid magnetic pulls, cyclones, and large cleaves while handling add phases."
+                }
+              ]
+            },
+            {
+              "id": "sb-grai-orbonne",
+              "name": "The Orbonne Monastery",
+              "tag": "24-player - 4.5",
+              "bosses": [
+                {
+                  "name": "Mustadio",
+                  "tip": "Read sniper aim and expose the correct side of your character. Spread and line attacks require quick facing changes."
+                },
+                {
+                  "name": "Agrias",
+                  "tip": "Use shield and sword duty actions correctly during add phases. Stand in sacred zones to survive key attacks."
+                },
+                {
+                  "name": "Thunder God Cid",
+                  "tip": "Handle alliance assignments, shadowblades, crush weapon markers, and adds without overlapping large AoEs."
+                },
+                {
+                  "name": "Ultima, the High Seraph",
+                  "tip": "Dodge maze and transformation mechanics while resolving alliance stacks and heavy raid-wide damage."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sb-grai-omega",
+          "title": "Omega (8-player)",
+          "dungeons": [
+            {
+              "id": "sb-grai-o1",
+              "name": "Omega: Deltascape V1.0",
+              "tag": "Alte Roite - 4.0",
+              "bosses": [
+                {
+                  "name": "Alte Roite",
+                  "tip": "Dodge Charybdis puddles, stack for Clamp, and avoid knockbacks during platform changes."
+                }
+              ]
+            },
+            {
+              "id": "sb-grai-o2",
+              "name": "Omega: Deltascape V2.0",
+              "tag": "Catastrophe - 4.0",
+              "bosses": [
+                {
+                  "name": "Catastrophe",
+                  "tip": "Use levitation to avoid ground effects and drop down for airborne attacks."
+                }
+              ]
+            },
+            {
+              "id": "sb-grai-o3",
+              "name": "Omega: Deltascape V3.0",
+              "tag": "Halicarnassus - 4.0",
+              "bosses": [
+                {
+                  "name": "Halicarnassus",
+                  "tip": "Role and tile mechanics determine safe positions. Handle stack/spread markers while watching forced movement."
+                }
+              ]
+            },
+            {
+              "id": "sb-grai-o4",
+              "name": "Omega: Deltascape V4.0",
+              "tag": "Exdeath - 4.0",
+              "bosses": [
+                {
+                  "name": "Exdeath",
+                  "tip": "Void and elemental mechanics alter familiar AoEs. Read Thunder, Blizzard, Fire, and White Hole tells."
+                }
+              ]
+            },
+            {
+              "id": "sb-grai-o5",
+              "name": "Omega: Sigmascape V1.0",
+              "tag": "Phantom Train - 4.2",
+              "bosses": [
+                {
+                  "name": "Phantom Train",
+                  "tip": "Avoid ghosts, handle passenger-car adds, and watch knockbacks near the train edge."
+                }
+              ]
+            },
+            {
+              "id": "sb-grai-o6",
+              "name": "Omega: Sigmascape V2.0",
+              "tag": "Chadarnook - 4.2",
+              "bosses": [
+                {
+                  "name": "Chadarnook",
+                  "tip": "Use paintings for the correct protection or effect. Separate Demon and Goddess mechanics cleanly."
+                }
+              ]
+            },
+            {
+              "id": "sb-grai-o7",
+              "name": "Omega: Sigmascape V3.0",
+              "tag": "Guardian - 4.2",
+              "bosses": [
+                {
+                  "name": "Guardian",
+                  "tip": "Program loads recreate previous mechanics. Identify each pattern before movement or add checks resolve."
+                }
+              ]
+            },
+            {
+              "id": "sb-grai-o8",
+              "name": "Omega: Sigmascape V4.0",
+              "tag": "Kefka - 4.2",
+              "bosses": [
+                {
+                  "name": "Kefka",
+                  "tip": "Question-mark telegraphs can lie. Resolve towers, stacks, and Forsaken patterns carefully."
+                }
+              ]
+            },
+            {
+              "id": "sb-grai-o9",
+              "name": "Omega: Alphascape V1.0",
+              "tag": "Chaos - 4.4",
+              "bosses": [
+                {
+                  "name": "Chaos",
+                  "tip": "Elemental attacks chain together. Pre-position for knockbacks and resolve pairs before the next cast."
+                }
+              ]
+            },
+            {
+              "id": "sb-grai-o10",
+              "name": "Omega: Alphascape V2.0",
+              "tag": "Midgardsormr - 4.4",
+              "bosses": [
+                {
+                  "name": "Midgardsormr",
+                  "tip": "Dodge dive paths, Akh Morn-style stacks, and dragon add mechanics."
+                }
+              ]
+            },
+            {
+              "id": "sb-grai-o11",
+              "name": "Omega: Alphascape V3.0",
+              "tag": "Omega - 4.4",
+              "bosses": [
+                {
+                  "name": "Omega",
+                  "tip": "Starboard and Larboard are side cleaves relative to the boss. Move to the opposite side of the cast."
+                }
+              ]
+            },
+            {
+              "id": "sb-grai-o12",
+              "name": "Omega: Alphascape V4.0",
+              "tag": "Omega-M and Omega-F - 4.4",
+              "bosses": [
+                {
+                  "name": "Omega-M and Omega-F",
+                  "tip": "Handle paired boss mechanics, shared damage, and targeted AoEs without unnecessary boss overlap."
+                },
+                {
+                  "name": "Final Omega",
+                  "tip": "Patch and Hello World-style debuffs require assigned positions. Watch debuff icons and crossing lines."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sb-grai-ult",
+          "title": "Ultimate Raids (high-end)",
+          "dungeons": [
+            {
+              "id": "sb-grai-ucob",
+              "name": "The Unending Coil of Bahamut",
+              "tag": "UCoB - 4.11",
+              "bosses": [
+                {
+                  "name": "Twintania, Nael, Bahamut Prime, Golden Bahamut",
+                  "tip": "Strict mitigation, positioning, and phase memory encounter. Use a dedicated current guide for synced progression."
+                }
+              ]
+            },
+            {
+              "id": "sb-grai-uwu",
+              "name": "The Weapon's Refrain",
+              "tag": "UWU - 4.31",
+              "bosses": [
+                {
+                  "name": "Garuda, Ifrit, Titan, Lahabrea, Ultima Weapon",
+                  "tip": "Awakening mechanics and primal phase order are the core checks. Assign cleanses, baits, and mitigation before pulling."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "shb": {
+      "dungeons": [
+        {
+          "id": "shb-gdun-lvl",
+          "title": "Leveling Dungeons (71-79)",
+          "dungeons": [
+            {
+              "id": "shb-gdun-holminster",
+              "name": "Holminster Switch",
+              "tag": "Lv 71 - MSQ",
+              "bosses": [
+                {
+                  "name": "Forgiven Dissonance",
+                  "tip": "Avoid frontal cone attacks and move between the sweeping ground eruptions as they rotate around the arena."
+                },
+                {
+                  "name": "Tesleen, the Forgiven",
+                  "tip": "Dodge line and circle AoEs while killing spawned sin eaters quickly before the arena fills with damage zones."
+                },
+                {
+                  "name": "Philia",
+                  "tip": "Handle stack and spread markers cleanly, avoid rotating wing attacks, and stay out of the expanding feather patterns."
+                }
+              ]
+            },
+            {
+              "id": "shb-gdun-dohn",
+              "name": "Dohn Mheg",
+              "tag": "Lv 73 - MSQ",
+              "bosses": [
+                {
+                  "name": "Aenc Thon, Lord of the Lengthsome Gait",
+                  "tip": "Avoid the boss rushes, dodge cone attacks, and keep clear of puddles left by repeated leaps."
+                },
+                {
+                  "name": "Griaule",
+                  "tip": "The boss alternates wide arena coverage with targeted AoEs. Move decisively to the safe quadrants and do not clip allies with markers."
+                },
+                {
+                  "name": "Aenc Thon, Lord of the Lingering Gaze",
+                  "tip": "The final path crossing is the key mechanic: walk the invisible bridge carefully and keep calm during the forced movement pressure."
+                }
+              ]
+            },
+            {
+              "id": "shb-gdun-qitana",
+              "name": "The Qitana Ravel",
+              "tag": "Lv 75 - MSQ",
+              "bosses": [
+                {
+                  "name": "Ronkan Dreamer",
+                  "tip": "Watch the boss orientation for heavy cleaves and move out of the lane-based AoEs before the statues activate."
+                },
+                {
+                  "name": "Storge",
+                  "tip": "Spread the bird markers, avoid repeated divebomb lanes, and keep moving when the arena fills with feathered line attacks."
+                },
+                {
+                  "name": "Eros",
+                  "tip": "Read whether the next attack is a point-blank burst or donut, then move in or out accordingly while handling targeted circles."
+                }
+              ]
+            },
+            {
+              "id": "shb-gdun-malikah",
+              "name": "Malikah's Well",
+              "tag": "Lv 77 - MSQ",
+              "bosses": [
+                {
+                  "name": "The Greater Armadillo",
+                  "tip": "Dodge rolling charges and keep out of the sand eruptions left behind by the boss."
+                },
+                {
+                  "name": "Biblos",
+                  "tip": "Watch the book-themed line and area attacks, move early for knockbacks, and keep clear of repeated page-pattern AoEs."
+                },
+                {
+                  "name": "Storge",
+                  "tip": "The final boss combines wide line attacks with knockbacks and puddles. Pre-position so the knockback does not send you into danger."
+                }
+              ]
+            },
+            {
+              "id": "shb-gdun-gulg",
+              "name": "Mt. Gulg",
+              "tag": "Lv 79 - MSQ",
+              "bosses": [
+                {
+                  "name": "Forgiven Obscenity",
+                  "tip": "Dodge wing cleaves and stay aware of large targeted circles that can quickly box the party in."
+                },
+                {
+                  "name": "Forgiven Whimsy",
+                  "tip": "Avoid the fruit and seed patterns, spread markers, and keep moving when the arena is divided into dangerous quadrants."
+                },
+                {
+                  "name": "Forgiven Cruelty",
+                  "tip": "Handle repeated conal and line attacks while stepping around tower-like hazards and heavy raid-wide damage."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "shb-gdun-80",
+          "title": "Level 80 Dungeons",
+          "dungeons": [
+            {
+              "id": "shb-gdun-amaurot",
+              "name": "Amaurot",
+              "tag": "5.0 - MSQ",
+              "bosses": [
+                {
+                  "name": "The First Beast",
+                  "tip": "Avoid line attacks and don't get trapped by overlapping AoEs as the arena narrows."
+                },
+                {
+                  "name": "Terminus Bellwether",
+                  "tip": "Watch for the add patterns and repeated room coverage attacks. Safe space shifts quickly, so move early."
+                },
+                {
+                  "name": "Therion",
+                  "tip": "Meteor-style impacts and lane attacks overlap with heavy raid damage. Keep spread markers separated and respect the edge."
+                }
+              ]
+            },
+            {
+              "id": "shb-gdun-twinning",
+              "name": "The Twinning",
+              "tag": "5.0",
+              "bosses": [
+                {
+                  "name": "Alpha Zaghnal",
+                  "tip": "Dodge the wide line attacks and keep out of the electric zones that remain after major casts."
+                },
+                {
+                  "name": "Mithridates",
+                  "tip": "The arena fills with directional cannons and targeted circles. Identify the safe lane before the next firing sequence starts."
+                },
+                {
+                  "name": "Tycoon",
+                  "tip": "Watch the rotating laser patterns, avoid missile circles, and move to the safe side before the platform-wide attacks resolve."
+                }
+              ]
+            },
+            {
+              "id": "shb-gdun-akadaemia",
+              "name": "Akadaemia Anyder",
+              "tag": "5.0",
+              "bosses": [
+                {
+                  "name": "Cladoselache",
+                  "tip": "Avoid rushes and broad conal attacks, then reposition for targeted puddles before they trap the party."
+                },
+                {
+                  "name": "Doliodus",
+                  "tip": "Read whether the next cast covers the center or outer ring and move in or out immediately."
+                },
+                {
+                  "name": "Quetzalcoatl",
+                  "tip": "Lightning puddles and line attacks overlap with add pressure. Keep the arena open and spread cleanly."
+                }
+              ]
+            },
+            {
+              "id": "shb-gdun-cosmos",
+              "name": "The Grand Cosmos",
+              "tag": "5.1 - MSQ",
+              "bosses": [
+                {
+                  "name": "The Beet Queen",
+                  "tip": "Avoid the puddles and targeted circles while keeping enough open floor for the later mechanics."
+                },
+                {
+                  "name": "Leannan Sith",
+                  "tip": "Burn the furniture with the appropriate fire mechanics, dodge the room patterns, and keep away from marked allies."
+                },
+                {
+                  "name": "Lugus",
+                  "tip": "Move out of the room-covering flame attacks, avoid stack overlap, and keep the fight centered for cleaner dodges."
+                }
+              ]
+            },
+            {
+              "id": "shb-gdun-anamnesis",
+              "name": "Anamnesis Anyder",
+              "tag": "5.2",
+              "bosses": [
+                {
+                  "name": "Unknown",
+                  "tip": "Dodge charges and large water attacks while keeping spread markers away from the group."
+                },
+                {
+                  "name": "Kyklops",
+                  "tip": "Watch the fist direction and the line patterns before the arena floods with overlapping AoEs."
+                },
+                {
+                  "name": "Rukshs Dheem",
+                  "tip": "Handle the rotating tidal mechanics and stack markers while moving out of expanding circles."
+                }
+              ]
+            },
+            {
+              "id": "shb-gdun-gauntlet",
+              "name": "The Heroes' Gauntlet",
+              "tag": "5.3 - MSQ",
+              "bosses": [
+                {
+                  "name": "Spectral Thief",
+                  "tip": "Dodge quick line and cone attacks while the arena stays visually busy. The telegraphs are brief, so stay light on your feet."
+                },
+                {
+                  "name": "Spectral Necromancer",
+                  "tip": "Avoid the summoned hazards, line attacks, and targeted circles while controlling the add pressure."
+                },
+                {
+                  "name": "Spectral Berserker",
+                  "tip": "Watch the jump targets and lane attacks, then reposition before the next raid-wide sequence lands."
+                }
+              ]
+            },
+            {
+              "id": "shb-gdun-paglthan",
+              "name": "Paglth'an",
+              "tag": "5.5 - MSQ",
+              "bosses": [
+                {
+                  "name": "Amhuluk",
+                  "tip": "Avoid poison puddles and repeated line attacks, then move to the safe area before large room coverage casts resolve."
+                },
+                {
+                  "name": "Magitek Predator",
+                  "tip": "Read the missile lanes and rotating fire patterns early. The arena fills fast if the party hesitates."
+                },
+                {
+                  "name": "Lunar Bahamut",
+                  "tip": "Dodge dive paths, stack shared damage properly, and avoid being clipped by overlapping line attacks in the final stretch."
+                }
+              ]
+            },
+            {
+              "id": "shb-gdun-matoya",
+              "name": "Matoya's Relict",
+              "tag": "5.5",
+              "bosses": [
+                {
+                  "name": "Mudman",
+                  "tip": "Watch the water and mud patterns, then reposition before the arena hazards spread into the safe lanes."
+                },
+                {
+                  "name": "Nixie",
+                  "tip": "Avoid bouncing water attacks and line mechanics while staying out of the puddles that shrink movement space."
+                },
+                {
+                  "name": "Mother Porxie",
+                  "tip": "Dodge the room patterns and avoid being cornered by the toy mechanics and targeted circles."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "trials": [
+        {
+          "id": "shb-gtri-story",
+          "title": "Story and Optional Trials",
+          "dungeons": [
+            {
+              "id": "shb-gtri-titania",
+              "name": "The Dancing Plague",
+              "tag": "Titania - Lv 73 - MSQ",
+              "bosses": [
+                {
+                  "name": "Titania",
+                  "tip": "Handle stack and spread markers cleanly, then defeat the add wave quickly before the arena fills with overlapping nature attacks."
+                }
+              ]
+            },
+            {
+              "id": "shb-gtri-innocence",
+              "name": "The Crown of the Immaculate",
+              "tag": "Innocence - Lv 79 - MSQ",
+              "bosses": [
+                {
+                  "name": "Innocence",
+                  "tip": "Watch the wing telegraphs, avoid line dives, and keep spread markers away from the party during heavy raid damage."
+                }
+              ]
+            },
+            {
+              "id": "shb-gtri-hades",
+              "name": "The Dying Gasp",
+              "tag": "Hades - Lv 80 - MSQ",
+              "bosses": [
+                {
+                  "name": "Hades",
+                  "tip": "The fight escalates through several phases with arena changes, stacks, spreads, and intermission adds. Respect each transition and save mitigation for repeated raid-wides."
+                }
+              ]
+            },
+            {
+              "id": "shb-gtri-ruby",
+              "name": "Cinder Drift",
+              "tag": "Ruby Weapon - 5.2",
+              "bosses": [
+                {
+                  "name": "Ruby Weapon",
+                  "tip": "Dodge claws, line attacks, and targeted circles while preparing for the later phase shift and add pressure."
+                }
+              ]
+            },
+            {
+              "id": "shb-gtri-sos",
+              "name": "The Seat of Sacrifice",
+              "tag": "Elidibus - 5.3 MSQ",
+              "bosses": [
+                {
+                  "name": "Warrior of Light",
+                  "tip": "Watch the limit break style attacks, stack and spread cleanly, and prepare for the transition check with proper positioning."
+                }
+              ]
+            },
+            {
+              "id": "shb-gtri-emerald",
+              "name": "Castrum Marinum",
+              "tag": "Emerald Weapon - 5.4",
+              "bosses": [
+                {
+                  "name": "Emerald Weapon",
+                  "tip": "Avoid the rotating beam patterns and line attacks, then adjust quickly when the fight shifts into its second phase."
+                }
+              ]
+            },
+            {
+              "id": "shb-gtri-diamond",
+              "name": "The Cloud Deck",
+              "tag": "Diamond Weapon - 5.5 MSQ",
+              "bosses": [
+                {
+                  "name": "Diamond Weapon",
+                  "tip": "Read the side cannons and safe lanes before each major volley. Platform awareness matters as much as raw movement speed."
+                }
+              ]
+            },
+            {
+              "id": "shb-gtri-varis",
+              "name": "Memoria Misera",
+              "tag": "Varis - 5.25 optional",
+              "bosses": [
+                {
+                  "name": "Varis zos Galvus",
+                  "tip": "Dodge weapon projections, line attacks, and repeated knockback pressure while staying spread for targeted mechanics."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "shb-gtri-ex",
+          "title": "Extreme Trials",
+          "dungeons": [
+            {
+              "id": "shb-gtri-titania-ex",
+              "name": "The Dancing Plague (Extreme)",
+              "tag": "Titania EX - 5.0",
+              "bosses": [
+                {
+                  "name": "Titania",
+                  "tip": "Assign adds, puddles, and spread positions up front. The enrage pressure comes from messy add handling more than the boss itself."
+                }
+              ]
+            },
+            {
+              "id": "shb-gtri-innocence-ex",
+              "name": "The Crown of the Immaculate (Extreme)",
+              "tag": "Innocence EX - 5.0",
+              "bosses": [
+                {
+                  "name": "Innocence",
+                  "tip": "Wing patterns, tower placements, and add handling all need clean positioning. Respect the edge during knockback sequences."
+                }
+              ]
+            },
+            {
+              "id": "shb-gtri-hades-ex",
+              "name": "The Minstrel's Ballad: Hades's Elegy",
+              "tag": "Hades EX - 5.1",
+              "bosses": [
+                {
+                  "name": "Hades",
+                  "tip": "A long multi-phase fight with strict movement discipline. Assign meteor, stack, and intermission positions before pulling."
+                }
+              ]
+            },
+            {
+              "id": "shb-gtri-ruby-ex",
+              "name": "Cinder Drift (Extreme)",
+              "tag": "Ruby Weapon EX - 5.2",
+              "bosses": [
+                {
+                  "name": "Ruby Weapon",
+                  "tip": "Spread, stack, and line bait responsibilities should be assigned clearly, especially once the second phase begins."
+                }
+              ]
+            },
+            {
+              "id": "shb-gtri-varis-ex",
+              "name": "Memoria Misera (Extreme)",
+              "tag": "Varis EX - 5.3",
+              "bosses": [
+                {
+                  "name": "Varis zos Galvus",
+                  "tip": "Weapon projection patterns and targeted mechanics resolve quickly. Pre-position so the party does not cross one another."
+                }
+              ]
+            },
+            {
+              "id": "shb-gtri-sos-ex",
+              "name": "The Seat of Sacrifice (Extreme)",
+              "tag": "Elidibus EX - 5.3",
+              "bosses": [
+                {
+                  "name": "Warrior of Light",
+                  "tip": "Limit break mechanics and transition checks are the heart of the fight. Keep mitigation ready for repeated heavy hits."
+                }
+              ]
+            },
+            {
+              "id": "shb-gtri-emerald-ex",
+              "name": "Castrum Marinum (Extreme)",
+              "tag": "Emerald Weapon EX - 5.4",
+              "bosses": [
+                {
+                  "name": "Emerald Weapon",
+                  "tip": "Cannons, swords, and phase transitions punish drifting. Learn the safe lanes and keep spreads tight."
+                }
+              ]
+            },
+            {
+              "id": "shb-gtri-diamond-ex",
+              "name": "The Cloud Deck (Extreme)",
+              "tag": "Diamond Weapon EX - 5.5",
+              "bosses": [
+                {
+                  "name": "Diamond Weapon",
+                  "tip": "Safe platform reads and repeated line patterns are the core checks. Move early rather than greed casts."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "raids": [
+        {
+          "id": "shb-grai-yorha",
+          "title": "YoRHa: Dark Apocalypse (Alliance)",
+          "dungeons": [
+            {
+              "id": "shb-grai-copied",
+              "name": "The Copied Factory",
+              "tag": "24-player - 5.1",
+              "bosses": [
+                {
+                  "name": "Serial-Jointed Command Model",
+                  "tip": "Avoid machine-gun lanes, rotating beams, and stacks of overlapping floor damage."
+                },
+                {
+                  "name": "Hobbes",
+                  "tip": "Watch the furnace and bomb patterns, then move into the safe sections before the arena-wide attacks finish."
+                },
+                {
+                  "name": "Engels",
+                  "tip": "Arms and lasers cover huge portions of the arena. Read the telegraphs early and keep away from the edge."
+                },
+                {
+                  "name": "9S: Operative Model",
+                  "tip": "Move through bullet hell patterns carefully and avoid being clipped by line attacks while handling alliance damage."
+                }
+              ]
+            },
+            {
+              "id": "shb-grai-bunker",
+              "name": "The Puppets' Bunker",
+              "tag": "24-player - 5.3",
+              "bosses": [
+                {
+                  "name": "813P-operated Aegis Unit",
+                  "tip": "Watch the shield direction and the heavy line coverage before repositioning for the next pattern."
+                },
+                {
+                  "name": "905P-operated Heavy Artillery Unit",
+                  "tip": "Large beam and missile patterns overlap with alliance spreads. Keep your lane clean."
+                },
+                {
+                  "name": "False Idol",
+                  "tip": "Rotating room coverage and tether mechanics punish hesitation. Move decisively once the pattern becomes clear."
+                },
+                {
+                  "name": "Compound 2P",
+                  "tip": "Sword, beam, and copy mechanics layer together. Handle targeted AoEs away from the group and respect the arena edge."
+                }
+              ]
+            },
+            {
+              "id": "shb-grai-paradigm",
+              "name": "The Tower at Paradigm's Breach",
+              "tag": "24-player - 5.5",
+              "bosses": [
+                {
+                  "name": "Knave of Hearts",
+                  "tip": "Cardinal line attacks and room patterns come quickly. Read the first tell and prepare for the follow-up immediately."
+                },
+                {
+                  "name": "Hansel and Gretel",
+                  "tip": "The shielded pair require proper positioning and target swapping. Do not stand in front of the protected partner."
+                },
+                {
+                  "name": "Red Girl",
+                  "tip": "Bullet patterns, stack markers, and arena changes overlap constantly. Stay calm and move deliberately."
+                },
+                {
+                  "name": "Her Inflorescence",
+                  "tip": "Late-phase mechanics combine heavy movement, targeted AoEs, and alliance damage. Preserve space for the final patterns."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "shb-grai-eden",
+          "title": "Eden (8-player)",
+          "dungeons": [
+            {
+              "id": "shb-grai-e1",
+              "name": "Eden's Gate: Resurrection",
+              "tag": "E1 - 5.01",
+              "bosses": [
+                {
+                  "name": "Eden Prime",
+                  "tip": "Spread markers, knockbacks, and elemental floor patterns resolve quickly. Watch the arena edges during movement checks."
+                }
+              ]
+            },
+            {
+              "id": "shb-grai-e2",
+              "name": "Eden's Gate: Descent",
+              "tag": "E2 - 5.01",
+              "bosses": [
+                {
+                  "name": "Voidwalker",
+                  "tip": "Handle delayed AoEs and shadow patterns carefully. Movement discipline matters more than raw damage."
+                }
+              ]
+            },
+            {
+              "id": "shb-grai-e3",
+              "name": "Eden's Gate: Inundation",
+              "tag": "E3 - 5.01",
+              "bosses": [
+                {
+                  "name": "Leviathan",
+                  "tip": "Read head and tail attacks, avoid platform knockoffs, and separate targeted mechanics cleanly."
+                }
+              ]
+            },
+            {
+              "id": "shb-grai-e4",
+              "name": "Eden's Gate: Sepulture",
+              "tag": "E4 - 5.01",
+              "bosses": [
+                {
+                  "name": "Titan",
+                  "tip": "Landslides, bombs, and platform changes combine rapidly. Move early and avoid greed during lane patterns."
+                }
+              ]
+            },
+            {
+              "id": "shb-grai-e5",
+              "name": "Eden's Verse: Fulmination",
+              "tag": "E5 - 5.2",
+              "bosses": [
+                {
+                  "name": "Ramuh",
+                  "tip": "Orbs and judgment mechanics need assigned handling. Do not leave orbs unmanaged for too long."
+                }
+              ]
+            },
+            {
+              "id": "shb-grai-e6",
+              "name": "Eden's Verse: Furor",
+              "tag": "E6 - 5.2",
+              "bosses": [
+                {
+                  "name": "Ifrit and Garuda",
+                  "tip": "The duo fight rewards clean pair positioning and quick reads on knockbacks, tethers, and shared damage."
+                }
+              ]
+            },
+            {
+              "id": "shb-grai-e7",
+              "name": "Eden's Verse: Iconoclasm",
+              "tag": "E7 - 5.2",
+              "bosses": [
+                {
+                  "name": "The Idol of Darkness",
+                  "tip": "Mirrors and delayed line attacks create deceptive safe zones. Track reflections, not just the boss."
+                }
+              ]
+            },
+            {
+              "id": "shb-grai-e8",
+              "name": "Eden's Verse: Refulgence",
+              "tag": "E8 - 5.2",
+              "bosses": [
+                {
+                  "name": "Shiva",
+                  "tip": "Weapon stance changes alter the next pattern. Watch the stance first, then solve the spread and movement mechanics."
+                }
+              ]
+            },
+            {
+              "id": "shb-grai-e9",
+              "name": "Eden's Promise: Umbra",
+              "tag": "E9 - 5.4",
+              "bosses": [
+                {
+                  "name": "Cloud of Darkness",
+                  "tip": "Dark flood patterns and portal attacks cover large space. Keep the party spread only as far as necessary."
+                }
+              ]
+            },
+            {
+              "id": "shb-grai-e10",
+              "name": "Eden's Promise: Litany",
+              "tag": "E10 - 5.4",
+              "bosses": [
+                {
+                  "name": "Shadowkeeper",
+                  "tip": "The boss teleports frequently and drags shadow patterns across the arena. Read the destination early."
+                }
+              ]
+            },
+            {
+              "id": "shb-grai-e11",
+              "name": "Eden's Promise: Anamorphosis",
+              "tag": "E11 - 5.4",
+              "bosses": [
+                {
+                  "name": "Fatebreaker",
+                  "tip": "Dashes, stacks, and arena-spanning sword lines chain together. Keep movement crisp and predictable."
+                }
+              ]
+            },
+            {
+              "id": "shb-grai-e12",
+              "name": "Eden's Promise: Eternity",
+              "tag": "E12 - 5.4",
+              "bosses": [
+                {
+                  "name": "Oracle of Darkness",
+                  "tip": "The final fight layers delayed mechanics, knockbacks, and add transitions. Treat every phase change as a reset for positioning."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "shb-grai-ult",
+          "title": "Ultimate Raid (high-end)",
+          "dungeons": [
+            {
+              "id": "shb-grai-tea",
+              "name": "The Epic of Alexander",
+              "tag": "TEA - 5.11",
+              "bosses": [
+                {
+                  "name": "Living Liquid, Brute Justice, Cruise Chaser, Alexander Prime",
+                  "tip": "High-end multi-phase fight with strict timing and role assignments. Use a dedicated current guide before attempting synced progression."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ew": {
+      "dungeons": [
+        {
+          "id": "ew-gdun-lvl",
+          "title": "Leveling Dungeons (81-89)",
+          "dungeons": [
+            {
+              "id": "ew-gdun-zot",
+              "name": "The Tower of Zot",
+              "tag": "Lv 81 - MSQ",
+              "bosses": [
+                {
+                  "name": "Minduruva",
+                  "tip": "Watch the line and circle spell patterns, then reposition before the next cast chain resolves."
+                },
+                {
+                  "name": "Sanduruva",
+                  "tip": "Avoid wide room coverage attacks and keep spread markers from boxing in the group."
+                },
+                {
+                  "name": "The Magus Sisters",
+                  "tip": "The trio layer stack, spread, and line mechanics together. Read which sister is acting next and move early."
+                }
+              ]
+            },
+            {
+              "id": "ew-gdun-babil",
+              "name": "The Tower of Babil",
+              "tag": "Lv 83 - MSQ",
+              "bosses": [
+                {
+                  "name": "Barnabas",
+                  "tip": "Avoid line cleaves and large targeted circles while keeping enough space for later mechanics."
+                },
+                {
+                  "name": "Lugae",
+                  "tip": "The encounter alternates between forms and gadget mechanics. Watch for room patterns and do not stand in front of charged devices."
+                },
+                {
+                  "name": "Anima",
+                  "tip": "Respect the side and rear coverage attacks, then reposition for line mechanics and heavy raid-wide damage."
+                }
+              ]
+            },
+            {
+              "id": "ew-gdun-vanaspati",
+              "name": "Vanaspati",
+              "tag": "Lv 85 - MSQ",
+              "bosses": [
+                {
+                  "name": "Terminus Wrecker",
+                  "tip": "Dodge repeated lane attacks and avoid being cornered by overlapping targeted circles."
+                },
+                {
+                  "name": "Laksmi-like Blasphemy",
+                  "tip": "Watch for the expanding room patterns and keep moving as the safe zones shift."
+                },
+                {
+                  "name": "Svarbhanu",
+                  "tip": "Handle stack markers cleanly, move out of meteor-like impacts, and avoid follow-up line attacks."
+                }
+              ]
+            },
+            {
+              "id": "ew-gdun-ktisis",
+              "name": "Ktisis Hyperboreia",
+              "tag": "Lv 87 - MSQ",
+              "bosses": [
+                {
+                  "name": "Lyssa",
+                  "tip": "Avoid frontal swings, line attacks, and repeated floor coverage patterns."
+                },
+                {
+                  "name": "Hermes",
+                  "tip": "Read the arena summons and move to the safe side before the creatures resolve their attacks."
+                },
+                {
+                  "name": "Meteion",
+                  "tip": "The fight combines delayed line mechanics, stack markers, and rotating patterns. Stay centered until the safe lane is obvious."
+                }
+              ]
+            },
+            {
+              "id": "ew-gdun-aitiascope",
+              "name": "The Aitiascope",
+              "tag": "Lv 89 - MSQ",
+              "bosses": [
+                {
+                  "name": "Livia sas Junius",
+                  "tip": "Avoid frontal and line attacks while handling targeted circles away from the group."
+                },
+                {
+                  "name": "Rhitahtyn sas Arvina",
+                  "tip": "Watch charge lanes and repeated weapon patterns, then move for knockback-style follow-ups."
+                },
+                {
+                  "name": "Amon",
+                  "tip": "Expect a fast mix of line attacks, targeted AoEs, and add pressure. Keep movement deliberate and avoid clipping allies."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ew-gdun-90",
+          "title": "Level 90 Dungeons",
+          "dungeons": [
+            {
+              "id": "ew-gdun-dead-ends",
+              "name": "The Dead Ends",
+              "tag": "6.0 - MSQ",
+              "bosses": [
+                {
+                  "name": "Caustic Grebuloff",
+                  "tip": "Poison puddles and cone attacks quickly limit the floor. Keep safe space open for later casts."
+                },
+                {
+                  "name": "Peacekeeper",
+                  "tip": "Watch the arm cannons and move into the safe lane before the beam patterns finish."
+                },
+                {
+                  "name": "Ra-la",
+                  "tip": "Stack and spread markers overlap with repeated room patterns. Use the edges carefully and do not panic-move."
+                }
+              ]
+            },
+            {
+              "id": "ew-gdun-smileton",
+              "name": "Smileton",
+              "tag": "6.0",
+              "bosses": [
+                {
+                  "name": "Face",
+                  "tip": "Read the conveyor and laser patterns early. The arena tricks matter more than the boss hitbox."
+                },
+                {
+                  "name": "Frameworker",
+                  "tip": "Avoid large line coverage and baited circles while staying out of the machine lanes."
+                },
+                {
+                  "name": "Big Cheese",
+                  "tip": "Mouse and cheese mechanics shrink the safe zones quickly. Keep moving and separate targeted damage."
+                }
+              ]
+            },
+            {
+              "id": "ew-gdun-stigma",
+              "name": "The Stigma Dreamscape",
+              "tag": "6.0",
+              "bosses": [
+                {
+                  "name": "Proto-Omega",
+                  "tip": "Dodge familiar Omega line and side attacks while keeping room for targeted circles."
+                },
+                {
+                  "name": "Minduruva Revisited",
+                  "tip": "Read the cast order and move for the follow-up, not just the first telegraph."
+                },
+                {
+                  "name": "The Endsinger-inspired Construct",
+                  "tip": "Arena coverage and repeated line attacks overlap heavily. Pre-position for the next pattern instead of reacting late."
+                }
+              ]
+            },
+            {
+              "id": "ew-gdun-alzadaal",
+              "name": "Alzadaal's Legacy",
+              "tag": "6.1 - MSQ",
+              "bosses": [
+                {
+                  "name": "Ambujam",
+                  "tip": "Avoid spreading water hazards across the arena and move out of the lane attacks before the next wave lands."
+                },
+                {
+                  "name": "Armored Chariot",
+                  "tip": "Watch the cannon orientation and step into the safe lane before the rotating fire begins."
+                },
+                {
+                  "name": "Kapikulu",
+                  "tip": "Dodge fast-moving line attacks and keep targeted circles from cutting off the center."
+                }
+              ]
+            },
+            {
+              "id": "ew-gdun-troia",
+              "name": "The Fell Court of Troia",
+              "tag": "6.2 - MSQ",
+              "bosses": [
+                {
+                  "name": "Evil Dreamer",
+                  "tip": "Avoid cone and line coverage while preparing for the follow-up room patterns."
+                },
+                {
+                  "name": "Beatrice",
+                  "tip": "Watch the summon order and move for the delayed attack sequence instead of the first cast alone."
+                },
+                {
+                  "name": "Scarmiglione",
+                  "tip": "Poison and line attacks cover most of the floor by the end. Preserve safe space and respect the edge."
+                }
+              ]
+            },
+            {
+              "id": "ew-gdun-lapis",
+              "name": "Lapis Manalis",
+              "tag": "6.3 - MSQ",
+              "bosses": [
+                {
+                  "name": "Albion",
+                  "tip": "Avoid line charges and breaking ice in bad positions. The arena can become cramped if players drift carelessly."
+                },
+                {
+                  "name": "Galatea Magna",
+                  "tip": "Read the mirrored lane patterns and move early before the entire floor is covered."
+                },
+                {
+                  "name": "Cagnazzo",
+                  "tip": "Water line attacks, stack markers, and expanding room patterns overlap. Keep the party compact but not stacked on markers."
+                }
+              ]
+            },
+            {
+              "id": "ew-gdun-aetherfont",
+              "name": "The Aetherfont",
+              "tag": "6.4 - MSQ",
+              "bosses": [
+                {
+                  "name": "Rencroft",
+                  "tip": "Dodge lane attacks and avoid being pushed into lingering water hazards."
+                },
+                {
+                  "name": "Lyngbakr",
+                  "tip": "Watch the boss orientation and the water bursts before moving to the next safe zone."
+                },
+                {
+                  "name": "Octomammoth",
+                  "tip": "Tentacle and line patterns resolve in sequence. Keep track of the next safe lane rather than the last one."
+                }
+              ]
+            },
+            {
+              "id": "ew-gdun-lunar",
+              "name": "The Lunar Subterrane",
+              "tag": "6.5 - MSQ",
+              "bosses": [
+                {
+                  "name": "Dark Elf",
+                  "tip": "Move for the delayed line attacks and keep spread markers from closing off the center."
+                },
+                {
+                  "name": "Damcyan Antlion",
+                  "tip": "Watch burrow paths and avoid the sand eruptions that follow the charge lanes."
+                },
+                {
+                  "name": "Zeromus-inspired Fiend",
+                  "tip": "Final room patterns overlap with heavy raid damage. Save space and mitigation for the closing sequence."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "trials": [
+        {
+          "id": "ew-gtri-story",
+          "title": "Story and Optional Trials",
+          "dungeons": [
+            {
+              "id": "ew-gtri-zodiark",
+              "name": "The Dark Inside",
+              "tag": "Zodiark - 6.0 MSQ",
+              "bosses": [
+                {
+                  "name": "Zodiark",
+                  "tip": "The platform rotates with each mechanic. Read the current pattern, then mentally rotate it before moving."
+                }
+              ]
+            },
+            {
+              "id": "ew-gtri-hydaelyn",
+              "name": "The Mothercrystal",
+              "tag": "Hydaelyn - 6.0 MSQ",
+              "bosses": [
+                {
+                  "name": "Hydaelyn",
+                  "tip": "Crystal summons and line patterns define the safe zones. Move early and keep stack markers controlled."
+                }
+              ]
+            },
+            {
+              "id": "ew-gtri-endsinger",
+              "name": "The Final Day",
+              "tag": "Endsinger - 6.0 MSQ",
+              "bosses": [
+                {
+                  "name": "The Endsinger",
+                  "tip": "A long story trial with repeated line patterns, spread markers, and transition pressure. Respect each phase change."
+                }
+              ]
+            },
+            {
+              "id": "ew-gtri-barbariccia",
+              "name": "The Storm's Crown",
+              "tag": "Barbariccia - 6.2 MSQ",
+              "bosses": [
+                {
+                  "name": "Barbariccia",
+                  "tip": "Fast movement and hair mechanics define the fight. Stay loose and read the spinning line patterns early."
+                }
+              ]
+            },
+            {
+              "id": "ew-gtri-rubicante",
+              "name": "Mount Ordeals",
+              "tag": "Rubicante - 6.3 MSQ",
+              "bosses": [
+                {
+                  "name": "Rubicante",
+                  "tip": "The rotating ring puzzle is the signature mechanic. Solve the path before the line attacks fire."
+                }
+              ]
+            },
+            {
+              "id": "ew-gtri-golbez",
+              "name": "The Voidcast Dais",
+              "tag": "Golbez - 6.4 MSQ",
+              "bosses": [
+                {
+                  "name": "Golbez",
+                  "tip": "Avoid meteor and shadow patterns, then reposition for line attacks and heavy raid-wides."
+                }
+              ]
+            },
+            {
+              "id": "ew-gtri-zeromus",
+              "name": "The Abyssal Fracture",
+              "tag": "Zeromus - 6.5 MSQ",
+              "bosses": [
+                {
+                  "name": "Zeromus",
+                  "tip": "Read the arena coverage carefully and move early for the large line and circle combinations."
+                }
+              ]
+            },
+            {
+              "id": "ew-gtri-ex1",
+              "name": "The Minstrel's Ballad: Zodiark's Fall",
+              "tag": "Zodiark EX - 6.0",
+              "bosses": [
+                {
+                  "name": "Zodiark",
+                  "tip": "The rotating arena mechanic is less forgiving here. Assign clock spots and move with discipline."
+                }
+              ]
+            },
+            {
+              "id": "ew-gtri-ex2",
+              "name": "The Minstrel's Ballad: Hydaelyn's Call",
+              "tag": "Hydaelyn EX - 6.0",
+              "bosses": [
+                {
+                  "name": "Hydaelyn",
+                  "tip": "Crystals, cleaves, and movement patterns overlap tightly. Keep the group organized around assigned positions."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ew-gtri-extremes",
+          "title": "Extreme Trials",
+          "dungeons": [
+            {
+              "id": "ew-gtri-endsinger-ex",
+              "name": "The Minstrel's Ballad: Endsinger's Aria",
+              "tag": "Endsinger EX - 6.1",
+              "bosses": [
+                {
+                  "name": "The Endsinger",
+                  "tip": "Planet and line mechanics require quick reads. Commit to assigned positions and avoid crossing the group."
+                }
+              ]
+            },
+            {
+              "id": "ew-gtri-barbariccia-ex",
+              "name": "Storm's Crown (Extreme)",
+              "tag": "Barbariccia EX - 6.2",
+              "bosses": [
+                {
+                  "name": "Barbariccia",
+                  "tip": "Rapid hair and dash mechanics punish hesitation. Stay ready to move twice for most patterns."
+                }
+              ]
+            },
+            {
+              "id": "ew-gtri-rubicante-ex",
+              "name": "Mount Ordeals (Extreme)",
+              "tag": "Rubicante EX - 6.3",
+              "bosses": [
+                {
+                  "name": "Rubicante",
+                  "tip": "The rotating ring puzzle and later movement checks need predetermined role positions."
+                }
+              ]
+            },
+            {
+              "id": "ew-gtri-golbez-ex",
+              "name": "The Voidcast Dais (Extreme)",
+              "tag": "Golbez EX - 6.4",
+              "bosses": [
+                {
+                  "name": "Golbez",
+                  "tip": "Meteor, towers, and line mechanics come quickly. Resolve each set cleanly before the next one starts."
+                }
+              ]
+            },
+            {
+              "id": "ew-gtri-zeromus-ex",
+              "name": "The Abyssal Fracture (Extreme)",
+              "tag": "Zeromus EX - 6.5",
+              "bosses": [
+                {
+                  "name": "Zeromus",
+                  "tip": "Arena coverage is the real challenge. Move early and keep the center clear for follow-up mechanics."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "raids": [
+        {
+          "id": "ew-grai-myths",
+          "title": "Myths of the Realm (Alliance)",
+          "dungeons": [
+            {
+              "id": "ew-grai-aglaia",
+              "name": "Aglaia",
+              "tag": "24-player - 6.1",
+              "bosses": [
+                {
+                  "name": "Byregot",
+                  "tip": "Watch the hammer and floor pattern interactions before moving to the safe lane."
+                },
+                {
+                  "name": "Rhalgr",
+                  "tip": "Fists and knockbacks define the fight. Keep away from the edge when large platform mechanics begin."
+                },
+                {
+                  "name": "Azeyma",
+                  "tip": "Sun patterns and rotating flames cover wide sections of the arena. Read the follow-up before moving."
+                },
+                {
+                  "name": "Nald'thal",
+                  "tip": "The scale mechanic and split arena require quick reads. Mind your footing when the floor changes."
+                }
+              ]
+            },
+            {
+              "id": "ew-grai-euphrosyne",
+              "name": "Euphrosyne",
+              "tag": "24-player - 6.3",
+              "bosses": [
+                {
+                  "name": "Nophica",
+                  "tip": "Garden mechanics create delayed safe zones. Move early so the flowers do not cut off your lane."
+                },
+                {
+                  "name": "Althyk and Nymeia",
+                  "tip": "Time manipulation and partner mechanics overlap. Handle your assignment cleanly and avoid panic movement."
+                },
+                {
+                  "name": "Halone",
+                  "tip": "Lance lines and ice patterns come in quick sequences. Keep the arena center readable."
+                },
+                {
+                  "name": "Menphina",
+                  "tip": "Moon mechanics and wolf summons create large arena coverage. Preserve space for the final overlap."
+                }
+              ]
+            },
+            {
+              "id": "ew-grai-thaleia",
+              "name": "Thaleia",
+              "tag": "24-player - 6.5",
+              "bosses": [
+                {
+                  "name": "Thaliak",
+                  "tip": "Water lanes and rotating patterns define the safe space. Move before the next ring resolves."
+                },
+                {
+                  "name": "Llymlaen",
+                  "tip": "Current and boat mechanics shift the arena quickly. Do not overcommit to the first safe spot."
+                },
+                {
+                  "name": "Oschon",
+                  "tip": "Dash lanes and line attacks resolve in sequence. Keep your alliance side clear."
+                },
+                {
+                  "name": "The Twelve",
+                  "tip": "The final fight combines prior alliance-style movement pressure with heavy raid-wide damage."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ew-grai-panda",
+          "title": "Pandemonium (8-player)",
+          "dungeons": [
+            {
+              "id": "ew-grai-p1",
+              "name": "Asphodelos: The First Circle",
+              "tag": "P1 - 6.01",
+              "bosses": [
+                {
+                  "name": "Erichthonios",
+                  "tip": "Chain mechanics and floor patterns are the key checks. Keep movement clean around your assignment."
+                }
+              ]
+            },
+            {
+              "id": "ew-grai-p2",
+              "name": "Asphodelos: The Second Circle",
+              "tag": "P2 - 6.01",
+              "bosses": [
+                {
+                  "name": "Hippokampos",
+                  "tip": "Flooding arena patterns and stack/spread mechanics overlap quickly. Respect the edge."
+                }
+              ]
+            },
+            {
+              "id": "ew-grai-p3",
+              "name": "Asphodelos: The Third Circle",
+              "tag": "P3 - 6.01",
+              "bosses": [
+                {
+                  "name": "Phoinix",
+                  "tip": "Bird and add mechanics control the rhythm of the fight. Keep the arena organized for repeated transitions."
+                }
+              ]
+            },
+            {
+              "id": "ew-grai-p4",
+              "name": "Asphodelos: The Fourth Circle",
+              "tag": "P4 - 6.01",
+              "bosses": [
+                {
+                  "name": "Hesperos",
+                  "tip": "Tethers, role assignments, and delayed floor mechanics need disciplined positioning."
+                }
+              ]
+            },
+            {
+              "id": "ew-grai-p5",
+              "name": "Abyssos: The Fifth Circle",
+              "tag": "P5 - 6.2",
+              "bosses": [
+                {
+                  "name": "Proto-Carbuncle",
+                  "tip": "Venom pools and line mechanics can consume the floor quickly. Keep the center usable."
+                }
+              ]
+            },
+            {
+              "id": "ew-grai-p6",
+              "name": "Abyssos: The Sixth Circle",
+              "tag": "P6 - 6.2",
+              "bosses": [
+                {
+                  "name": "Hegemone",
+                  "tip": "Seeds, spreads, and rotating patterns overlap. Track the next safe lane, not just the current one."
+                }
+              ]
+            },
+            {
+              "id": "ew-grai-p7",
+              "name": "Abyssos: The Seventh Circle",
+              "tag": "P7 - 6.2",
+              "bosses": [
+                {
+                  "name": "Agdistis",
+                  "tip": "Arena shape changes and repeated movement checks define the fight. Stay on your assigned side."
+                }
+              ]
+            },
+            {
+              "id": "ew-grai-p8",
+              "name": "Abyssos: The Eighth Circle",
+              "tag": "P8 - 6.2",
+              "bosses": [
+                {
+                  "name": "Hephaistos",
+                  "tip": "Expect a dense mix of line attacks, targeted mechanics, and transitions. Move with purpose, not speed alone."
+                }
+              ]
+            },
+            {
+              "id": "ew-grai-p9",
+              "name": "Anabaseios: The Ninth Circle",
+              "tag": "P9 - 6.4",
+              "bosses": [
+                {
+                  "name": "Kokytos",
+                  "tip": "Dual-element and movement mechanics resolve in fast pairs. Keep your clock position in mind."
+                }
+              ]
+            },
+            {
+              "id": "ew-grai-p10",
+              "name": "Anabaseios: The Tenth Circle",
+              "tag": "P10 - 6.4",
+              "bosses": [
+                {
+                  "name": "Pandaemoniac Creature",
+                  "tip": "Web-like arena patterns and line attacks can trap drifting players. Move early and stay compact."
+                }
+              ]
+            },
+            {
+              "id": "ew-grai-p11",
+              "name": "Anabaseios: The Eleventh Circle",
+              "tag": "P11 - 6.4",
+              "bosses": [
+                {
+                  "name": "Themis",
+                  "tip": "Light and dark assignments matter more than raw movement. Resolve your color cleanly, then relocate."
+                }
+              ]
+            },
+            {
+              "id": "ew-grai-p12",
+              "name": "Anabaseios: The Twelfth Circle",
+              "tag": "P12 - 6.4",
+              "bosses": [
+                {
+                  "name": "Athena",
+                  "tip": "The final raid layers delayed mechanics and transitions heavily. Treat each phase shift as a fresh positioning puzzle."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ew-grai-ult",
+          "title": "Ultimate Raids (high-end)",
+          "dungeons": [
+            {
+              "id": "ew-grai-dsr",
+              "name": "Dragonsong's Reprise",
+              "tag": "DSR - 6.11",
+              "bosses": [
+                {
+                  "name": "Thordan, Nidhogg, Hraesvelgr, King Thordan",
+                  "tip": "Extremely punishing multi-phase ultimate. Use a dedicated current guide before attempting synced progression."
+                }
+              ]
+            },
+            {
+              "id": "ew-grai-top",
+              "name": "The Omega Protocol",
+              "tag": "TOP - 6.31",
+              "bosses": [
+                {
+                  "name": "Omega sequence",
+                  "tip": "High-end fight built around strict assignment discipline and layered debuffs. Study a dedicated guide before prog."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "dt": {
+      "dungeons": [
+        {
+          "id": "dt-gdun-lvl",
+          "title": "Leveling Dungeons (91-99)",
+          "dungeons": [
+            {
+              "id": "dt-gdun-ihuykatumu",
+              "name": "Ihuykatumu",
+              "tag": "Lv 91 - MSQ",
+              "bosses": [
+                {
+                  "name": "Prime Punutiy",
+                  "tip": "Avoid conal and circular splash attacks, and run away when he draws players in."
+                },
+                {
+                  "name": "Drowsie",
+                  "tip": "Dodge the vine slams indicated by arrow lines and defeat the Mimiclot adds."
+                },
+                {
+                  "name": "Apex Predator: Apollyon",
+                  "tip": "Watch the wind directions for knockbacks and dodge the blades of famine."
+                }
+              ]
+            },
+            {
+              "id": "dt-gdun-worqor",
+              "name": "Worqor Zormor",
+              "tag": "Lv 93 - MSQ",
+              "bosses": [
+                {
+                  "name": "Ryoqor Terteh",
+                  "tip": "Reposition before the ice shards erupt from the snow piles."
+                },
+                {
+                  "name": "Kahderyor",
+                  "tip": "Avoid wind currents and stand behind the frozen walls during the storm."
+                },
+                {
+                  "name": "Gurfurlur, the Elector",
+                  "tip": "Dodge the rolling boulders and watch the ground circles during his charge."
+                }
+              ]
+            },
+            {
+              "id": "dt-gdun-skydeep",
+              "name": "The Skydeep Cenote",
+              "tag": "Lv 95 - MSQ",
+              "bosses": [
+                {
+                  "name": "Feather Ray",
+                  "tip": "Dodge the bubble lines and follow the safe spots between expanding rings."
+                },
+                {
+                  "name": "Firearms",
+                  "tip": "Position in the safe zones of the grid to dodge crossing laser lines."
+                },
+                {
+                  "name": "Maulskull",
+                  "tip": "Watch the columns' glowing rings to dodge the sweeping energy beams."
+                }
+              ]
+            },
+            {
+              "id": "dt-gdun-vanguard",
+              "name": "Vanguard",
+              "tag": "Lv 97 - MSQ",
+              "bosses": [
+                {
+                  "name": "Vanguard Commander R8",
+                  "tip": "Avoid electric floor tiles and watch for turret fire lanes."
+                },
+                {
+                  "name": "Protector",
+                  "tip": "Reposition quickly to stand in the gaps of the cross-shaped lasers."
+                },
+                {
+                  "name": "Zander the Snakeskinner",
+                  "tip": "Stay close to the boss during circular AoEs, then run out for point-blank circles."
+                }
+              ]
+            },
+            {
+              "id": "dt-gdun-origenics",
+              "name": "Origenics",
+              "tag": "Lv 99 - MSQ",
+              "bosses": [
+                {
+                  "name": "Herpekaris",
+                  "tip": "Watch the glowing tubes on the walls to find the safe lane."
+                },
+                {
+                  "name": "Deceiver",
+                  "tip": "Reposition to avoid the rotating laser sweep."
+                },
+                {
+                  "name": "Ambrose the Undeparted",
+                  "tip": "Keep moving to dodge falling debris and avoid cross lasers."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dt-gdun-100",
+          "title": "Level 100 Dungeons",
+          "dungeons": [
+            {
+              "id": "dt-gdun-alexandria",
+              "name": "Alexandria",
+              "tag": "7.0 - MSQ",
+              "bosses": [
+                {
+                  "name": "Antivirus X",
+                  "tip": "Dodge the sand sinkholes and stay clear of the center when he dives."
+                },
+                {
+                  "name": "Amalgam",
+                  "tip": "Dodge the grid of laser beams that lock onto players."
+                },
+                {
+                  "name": "Eliminator",
+                  "tip": "Watch his sword sweep direction to find the safe half-room."
+                }
+              ]
+            },
+            {
+              "id": "dt-gdun-strayborough",
+              "name": "The Strayborough Deadwalk",
+              "tag": "7.0",
+              "bosses": [
+                {
+                  "name": "His Royal Headness Leonogg I",
+                  "tip": "Keep moving to avoid the slow-moving target circles."
+                },
+                {
+                  "name": "Jack-in-the-Pot",
+                  "tip": "Stay behind the boss during his frontal cone hammer smashes."
+                },
+                {
+                  "name": "Träumerei",
+                  "tip": "Dodge overlapping ghosts and keep the center clear."
+                }
+              ]
+            },
+            {
+              "id": "dt-gdun-tender-valley",
+              "name": "Tender Valley",
+              "tag": "7.0",
+              "bosses": [
+                {
+                  "name": "Barreltender",
+                  "tip": "Avoid needle sprays and keep the perimeter clear."
+                },
+                {
+                  "name": "Anthracite",
+                  "tip": "Stand behind the stone pillars to avoid the massive wind pushback."
+                },
+                {
+                  "name": "The Greatest Serpent of Tural",
+                  "tip": "Watch the color patterns on the ground and move to the corresponding safe tile."
+                }
+              ]
+            },
+            {
+              "id": "dt-gdun-yuweyawata",
+              "name": "Yuweyawata Field Station",
+              "tag": "7.1 - MSQ",
+              "bosses": [
+                {
+                  "name": "Lindblum Zaghnal",
+                  "tip": "Dodge the electrical charges and stay off active tracks."
+                },
+                {
+                  "name": "Overseer Kanilokka",
+                  "tip": "Reposition to the opposite side during the long hallway charge."
+                },
+                {
+                  "name": "Tural Vidraal: Lunipyati",
+                  "tip": "Watch the overhead lights and step into the unlit quadrants."
+                }
+              ]
+            },
+            {
+              "id": "dt-gdun-underkeep",
+              "name": "The Underkeep",
+              "tag": "7.2 - MSQ",
+              "bosses": [
+                {
+                  "name": "Gargant",
+                  "tip": "Avoid chain hooks and watch for floor trap doors."
+                },
+                {
+                  "name": "Soldier S0",
+                  "tip": "Stand behind the boss to dodge the tail swipe."
+                },
+                {
+                  "name": "Indefatigable Defense: Valia Pira",
+                  "tip": "Dodge falling cages and watch for expanding purple pools."
+                }
+              ]
+            },
+            {
+              "id": "dt-gdun-meso-terminal",
+              "name": "The Meso Terminal",
+              "tag": "7.3 - MSQ",
+              "bosses": [
+                {
+                  "name": "Chirurgeon General",
+                  "tip": "Dodge crossing laser grids and move out of the central ring."
+                },
+                {
+                  "name": "Hooded Headsmen",
+                  "tip": "Dodge the rotating fire sweeps and spread out."
+                },
+                {
+                  "name": "Memory Meld: The Immortal Remains",
+                  "tip": "Destroy the power cells quickly to prevent the room-wide wipe."
+                }
+              ]
+            },
+            {
+              "id": "dt-gdun-mistwake",
+              "name": "Mistwake",
+              "tag": "7.4 - MSQ",
+              "bosses": [
+                {
+                  "name": "Treno Catoblepas",
+                  "tip": "Watch for ripple lines in the water and move away from them."
+                },
+                {
+                  "name": "Amdusias",
+                  "tip": "Dodge sliding glacier paths and ice walls."
+                },
+                {
+                  "name": "Thundergust Griffin",
+                  "tip": "Keep tentacles faced away from the party and stack for shared damage."
+                }
+              ]
+            },
+            {
+              "id": "dt-gdun-clyteum",
+              "name": "The Clyteum",
+              "tag": "7.5 - MSQ",
+              "bosses": [
+                {
+                  "name": "Eye of the Scorpion",
+                  "tip": "Dodge circular wind lines and watch for side sweeps."
+                },
+                {
+                  "name": "Chort",
+                  "tip": "Dodge arrow rains and charge lines."
+                },
+                {
+                  "name": "Masterful Manipulator: Malphas",
+                  "tip": "Watch the crown symbols to predict the safe quadrants of the room."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "trials": [
+        {
+          "id": "dt-gtri-story",
+          "title": "Story and Optional Trials",
+          "dungeons": [
+            {
+              "id": "dt-gtri-valigarmanda",
+              "name": "Worqor Lar Dor",
+              "tag": "Valigarmanda - 7.0 MSQ",
+              "bosses": [
+                {
+                  "name": "Valigarmanda",
+                  "tip": "Avoid frost breath and watch for the platform-wide ice cracks."
+                }
+              ]
+            },
+            {
+              "id": "dt-gtri-zoraal-ja",
+              "name": "Everkeep",
+              "tag": "Zoraal Ja - 7.0 MSQ",
+              "bosses": [
+                {
+                  "name": "Zoraal Ja",
+                  "tip": "Position carefully to avoid being knocked off the platform edge."
+                }
+              ]
+            },
+            {
+              "id": "dt-gtri-queen-eternal",
+              "name": "The Interphos",
+              "tag": "Queen Eternal - 7.0 MSQ",
+              "bosses": [
+                {
+                  "name": "Queen Eternal",
+                  "tip": "Observe the glowing hands to find the safe side of the arena."
+                }
+              ]
+            },
+            {
+              "id": "dt-gtri-zelenia",
+              "name": "Recollection",
+              "tag": "Zelenia - 7.2 MSQ",
+              "bosses": [
+                {
+                  "name": "Queen’s Knight, Zelenia",
+                  "tip": "Dodge the mirror images' intersecting line attacks."
+                }
+              ]
+            },
+            {
+              "id": "dt-gtri-necron",
+              "name": "The Ageless Necropolis",
+              "tag": "Necron - 7.3 MSQ",
+              "bosses": [
+                {
+                  "name": "Necron",
+                  "tip": "Watch the glowing panels on the floor and stand on the safe color."
+                }
+              ]
+            },
+            {
+              "id": "dt-gtri-doomtrain",
+              "name": "Hell on Rails",
+              "tag": "Doomtrain - 7.4 MSQ",
+              "bosses": [
+                {
+                  "name": "Doomtrain",
+                  "tip": "Reposition to avoid the crossing train tracks and spectral train cars."
+                }
+              ]
+            },
+            {
+              "id": "dt-gtri-enuo",
+              "name": "The Unmaking",
+              "tag": "Enuo - 7.5 MSQ",
+              "bosses": [
+                {
+                  "name": "Enuo",
+                  "tip": "Solve the shifting grid puzzle to find the safe pocket."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dt-gtri-extremes",
+          "title": "Extreme Trials",
+          "dungeons": [
+            {
+              "id": "dt-gtri-valigarmanda-ex",
+              "name": "Worqor Lar Dor (Extreme)",
+              "tag": "Valigarmanda EX - 7.0",
+              "bosses": [
+                {
+                  "name": "Valigarmanda",
+                  "tip": "Extremely precise element management and swift movement required for survival."
+                }
+              ]
+            },
+            {
+              "id": "dt-gtri-zoraal-ja-ex",
+              "name": "Everkeep (Extreme)",
+              "tag": "Zoraal Ja EX - 7.0",
+              "bosses": [
+                {
+                  "name": "Zoraal Ja",
+                  "tip": "Knockback prevention and platform positioning are highly unforgiving."
+                }
+              ]
+            },
+            {
+              "id": "dt-gtri-sphene-ex",
+              "name": "The Minstrel's Ballad: Sphene's Burden",
+              "tag": "Queen Eternal EX - 7.1",
+              "bosses": [
+                {
+                  "name": "Queen Eternal",
+                  "tip": "Layered mechanics and fast-moving grids require precise coordination."
+                }
+              ]
+            },
+            {
+              "id": "dt-gtri-zelenia-ex",
+              "name": "Recollection (Extreme)",
+              "tag": "Zelenia EX - 7.2",
+              "bosses": [
+                {
+                  "name": "Queen’s Knight, Zelenia",
+                  "tip": "High-end mirror patterns and role spreads require strict discipline."
+                }
+              ]
+            },
+            {
+              "id": "dt-gtri-necron-ex",
+              "name": "The Ageless Necropolis (Extreme)",
+              "tag": "Necron EX - 7.3",
+              "bosses": [
+                {
+                  "name": "Necron",
+                  "tip": "Fast-paced floor color changes and heavy damage checks."
+                }
+              ]
+            },
+            {
+              "id": "dt-gtri-doomtrain-ex",
+              "name": "Hell on Rails (Extreme)",
+              "tag": "Doomtrain EX - 7.4",
+              "bosses": [
+                {
+                  "name": "Doomtrain",
+                  "tip": "Ghost tracks and overlapping train car mechanics require group synchronization."
+                }
+              ]
+            },
+            {
+              "id": "dt-gtri-enuo-ex",
+              "name": "The Unmaking (Extreme)",
+              "tag": "Enuo EX - 7.5",
+              "bosses": [
+                {
+                  "name": "Enuo",
+                  "tip": "Punishes minor positioning errors with instant death. Study a dedicated guide."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "raids": [
+        {
+          "id": "dt-grai-vd",
+          "title": "Echoes of Vana'diel (Alliance)",
+          "dungeons": [
+            {
+              "id": "dt-grai-jeuno",
+              "name": "Jeuno: The First Walk",
+              "tag": "24-player - 7.1",
+              "bosses": [
+                {
+                  "name": "Prishe of the Distant Chains",
+                  "tip": "Dodge rapid physical combos and circular light explosions."
+                },
+                {
+                  "name": "Fafnir the Forgotten",
+                  "tip": "Avoid the tail swipe and position correctly to dodge elemental breath."
+                },
+                {
+                  "name": "The Ark Angels",
+                  "tip": "Coordinate targets to handle the separate Ark Angels' abilities simultaneously."
+                },
+                {
+                  "name": "Shadow Lord",
+                  "tip": "Stay in the safe lanes during the dark barrier phase and mitigate room-wide bursts."
+                }
+              ]
+            },
+            {
+              "id": "dt-grai-sandoria",
+              "name": "San d'Oria: The Second Walk",
+              "tag": "24-player - 7.2",
+              "bosses": [
+                {
+                  "name": "Kirin",
+                  "tip": "Dodge element drops and watch for Shijin adds."
+                },
+                {
+                  "name": "Ultima & Omega",
+                  "tip": "Coordinate tank-busters and handle overlapping laser grids."
+                },
+                {
+                  "name": "Kam'lanaut",
+                  "tip": "Mitigate heavy elemental damage and dodge sweeping blade strikes."
+                },
+                {
+                  "name": "Eald'narche",
+                  "tip": "Dodge phase shifts, rotating lasers, and spatial distortions."
+                }
+              ]
+            },
+            {
+              "id": "dt-grai-windurst",
+              "name": "Windurst: The Third Walk",
+              "tag": "24-player - 7.3",
+              "bosses": [
+                {
+                  "name": "Shantotto the Demon",
+                  "tip": "Avoid the giant staff markers and step out of wide magical rings."
+                },
+                {
+                  "name": "Alexander Resurrected",
+                  "tip": "Dodge divine wings, coordinate light stacks, and mitigate heavy bursts."
+                },
+                {
+                  "name": "Promathia",
+                  "tip": "Dodge memory line attacks and watch the floor tiles."
+                },
+                {
+                  "name": "Shinryu Paradox & Hollow King",
+                  "tip": "Handle the ultimate overlap of elemental beams and space rips."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dt-grai-aac",
+          "title": "The Arcadion (8-player)",
+          "dungeons": [
+            {
+              "id": "dt-grai-m1",
+              "name": "AAC Light-heavyweight M1",
+              "tag": "Normal - 7.0",
+              "bosses": [
+                {
+                  "name": "Black Cat",
+                  "tip": "Watch the claw directions and move to the safe side when she pounces."
+                }
+              ]
+            },
+            {
+              "id": "dt-grai-m2",
+              "name": "AAC Light-heavyweight M2",
+              "tag": "Normal - 7.0",
+              "bosses": [
+                {
+                  "name": "Honey B. Lovely",
+                  "tip": "Dodge the heart projectiles and move out of the sweet spots."
+                }
+              ]
+            },
+            {
+              "id": "dt-grai-m3",
+              "name": "AAC Light-heavyweight M3",
+              "tag": "Normal - 7.0",
+              "bosses": [
+                {
+                  "name": "Brute Bomber",
+                  "tip": "Avoid the burning floor lanes and stay close during the stack."
+                }
+              ]
+            },
+            {
+              "id": "dt-grai-m4",
+              "name": "AAC Light-heavyweight M4",
+              "tag": "Normal - 7.0",
+              "bosses": [
+                {
+                  "name": "Wicked Thunder",
+                  "tip": "Dodge the sword sweeps and stay clear of the falling feathers."
+                }
+              ]
+            },
+            {
+              "id": "dt-grai-m5",
+              "name": "AAC Cruiserweight M5",
+              "tag": "Normal - 7.2",
+              "bosses": [
+                {
+                  "name": "Dancing Green",
+                  "tip": "Keep moving to dodge the moving grass blades."
+                }
+              ]
+            },
+            {
+              "id": "dt-grai-m6",
+              "name": "AAC Cruiserweight M6",
+              "tag": "Normal - 7.2",
+              "bosses": [
+                {
+                  "name": "Sugar Riot",
+                  "tip": "Avoid the sweet/sour candy pools and watch the side indicators."
+                }
+              ]
+            },
+            {
+              "id": "dt-grai-m7",
+              "name": "AAC Cruiserweight M7",
+              "tag": "Normal - 7.2",
+              "bosses": [
+                {
+                  "name": "Brute Abominator",
+                  "tip": "Coordinate the tag-team swap and dodge the double clothesline."
+                }
+              ]
+            },
+            {
+              "id": "dt-grai-m8",
+              "name": "AAC Cruiserweight M8",
+              "tag": "Normal - 7.2",
+              "bosses": [
+                {
+                  "name": "Howling Blade",
+                  "tip": "Handle the throne mechanics and clear the adds swiftly."
+                }
+              ]
+            },
+            {
+              "id": "dt-grai-m9",
+              "name": "AAC Heavyweight M9",
+              "tag": "Normal - 7.4",
+              "bosses": [
+                {
+                  "name": "Vamp Fatale",
+                  "tip": "Reposition to dodge the blood bat line sweeps."
+                }
+              ]
+            },
+            {
+              "id": "dt-grai-m10",
+              "name": "AAC Heavyweight M10",
+              "tag": "Normal - 7.4",
+              "bosses": [
+                {
+                  "name": "The Xtremes",
+                  "tip": "Coordinate the hot/cold element spreads and stack."
+                }
+              ]
+            },
+            {
+              "id": "dt-grai-m11",
+              "name": "AAC Heavyweight M11",
+              "tag": "Normal - 7.4",
+              "bosses": [
+                {
+                  "name": "The Tyrant",
+                  "tip": "Move into the safe quadrants during the giant weapon swings."
+                }
+              ]
+            },
+            {
+              "id": "dt-grai-m12",
+              "name": "AAC Heavyweight M12",
+              "tag": "Normal - 7.4",
+              "bosses": [
+                {
+                  "name": "Lindwurm",
+                  "tip": "Handle the Lindwurm charge and clear the tail swipe."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dt-grai-aac-sav",
+          "title": "The Arcadion (Savage)",
+          "dungeons": [
+            {
+              "id": "dt-grai-m1s",
+              "name": "AAC Light-heavyweight M1 (Savage)",
+              "tag": "Savage - 7.05",
+              "bosses": [
+                {
+                  "name": "Black Cat",
+                  "tip": "Claw and pounce mechanics leave minimal safe space. Clock positions must be perfect."
+                }
+              ]
+            },
+            {
+              "id": "dt-grai-m2s",
+              "name": "AAC Light-heavyweight M2 (Savage)",
+              "tag": "Savage - 7.05",
+              "bosses": [
+                {
+                  "name": "Honey B. Lovely",
+                  "tip": "Heart stacks and speed bursts require precise movement and strict debuff handling."
+                }
+              ]
+            },
+            {
+              "id": "dt-grai-m3s",
+              "name": "AAC Light-heavyweight M3 (Savage)",
+              "tag": "Savage - 7.05",
+              "bosses": [
+                {
+                  "name": "Brute Bomber",
+                  "tip": "Furious fire lines and heavy physical raid damage require defensive rotations."
+                }
+              ]
+            },
+            {
+              "id": "dt-grai-m4s",
+              "name": "AAC Light-heavyweight M4 (Savage)",
+              "tag": "Savage - 7.05",
+              "bosses": [
+                {
+                  "name": "Wicked Thunder",
+                  "tip": "Rapid sword patterns and feathers require fast-paced positioning and high coordination."
+                }
+              ]
+            },
+            {
+              "id": "dt-grai-m5s",
+              "name": "AAC Cruiserweight M5 (Savage)",
+              "tag": "Savage - 7.2",
+              "bosses": [
+                {
+                  "name": "Dancing Green",
+                  "tip": "Fast-moving grass blades and tether swaps require strict movement discipline."
+                }
+              ]
+            },
+            {
+              "id": "dt-grai-m6s",
+              "name": "AAC Cruiserweight M6 (Savage)",
+              "tag": "Savage - 7.2",
+              "bosses": [
+                {
+                  "name": "Sugar Riot",
+                  "tip": "Overlapping candy pools and side sweeps require immediate reaction."
+                }
+              ]
+            },
+            {
+              "id": "dt-grai-m7s",
+              "name": "AAC Cruiserweight M7 (Savage)",
+              "tag": "Savage - 7.2",
+              "bosses": [
+                {
+                  "name": "Brute Abominator",
+                  "tip": "Fast-paced swap mechanics and double clothesline require clear communication."
+                }
+              ]
+            },
+            {
+              "id": "dt-grai-m8s",
+              "name": "AAC Cruiserweight M8 (Savage)",
+              "tag": "Savage - 7.2",
+              "bosses": [
+                {
+                  "name": "Howling Blade",
+                  "tip": "Punishing add phase and throne mechanics require heavy mitigation."
+                }
+              ]
+            },
+            {
+              "id": "dt-grai-m9s",
+              "name": "AAC Heavyweight M9 (Savage)",
+              "tag": "Savage - 7.4",
+              "bosses": [
+                {
+                  "name": "Vamp Fatale",
+                  "tip": "Blood bat lines and coordinate swaps are highly unforgiving."
+                }
+              ]
+            },
+            {
+              "id": "dt-grai-m10s",
+              "name": "AAC Heavyweight M10 (Savage)",
+              "tag": "Savage - 7.4",
+              "bosses": [
+                {
+                  "name": "The Xtremes",
+                  "tip": "Element spreads and tank swaps require rapid adaptation."
+                }
+              ]
+            },
+            {
+              "id": "dt-grai-m11s",
+              "name": "AAC Heavyweight M11 (Savage)",
+              "tag": "Savage - 7.4",
+              "bosses": [
+                {
+                  "name": "The Tyrant",
+                  "tip": "Heavy weapon sweeps and role-based debuffs require strict coordination."
+                }
+              ]
+            },
+            {
+              "id": "dt-grai-m12s",
+              "name": "AAC Heavyweight M12 (Savage)",
+              "tag": "Savage - 7.4",
+              "bosses": [
+                {
+                  "name": "Lindwurm",
+                  "tip": "The ultimate champion. Combines every mechanics tier with extremely tight DPS check."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dt-grai-ult",
+          "title": "High-end Raids",
+          "dungeons": [
+            {
+              "id": "dt-grai-cloud-ex",
+              "name": "Cloud of Darkness (Chaotic)",
+              "tag": "Chaotic - 7.1",
+              "bosses": [
+                {
+                  "name": "Cloud of Darkness",
+                  "tip": "Chaotic-level mechanics. Pre-position and study partner pairs."
+                }
+              ]
+            },
+            {
+              "id": "dt-grai-futures",
+              "name": "Futures Rewritten (Ultimate)",
+              "tag": "Ultimate - 7.2",
+              "bosses": [
+                {
+                  "name": "Ryne & Gaia",
+                  "tip": "Extremely high-end fight. Multi-phase study of all memory loops and mechanics is mandatory."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "jobs": {
+    "tanks": [
+      {
+        "role": null,
+        "jobs": [
+          {
+            "id": "pld",
+            "label": "Paladin",
+            "sections": [
+              {
+                "id": "job-gld",
+                "title": "Gladiator",
+                "note": "Lv 1–30",
+                "quests": [
+                  {
+                    "name": "Way of the Gladiator",
+                    "tag": "Lv 1 · unlock"
+                  },
+                  {
+                    "name": "My First Gladius",
+                    "tag": "Lv 1"
+                  },
+                  {
+                    "name": "Kicking the Hornet's Nest",
+                    "tag": "Lv 5"
+                  },
+                  {
+                    "name": "Ul'dah's Most Wanted",
+                    "tag": "Lv 10"
+                  },
+                  {
+                    "name": "That Old Familiar Feeling",
+                    "tag": "Lv 15"
+                  },
+                  {
+                    "name": "The Face of Thal",
+                    "tag": "Lv 20"
+                  },
+                  {
+                    "name": "On Holy Ground",
+                    "tag": "Lv 25"
+                  },
+                  {
+                    "name": "The Rematch",
+                    "tag": "Lv 30 · → Paladin"
+                  }
+                ]
+              },
+              {
+                "id": "job-pld-arr",
+                "title": "Paladin — A Realm Reborn",
+                "note": "Lv 30–50",
+                "quests": [
+                  {
+                    "name": "Paladin's Pledge",
+                    "tag": "Lv 30 · unlock"
+                  },
+                  {
+                    "name": "Honor Lost",
+                    "tag": "Lv 35"
+                  },
+                  {
+                    "name": "Power Struggles",
+                    "tag": "Lv 40"
+                  },
+                  {
+                    "name": "Poisoned Hearts",
+                    "tag": "Lv 45"
+                  },
+                  {
+                    "name": "Parley in the Sagolii",
+                    "tag": "Lv 45"
+                  },
+                  {
+                    "name": "Keeping the Oath",
+                    "tag": "Lv 50"
+                  },
+                  {
+                    "name": "An Exemplary Example",
+                    "tag": "Lv 50"
+                  }
+                ]
+              },
+              {
+                "id": "job-pld-hw",
+                "title": "Paladin — Heavensward",
+                "note": "Lv 52–60",
+                "quests": [
+                  {
+                    "name": "The Paladin Who Cried Wolf",
+                    "tag": "Lv 52"
+                  },
+                  {
+                    "name": "Big Sollerets to Fill",
+                    "tag": "Lv 54"
+                  },
+                  {
+                    "name": "Hey Soul Crystal",
+                    "tag": "Lv 56"
+                  },
+                  {
+                    "name": "All According to Plan",
+                    "tag": "Lv 58"
+                  },
+                  {
+                    "name": "This Little Sword of Mine",
+                    "tag": "Lv 60"
+                  },
+                  {
+                    "name": "Tournament of the Century",
+                    "tag": "Lv 60"
+                  }
+                ]
+              },
+              {
+                "id": "job-pld-sb",
+                "title": "Paladin — Stormblood",
+                "note": "Lv 63–70",
+                "quests": [
+                  {
+                    "name": "In Thal's Name",
+                    "tag": "Lv 63"
+                  },
+                  {
+                    "name": "In Nald's Name",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "Fade to Black Lotus",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "Raising the Sword",
+                    "tag": "Lv 70"
+                  }
+                ]
+              },
+              {
+                "id": "job-pld-shb",
+                "title": "Paladin — Shadowbringers",
+                "note": "Lv 80",
+                "quests": [
+                  {
+                    "name": "Worth Fighting For",
+                    "tag": "Lv 80"
+                  }
+                ]
+              }
+            ],
+            "huntSections": [
+              {
+                "id": "hunt-gld-r1",
+                "title": "Rank 1",
+                "note": "Lv 1–15",
+                "quests": [
+                  {
+                    "name": "Little Ladybug",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Star Marmot",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Cactuar",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Snapping Shrew",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Hammer Beak",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Antling Worker",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Earth Sprite",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Spriggan Graverobber",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Qiqirn Shellsweeper",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Antling Soldier",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Dusty Mongrel",
+                    "tag": "×3"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-gld-r2",
+                "title": "Rank 2",
+                "note": "Lv 15–25",
+                "quests": [
+                  {
+                    "name": "Bomb",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Copper Coblyn",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Cochineal Cactuar",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Quiveron Guard",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Giant Tortoise",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Thickshell",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Scaphite",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Tuco-tuco",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Myotragus Billy",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Vandalous Imp",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Rotting Noble",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Bloated Bogy",
+                    "tag": "×3"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-gld-r3",
+                "title": "Rank 3",
+                "note": "Lv 25–35",
+                "quests": [
+                  {
+                    "name": "Stoneshell",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Kedtrap",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Lead Coblyn",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Overgrown Offering",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Coeurl Pup",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Balloon",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Sabotender",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Qiqirn Roerunner",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Goblin Thug",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Coeurlclaw Cutter",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Apkallu",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Pteroc",
+                    "tag": "×3"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-gld-r4",
+                "title": "Rank 4",
+                "note": "Lv 35–45",
+                "quests": [
+                  {
+                    "name": "Floating Eye",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Mamool Ja Sophist",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Uragnite",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Adamantoise",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Sandworm",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Deathgaze",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Velociraptor",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Fallen Wizard",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Snow Wolf Pup",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Treant",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Vodoriga",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Hippocerf",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Grenade",
+                    "tag": "×3"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-gld-r5",
+                "title": "Rank 5",
+                "note": "Lv 45–50",
+                "quests": [
+                  {
+                    "name": "Preying Mantis",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Lammergeyer",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Oldgrowth Treant",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "3rd Cohort Eques",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Dead Man's Moan",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Morbol",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Mudpuppy",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Lake Cobra",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Giant Lugger",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Tempered Orator",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Dullahan",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Basilisk",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Gigas Bhikkhu",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "2nd Cohort Hoplomachus",
+                    "tag": "×5"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "war",
+            "label": "Warrior",
+            "sections": [
+              {
+                "id": "job-mrd",
+                "title": "Marauder",
+                "note": "Lv 1–30",
+                "quests": [
+                  {
+                    "name": "Way of the Marauder",
+                    "tag": "Lv 1 · unlock"
+                  },
+                  {
+                    "name": "My First Axe",
+                    "tag": "Lv 1"
+                  },
+                  {
+                    "name": "Simply the Hest",
+                    "tag": "Lv 5"
+                  },
+                  {
+                    "name": "Blood on the Battlefield",
+                    "tag": "Lv 10"
+                  },
+                  {
+                    "name": "Camaraderie",
+                    "tag": "Lv 15"
+                  },
+                  {
+                    "name": "Rude Awakening",
+                    "tag": "Lv 20"
+                  },
+                  {
+                    "name": "Worthy of His Back",
+                    "tag": "Lv 25"
+                  },
+                  {
+                    "name": "Pride and Duty (Will Take You from the Mountain)",
+                    "tag": "Lv 30 · → Warrior"
+                  }
+                ]
+              },
+              {
+                "id": "job-war-arr",
+                "title": "Warrior — A Realm Reborn",
+                "note": "Lv 30–50",
+                "quests": [
+                  {
+                    "name": "A Spectacle for the Ages",
+                    "tag": "Lv 30 · unlock"
+                  },
+                  {
+                    "name": "Proof of Might",
+                    "tag": "Lv 35"
+                  },
+                  {
+                    "name": "Crushing It",
+                    "tag": "Lv 40"
+                  },
+                  {
+                    "name": "Warrior of Light",
+                    "tag": "Lv 45"
+                  },
+                  {
+                    "name": "The Heart of the Problem",
+                    "tag": "Lv 50"
+                  },
+                  {
+                    "name": "A Song of Steels",
+                    "tag": "Lv 50"
+                  }
+                ]
+              },
+              {
+                "id": "job-war-hw",
+                "title": "Warrior — Heavensward",
+                "note": "Lv 52–60",
+                "quests": [
+                  {
+                    "name": "Curious Gorge Meets His Match",
+                    "tag": "Lv 52"
+                  },
+                  {
+                    "name": "How to Quit You",
+                    "tag": "Lv 54"
+                  },
+                  {
+                    "name": "Curious Gorge Goes to Castrum Oriens",
+                    "tag": "Lv 56"
+                  },
+                  {
+                    "name": "Warrior of Heart",
+                    "tag": "Lv 58"
+                  },
+                  {
+                    "name": "The Heart of the Beast",
+                    "tag": "Lv 60"
+                  }
+                ]
+              },
+              {
+                "id": "job-war-sb",
+                "title": "Warrior — Stormblood",
+                "note": "Lv 63–70",
+                "quests": [
+                  {
+                    "name": "None of the Above",
+                    "tag": "Lv 63"
+                  },
+                  {
+                    "name": "The Baying of the Hounds",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "Tainted Love",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "Warrior of the Round",
+                    "tag": "Lv 70"
+                  }
+                ]
+              },
+              {
+                "id": "job-war-shb",
+                "title": "Warrior — Shadowbringers",
+                "note": "Lv 80",
+                "quests": [
+                  {
+                    "name": "The Warrior's Journey",
+                    "tag": "Lv 80"
+                  }
+                ]
+              }
+            ],
+            "huntSections": [
+              {
+                "id": "hunt-mrd-r1",
+                "title": "Rank 1",
+                "note": "Lv 1–15",
+                "quests": [
+                  {
+                    "name": "Little Ladybug",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Wharf Rat",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Aurelia",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Bee Cloud",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Wild Dodo",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Tiny Mandragora",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Bogy",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Wounded Aurochs",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Grounded Raider",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Megalocrab",
+                    "tag": "×3"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-mrd-r2",
+                "title": "Rank 2",
+                "note": "Lv 15–25",
+                "quests": [
+                  {
+                    "name": "Firefly",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Mossless Goobbue",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Fat Dodo",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Moraby Mole",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Qiqirn Eggdigger",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Rhotano Buccaneer",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Dusk Bat",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Puk Hatchling",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Hedgemole",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Rothlyt Pelican",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Killer Mantis",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Wild Wolf",
+                    "tag": "×4"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-mrd-r3",
+                "title": "Rank 3",
+                "note": "Lv 25–35",
+                "quests": [
+                  {
+                    "name": "Stoneshell",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Diseased Treant",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Yarzon Scavenger",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Redbelly Larcener",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Shroud Hare",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Sabotender",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Balloon",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Phurble",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Sandskin Peiste",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Axe Beak",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Toadstool",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Floating Eye",
+                    "tag": "×4"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-mrd-r4",
+                "title": "Rank 4",
+                "note": "Lv 35–45",
+                "quests": [
+                  {
+                    "name": "Stroper",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Adamantoise",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Smoke Bomb",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Grass Raptor",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Snipper",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Bloodshore Bell",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Jungle Coeurl",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Snow Wolf Pup",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Redhorn Ogre",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Ornery Karakul",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Highland Goobbue",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Downy Aevis",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Snowstorm Goobbue",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Grenade",
+                    "tag": "×4"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-mrd-r5",
+                "title": "Rank 5",
+                "note": "Lv 45–50",
+                "quests": [
+                  {
+                    "name": "Molted Ziz",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Quartz Doblyn",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Dead Man's Moan",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Morbol",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Crater Golem",
+                    "tag": "×1"
+                  },
+                  {
+                    "name": "Wild Hog",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Biast",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "5th Cohort Signifer",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Synthetic Doblyn",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Watchwolf",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Iron Tortoise",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Milkroot Cluster",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "4th Cohort Secutor",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "2nd Cohort Laquearius",
+                    "tag": "×5"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "drk",
+            "label": "Dark Knight",
+            "sections": [
+              {
+                "id": "job-drk-hw",
+                "title": "Dark Knight — Heavensward",
+                "note": "Lv 30–60",
+                "quests": [
+                  {
+                    "name": "Our End",
+                    "tag": "Lv 30 · unlock"
+                  },
+                  {
+                    "name": "Unmoved",
+                    "tag": "Lv 35"
+                  },
+                  {
+                    "name": "Kindred Spirits",
+                    "tag": "Lv 40"
+                  },
+                  {
+                    "name": "Do Unto Others",
+                    "tag": "Lv 45"
+                  },
+                  {
+                    "name": "Heroism",
+                    "tag": "Lv 50"
+                  },
+                  {
+                    "name": "Knights Be Not Proud",
+                    "tag": "Lv 55"
+                  },
+                  {
+                    "name": "Before the Dawn",
+                    "tag": "Lv 58"
+                  },
+                  {
+                    "name": "Endgame",
+                    "tag": "Lv 60"
+                  }
+                ]
+              },
+              {
+                "id": "job-drk-sb",
+                "title": "Dark Knight — Stormblood",
+                "note": "Lv 63–70",
+                "quests": [
+                  {
+                    "name": "Absolution",
+                    "tag": "Lv 63"
+                  },
+                  {
+                    "name": "A Soul Apart",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "The Wages of Violence",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "Shadowsake",
+                    "tag": "Lv 70"
+                  }
+                ]
+              },
+              {
+                "id": "job-drk-shb",
+                "title": "Dark Knight — Shadowbringers",
+                "note": "Lv 80",
+                "quests": [
+                  {
+                    "name": "The Darkest Knight",
+                    "tag": "Lv 80"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "gnb",
+            "label": "Gunbreaker",
+            "sections": [
+              {
+                "id": "job-gnb-shb",
+                "title": "Gunbreaker — Shadowbringers",
+                "note": "Lv 60–80",
+                "quests": [
+                  {
+                    "name": "The Makings of a Gunbreaker",
+                    "tag": "Lv 60 · unlock"
+                  },
+                  {
+                    "name": "A Gunbreaker's Resolve",
+                    "tag": "Lv 60"
+                  },
+                  {
+                    "name": "The Blade's Reach",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "A Land Encroached Upon",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "The Blade's Reunion",
+                    "tag": "Lv 70"
+                  },
+                  {
+                    "name": "The Gunbreaker's Burden",
+                    "tag": "Lv 72"
+                  },
+                  {
+                    "name": "When Old Wounds Fail",
+                    "tag": "Lv 74"
+                  },
+                  {
+                    "name": "The Soul of Stone",
+                    "tag": "Lv 76"
+                  },
+                  {
+                    "name": "Gunbreaker's Day",
+                    "tag": "Lv 78"
+                  },
+                  {
+                    "name": "The Strong Survive",
+                    "tag": "Lv 80"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "healers": [
+      {
+        "role": null,
+        "jobs": [
+          {
+            "id": "whm",
+            "label": "White Mage",
+            "sections": [
+              {
+                "id": "job-cnj",
+                "title": "Conjurer",
+                "note": "Lv 1–30",
+                "quests": [
+                  {
+                    "name": "Way of the Conjurer",
+                    "tag": "Lv 1 · unlock"
+                  },
+                  {
+                    "name": "My First Cane",
+                    "tag": "Lv 1"
+                  },
+                  {
+                    "name": "Spirithold Broken",
+                    "tag": "Lv 5"
+                  },
+                  {
+                    "name": "The Spiritspeaker",
+                    "tag": "Lv 10"
+                  },
+                  {
+                    "name": "Awakening the Echo",
+                    "tag": "Lv 15"
+                  },
+                  {
+                    "name": "A Hero in the Making",
+                    "tag": "Lv 20"
+                  },
+                  {
+                    "name": "Austerities of Earth",
+                    "tag": "Lv 25"
+                  },
+                  {
+                    "name": "In Nature's Embrace",
+                    "tag": "Lv 30 · → White Mage"
+                  }
+                ]
+              },
+              {
+                "id": "job-whm-arr",
+                "title": "White Mage — A Realm Reborn",
+                "note": "Lv 30–50",
+                "quests": [
+                  {
+                    "name": "Seer Folly",
+                    "tag": "Lv 30 · unlock"
+                  },
+                  {
+                    "name": "Nary a Care in the World",
+                    "tag": "Lv 35"
+                  },
+                  {
+                    "name": "The Gift of Mercy",
+                    "tag": "Lv 40"
+                  },
+                  {
+                    "name": "Cure for the Common Cause",
+                    "tag": "Lv 45"
+                  },
+                  {
+                    "name": "Heart of the Forest",
+                    "tag": "Lv 50"
+                  },
+                  {
+                    "name": "True White",
+                    "tag": "Lv 50"
+                  }
+                ]
+              },
+              {
+                "id": "job-whm-hw",
+                "title": "White Mage — Heavensward",
+                "note": "Lv 52–60",
+                "quests": [
+                  {
+                    "name": "Mantle of the Whorl",
+                    "tag": "Lv 52"
+                  },
+                  {
+                    "name": "Rite of the Roundtable",
+                    "tag": "Lv 54"
+                  },
+                  {
+                    "name": "A Lesson in Life",
+                    "tag": "Lv 56"
+                  },
+                  {
+                    "name": "Casting Shadows",
+                    "tag": "Lv 58"
+                  },
+                  {
+                    "name": "Mantle of the White",
+                    "tag": "Lv 60"
+                  }
+                ]
+              },
+              {
+                "id": "job-whm-sb",
+                "title": "White Mage — Stormblood",
+                "note": "Lv 63–70",
+                "quests": [
+                  {
+                    "name": "You Know What I'll Do",
+                    "tag": "Lv 63"
+                  },
+                  {
+                    "name": "The Measure of a Mentor",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "Body and Soul",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "The Planer's Call",
+                    "tag": "Lv 70"
+                  }
+                ]
+              },
+              {
+                "id": "job-whm-shb",
+                "title": "White Mage — Shadowbringers",
+                "note": "Lv 80",
+                "quests": [
+                  {
+                    "name": "The Gift of Life",
+                    "tag": "Lv 80"
+                  }
+                ]
+              }
+            ],
+            "huntSections": [
+              {
+                "id": "hunt-cnj-r1",
+                "title": "Rank 1",
+                "note": "Lv 1–15",
+                "quests": [
+                  {
+                    "name": "Little Ladybug",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Ground Squirrel",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Forest Funguar",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Miteling",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Chigoe",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Water Sprite",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Midge Swarm",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Microchu",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Syrphid Swarm",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Northern Vulture",
+                    "tag": "×3"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-cnj-r2",
+                "title": "Rank 2",
+                "note": "Lv 15–25",
+                "quests": [
+                  {
+                    "name": "Tree Slug",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Arbor Buzzard",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Goblin Hunter",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Firefly",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Mandragora",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Boring Weevil",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Faerie Funguar",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Giant Gnat",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Wolf Poacher",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Qiqirn Beater",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Black Bat",
+                    "tag": "×3"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-cnj-r3",
+                "title": "Rank 3",
+                "note": "Lv 25–35",
+                "quests": [
+                  {
+                    "name": "Stoneshell",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Laughing Toad",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Diseased Treant",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Lead Coblyn",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Bark Eft",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Glowfly",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Antelope Stag",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Sabotender",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Qiqirn Roerunner",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Goblin Thug",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Toadstool",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Apkallu",
+                    "tag": "×3"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-cnj-r4",
+                "title": "Rank 4",
+                "note": "Lv 35–45",
+                "quests": [
+                  {
+                    "name": "Lindwurm",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Gigantoad",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Bigmouth Orobon",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Mamool Ja Infiltrator",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Sandworm",
+                    "tag": "×1"
+                  },
+                  {
+                    "name": "Revenant",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Bloodshore Bell",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Ornery Karakul",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Deepvoid Deathmouse",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Dryad",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Downy Aevis",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Will-o'-the-wisp",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Dragonfly",
+                    "tag": "×4"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-cnj-r5",
+                "title": "Rank 5",
+                "note": "Lv 45–50",
+                "quests": [
+                  {
+                    "name": "Golden Fleece",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Grenade",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Hippocerf",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Lammergeyer",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Dead Man's Moan",
+                    "tag": "×1"
+                  },
+                  {
+                    "name": "3rd Cohort Hoplomachus",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Lesser Kalong",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Snow Wolf",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "5th Cohort Eques",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Sea Wasp",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Sylph Bonnet",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Ahriman",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "2nd Cohort Vanguard",
+                    "tag": "×4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "acn",
+            "label": "Arcanist",
+            "sections": [
+              {
+                "id": "job-acn",
+                "title": "Arcanist",
+                "note": "Lv 1–30 · shared by SCH & SMN",
+                "quests": [
+                  {
+                    "name": "Way of the Arcanist",
+                    "tag": "Lv 1 · unlock"
+                  },
+                  {
+                    "name": "My First Grimoire",
+                    "tag": "Lv 1"
+                  },
+                  {
+                    "name": "It's Probably Pirates",
+                    "tag": "Lv 5"
+                  },
+                  {
+                    "name": "Skeletons in Her Closet",
+                    "tag": "Lv 10"
+                  },
+                  {
+                    "name": "Business is Booming",
+                    "tag": "Lv 15"
+                  },
+                  {
+                    "name": "Big Catch",
+                    "tag": "Lv 20"
+                  },
+                  {
+                    "name": "The Things We Do for Cheese",
+                    "tag": "Lv 25"
+                  },
+                  {
+                    "name": "Sinking Doesmaga",
+                    "tag": "Lv 30 · → Scholar / Summoner"
+                  }
+                ]
+              }
+            ],
+            "huntSections": [
+              {
+                "id": "hunt-acn-r1",
+                "title": "Rank 1",
+                "note": "Lv 1–15",
+                "quests": [
+                  {
+                    "name": "Little Ladybug",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Wharf Rat",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Lost Lamb",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Wind Sprite",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Puk Hatchling",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Nesting Buzzard",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Bogy",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Cave Bat",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Galago",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Grounded Pirate",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Lightning Sprite",
+                    "tag": "×3"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-acn-r2",
+                "title": "Rank 2",
+                "note": "Lv 15–25",
+                "quests": [
+                  {
+                    "name": "Sewer Mole",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Mossless Goobbue",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Fat Dodo",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Arbor Buzzard",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Qiqirn Eggdigger",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Dusk Bat",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Puk Hatchling",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Hedgemole",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Rothlyt Pelican",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Killer Mantis",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Bumble Beetle",
+                    "tag": "×3"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-acn-r3",
+                "title": "Rank 3",
+                "note": "Lv 25–35",
+                "quests": [
+                  {
+                    "name": "Overgrown Ivy",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Lead Coblyn",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Kedtrap",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Coeurl Pup",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Antelope Stag",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Balloon",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Chasm Buzzard",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Axe Beak",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Clay Golem",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Sandstone Golem",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Brood Ziz",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Lindwurm",
+                    "tag": "×4"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-acn-r4",
+                "title": "Rank 4",
+                "note": "Lv 35–45",
+                "quests": [
+                  {
+                    "name": "Qiqirn Gullroaster",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Grass Raptor",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Gigantoad",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Sundrake",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Colibri",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Coeurl",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Mildewed Goobbue",
+                    "tag": "×1"
+                  },
+                  {
+                    "name": "Snow Wolf Pup",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Feral Croc",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Dryad",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Taurus",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Molted Ziz",
+                    "tag": "×4"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-acn-r5",
+                "title": "Rank 5",
+                "note": "Lv 45–50",
+                "quests": [
+                  {
+                    "name": "Quartz Doblyn",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Lammergeyer",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "3rd Cohort Laquearius",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Nix",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Mudpuppy",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Wild Hog",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Watchwolf",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "5th Cohort Laquearius",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Snow Wolf",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Natalan Watchwolf",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Axolotl",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Zahar'ak Battle Drake",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "4th Cohort Vanguard",
+                    "tag": "×4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "sch",
+            "label": "Scholar",
+            "sections": [
+              {
+                "id": "job-sch-arr",
+                "title": "Scholar — A Realm Reborn",
+                "note": "Lv 30–50",
+                "quests": [
+                  {
+                    "name": "Forgotten but Not Gone",
+                    "tag": "Lv 30 · unlock"
+                  },
+                  {
+                    "name": "Hest of the Best",
+                    "tag": "Lv 35"
+                  },
+                  {
+                    "name": "The Beast Within",
+                    "tag": "Lv 40"
+                  },
+                  {
+                    "name": "The Theory of Everything",
+                    "tag": "Lv 45"
+                  },
+                  {
+                    "name": "The Next Ship Out",
+                    "tag": "Lv 50"
+                  },
+                  {
+                    "name": "Promises to Keep",
+                    "tag": "Lv 50"
+                  }
+                ]
+              },
+              {
+                "id": "job-sch-hw",
+                "title": "Scholar — Heavensward",
+                "note": "Lv 52–60",
+                "quests": [
+                  {
+                    "name": "Scholarly Pursuit",
+                    "tag": "Lv 52"
+                  },
+                  {
+                    "name": "A Faerie Tale Come True",
+                    "tag": "Lv 54"
+                  },
+                  {
+                    "name": "Soul Searching",
+                    "tag": "Lv 56"
+                  },
+                  {
+                    "name": "A Scholar's Test",
+                    "tag": "Lv 58"
+                  },
+                  {
+                    "name": "Scholarly Duties",
+                    "tag": "Lv 60"
+                  }
+                ]
+              },
+              {
+                "id": "job-sch-sb",
+                "title": "Scholar — Stormblood",
+                "note": "Lv 63–70",
+                "quests": [
+                  {
+                    "name": "An Unwanted Truth",
+                    "tag": "Lv 63"
+                  },
+                  {
+                    "name": "The Wages of Mercy",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "The Kindness of Strangers",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "The Last of the Scholars",
+                    "tag": "Lv 70"
+                  }
+                ]
+              },
+              {
+                "id": "job-sch-shb",
+                "title": "Scholar — Shadowbringers",
+                "note": "Lv 80",
+                "quests": [
+                  {
+                    "name": "Scholar's Burden",
+                    "tag": "Lv 80"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "ast",
+            "label": "Astrologian",
+            "sections": [
+              {
+                "id": "job-ast-hw",
+                "title": "Astrologian — Heavensward",
+                "note": "Lv 30–60",
+                "quests": [
+                  {
+                    "name": "Stairway to the Heavens",
+                    "tag": "Lv 30 · unlock"
+                  },
+                  {
+                    "name": "Heavens' Grace",
+                    "tag": "Lv 35"
+                  },
+                  {
+                    "name": "A Burden of Responsibility",
+                    "tag": "Lv 40"
+                  },
+                  {
+                    "name": "Fool's Expectations",
+                    "tag": "Lv 45"
+                  },
+                  {
+                    "name": "Eyes Unclouded",
+                    "tag": "Lv 50"
+                  },
+                  {
+                    "name": "Reviving the Past",
+                    "tag": "Lv 55"
+                  },
+                  {
+                    "name": "A Vision of Resolution",
+                    "tag": "Lv 58"
+                  },
+                  {
+                    "name": "Fortune in the Stars",
+                    "tag": "Lv 60"
+                  }
+                ]
+              },
+              {
+                "id": "job-ast-sb",
+                "title": "Astrologian — Stormblood",
+                "note": "Lv 63–70",
+                "quests": [
+                  {
+                    "name": "Divine Stars",
+                    "tag": "Lv 63"
+                  },
+                  {
+                    "name": "The Star in the Balance",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "Hear, See, Act",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "Mapping the Realm",
+                    "tag": "Lv 70"
+                  }
+                ]
+              },
+              {
+                "id": "job-ast-shb",
+                "title": "Astrologian — Shadowbringers",
+                "note": "Lv 80",
+                "quests": [
+                  {
+                    "name": "The Astrologian's Ward",
+                    "tag": "Lv 80"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "sge",
+            "label": "Sage",
+            "sections": [
+              {
+                "id": "job-sge-ew",
+                "title": "Sage — Endwalker",
+                "note": "Lv 70–90",
+                "quests": [
+                  {
+                    "name": "Sage's Path",
+                    "tag": "Lv 70 · unlock"
+                  },
+                  {
+                    "name": "The Gift of Galenus",
+                    "tag": "Lv 72"
+                  },
+                  {
+                    "name": "The Mind of a Sage",
+                    "tag": "Lv 74"
+                  },
+                  {
+                    "name": "Learning to Walk Again",
+                    "tag": "Lv 76"
+                  },
+                  {
+                    "name": "A Sage's Calling",
+                    "tag": "Lv 78"
+                  },
+                  {
+                    "name": "The Burden of Wisdom",
+                    "tag": "Lv 80"
+                  },
+                  {
+                    "name": "The Last Note",
+                    "tag": "Lv 82"
+                  },
+                  {
+                    "name": "Boundaries of Wisdom",
+                    "tag": "Lv 85"
+                  },
+                  {
+                    "name": "A Teacher's Legacy",
+                    "tag": "Lv 88"
+                  },
+                  {
+                    "name": "The Sage's Path, Part II",
+                    "tag": "Lv 90"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "dps": [
+      {
+        "role": "Melee",
+        "jobs": [
+          {
+            "id": "mnk",
+            "label": "Monk",
+            "sections": [
+              {
+                "id": "job-pgl",
+                "title": "Pugilist",
+                "note": "Lv 1–30",
+                "quests": [
+                  {
+                    "name": "Way of the Pugilist",
+                    "tag": "Lv 1 · unlock"
+                  },
+                  {
+                    "name": "My First Fists",
+                    "tag": "Lv 1"
+                  },
+                  {
+                    "name": "Throwing Your Weight Around",
+                    "tag": "Lv 5"
+                  },
+                  {
+                    "name": "Return of the Holyfist",
+                    "tag": "Lv 10"
+                  },
+                  {
+                    "name": "A Royal Reception",
+                    "tag": "Lv 15"
+                  },
+                  {
+                    "name": "The Middle Path",
+                    "tag": "Lv 20"
+                  },
+                  {
+                    "name": "Guts Over Gil",
+                    "tag": "Lv 25"
+                  },
+                  {
+                    "name": "Brother from Another Mother",
+                    "tag": "Lv 30 · → Monk"
+                  }
+                ]
+              },
+              {
+                "id": "job-mnk-arr",
+                "title": "Monk — A Realm Reborn",
+                "note": "Lv 30–50",
+                "quests": [
+                  {
+                    "name": "Never Easy",
+                    "tag": "Lv 30 · unlock"
+                  },
+                  {
+                    "name": "Virtuous Acts",
+                    "tag": "Lv 35"
+                  },
+                  {
+                    "name": "For the Greater Good",
+                    "tag": "Lv 40"
+                  },
+                  {
+                    "name": "Stormcaller",
+                    "tag": "Lv 45"
+                  },
+                  {
+                    "name": "Return of the Holyfist",
+                    "tag": "Lv 50"
+                  },
+                  {
+                    "name": "More than a Warrior",
+                    "tag": "Lv 50"
+                  }
+                ]
+              },
+              {
+                "id": "job-mnk-hw",
+                "title": "Monk — Heavensward",
+                "note": "Lv 52–60",
+                "quests": [
+                  {
+                    "name": "A Community of Disciples",
+                    "tag": "Lv 52"
+                  },
+                  {
+                    "name": "Of Defiance Born",
+                    "tag": "Lv 54"
+                  },
+                  {
+                    "name": "A Monk's Legacy",
+                    "tag": "Lv 56"
+                  },
+                  {
+                    "name": "Smashing Success",
+                    "tag": "Lv 58"
+                  },
+                  {
+                    "name": "A Fistful of Resolve",
+                    "tag": "Lv 60"
+                  }
+                ]
+              },
+              {
+                "id": "job-mnk-sb",
+                "title": "Monk — Stormblood",
+                "note": "Lv 63–70",
+                "quests": [
+                  {
+                    "name": "Appetite for Destruction",
+                    "tag": "Lv 63"
+                  },
+                  {
+                    "name": "An Ear to the Ground",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "The Courage in Your Fists",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "Heavens' Fall",
+                    "tag": "Lv 70"
+                  }
+                ]
+              },
+              {
+                "id": "job-mnk-shb",
+                "title": "Monk — Shadowbringers",
+                "note": "Lv 80",
+                "quests": [
+                  {
+                    "name": "The Lost Monk",
+                    "tag": "Lv 80"
+                  }
+                ]
+              }
+            ],
+            "huntSections": [
+              {
+                "id": "hunt-pgl-r1",
+                "title": "Rank 1",
+                "note": "Lv 1–15",
+                "quests": [
+                  {
+                    "name": "Huge Hornet",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Star Marmot",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Cactuar",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Snapping Shrew",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Orobon",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Nesting Buzzard",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Spriggan Graverobber",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Goblin Mugger",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Sandtoad",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Eft",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Sun Midge Swarm",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Desert Peiste",
+                    "tag": "×2"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-pgl-r2",
+                "title": "Rank 2",
+                "note": "Lv 15–25",
+                "quests": [
+                  {
+                    "name": "Bomb",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Cochineal Cactuar",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Antling Sentry",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Giant Tortoise",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Arbor Buzzard",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Scaphite",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Thickshell",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Tuco-tuco",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Myotragus Nanny",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Blowfly Swarm",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Vandalous Imp",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Bloated Bogy",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Rotting Corpse",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Rotting Noble",
+                    "tag": "×2"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-pgl-r3",
+                "title": "Rank 3",
+                "note": "Lv 25–35",
+                "quests": [
+                  {
+                    "name": "Overgrown Ivy",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Smallmouth Orobon",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Forest Yarzon",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Coeurl Pup",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Shroud Hare",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Bark Eft",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Fallen Mage",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Ziz",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Corpse Brigade Knuckledancer",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Clay Golem",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Coeurlclaw Hunter",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Lindwurm",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Bigmouth Orobon",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Apkallu",
+                    "tag": "×3"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-pgl-r4",
+                "title": "Rank 4",
+                "note": "Lv 35–45",
+                "quests": [
+                  {
+                    "name": "Mamool Ja Breeder",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Russet Yarzon",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Smoke Bomb",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Deathgaze",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Jungle Coeurl",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Goobbue",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Basalt Golem",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Velociraptor",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Highland Goobbue",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Feral Croc",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Redhorn Ogre",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Ochu",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Molted Ziz",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Snowstorm Goobbue",
+                    "tag": "×3"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-pgl-r5",
+                "title": "Rank 5",
+                "note": "Lv 45–50",
+                "quests": [
+                  {
+                    "name": "Quartz Doblyn",
+                    "tag": "×6"
+                  },
+                  {
+                    "name": "Dead Man's Moan",
+                    "tag": "×6"
+                  },
+                  {
+                    "name": "3rd Cohort Signifer",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Wild Hog",
+                    "tag": "×6"
+                  },
+                  {
+                    "name": "Raging Harrier",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Biast",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Gigas Shramana",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Snow Wolf",
+                    "tag": "×6"
+                  },
+                  {
+                    "name": "5th Cohort Hoplomachus",
+                    "tag": "×6"
+                  },
+                  {
+                    "name": "Dreamtoad",
+                    "tag": "×6"
+                  },
+                  {
+                    "name": "Hapalit",
+                    "tag": "×6"
+                  },
+                  {
+                    "name": "Zahar'ak Battle Drake",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Basilisk",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Shelfclaw Reaver",
+                    "tag": "×4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "drg",
+            "label": "Dragoon",
+            "sections": [
+              {
+                "id": "job-lnc",
+                "title": "Lancer",
+                "note": "Lv 1–30",
+                "quests": [
+                  {
+                    "name": "Way of the Lancer",
+                    "tag": "Lv 1 · unlock"
+                  },
+                  {
+                    "name": "My First Spear",
+                    "tag": "Lv 1"
+                  },
+                  {
+                    "name": "To Catch a Poacher",
+                    "tag": "Lv 5"
+                  },
+                  {
+                    "name": "Lance of Fury",
+                    "tag": "Lv 10"
+                  },
+                  {
+                    "name": "Courage of Stone",
+                    "tag": "Lv 15"
+                  },
+                  {
+                    "name": "A Matter of Vengeance",
+                    "tag": "Lv 20"
+                  },
+                  {
+                    "name": "Fading Light",
+                    "tag": "Lv 25"
+                  },
+                  {
+                    "name": "Friends Forever",
+                    "tag": "Lv 30 · → Dragoon"
+                  }
+                ]
+              },
+              {
+                "id": "job-drg-arr",
+                "title": "Dragoon — A Realm Reborn",
+                "note": "Lv 30–50",
+                "quests": [
+                  {
+                    "name": "Eye of the Dragon",
+                    "tag": "Lv 30 · unlock"
+                  },
+                  {
+                    "name": "A Dragoon's Life",
+                    "tag": "Lv 35"
+                  },
+                  {
+                    "name": "Unfading Scars",
+                    "tag": "Lv 40"
+                  },
+                  {
+                    "name": "The Dragon's Tooth",
+                    "tag": "Lv 45"
+                  },
+                  {
+                    "name": "Double Dragoon",
+                    "tag": "Lv 50"
+                  },
+                  {
+                    "name": "The Heart of the Dragon",
+                    "tag": "Lv 50"
+                  }
+                ]
+              },
+              {
+                "id": "job-drg-hw",
+                "title": "Dragoon — Heavensward",
+                "note": "Lv 52–60",
+                "quests": [
+                  {
+                    "name": "The Fate of Stars",
+                    "tag": "Lv 52"
+                  },
+                  {
+                    "name": "Into the Dragon's Maw",
+                    "tag": "Lv 54"
+                  },
+                  {
+                    "name": "The Finest of Blades",
+                    "tag": "Lv 56"
+                  },
+                  {
+                    "name": "Sworn Upon a Lance",
+                    "tag": "Lv 58"
+                  },
+                  {
+                    "name": "Lance of Heaven",
+                    "tag": "Lv 60"
+                  }
+                ]
+              },
+              {
+                "id": "job-drg-sb",
+                "title": "Dragoon — Stormblood",
+                "note": "Lv 63–70",
+                "quests": [
+                  {
+                    "name": "Life's Little Struggles",
+                    "tag": "Lv 63"
+                  },
+                  {
+                    "name": "Another Brave New World",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "Dragon and Master",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "The Last Dragon's Fate",
+                    "tag": "Lv 70"
+                  }
+                ]
+              },
+              {
+                "id": "job-drg-shb",
+                "title": "Dragoon — Shadowbringers",
+                "note": "Lv 80",
+                "quests": [
+                  {
+                    "name": "A Dragoon's Duty",
+                    "tag": "Lv 80"
+                  }
+                ]
+              }
+            ],
+            "huntSections": [
+              {
+                "id": "hunt-lnc-r1",
+                "title": "Rank 1",
+                "note": "Lv 1–15",
+                "quests": [
+                  {
+                    "name": "Little Ladybug",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Ground Squirrel",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Forest Funguar",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Miteling",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Opo-opo",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Microchu",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Black Eft",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Bog Yarzon",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Hoglet",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Anole",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Diremite",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Tree Slug",
+                    "tag": "×3"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-lnc-r2",
+                "title": "Rank 2",
+                "note": "Lv 15–25",
+                "quests": [
+                  {
+                    "name": "Arbor Buzzard",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Treant Sapling",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Mandragora",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Wild Hoglet",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Lemur",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Boring Weevil",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Faerie Funguar",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Giant Gnat",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Boar Poacher",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Ziz Gorlin",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Black Bat",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Qiqirn Beater",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Antelope Doe",
+                    "tag": "×3"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-lnc-r3",
+                "title": "Rank 3",
+                "note": "Lv 25–35",
+                "quests": [
+                  {
+                    "name": "Stoneshell",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Smallmouth Orobon",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Yarzon Scavenger",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Redbelly Lookout",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Antelope Stag",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Moondrip Piledriver",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Sabotender",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Goblin Thug",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Sandskin Peiste",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Corpse Brigade Firedancer",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Coeurlclaw Poacher",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Apkallu",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Midland Condor",
+                    "tag": "×4"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-lnc-r4",
+                "title": "Rank 4",
+                "note": "Lv 35–45",
+                "quests": [
+                  {
+                    "name": "Floating Eye",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Large Buffalo",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Smoke Bomb",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Sundrake",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Spriggan",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Basalt Golem",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Ringtail",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Ornery Karakul",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Lesser Kalong",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Snow Wolf Pup",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Dryad",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Bateleur",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Downy Aevis",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Mirrorknight",
+                    "tag": "×4"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-lnc-r5",
+                "title": "Rank 5",
+                "note": "Lv 45–50",
+                "quests": [
+                  {
+                    "name": "Dragonfly",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Baritine Croc",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Dead Man's Moan",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "3rd Cohort Signifer",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Morbol",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Wild Hog",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Daring Harrier",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Lake Cobra",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Snow Wolf",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Sea Wasp",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "5th Cohort Vanguard",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Natalan Watchwolf",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Sylphlands Sentinel",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Basilisk",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "2nd Cohort Eques",
+                    "tag": "×5"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "nin",
+            "label": "Ninja",
+            "sections": [
+              {
+                "id": "job-rog",
+                "title": "Rogue",
+                "note": "Lv 1–30",
+                "quests": [
+                  {
+                    "name": "Way of the Rogue",
+                    "tag": "Lv 1 · unlock"
+                  },
+                  {
+                    "name": "My First Daggers",
+                    "tag": "Lv 1"
+                  },
+                  {
+                    "name": "Hunting Shadows",
+                    "tag": "Lv 5"
+                  },
+                  {
+                    "name": "My First Linkpearl",
+                    "tag": "Lv 10"
+                  },
+                  {
+                    "name": "Cutting Ties",
+                    "tag": "Lv 15"
+                  },
+                  {
+                    "name": "Quicker than the Eye",
+                    "tag": "Lv 20"
+                  },
+                  {
+                    "name": "House of Knives",
+                    "tag": "Lv 25"
+                  },
+                  {
+                    "name": "Underneath the Masked Rose",
+                    "tag": "Lv 30 · → Ninja"
+                  }
+                ]
+              },
+              {
+                "id": "job-nin-arr",
+                "title": "Ninja — A Realm Reborn",
+                "note": "Lv 30–50",
+                "quests": [
+                  {
+                    "name": "Peasants by Day, Ninjas by Night",
+                    "tag": "Lv 30 · unlock"
+                  },
+                  {
+                    "name": "The Murkiest of Depths",
+                    "tag": "Lv 35"
+                  },
+                  {
+                    "name": "Unforgivable",
+                    "tag": "Lv 40"
+                  },
+                  {
+                    "name": "Inside Job",
+                    "tag": "Lv 45"
+                  },
+                  {
+                    "name": "A Shinobi's Resolve",
+                    "tag": "Lv 50"
+                  },
+                  {
+                    "name": "Shadow Boxing",
+                    "tag": "Lv 50"
+                  }
+                ]
+              },
+              {
+                "id": "job-nin-hw",
+                "title": "Ninja — Heavensward",
+                "note": "Lv 52–60",
+                "quests": [
+                  {
+                    "name": "Ninja Undertakings",
+                    "tag": "Lv 52"
+                  },
+                  {
+                    "name": "A Shinobi's Mission",
+                    "tag": "Lv 54"
+                  },
+                  {
+                    "name": "Mysterious Masked Ninjas",
+                    "tag": "Lv 56"
+                  },
+                  {
+                    "name": "In Regards to an Operative",
+                    "tag": "Lv 58"
+                  },
+                  {
+                    "name": "A Flash of Inspiration",
+                    "tag": "Lv 60"
+                  }
+                ]
+              },
+              {
+                "id": "job-nin-sb",
+                "title": "Ninja — Stormblood",
+                "note": "Lv 63–70",
+                "quests": [
+                  {
+                    "name": "Ninja Roulette",
+                    "tag": "Lv 63"
+                  },
+                  {
+                    "name": "Kunoichi in the Shadows",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "True Concealment",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "The Legend of the Ninja",
+                    "tag": "Lv 70"
+                  }
+                ]
+              },
+              {
+                "id": "job-nin-shb",
+                "title": "Ninja — Shadowbringers",
+                "note": "Lv 80",
+                "quests": [
+                  {
+                    "name": "Ninja in the Spirit",
+                    "tag": "Lv 80"
+                  }
+                ]
+              }
+            ],
+            "huntSections": [
+              {
+                "id": "hunt-rog-r1",
+                "title": "Rank 1",
+                "note": "Lv 1–15",
+                "quests": [
+                  {
+                    "name": "Wharf Rat",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Lost Lamb",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Aurelia",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Wild Dodo",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Pugil",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Goblin Fisher",
+                    "tag": "×1"
+                  },
+                  {
+                    "name": "Tiny Mandragora",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Cave Bat",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Galago",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Grounded Pirate",
+                    "tag": "×1"
+                  },
+                  {
+                    "name": "Grounded Raider",
+                    "tag": "×1"
+                  },
+                  {
+                    "name": "Megalocrab",
+                    "tag": "×3"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-rog-r2",
+                "title": "Rank 2",
+                "note": "Lv 15–25",
+                "quests": [
+                  {
+                    "name": "Wild Jackal",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Roseling",
+                    "tag": "×1"
+                  },
+                  {
+                    "name": "Sewer Mole",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Fat Dodo",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Moraby Mole",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Qiqirn Eggdigger",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Puk Hatchling",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Rothlyt Pelican",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Killer Mantis",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Hedgemole",
+                    "tag": "×1"
+                  },
+                  {
+                    "name": "Wild Wolf",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Bumble Beetle",
+                    "tag": "×3"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-rog-r3",
+                "title": "Rank 3",
+                "note": "Lv 25–35",
+                "quests": [
+                  {
+                    "name": "Black Bat",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Gall Gnat",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Overgrown Ivy",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Bark Eft",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Redbelly Lookout",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Redbelly Larcener",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Antelope Stag",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "River Yarzon",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Corpse Brigade Knuckledancer",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Corpse Brigade Firedancer",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Coeurlclaw Hunter",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Coeurlclaw Cutter",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Sandstone Golem",
+                    "tag": "×3"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-rog-r4",
+                "title": "Rank 4",
+                "note": "Lv 35–45",
+                "quests": [
+                  {
+                    "name": "Large Buffalo",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Grass Raptor",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Qiqirn Gullroaster",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Colibri",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Coeurl",
+                    "tag": "×1"
+                  },
+                  {
+                    "name": "Highland Condor",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Basalt Golem",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Velociraptor",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Feral Croc",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Highland Goobbue",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Redhorn Ogre",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Taurus",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Bateleur",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Chinchilla",
+                    "tag": "×2"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-rog-r5",
+                "title": "Rank 5",
+                "note": "Lv 45–50",
+                "quests": [
+                  {
+                    "name": "Golden Fleece",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Quartz Doblyn",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Nix",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Mudpuppy",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Daring Harrier",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Raging Harrier",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Gigas Shramana",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Gigas Sozu",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Hippogryph",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Hapalit",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "2nd Cohort Eques",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "2nd Cohort Signifer",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "2nd Cohort Secutor",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "2nd Cohort Vanguard",
+                    "tag": "×2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "sam",
+            "label": "Samurai",
+            "sections": [
+              {
+                "id": "job-sam-sb",
+                "title": "Samurai — Stormblood",
+                "note": "Lv 50–70",
+                "quests": [
+                  {
+                    "name": "The Way of the Samurai",
+                    "tag": "Lv 50 · unlock"
+                  },
+                  {
+                    "name": "The Unfinished Man",
+                    "tag": "Lv 52"
+                  },
+                  {
+                    "name": "The Blade Unsheathed",
+                    "tag": "Lv 55"
+                  },
+                  {
+                    "name": "Steel Kills",
+                    "tag": "Lv 58"
+                  },
+                  {
+                    "name": "The Face of True Evil",
+                    "tag": "Lv 60"
+                  },
+                  {
+                    "name": "A Thousand Years in the Shadow",
+                    "tag": "Lv 63"
+                  },
+                  {
+                    "name": "A Rhapsody in Steel",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "Sword and Soul",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "The Lone Samurai",
+                    "tag": "Lv 70"
+                  }
+                ]
+              },
+              {
+                "id": "job-sam-shb",
+                "title": "Samurai — Shadowbringers",
+                "note": "Lv 80",
+                "quests": [
+                  {
+                    "name": "A Katana's Memory",
+                    "tag": "Lv 80"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "rpr",
+            "label": "Reaper",
+            "sections": [
+              {
+                "id": "job-rpr-ew",
+                "title": "Reaper — Endwalker",
+                "note": "Lv 70–90",
+                "quests": [
+                  {
+                    "name": "The Killer Instinct",
+                    "tag": "Lv 70 · unlock"
+                  },
+                  {
+                    "name": "The Voice of the Void",
+                    "tag": "Lv 72"
+                  },
+                  {
+                    "name": "A Familiar Pain",
+                    "tag": "Lv 74"
+                  },
+                  {
+                    "name": "The Cycle of Life and Death",
+                    "tag": "Lv 76"
+                  },
+                  {
+                    "name": "The Harvester's Creed",
+                    "tag": "Lv 78"
+                  },
+                  {
+                    "name": "A Harvest to Remember",
+                    "tag": "Lv 80"
+                  },
+                  {
+                    "name": "The Reaper's Legacy",
+                    "tag": "Lv 82"
+                  },
+                  {
+                    "name": "Binding Ties",
+                    "tag": "Lv 85"
+                  },
+                  {
+                    "name": "A Father's Burden",
+                    "tag": "Lv 88"
+                  },
+                  {
+                    "name": "Reaper's Requiem",
+                    "tag": "Lv 90"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "vpr",
+            "label": "Viper",
+            "sections": [
+              {
+                "id": "job-vpr-dt",
+                "title": "Viper — Dawntrail",
+                "note": "Lv 80+",
+                "quests": [
+                  {
+                    "name": "Viper's Bind",
+                    "tag": "Lv 80 · unlock"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "role": "Ranged",
+        "jobs": [
+          {
+            "id": "brd",
+            "label": "Bard",
+            "sections": [
+              {
+                "id": "job-arc",
+                "title": "Archer",
+                "note": "Lv 1–30",
+                "quests": [
+                  {
+                    "name": "Way of the Archer",
+                    "tag": "Lv 1 · unlock"
+                  },
+                  {
+                    "name": "My First Bow",
+                    "tag": "Lv 1"
+                  },
+                  {
+                    "name": "To Guard a Guardian",
+                    "tag": "Lv 5"
+                  },
+                  {
+                    "name": "Damage Control",
+                    "tag": "Lv 10"
+                  },
+                  {
+                    "name": "The Archer's Anthem",
+                    "tag": "Lv 15"
+                  },
+                  {
+                    "name": "Preparations of War",
+                    "tag": "Lv 20"
+                  },
+                  {
+                    "name": "Gathering Resolve",
+                    "tag": "Lv 25"
+                  },
+                  {
+                    "name": "A Song of Bards and Bowmen",
+                    "tag": "Lv 30 · → Bard"
+                  }
+                ]
+              },
+              {
+                "id": "job-brd-arr",
+                "title": "Bard — A Realm Reborn",
+                "note": "Lv 30–50",
+                "quests": [
+                  {
+                    "name": "Bard's-Eye View",
+                    "tag": "Lv 30 · unlock"
+                  },
+                  {
+                    "name": "Love Pains",
+                    "tag": "Lv 35"
+                  },
+                  {
+                    "name": "Ballad of Oblivion",
+                    "tag": "Lv 40"
+                  },
+                  {
+                    "name": "Notched Thoughts",
+                    "tag": "Lv 45"
+                  },
+                  {
+                    "name": "Heart of the Arrow",
+                    "tag": "Lv 50"
+                  },
+                  {
+                    "name": "Requiem for the Fallen",
+                    "tag": "Lv 50"
+                  }
+                ]
+              },
+              {
+                "id": "job-brd-hw",
+                "title": "Bard — Heavensward",
+                "note": "Lv 52–60",
+                "quests": [
+                  {
+                    "name": "The Prodigal Bard",
+                    "tag": "Lv 52"
+                  },
+                  {
+                    "name": "When All the Notes Are Wrong",
+                    "tag": "Lv 54"
+                  },
+                  {
+                    "name": "A Song of Redemption",
+                    "tag": "Lv 56"
+                  },
+                  {
+                    "name": "Hail to the Queen",
+                    "tag": "Lv 58"
+                  },
+                  {
+                    "name": "Final Verse",
+                    "tag": "Lv 60"
+                  }
+                ]
+              },
+              {
+                "id": "job-brd-sb",
+                "title": "Bard — Stormblood",
+                "note": "Lv 63–70",
+                "quests": [
+                  {
+                    "name": "Bard of the Blessed",
+                    "tag": "Lv 63"
+                  },
+                  {
+                    "name": "The Lost Melody",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "Tones of the Fallen",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "Forever and Ever",
+                    "tag": "Lv 70"
+                  }
+                ]
+              },
+              {
+                "id": "job-brd-shb",
+                "title": "Bard — Shadowbringers",
+                "note": "Lv 80",
+                "quests": [
+                  {
+                    "name": "A Bard's Song",
+                    "tag": "Lv 80"
+                  }
+                ]
+              }
+            ],
+            "huntSections": [
+              {
+                "id": "hunt-arc-r1",
+                "title": "Rank 1",
+                "note": "Lv 1–15",
+                "quests": [
+                  {
+                    "name": "Little Ladybug",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Ground Squirrel",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Forest Funguar",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Miteling",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Midge Swarm",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Water Sprite",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Black Eft",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Anole",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Trickster Imp",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Roselet",
+                    "tag": "×4"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-arc-r2",
+                "title": "Rank 2",
+                "note": "Lv 15–25",
+                "quests": [
+                  {
+                    "name": "Hornet Swarm",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Arbor Buzzard",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Magicked Bones",
+                    "tag": "×1"
+                  },
+                  {
+                    "name": "Treant Sapling",
+                    "tag": "×1"
+                  },
+                  {
+                    "name": "Goblin Hunter",
+                    "tag": "×1"
+                  },
+                  {
+                    "name": "Mandragora",
+                    "tag": "×1"
+                  },
+                  {
+                    "name": "Wild Hoglet",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Lemur",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Faerie Funguar",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Giant Gnat",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Raptor Poacher",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Antelope Doe",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Wild Boar",
+                    "tag": "×4"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-arc-r3",
+                "title": "Rank 3",
+                "note": "Lv 25–35",
+                "quests": [
+                  {
+                    "name": "Stoneshell",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Diseased Treant",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Overgrown Offering",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Yarzon Scavenger",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Forest Yarzon",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Jumping Djigga",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Redbelly Sharpeye",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Banemite",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Chasm Buzzard",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Sandskin Peiste",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Ziz",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Toadstool",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Apkallu",
+                    "tag": "×5"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-arc-r4",
+                "title": "Rank 4",
+                "note": "Lv 35–45",
+                "quests": [
+                  {
+                    "name": "Floating Eye",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Sandworm",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Russet Yarzon",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Giant Pelican",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Smoke Bomb",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Spriggan",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Bloodshore Bell",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Jungle Coeurl",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Ringtail",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Highland Condor",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Salamander",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Fallen Pikeman",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Ice Sprite",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Feral Croc",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Vodoriga",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Baritine Croc",
+                    "tag": "×5"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-arc-r5",
+                "title": "Rank 5",
+                "note": "Lv 45–50",
+                "quests": [
+                  {
+                    "name": "Hippocerf",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Dragonfly",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Oldgrowth Treant",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Lammergeyer",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Dead Man's Moan",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Morbol",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Mudpuppy",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Lesser Kalong",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Giant Reader",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Hippogryph",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "5th Cohort Secutor",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Tempered Gladiator",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Sylphlands Condor",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Milkroot Sapling",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Ahriman",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Shelfeye Reaver",
+                    "tag": "×5"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "mch",
+            "label": "Machinist",
+            "sections": [
+              {
+                "id": "job-mch-hw",
+                "title": "Machinist — Heavensward",
+                "note": "Lv 30–60",
+                "quests": [
+                  {
+                    "name": "Arm and Hammer",
+                    "tag": "Lv 30 · unlock"
+                  },
+                  {
+                    "name": "Of Mist and Machinery",
+                    "tag": "Lv 35"
+                  },
+                  {
+                    "name": "A Recurring Problem",
+                    "tag": "Lv 40"
+                  },
+                  {
+                    "name": "Arms and the Machinist",
+                    "tag": "Lv 45"
+                  },
+                  {
+                    "name": "The Expert Touch",
+                    "tag": "Lv 50"
+                  },
+                  {
+                    "name": "A Spark Flies",
+                    "tag": "Lv 55"
+                  },
+                  {
+                    "name": "Raising the Spirits",
+                    "tag": "Lv 58"
+                  },
+                  {
+                    "name": "Rise of the Machinists",
+                    "tag": "Lv 60"
+                  }
+                ]
+              },
+              {
+                "id": "job-mch-sb",
+                "title": "Machinist — Stormblood",
+                "note": "Lv 63–70",
+                "quests": [
+                  {
+                    "name": "The True and Noble",
+                    "tag": "Lv 63"
+                  },
+                  {
+                    "name": "Manic Mechanics",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "A Machine for Killing",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "A Machinist's Fate",
+                    "tag": "Lv 70"
+                  }
+                ]
+              },
+              {
+                "id": "job-mch-shb",
+                "title": "Machinist — Shadowbringers",
+                "note": "Lv 80",
+                "quests": [
+                  {
+                    "name": "A Machinist's Heart",
+                    "tag": "Lv 80"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "dnc",
+            "label": "Dancer",
+            "sections": [
+              {
+                "id": "job-dnc-shb",
+                "title": "Dancer — Shadowbringers",
+                "note": "Lv 60–80",
+                "quests": [
+                  {
+                    "name": "Shall We Dance",
+                    "tag": "Lv 60 · unlock"
+                  },
+                  {
+                    "name": "And We Danced",
+                    "tag": "Lv 60"
+                  },
+                  {
+                    "name": "Leap of Faith",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "Partners in Crime",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "Never Dance Alone",
+                    "tag": "Lv 70"
+                  },
+                  {
+                    "name": "The Path of a Dancer",
+                    "tag": "Lv 72"
+                  },
+                  {
+                    "name": "Every Gesture a Step",
+                    "tag": "Lv 74"
+                  },
+                  {
+                    "name": "In Harmony",
+                    "tag": "Lv 76"
+                  },
+                  {
+                    "name": "A Life in Motion",
+                    "tag": "Lv 78"
+                  },
+                  {
+                    "name": "Together We Dance",
+                    "tag": "Lv 80"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "blm",
+            "label": "Black Mage",
+            "sections": [
+              {
+                "id": "job-thm",
+                "title": "Thaumaturge",
+                "note": "Lv 1–30",
+                "quests": [
+                  {
+                    "name": "Way of the Thaumaturge",
+                    "tag": "Lv 1 · unlock"
+                  },
+                  {
+                    "name": "My First Sceptre",
+                    "tag": "Lv 1"
+                  },
+                  {
+                    "name": "Threat Level: Elevated",
+                    "tag": "Lv 5"
+                  },
+                  {
+                    "name": "You Shall Not Harm",
+                    "tag": "Lv 10"
+                  },
+                  {
+                    "name": "Sylph Management",
+                    "tag": "Lv 15"
+                  },
+                  {
+                    "name": "Playing with Fire",
+                    "tag": "Lv 20"
+                  },
+                  {
+                    "name": "The Threat of Accessories",
+                    "tag": "Lv 25"
+                  },
+                  {
+                    "name": "Taking the Black",
+                    "tag": "Lv 30 · → Black Mage"
+                  }
+                ]
+              },
+              {
+                "id": "job-blm-arr",
+                "title": "Black Mage — A Realm Reborn",
+                "note": "Lv 30–50",
+                "quests": [
+                  {
+                    "name": "Black Books",
+                    "tag": "Lv 30 · unlock"
+                  },
+                  {
+                    "name": "Never the Twain Shall Meet",
+                    "tag": "Lv 35"
+                  },
+                  {
+                    "name": "Rite of the Archon",
+                    "tag": "Lv 40"
+                  },
+                  {
+                    "name": "The Shape of Things to Come",
+                    "tag": "Lv 45"
+                  },
+                  {
+                    "name": "Written in the Stars",
+                    "tag": "Lv 50"
+                  },
+                  {
+                    "name": "A Final Temptation",
+                    "tag": "Lv 50"
+                  }
+                ]
+              },
+              {
+                "id": "job-blm-hw",
+                "title": "Black Mage — Heavensward",
+                "note": "Lv 52–60",
+                "quests": [
+                  {
+                    "name": "Returning to the Source",
+                    "tag": "Lv 52"
+                  },
+                  {
+                    "name": "A Series of Unfortunate Spells",
+                    "tag": "Lv 54"
+                  },
+                  {
+                    "name": "Diamond in the Rough",
+                    "tag": "Lv 56"
+                  },
+                  {
+                    "name": "The Sins of Antiquity",
+                    "tag": "Lv 58"
+                  },
+                  {
+                    "name": "Ice and Fire",
+                    "tag": "Lv 60"
+                  }
+                ]
+              },
+              {
+                "id": "job-blm-sb",
+                "title": "Black Mage — Stormblood",
+                "note": "Lv 63–70",
+                "quests": [
+                  {
+                    "name": "Up in Flames",
+                    "tag": "Lv 63"
+                  },
+                  {
+                    "name": "Arcane Anathema",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "A Mage's Life for Me",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "Matoya's Grimoire",
+                    "tag": "Lv 70"
+                  }
+                ]
+              },
+              {
+                "id": "job-blm-shb",
+                "title": "Black Mage — Shadowbringers",
+                "note": "Lv 80",
+                "quests": [
+                  {
+                    "name": "A Striking Opportunity",
+                    "tag": "Lv 80"
+                  }
+                ]
+              }
+            ],
+            "huntSections": [
+              {
+                "id": "hunt-thm-r1",
+                "title": "Rank 1",
+                "note": "Lv 1–15",
+                "quests": [
+                  {
+                    "name": "Little Ladybug",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Huge Hornet",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Cactuar",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Snapping Shrew",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Syrphid Cloud",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Yarzon Feeder",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Rusty Coblyn",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Spriggan Graverobber",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Qiqirn Shellsweeper",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Sun Bat",
+                    "tag": "×3"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-thm-r2",
+                "title": "Rank 2",
+                "note": "Lv 15–25",
+                "quests": [
+                  {
+                    "name": "Copper Coblyn",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Bomb",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Cochineal Cactuar",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Quiveron Attendant",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Giant Tortoise",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Antling Sentry",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Thickshell",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Toxic Toad",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Tuco-tuco",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Myotragus Nanny",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Blowfly Swarm",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Rotting Corpse",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Bloated Bogy",
+                    "tag": "×3"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-thm-r3",
+                "title": "Rank 3",
+                "note": "Lv 25–35",
+                "quests": [
+                  {
+                    "name": "Kedtrap",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Overgrown Ivy",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Yarzon Scavenger",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Forest Yarzon",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Laughing Toad",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Bark Eft",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Jumping Djigga",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Glowfly",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "River Yarzon",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Potter Wasp Swarm",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Phurble",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Corpse Brigade Knuckledancer",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Fire Sprite",
+                    "tag": "×4"
+                  },
+                  {
+                    "name": "Stroper",
+                    "tag": "×4"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-thm-r4",
+                "title": "Rank 4",
+                "note": "Lv 35–45",
+                "quests": [
+                  {
+                    "name": "Adamantoise",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Mamool Ja Executioner",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Revenant",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Russet Yarzon",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Smoke Bomb",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Dung Midge Swarm",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Gigantoad",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Spriggan",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Salamander",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Plasmoid",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Ice Sprite",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Feral Croc",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Will-o'-the-wisp",
+                    "tag": "×5"
+                  },
+                  {
+                    "name": "Golden Fleece",
+                    "tag": "×5"
+                  }
+                ]
+              },
+              {
+                "id": "hunt-thm-r5",
+                "title": "Rank 5",
+                "note": "Lv 45–50",
+                "quests": [
+                  {
+                    "name": "Oldgrowth Treant",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Dragonfly",
+                    "tag": "×6"
+                  },
+                  {
+                    "name": "Crater Golem",
+                    "tag": "×1"
+                  },
+                  {
+                    "name": "Dead Man's Moan",
+                    "tag": "×6"
+                  },
+                  {
+                    "name": "3rd Cohort Secutor",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Morbol",
+                    "tag": "×6"
+                  },
+                  {
+                    "name": "Nix",
+                    "tag": "×6"
+                  },
+                  {
+                    "name": "Lesser Kalong",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Gigas Sozu",
+                    "tag": "×2"
+                  },
+                  {
+                    "name": "Giant Logger",
+                    "tag": "×3"
+                  },
+                  {
+                    "name": "Iron Tortoise",
+                    "tag": "×6"
+                  },
+                  {
+                    "name": "Synthetic Doblyn",
+                    "tag": "×6"
+                  },
+                  {
+                    "name": "Ked",
+                    "tag": "×6"
+                  },
+                  {
+                    "name": "4th Cohort Hoplomachus",
+                    "tag": "×6"
+                  },
+                  {
+                    "name": "2nd Cohort Signifer",
+                    "tag": "×6"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "smn",
+            "label": "Summoner",
+            "sections": [
+              {
+                "id": "job-smn-arr",
+                "title": "Summoner — A Realm Reborn",
+                "note": "Lv 30–50",
+                "quests": [
+                  {
+                    "name": "Austerities of Flame",
+                    "tag": "Lv 30 · unlock"
+                  },
+                  {
+                    "name": "A Matter of Tradition",
+                    "tag": "Lv 35"
+                  },
+                  {
+                    "name": "Animal Instinct",
+                    "tag": "Lv 40"
+                  },
+                  {
+                    "name": "At the End of Our Hope",
+                    "tag": "Lv 45"
+                  },
+                  {
+                    "name": "Primal Burdens",
+                    "tag": "Lv 50"
+                  },
+                  {
+                    "name": "Shadowing the Summoner",
+                    "tag": "Lv 50"
+                  }
+                ]
+              },
+              {
+                "id": "job-smn-hw",
+                "title": "Summoner — Heavensward",
+                "note": "Lv 52–60",
+                "quests": [
+                  {
+                    "name": "Austerities of Fire",
+                    "tag": "Lv 52"
+                  },
+                  {
+                    "name": "Primal Fear",
+                    "tag": "Lv 54"
+                  },
+                  {
+                    "name": "The Defiant Ones",
+                    "tag": "Lv 56"
+                  },
+                  {
+                    "name": "The Fluttering Flame",
+                    "tag": "Lv 58"
+                  },
+                  {
+                    "name": "Primal Nature",
+                    "tag": "Lv 60"
+                  }
+                ]
+              },
+              {
+                "id": "job-smn-sb",
+                "title": "Summoner — Stormblood",
+                "note": "Lv 63–70",
+                "quests": [
+                  {
+                    "name": "Primal Aspirations",
+                    "tag": "Lv 63"
+                  },
+                  {
+                    "name": "Dead Ends",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "The Sum of Our Parts",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "A Summoner's Resolve",
+                    "tag": "Lv 70"
+                  }
+                ]
+              },
+              {
+                "id": "job-smn-shb",
+                "title": "Summoner — Shadowbringers",
+                "note": "Lv 80",
+                "quests": [
+                  {
+                    "name": "The Lost Shepherd",
+                    "tag": "Lv 80"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "rdm",
+            "label": "Red Mage",
+            "sections": [
+              {
+                "id": "job-rdm-sb",
+                "title": "Red Mage — Stormblood",
+                "note": "Lv 50–70",
+                "quests": [
+                  {
+                    "name": "Taking the Red",
+                    "tag": "Lv 50 · unlock"
+                  },
+                  {
+                    "name": "The Crimson Duelist",
+                    "tag": "Lv 52"
+                  },
+                  {
+                    "name": "A Vermillion Vendetta",
+                    "tag": "Lv 55"
+                  },
+                  {
+                    "name": "Dueling with the White",
+                    "tag": "Lv 58"
+                  },
+                  {
+                    "name": "Thicker than Water",
+                    "tag": "Lv 60"
+                  },
+                  {
+                    "name": "Echoes of a Roar",
+                    "tag": "Lv 63"
+                  },
+                  {
+                    "name": "Masque of the Crimson Rose",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "The Heart of Stone",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "The Crimson Duel",
+                    "tag": "Lv 70"
+                  }
+                ]
+              },
+              {
+                "id": "job-rdm-shb",
+                "title": "Red Mage — Shadowbringers",
+                "note": "Lv 80",
+                "quests": [
+                  {
+                    "name": "The Red Mage's Silence",
+                    "tag": "Lv 80"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "blu",
+            "label": "Blue Mage",
+            "sections": [
+              {
+                "id": "job-blu",
+                "title": "Blue Mage",
+                "note": "Lv 1–70 · limited job",
+                "quests": [
+                  {
+                    "name": "Taking the Blue",
+                    "tag": "Lv 1 · unlock"
+                  },
+                  {
+                    "name": "Blue Is the New Black",
+                    "tag": "Lv 1"
+                  },
+                  {
+                    "name": "Beginner Blues",
+                    "tag": "Lv 10"
+                  },
+                  {
+                    "name": "On the Eve of Battle",
+                    "tag": "Lv 50"
+                  },
+                  {
+                    "name": "Out of the Blue",
+                    "tag": "Lv 60"
+                  },
+                  {
+                    "name": "Blue in the Face",
+                    "tag": "Lv 70"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "pct",
+            "label": "Pictomancer",
+            "sections": [
+              {
+                "id": "job-pct-dt",
+                "title": "Pictomancer — Dawntrail",
+                "note": "Lv 80+",
+                "quests": [
+                  {
+                    "name": "The Painter's Canvas",
+                    "tag": "Lv 80 · unlock"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "dol": [
+      {
+        "role": null,
+        "jobs": [
+          {
+            "id": "min",
+            "label": "Miner",
+            "sections": [
+              {
+                "id": "job-min-arr1",
+                "title": "Miner — A Realm Reborn",
+                "note": "Lv 1–30",
+                "quests": [
+                  {
+                    "name": "Way of the Miner",
+                    "tag": "Lv 1 · unlock"
+                  },
+                  {
+                    "name": "My First Pickaxe",
+                    "tag": "Lv 1"
+                  },
+                  {
+                    "name": "Leves of Horizon",
+                    "tag": "Lv 5"
+                  },
+                  {
+                    "name": "Caution: Explosives",
+                    "tag": "Lv 10"
+                  },
+                  {
+                    "name": "A Pebble in the Hand",
+                    "tag": "Lv 15"
+                  },
+                  {
+                    "name": "Pushing Back the Dark",
+                    "tag": "Lv 20"
+                  },
+                  {
+                    "name": "Defending the Land",
+                    "tag": "Lv 25"
+                  },
+                  {
+                    "name": "A Miner Incident",
+                    "tag": "Lv 30"
+                  }
+                ]
+              },
+              {
+                "id": "job-min-arr2",
+                "title": "Miner — A Realm Reborn",
+                "note": "Lv 35–50",
+                "quests": [
+                  {
+                    "name": "One Good Turn",
+                    "tag": "Lv 35"
+                  },
+                  {
+                    "name": "Sightseeing with the Sentry",
+                    "tag": "Lv 40"
+                  },
+                  {
+                    "name": "Rock Bottom",
+                    "tag": "Lv 45"
+                  },
+                  {
+                    "name": "In the Eye of the Beholder",
+                    "tag": "Lv 50"
+                  }
+                ]
+              },
+              {
+                "id": "job-min-hw",
+                "title": "Miner — Heavensward",
+                "note": "Lv 52–60",
+                "quests": [
+                  {
+                    "name": "Gone with the Ore",
+                    "tag": "Lv 52"
+                  },
+                  {
+                    "name": "Things Aren't Always Black and White",
+                    "tag": "Lv 54"
+                  },
+                  {
+                    "name": "A Pickaxe for All Seasons",
+                    "tag": "Lv 56"
+                  },
+                  {
+                    "name": "The Sole Survivor",
+                    "tag": "Lv 58"
+                  },
+                  {
+                    "name": "A Miner Miscalculation",
+                    "tag": "Lv 60"
+                  }
+                ]
+              },
+              {
+                "id": "job-min-sb",
+                "title": "Miner — Stormblood",
+                "note": "Lv 63–70",
+                "quests": [
+                  {
+                    "name": "A New Vein of Expertise",
+                    "tag": "Lv 63"
+                  },
+                  {
+                    "name": "Reach for the Stars",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "The Will to Mine",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "Through the Grapevine",
+                    "tag": "Lv 70"
+                  }
+                ]
+              },
+              {
+                "id": "job-min-shb",
+                "title": "Miner — Shadowbringers",
+                "note": "Lv 80",
+                "quests": [
+                  {
+                    "name": "Stones of Mystery",
+                    "tag": "Lv 80"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "btn",
+            "label": "Botanist",
+            "sections": [
+              {
+                "id": "job-btn-arr1",
+                "title": "Botanist — A Realm Reborn",
+                "note": "Lv 1–30",
+                "quests": [
+                  {
+                    "name": "Way of the Botanist",
+                    "tag": "Lv 1 · unlock"
+                  },
+                  {
+                    "name": "My First Hatchet",
+                    "tag": "Lv 1"
+                  },
+                  {
+                    "name": "Leves of Bentbranch",
+                    "tag": "Lv 5"
+                  },
+                  {
+                    "name": "From Forest to Home",
+                    "tag": "Lv 10"
+                  },
+                  {
+                    "name": "The Botanist's Burden",
+                    "tag": "Lv 15"
+                  },
+                  {
+                    "name": "Seeds of Change",
+                    "tag": "Lv 20"
+                  },
+                  {
+                    "name": "The Sproutling Diaries",
+                    "tag": "Lv 25"
+                  },
+                  {
+                    "name": "Feeding the Hungry",
+                    "tag": "Lv 30"
+                  }
+                ]
+              },
+              {
+                "id": "job-btn-arr2",
+                "title": "Botanist — A Realm Reborn",
+                "note": "Lv 35–50",
+                "quests": [
+                  {
+                    "name": "Blooming Botanist",
+                    "tag": "Lv 35"
+                  },
+                  {
+                    "name": "A Tree Grows in Gridania",
+                    "tag": "Lv 40"
+                  },
+                  {
+                    "name": "Of Soil and Stardust",
+                    "tag": "Lv 45"
+                  },
+                  {
+                    "name": "The Nature of Things",
+                    "tag": "Lv 50"
+                  }
+                ]
+              },
+              {
+                "id": "job-btn-hw",
+                "title": "Botanist — Heavensward",
+                "note": "Lv 52–60",
+                "quests": [
+                  {
+                    "name": "Growing Pains",
+                    "tag": "Lv 52"
+                  },
+                  {
+                    "name": "Down to Earth",
+                    "tag": "Lv 54"
+                  },
+                  {
+                    "name": "The Root of the Problem",
+                    "tag": "Lv 56"
+                  },
+                  {
+                    "name": "Out on a Limb",
+                    "tag": "Lv 58"
+                  },
+                  {
+                    "name": "The Botanist's Resolve",
+                    "tag": "Lv 60"
+                  }
+                ]
+              },
+              {
+                "id": "job-btn-sb",
+                "title": "Botanist — Stormblood",
+                "note": "Lv 63–70",
+                "quests": [
+                  {
+                    "name": "Where East Meets West",
+                    "tag": "Lv 63"
+                  },
+                  {
+                    "name": "Roots of Life",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "Fertile Ground",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "Growth and Decay",
+                    "tag": "Lv 70"
+                  }
+                ]
+              },
+              {
+                "id": "job-btn-shb",
+                "title": "Botanist — Shadowbringers",
+                "note": "Lv 80",
+                "quests": [
+                  {
+                    "name": "Back to the Roots",
+                    "tag": "Lv 80"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "fsh",
+            "label": "Fisher",
+            "sections": [
+              {
+                "id": "job-fsh-arr1",
+                "title": "Fisher — A Realm Reborn",
+                "note": "Lv 1–30",
+                "quests": [
+                  {
+                    "name": "Way of the Fisher",
+                    "tag": "Lv 1 · unlock"
+                  },
+                  {
+                    "name": "My First Fishing Rod",
+                    "tag": "Lv 1"
+                  },
+                  {
+                    "name": "Leves of Swiftperch",
+                    "tag": "Lv 5"
+                  },
+                  {
+                    "name": "Leves of Aleport",
+                    "tag": "Lv 10"
+                  },
+                  {
+                    "name": "A Fisher's Life",
+                    "tag": "Lv 15"
+                  },
+                  {
+                    "name": "A Fish out of Water",
+                    "tag": "Lv 20"
+                  },
+                  {
+                    "name": "What Fish Can Tell",
+                    "tag": "Lv 25"
+                  },
+                  {
+                    "name": "One That Got Away",
+                    "tag": "Lv 30"
+                  }
+                ]
+              },
+              {
+                "id": "job-fsh-arr2",
+                "title": "Fisher — A Realm Reborn",
+                "note": "Lv 35–50",
+                "quests": [
+                  {
+                    "name": "Nothing Left to Reel",
+                    "tag": "Lv 35"
+                  },
+                  {
+                    "name": "The Fisher's Calling",
+                    "tag": "Lv 40"
+                  },
+                  {
+                    "name": "The Big Catch",
+                    "tag": "Lv 45"
+                  },
+                  {
+                    "name": "Like a Fish in Water",
+                    "tag": "Lv 50"
+                  }
+                ]
+              },
+              {
+                "id": "job-fsh-hw",
+                "title": "Fisher — Heavensward",
+                "note": "Lv 52–60",
+                "quests": [
+                  {
+                    "name": "From Sea to Sky",
+                    "tag": "Lv 52"
+                  },
+                  {
+                    "name": "Fishing for Answers",
+                    "tag": "Lv 54"
+                  },
+                  {
+                    "name": "The Fisher and the Sea",
+                    "tag": "Lv 56"
+                  },
+                  {
+                    "name": "Casting Wide",
+                    "tag": "Lv 58"
+                  },
+                  {
+                    "name": "The Fisher's Pride",
+                    "tag": "Lv 60"
+                  }
+                ]
+              },
+              {
+                "id": "job-fsh-sb",
+                "title": "Fisher — Stormblood",
+                "note": "Lv 63–70",
+                "quests": [
+                  {
+                    "name": "Rolling in the Deep",
+                    "tag": "Lv 63"
+                  },
+                  {
+                    "name": "The Fisher's Journey",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "A Familiar Shore",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "Reeling in the Years",
+                    "tag": "Lv 70"
+                  }
+                ]
+              },
+              {
+                "id": "job-fsh-shb",
+                "title": "Fisher — Shadowbringers",
+                "note": "Lv 80",
+                "quests": [
+                  {
+                    "name": "Big Fisher",
+                    "tag": "Lv 80"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "doh": [
+      {
+        "role": null,
+        "jobs": [
+          {
+            "id": "crp",
+            "label": "Carpenter",
+            "sections": [
+              {
+                "id": "job-crp-arr1",
+                "title": "Carpenter — A Realm Reborn",
+                "note": "Lv 1–30",
+                "quests": [
+                  {
+                    "name": "Way of the Carpenter",
+                    "tag": "Lv 1 · unlock"
+                  },
+                  {
+                    "name": "My First Saw",
+                    "tag": "Lv 1"
+                  },
+                  {
+                    "name": "To Be the Wood",
+                    "tag": "Lv 5"
+                  },
+                  {
+                    "name": "Supplies for the Sick",
+                    "tag": "Lv 10"
+                  },
+                  {
+                    "name": "A Carpenter in Need",
+                    "tag": "Lv 15"
+                  },
+                  {
+                    "name": "The Lance's Lesson",
+                    "tag": "Lv 20"
+                  },
+                  {
+                    "name": "A Crisis of Confidence",
+                    "tag": "Lv 25"
+                  },
+                  {
+                    "name": "Between Captain and Conjurer",
+                    "tag": "Lv 30"
+                  }
+                ]
+              },
+              {
+                "id": "job-crp-arr2",
+                "title": "Carpenter — A Realm Reborn",
+                "note": "Lv 35–50",
+                "quests": [
+                  {
+                    "name": "Growing Apart",
+                    "tag": "Lv 35"
+                  },
+                  {
+                    "name": "Memento Mori",
+                    "tag": "Lv 40"
+                  },
+                  {
+                    "name": "Gone till the Sixth Astral Moon",
+                    "tag": "Lv 45"
+                  },
+                  {
+                    "name": "Saving Captain Gairhard",
+                    "tag": "Lv 50"
+                  },
+                  {
+                    "name": "Lance of a Lifetime",
+                    "tag": "Lv 50"
+                  }
+                ]
+              },
+              {
+                "id": "job-crp-hw",
+                "title": "Carpenter — Heavensward",
+                "note": "Lv 53–60",
+                "quests": [
+                  {
+                    "name": "A-hunting He Will Go",
+                    "tag": "Lv 53"
+                  },
+                  {
+                    "name": "Ministers of Grace Defend Him",
+                    "tag": "Lv 55"
+                  },
+                  {
+                    "name": "The Son Also Rises",
+                    "tag": "Lv 58"
+                  },
+                  {
+                    "name": "More Fierce than Fire",
+                    "tag": "Lv 60"
+                  }
+                ]
+              },
+              {
+                "id": "job-crp-sb",
+                "title": "Carpenter — Stormblood",
+                "note": "Lv 63–70",
+                "quests": [
+                  {
+                    "name": "The Game of Confidence",
+                    "tag": "Lv 63"
+                  },
+                  {
+                    "name": "A Lesson in Listening",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "Live and Let Dine",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "Tea Party Rules",
+                    "tag": "Lv 70"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "bsm",
+            "label": "Blacksmith",
+            "sections": [
+              {
+                "id": "job-bsm-arr1",
+                "title": "Blacksmith — A Realm Reborn",
+                "note": "Lv 1–30",
+                "quests": [
+                  {
+                    "name": "Way of the Blacksmith",
+                    "tag": "Lv 1 · unlock"
+                  },
+                  {
+                    "name": "My First Cross-pein Hammer",
+                    "tag": "Lv 1"
+                  },
+                  {
+                    "name": "Hammer Time",
+                    "tag": "Lv 5"
+                  },
+                  {
+                    "name": "Riveting Ramblings",
+                    "tag": "Lv 10"
+                  },
+                  {
+                    "name": "The Business of Blacksmithing",
+                    "tag": "Lv 15"
+                  },
+                  {
+                    "name": "By the Sweat of Your Brow",
+                    "tag": "Lv 20"
+                  },
+                  {
+                    "name": "True as Steel",
+                    "tag": "Lv 25"
+                  },
+                  {
+                    "name": "As Iron Sharpens Iron",
+                    "tag": "Lv 30"
+                  }
+                ]
+              },
+              {
+                "id": "job-bsm-arr2",
+                "title": "Blacksmith — A Realm Reborn",
+                "note": "Lv 35–50",
+                "quests": [
+                  {
+                    "name": "Set Faezahr to Stun",
+                    "tag": "Lv 35"
+                  },
+                  {
+                    "name": "Forging Ahead",
+                    "tag": "Lv 40"
+                  },
+                  {
+                    "name": "Beauty and the Bardiche",
+                    "tag": "Lv 45"
+                  },
+                  {
+                    "name": "Waiting in the Winglet",
+                    "tag": "Lv 50"
+                  }
+                ]
+              },
+              {
+                "id": "job-bsm-hw",
+                "title": "Blacksmith — Heavensward",
+                "note": "Lv 50–60",
+                "quests": [
+                  {
+                    "name": "Forging Northwards",
+                    "tag": "Lv 50"
+                  },
+                  {
+                    "name": "Leave It to Fremondain",
+                    "tag": "Lv 53"
+                  },
+                  {
+                    "name": "The Good Fight",
+                    "tag": "Lv 55"
+                  },
+                  {
+                    "name": "Blade That Was Broken",
+                    "tag": "Lv 58"
+                  },
+                  {
+                    "name": "Integrity",
+                    "tag": "Lv 60"
+                  },
+                  {
+                    "name": "A Missive from the Far East",
+                    "tag": "Lv 60"
+                  }
+                ]
+              },
+              {
+                "id": "job-bsm-sb",
+                "title": "Blacksmith — Stormblood",
+                "note": "Lv 63–70",
+                "quests": [
+                  {
+                    "name": "The Client Is King",
+                    "tag": "Lv 63"
+                  },
+                  {
+                    "name": "Blood Ties",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "The Missing Piece",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "The Final Face-off",
+                    "tag": "Lv 70"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "arm",
+            "label": "Armorer",
+            "sections": [
+              {
+                "id": "job-arm-arr1",
+                "title": "Armorer — A Realm Reborn",
+                "note": "Lv 1–30",
+                "quests": [
+                  {
+                    "name": "Way of the Armorer",
+                    "tag": "Lv 1 · unlock"
+                  },
+                  {
+                    "name": "My First Doming Hammer",
+                    "tag": "Lv 1"
+                  },
+                  {
+                    "name": "From Thigh to Neck",
+                    "tag": "Lv 5"
+                  },
+                  {
+                    "name": "The Base Fundamentals",
+                    "tag": "Lv 10"
+                  },
+                  {
+                    "name": "One's Own Worst Critic",
+                    "tag": "Lv 15"
+                  },
+                  {
+                    "name": "An Armorer's Pride",
+                    "tag": "Lv 20"
+                  },
+                  {
+                    "name": "Showing Your Steel",
+                    "tag": "Lv 25"
+                  },
+                  {
+                    "name": "May the Best Armorer Win",
+                    "tag": "Lv 30"
+                  }
+                ]
+              },
+              {
+                "id": "job-arm-arr2",
+                "title": "Armorer — A Realm Reborn",
+                "note": "Lv 35–50",
+                "quests": [
+                  {
+                    "name": "Pans of Steel",
+                    "tag": "Lv 35"
+                  },
+                  {
+                    "name": "Best of Three",
+                    "tag": "Lv 40"
+                  },
+                  {
+                    "name": "For the Good of the Guild",
+                    "tag": "Lv 45"
+                  },
+                  {
+                    "name": "Rivalry and Respect",
+                    "tag": "Lv 50"
+                  },
+                  {
+                    "name": "The Breaking of Blanstyr",
+                    "tag": "Lv 50"
+                  }
+                ]
+              },
+              {
+                "id": "job-arm-hw",
+                "title": "Armorer — Heavensward",
+                "note": "Lv 53–60",
+                "quests": [
+                  {
+                    "name": "Light-headed",
+                    "tag": "Lv 53"
+                  },
+                  {
+                    "name": "Fancy Lancer",
+                    "tag": "Lv 55"
+                  },
+                  {
+                    "name": "The Reforging of Blanstyr",
+                    "tag": "Lv 58"
+                  },
+                  {
+                    "name": "The Pride of Vymelli",
+                    "tag": "Lv 60"
+                  },
+                  {
+                    "name": "Original Blanstyr",
+                    "tag": "Lv 60"
+                  }
+                ]
+              },
+              {
+                "id": "job-arm-sb",
+                "title": "Armorer — Stormblood",
+                "note": "Lv 63–70",
+                "quests": [
+                  {
+                    "name": "Eastern Apprentice",
+                    "tag": "Lv 63"
+                  },
+                  {
+                    "name": "Forging with Scales",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "Head-to-head Contest",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "A Confluence of Style",
+                    "tag": "Lv 70"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "gsm",
+            "label": "Goldsmith",
+            "sections": [
+              {
+                "id": "job-gsm-arr1",
+                "title": "Goldsmith — A Realm Reborn",
+                "note": "Lv 1–30",
+                "quests": [
+                  {
+                    "name": "Way of the Goldsmith",
+                    "tag": "Lv 1 · unlock"
+                  },
+                  {
+                    "name": "My First Chaser Hammer",
+                    "tag": "Lv 1"
+                  },
+                  {
+                    "name": "Gorgets Rising",
+                    "tag": "Lv 5"
+                  },
+                  {
+                    "name": "Throw Some Rings on It",
+                    "tag": "Lv 10"
+                  },
+                  {
+                    "name": "Objectively Speaking",
+                    "tag": "Lv 15"
+                  },
+                  {
+                    "name": "A Melding of the Minds",
+                    "tag": "Lv 20"
+                  },
+                  {
+                    "name": "Or Ever the Silver Cord Be Loosed",
+                    "tag": "Lv 25"
+                  },
+                  {
+                    "name": "Serendipity Now",
+                    "tag": "Lv 30"
+                  }
+                ]
+              },
+              {
+                "id": "job-gsm-arr2",
+                "title": "Goldsmith — A Realm Reborn",
+                "note": "Lv 35–50",
+                "quests": [
+                  {
+                    "name": "Mammets on Fire",
+                    "tag": "Lv 35"
+                  },
+                  {
+                    "name": "The Horns of the Green",
+                    "tag": "Lv 40"
+                  },
+                  {
+                    "name": "The Fox in the Hen House",
+                    "tag": "Lv 45"
+                  },
+                  {
+                    "name": "Jaded",
+                    "tag": "Lv 50"
+                  },
+                  {
+                    "name": "Form to the Formless",
+                    "tag": "Lv 50"
+                  }
+                ]
+              },
+              {
+                "id": "job-gsm-hw",
+                "title": "Goldsmith — Heavensward",
+                "note": "Lv 53–60",
+                "quests": [
+                  {
+                    "name": "Elegance and Artistry",
+                    "tag": "Lv 53"
+                  },
+                  {
+                    "name": "Double Trouble",
+                    "tag": "Lv 55"
+                  },
+                  {
+                    "name": "A Masterclass",
+                    "tag": "Lv 58"
+                  },
+                  {
+                    "name": "Two Hearts Beat as One",
+                    "tag": "Lv 60"
+                  },
+                  {
+                    "name": "A Royal Request",
+                    "tag": "Lv 60"
+                  }
+                ]
+              },
+              {
+                "id": "job-gsm-sb",
+                "title": "Goldsmith — Stormblood",
+                "note": "Lv 63–70",
+                "quests": [
+                  {
+                    "name": "Gemworks in Progress",
+                    "tag": "Lv 63"
+                  },
+                  {
+                    "name": "Blindsided",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "The Perfect Tribute",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "Sultana Dreaming",
+                    "tag": "Lv 70"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "role": null,
+        "jobs": [
+          {
+            "id": "ltw",
+            "label": "Leatherworker",
+            "sections": [
+              {
+                "id": "job-ltw-arr1",
+                "title": "Leatherworker — A Realm Reborn",
+                "note": "Lv 1–30",
+                "quests": [
+                  {
+                    "name": "Way of the Leatherworker",
+                    "tag": "Lv 1 · unlock"
+                  },
+                  {
+                    "name": "My First Head Knife",
+                    "tag": "Lv 1"
+                  },
+                  {
+                    "name": "A Test of Technique",
+                    "tag": "Lv 5"
+                  },
+                  {
+                    "name": "Geva's Gambit",
+                    "tag": "Lv 10"
+                  },
+                  {
+                    "name": "Working Hells for Leather",
+                    "tag": "Lv 15"
+                  },
+                  {
+                    "name": "Aldgoat Everything",
+                    "tag": "Lv 20"
+                  },
+                  {
+                    "name": "Skin in the Game",
+                    "tag": "Lv 25"
+                  },
+                  {
+                    "name": "Toadskins of the Father",
+                    "tag": "Lv 30"
+                  }
+                ]
+              },
+              {
+                "id": "job-ltw-arr2",
+                "title": "Leatherworker — A Realm Reborn",
+                "note": "Lv 35–50",
+                "quests": [
+                  {
+                    "name": "Lead by Example",
+                    "tag": "Lv 35"
+                  },
+                  {
+                    "name": "Brand Loyalty",
+                    "tag": "Lv 40"
+                  },
+                  {
+                    "name": "Dissension in the Ranks",
+                    "tag": "Lv 45"
+                  },
+                  {
+                    "name": "Accept No Imitations",
+                    "tag": "Lv 50"
+                  }
+                ]
+              },
+              {
+                "id": "job-ltw-hw",
+                "title": "Leatherworker — Heavensward",
+                "note": "Lv 50–60",
+                "quests": [
+                  {
+                    "name": "Turndown Service",
+                    "tag": "Lv 50"
+                  },
+                  {
+                    "name": "By Your Bootstraps",
+                    "tag": "Lv 53"
+                  },
+                  {
+                    "name": "Perfect Pitch",
+                    "tag": "Lv 55"
+                  },
+                  {
+                    "name": "From the Hoplon to the Brume",
+                    "tag": "Lv 58"
+                  },
+                  {
+                    "name": "A Winter's Sale",
+                    "tag": "Lv 60"
+                  },
+                  {
+                    "name": "A Taxing Request",
+                    "tag": "Lv 60"
+                  }
+                ]
+              },
+              {
+                "id": "job-ltw-sb",
+                "title": "Leatherworker — Stormblood",
+                "note": "Lv 63–70",
+                "quests": [
+                  {
+                    "name": "Mounting Expectations",
+                    "tag": "Lv 63"
+                  },
+                  {
+                    "name": "The Value of Life",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "The Trouble with Taxidermy",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "True to Life",
+                    "tag": "Lv 70"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "wvr",
+            "label": "Weaver",
+            "sections": [
+              {
+                "id": "job-wvr-arr1",
+                "title": "Weaver — A Realm Reborn",
+                "note": "Lv 1–30",
+                "quests": [
+                  {
+                    "name": "Way of the Weaver",
+                    "tag": "Lv 1 · unlock"
+                  },
+                  {
+                    "name": "My First Needle",
+                    "tag": "Lv 1"
+                  },
+                  {
+                    "name": "Once More unto the Breeches",
+                    "tag": "Lv 5"
+                  },
+                  {
+                    "name": "Alternative Applications",
+                    "tag": "Lv 10"
+                  },
+                  {
+                    "name": "Practical Needs",
+                    "tag": "Lv 15"
+                  },
+                  {
+                    "name": "Materia Concerns",
+                    "tag": "Lv 20"
+                  },
+                  {
+                    "name": "That Velveteen Dress",
+                    "tag": "Lv 25"
+                  },
+                  {
+                    "name": "Miner on a Mission",
+                    "tag": "Lv 30"
+                  }
+                ]
+              },
+              {
+                "id": "job-wvr-arr2",
+                "title": "Weaver — A Realm Reborn",
+                "note": "Lv 35–50",
+                "quests": [
+                  {
+                    "name": "Designed by Committee",
+                    "tag": "Lv 35"
+                  },
+                  {
+                    "name": "A Subtle Inquiry",
+                    "tag": "Lv 40"
+                  },
+                  {
+                    "name": "The Intervention",
+                    "tag": "Lv 45"
+                  },
+                  {
+                    "name": "A Miner Reborn",
+                    "tag": "Lv 50"
+                  },
+                  {
+                    "name": "The Social Knitwork",
+                    "tag": "Lv 50"
+                  }
+                ]
+              },
+              {
+                "id": "job-wvr-hw",
+                "title": "Weaver — Heavensward",
+                "note": "Lv 53–60",
+                "quests": [
+                  {
+                    "name": "Tomboy Foolery",
+                    "tag": "Lv 53"
+                  },
+                  {
+                    "name": "For Lover and Country",
+                    "tag": "Lv 55"
+                  },
+                  {
+                    "name": "Spinning the Truth",
+                    "tag": "Lv 58"
+                  },
+                  {
+                    "name": "Never Leave without a Good-bye",
+                    "tag": "Lv 60"
+                  },
+                  {
+                    "name": "When East Meets West",
+                    "tag": "Lv 60"
+                  }
+                ]
+              },
+              {
+                "id": "job-wvr-sb",
+                "title": "Weaver — Stormblood",
+                "note": "Lv 63–70",
+                "quests": [
+                  {
+                    "name": "The Butterfly Effect",
+                    "tag": "Lv 63"
+                  },
+                  {
+                    "name": "The Crane's Caveat",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "A Geiko for All Seasons",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "Send Me an Angel",
+                    "tag": "Lv 70"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "alc",
+            "label": "Alchemist",
+            "sections": [
+              {
+                "id": "job-alc-arr1",
+                "title": "Alchemist — A Realm Reborn",
+                "note": "Lv 1–30",
+                "quests": [
+                  {
+                    "name": "Way of the Alchemist",
+                    "tag": "Lv 1 · unlock"
+                  },
+                  {
+                    "name": "My First Alembic",
+                    "tag": "Lv 1"
+                  },
+                  {
+                    "name": "The Second Principle",
+                    "tag": "Lv 5"
+                  },
+                  {
+                    "name": "All of Your Beeswax",
+                    "tag": "Lv 10"
+                  },
+                  {
+                    "name": "For Fair Love",
+                    "tag": "Lv 15"
+                  },
+                  {
+                    "name": "The Arcanist's Tome",
+                    "tag": "Lv 20"
+                  },
+                  {
+                    "name": "Practical Alchemy",
+                    "tag": "Lv 25"
+                  },
+                  {
+                    "name": "Baleful Brews",
+                    "tag": "Lv 30"
+                  }
+                ]
+              },
+              {
+                "id": "job-alc-arr2",
+                "title": "Alchemist — A Realm Reborn",
+                "note": "Lv 35–50",
+                "quests": [
+                  {
+                    "name": "Cease and Assist",
+                    "tag": "Lv 35"
+                  },
+                  {
+                    "name": "Might Made Right",
+                    "tag": "Lv 40"
+                  },
+                  {
+                    "name": "Ultimate Alchemy",
+                    "tag": "Lv 45"
+                  },
+                  {
+                    "name": "Momentary Miracle",
+                    "tag": "Lv 50"
+                  },
+                  {
+                    "name": "Without a Trace",
+                    "tag": "Lv 50"
+                  }
+                ]
+              },
+              {
+                "id": "job-alc-hw",
+                "title": "Alchemist — Heavensward",
+                "note": "Lv 53–60",
+                "quests": [
+                  {
+                    "name": "Magic Marks the Spot",
+                    "tag": "Lv 53"
+                  },
+                  {
+                    "name": "From Hells",
+                    "tag": "Lv 55"
+                  },
+                  {
+                    "name": "Burden of Proof",
+                    "tag": "Lv 58"
+                  },
+                  {
+                    "name": "What Death Can Join Together",
+                    "tag": "Lv 60"
+                  },
+                  {
+                    "name": "Not Quite Dead Yet",
+                    "tag": "Lv 60"
+                  }
+                ]
+              },
+              {
+                "id": "job-alc-sb",
+                "title": "Alchemist — Stormblood",
+                "note": "Lv 63–70",
+                "quests": [
+                  {
+                    "name": "The Forbidden Blade",
+                    "tag": "Lv 63"
+                  },
+                  {
+                    "name": "Do Goldsmiths Dream of Gilded Sheep",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "No Sin Unpunished",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "A Love Beyond Lifetimes",
+                    "tag": "Lv 70"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "cul",
+            "label": "Culinarian",
+            "sections": [
+              {
+                "id": "job-cul-arr1",
+                "title": "Culinarian — A Realm Reborn",
+                "note": "Lv 1–30",
+                "quests": [
+                  {
+                    "name": "Way of the Culinarian",
+                    "tag": "Lv 1 · unlock"
+                  },
+                  {
+                    "name": "My First Skillet",
+                    "tag": "Lv 1"
+                  },
+                  {
+                    "name": "A Treat of Trout",
+                    "tag": "Lv 5"
+                  },
+                  {
+                    "name": "Dodo It Yourself",
+                    "tag": "Lv 10"
+                  },
+                  {
+                    "name": "On a Skewer Tip",
+                    "tag": "Lv 15"
+                  },
+                  {
+                    "name": "Releasing a Burden",
+                    "tag": "Lv 20"
+                  },
+                  {
+                    "name": "Winning Friends with Aldgoat",
+                    "tag": "Lv 25"
+                  },
+                  {
+                    "name": "The Chefsbane Cometh",
+                    "tag": "Lv 30"
+                  }
+                ]
+              },
+              {
+                "id": "job-cul-arr2",
+                "title": "Culinarian — A Realm Reborn",
+                "note": "Lv 35–50",
+                "quests": [
+                  {
+                    "name": "Of Cooks and Books",
+                    "tag": "Lv 35"
+                  },
+                  {
+                    "name": "Diplomacy of the Skillet",
+                    "tag": "Lv 40"
+                  },
+                  {
+                    "name": "A Taste of Home",
+                    "tag": "Lv 45"
+                  },
+                  {
+                    "name": "Revenge of the Chefsbane",
+                    "tag": "Lv 50"
+                  },
+                  {
+                    "name": "Wait on Me",
+                    "tag": "Lv 50"
+                  }
+                ]
+              },
+              {
+                "id": "job-cul-hw",
+                "title": "Culinarian — Heavensward",
+                "note": "Lv 53–60",
+                "quests": [
+                  {
+                    "name": "A Spoonful Less Sugar",
+                    "tag": "Lv 53"
+                  },
+                  {
+                    "name": "Looking for Some Hot Stuff",
+                    "tag": "Lv 55"
+                  },
+                  {
+                    "name": "Love Meat Tender",
+                    "tag": "Lv 58"
+                  },
+                  {
+                    "name": "The Spirit of Hospitality",
+                    "tag": "Lv 60"
+                  },
+                  {
+                    "name": "Flavors of the Far East",
+                    "tag": "Lv 60"
+                  }
+                ]
+              },
+              {
+                "id": "job-cul-sb",
+                "title": "Culinarian — Stormblood",
+                "note": "Lv 63–70",
+                "quests": [
+                  {
+                    "name": "Rice to the Occasion",
+                    "tag": "Lv 63"
+                  },
+                  {
+                    "name": "A Broth from the Brine",
+                    "tag": "Lv 65"
+                  },
+                  {
+                    "name": "Teach a Man to Make Fish",
+                    "tag": "Lv 68"
+                  },
+                  {
+                    "name": "The Way to a Father's Heart",
+                    "tag": "Lv 70"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "deepDungeons": [
+    {
+      "role": "Palace of the Dead",
+      "summary": "South Shroud deep dungeon with 200 floors. Floors 1-100 are standard matchmaking progression; 101+ is fixed party challenge content.",
+      "jobs": [
+        {
+          "id": "deep-potd",
+          "label": "Floor Sets",
+          "sections": [
+            {
+              "id": "deep-potd-001-010",
+              "title": "Floors 1-10",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 1"
+                },
+                {
+                  "name": "Floor 2"
+                },
+                {
+                  "name": "Floor 3"
+                },
+                {
+                  "name": "Floor 4"
+                },
+                {
+                  "name": "Floor 5"
+                },
+                {
+                  "name": "Floor 6"
+                },
+                {
+                  "name": "Floor 7"
+                },
+                {
+                  "name": "Floor 8"
+                },
+                {
+                  "name": "Floor 9"
+                },
+                {
+                  "name": "Floor 10"
+                }
+              ]
+            },
+            {
+              "id": "deep-potd-011-020",
+              "title": "Floors 11-20",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 11"
+                },
+                {
+                  "name": "Floor 12"
+                },
+                {
+                  "name": "Floor 13"
+                },
+                {
+                  "name": "Floor 14"
+                },
+                {
+                  "name": "Floor 15"
+                },
+                {
+                  "name": "Floor 16"
+                },
+                {
+                  "name": "Floor 17"
+                },
+                {
+                  "name": "Floor 18"
+                },
+                {
+                  "name": "Floor 19"
+                },
+                {
+                  "name": "Floor 20"
+                }
+              ]
+            },
+            {
+              "id": "deep-potd-021-030",
+              "title": "Floors 21-30",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 21"
+                },
+                {
+                  "name": "Floor 22"
+                },
+                {
+                  "name": "Floor 23"
+                },
+                {
+                  "name": "Floor 24"
+                },
+                {
+                  "name": "Floor 25"
+                },
+                {
+                  "name": "Floor 26"
+                },
+                {
+                  "name": "Floor 27"
+                },
+                {
+                  "name": "Floor 28"
+                },
+                {
+                  "name": "Floor 29"
+                },
+                {
+                  "name": "Floor 30"
+                }
+              ]
+            },
+            {
+              "id": "deep-potd-031-040",
+              "title": "Floors 31-40",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 31"
+                },
+                {
+                  "name": "Floor 32"
+                },
+                {
+                  "name": "Floor 33"
+                },
+                {
+                  "name": "Floor 34"
+                },
+                {
+                  "name": "Floor 35"
+                },
+                {
+                  "name": "Floor 36"
+                },
+                {
+                  "name": "Floor 37"
+                },
+                {
+                  "name": "Floor 38"
+                },
+                {
+                  "name": "Floor 39"
+                },
+                {
+                  "name": "Floor 40"
+                }
+              ]
+            },
+            {
+              "id": "deep-potd-041-050",
+              "title": "Floors 41-50",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 41"
+                },
+                {
+                  "name": "Floor 42"
+                },
+                {
+                  "name": "Floor 43"
+                },
+                {
+                  "name": "Floor 44"
+                },
+                {
+                  "name": "Floor 45"
+                },
+                {
+                  "name": "Floor 46"
+                },
+                {
+                  "name": "Floor 47"
+                },
+                {
+                  "name": "Floor 48"
+                },
+                {
+                  "name": "Floor 49"
+                },
+                {
+                  "name": "Floor 50"
+                }
+              ]
+            },
+            {
+              "id": "deep-potd-051-060",
+              "title": "Floors 51-60",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 51"
+                },
+                {
+                  "name": "Floor 52"
+                },
+                {
+                  "name": "Floor 53"
+                },
+                {
+                  "name": "Floor 54"
+                },
+                {
+                  "name": "Floor 55"
+                },
+                {
+                  "name": "Floor 56"
+                },
+                {
+                  "name": "Floor 57"
+                },
+                {
+                  "name": "Floor 58"
+                },
+                {
+                  "name": "Floor 59"
+                },
+                {
+                  "name": "Floor 60"
+                }
+              ]
+            },
+            {
+              "id": "deep-potd-061-070",
+              "title": "Floors 61-70",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 61"
+                },
+                {
+                  "name": "Floor 62"
+                },
+                {
+                  "name": "Floor 63"
+                },
+                {
+                  "name": "Floor 64"
+                },
+                {
+                  "name": "Floor 65"
+                },
+                {
+                  "name": "Floor 66"
+                },
+                {
+                  "name": "Floor 67"
+                },
+                {
+                  "name": "Floor 68"
+                },
+                {
+                  "name": "Floor 69"
+                },
+                {
+                  "name": "Floor 70"
+                }
+              ]
+            },
+            {
+              "id": "deep-potd-071-080",
+              "title": "Floors 71-80",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 71"
+                },
+                {
+                  "name": "Floor 72"
+                },
+                {
+                  "name": "Floor 73"
+                },
+                {
+                  "name": "Floor 74"
+                },
+                {
+                  "name": "Floor 75"
+                },
+                {
+                  "name": "Floor 76"
+                },
+                {
+                  "name": "Floor 77"
+                },
+                {
+                  "name": "Floor 78"
+                },
+                {
+                  "name": "Floor 79"
+                },
+                {
+                  "name": "Floor 80"
+                }
+              ]
+            },
+            {
+              "id": "deep-potd-081-090",
+              "title": "Floors 81-90",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 81"
+                },
+                {
+                  "name": "Floor 82"
+                },
+                {
+                  "name": "Floor 83"
+                },
+                {
+                  "name": "Floor 84"
+                },
+                {
+                  "name": "Floor 85"
+                },
+                {
+                  "name": "Floor 86"
+                },
+                {
+                  "name": "Floor 87"
+                },
+                {
+                  "name": "Floor 88"
+                },
+                {
+                  "name": "Floor 89"
+                },
+                {
+                  "name": "Floor 90"
+                }
+              ]
+            },
+            {
+              "id": "deep-potd-091-100",
+              "title": "Floors 91-100",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 91"
+                },
+                {
+                  "name": "Floor 92"
+                },
+                {
+                  "name": "Floor 93"
+                },
+                {
+                  "name": "Floor 94"
+                },
+                {
+                  "name": "Floor 95"
+                },
+                {
+                  "name": "Floor 96"
+                },
+                {
+                  "name": "Floor 97"
+                },
+                {
+                  "name": "Floor 98"
+                },
+                {
+                  "name": "Floor 99"
+                },
+                {
+                  "name": "Floor 100"
+                }
+              ]
+            },
+            {
+              "id": "deep-potd-101-110",
+              "title": "Floors 101-110",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 101"
+                },
+                {
+                  "name": "Floor 102"
+                },
+                {
+                  "name": "Floor 103"
+                },
+                {
+                  "name": "Floor 104"
+                },
+                {
+                  "name": "Floor 105"
+                },
+                {
+                  "name": "Floor 106"
+                },
+                {
+                  "name": "Floor 107"
+                },
+                {
+                  "name": "Floor 108"
+                },
+                {
+                  "name": "Floor 109"
+                },
+                {
+                  "name": "Floor 110"
+                }
+              ]
+            },
+            {
+              "id": "deep-potd-111-120",
+              "title": "Floors 111-120",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 111"
+                },
+                {
+                  "name": "Floor 112"
+                },
+                {
+                  "name": "Floor 113"
+                },
+                {
+                  "name": "Floor 114"
+                },
+                {
+                  "name": "Floor 115"
+                },
+                {
+                  "name": "Floor 116"
+                },
+                {
+                  "name": "Floor 117"
+                },
+                {
+                  "name": "Floor 118"
+                },
+                {
+                  "name": "Floor 119"
+                },
+                {
+                  "name": "Floor 120"
+                }
+              ]
+            },
+            {
+              "id": "deep-potd-121-130",
+              "title": "Floors 121-130",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 121"
+                },
+                {
+                  "name": "Floor 122"
+                },
+                {
+                  "name": "Floor 123"
+                },
+                {
+                  "name": "Floor 124"
+                },
+                {
+                  "name": "Floor 125"
+                },
+                {
+                  "name": "Floor 126"
+                },
+                {
+                  "name": "Floor 127"
+                },
+                {
+                  "name": "Floor 128"
+                },
+                {
+                  "name": "Floor 129"
+                },
+                {
+                  "name": "Floor 130"
+                }
+              ]
+            },
+            {
+              "id": "deep-potd-131-140",
+              "title": "Floors 131-140",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 131"
+                },
+                {
+                  "name": "Floor 132"
+                },
+                {
+                  "name": "Floor 133"
+                },
+                {
+                  "name": "Floor 134"
+                },
+                {
+                  "name": "Floor 135"
+                },
+                {
+                  "name": "Floor 136"
+                },
+                {
+                  "name": "Floor 137"
+                },
+                {
+                  "name": "Floor 138"
+                },
+                {
+                  "name": "Floor 139"
+                },
+                {
+                  "name": "Floor 140"
+                }
+              ]
+            },
+            {
+              "id": "deep-potd-141-150",
+              "title": "Floors 141-150",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 141"
+                },
+                {
+                  "name": "Floor 142"
+                },
+                {
+                  "name": "Floor 143"
+                },
+                {
+                  "name": "Floor 144"
+                },
+                {
+                  "name": "Floor 145"
+                },
+                {
+                  "name": "Floor 146"
+                },
+                {
+                  "name": "Floor 147"
+                },
+                {
+                  "name": "Floor 148"
+                },
+                {
+                  "name": "Floor 149"
+                },
+                {
+                  "name": "Floor 150"
+                }
+              ]
+            },
+            {
+              "id": "deep-potd-151-160",
+              "title": "Floors 151-160",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 151"
+                },
+                {
+                  "name": "Floor 152"
+                },
+                {
+                  "name": "Floor 153"
+                },
+                {
+                  "name": "Floor 154"
+                },
+                {
+                  "name": "Floor 155"
+                },
+                {
+                  "name": "Floor 156"
+                },
+                {
+                  "name": "Floor 157"
+                },
+                {
+                  "name": "Floor 158"
+                },
+                {
+                  "name": "Floor 159"
+                },
+                {
+                  "name": "Floor 160"
+                }
+              ]
+            },
+            {
+              "id": "deep-potd-161-170",
+              "title": "Floors 161-170",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 161"
+                },
+                {
+                  "name": "Floor 162"
+                },
+                {
+                  "name": "Floor 163"
+                },
+                {
+                  "name": "Floor 164"
+                },
+                {
+                  "name": "Floor 165"
+                },
+                {
+                  "name": "Floor 166"
+                },
+                {
+                  "name": "Floor 167"
+                },
+                {
+                  "name": "Floor 168"
+                },
+                {
+                  "name": "Floor 169"
+                },
+                {
+                  "name": "Floor 170"
+                }
+              ]
+            },
+            {
+              "id": "deep-potd-171-180",
+              "title": "Floors 171-180",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 171"
+                },
+                {
+                  "name": "Floor 172"
+                },
+                {
+                  "name": "Floor 173"
+                },
+                {
+                  "name": "Floor 174"
+                },
+                {
+                  "name": "Floor 175"
+                },
+                {
+                  "name": "Floor 176"
+                },
+                {
+                  "name": "Floor 177"
+                },
+                {
+                  "name": "Floor 178"
+                },
+                {
+                  "name": "Floor 179"
+                },
+                {
+                  "name": "Floor 180"
+                }
+              ]
+            },
+            {
+              "id": "deep-potd-181-190",
+              "title": "Floors 181-190",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 181"
+                },
+                {
+                  "name": "Floor 182"
+                },
+                {
+                  "name": "Floor 183"
+                },
+                {
+                  "name": "Floor 184"
+                },
+                {
+                  "name": "Floor 185"
+                },
+                {
+                  "name": "Floor 186"
+                },
+                {
+                  "name": "Floor 187"
+                },
+                {
+                  "name": "Floor 188"
+                },
+                {
+                  "name": "Floor 189"
+                },
+                {
+                  "name": "Floor 190"
+                }
+              ]
+            },
+            {
+              "id": "deep-potd-191-200",
+              "title": "Floors 191-200",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 191"
+                },
+                {
+                  "name": "Floor 192"
+                },
+                {
+                  "name": "Floor 193"
+                },
+                {
+                  "name": "Floor 194"
+                },
+                {
+                  "name": "Floor 195"
+                },
+                {
+                  "name": "Floor 196"
+                },
+                {
+                  "name": "Floor 197"
+                },
+                {
+                  "name": "Floor 198"
+                },
+                {
+                  "name": "Floor 199"
+                },
+                {
+                  "name": "Floor 200"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "Heaven-on-High",
+      "summary": "Ruby Sea deep dungeon with 100 floors and fast-paced pulls. Great for leveling and challenge clears.",
+      "jobs": [
+        {
+          "id": "deep-hoh",
+          "label": "Floor Sets",
+          "sections": [
+            {
+              "id": "deep-hoh-001-010",
+              "title": "Floors 1-10",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 1"
+                },
+                {
+                  "name": "Floor 2"
+                },
+                {
+                  "name": "Floor 3"
+                },
+                {
+                  "name": "Floor 4"
+                },
+                {
+                  "name": "Floor 5"
+                },
+                {
+                  "name": "Floor 6"
+                },
+                {
+                  "name": "Floor 7"
+                },
+                {
+                  "name": "Floor 8"
+                },
+                {
+                  "name": "Floor 9"
+                },
+                {
+                  "name": "Floor 10"
+                }
+              ]
+            },
+            {
+              "id": "deep-hoh-011-020",
+              "title": "Floors 11-20",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 11"
+                },
+                {
+                  "name": "Floor 12"
+                },
+                {
+                  "name": "Floor 13"
+                },
+                {
+                  "name": "Floor 14"
+                },
+                {
+                  "name": "Floor 15"
+                },
+                {
+                  "name": "Floor 16"
+                },
+                {
+                  "name": "Floor 17"
+                },
+                {
+                  "name": "Floor 18"
+                },
+                {
+                  "name": "Floor 19"
+                },
+                {
+                  "name": "Floor 20"
+                }
+              ]
+            },
+            {
+              "id": "deep-hoh-021-030",
+              "title": "Floors 21-30",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 21"
+                },
+                {
+                  "name": "Floor 22"
+                },
+                {
+                  "name": "Floor 23"
+                },
+                {
+                  "name": "Floor 24"
+                },
+                {
+                  "name": "Floor 25"
+                },
+                {
+                  "name": "Floor 26"
+                },
+                {
+                  "name": "Floor 27"
+                },
+                {
+                  "name": "Floor 28"
+                },
+                {
+                  "name": "Floor 29"
+                },
+                {
+                  "name": "Floor 30"
+                }
+              ]
+            },
+            {
+              "id": "deep-hoh-031-040",
+              "title": "Floors 31-40",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 31"
+                },
+                {
+                  "name": "Floor 32"
+                },
+                {
+                  "name": "Floor 33"
+                },
+                {
+                  "name": "Floor 34"
+                },
+                {
+                  "name": "Floor 35"
+                },
+                {
+                  "name": "Floor 36"
+                },
+                {
+                  "name": "Floor 37"
+                },
+                {
+                  "name": "Floor 38"
+                },
+                {
+                  "name": "Floor 39"
+                },
+                {
+                  "name": "Floor 40"
+                }
+              ]
+            },
+            {
+              "id": "deep-hoh-041-050",
+              "title": "Floors 41-50",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 41"
+                },
+                {
+                  "name": "Floor 42"
+                },
+                {
+                  "name": "Floor 43"
+                },
+                {
+                  "name": "Floor 44"
+                },
+                {
+                  "name": "Floor 45"
+                },
+                {
+                  "name": "Floor 46"
+                },
+                {
+                  "name": "Floor 47"
+                },
+                {
+                  "name": "Floor 48"
+                },
+                {
+                  "name": "Floor 49"
+                },
+                {
+                  "name": "Floor 50"
+                }
+              ]
+            },
+            {
+              "id": "deep-hoh-051-060",
+              "title": "Floors 51-60",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 51"
+                },
+                {
+                  "name": "Floor 52"
+                },
+                {
+                  "name": "Floor 53"
+                },
+                {
+                  "name": "Floor 54"
+                },
+                {
+                  "name": "Floor 55"
+                },
+                {
+                  "name": "Floor 56"
+                },
+                {
+                  "name": "Floor 57"
+                },
+                {
+                  "name": "Floor 58"
+                },
+                {
+                  "name": "Floor 59"
+                },
+                {
+                  "name": "Floor 60"
+                }
+              ]
+            },
+            {
+              "id": "deep-hoh-061-070",
+              "title": "Floors 61-70",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 61"
+                },
+                {
+                  "name": "Floor 62"
+                },
+                {
+                  "name": "Floor 63"
+                },
+                {
+                  "name": "Floor 64"
+                },
+                {
+                  "name": "Floor 65"
+                },
+                {
+                  "name": "Floor 66"
+                },
+                {
+                  "name": "Floor 67"
+                },
+                {
+                  "name": "Floor 68"
+                },
+                {
+                  "name": "Floor 69"
+                },
+                {
+                  "name": "Floor 70"
+                }
+              ]
+            },
+            {
+              "id": "deep-hoh-071-080",
+              "title": "Floors 71-80",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 71"
+                },
+                {
+                  "name": "Floor 72"
+                },
+                {
+                  "name": "Floor 73"
+                },
+                {
+                  "name": "Floor 74"
+                },
+                {
+                  "name": "Floor 75"
+                },
+                {
+                  "name": "Floor 76"
+                },
+                {
+                  "name": "Floor 77"
+                },
+                {
+                  "name": "Floor 78"
+                },
+                {
+                  "name": "Floor 79"
+                },
+                {
+                  "name": "Floor 80"
+                }
+              ]
+            },
+            {
+              "id": "deep-hoh-081-090",
+              "title": "Floors 81-90",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 81"
+                },
+                {
+                  "name": "Floor 82"
+                },
+                {
+                  "name": "Floor 83"
+                },
+                {
+                  "name": "Floor 84"
+                },
+                {
+                  "name": "Floor 85"
+                },
+                {
+                  "name": "Floor 86"
+                },
+                {
+                  "name": "Floor 87"
+                },
+                {
+                  "name": "Floor 88"
+                },
+                {
+                  "name": "Floor 89"
+                },
+                {
+                  "name": "Floor 90"
+                }
+              ]
+            },
+            {
+              "id": "deep-hoh-091-100",
+              "title": "Floors 91-100",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 91"
+                },
+                {
+                  "name": "Floor 92"
+                },
+                {
+                  "name": "Floor 93"
+                },
+                {
+                  "name": "Floor 94"
+                },
+                {
+                  "name": "Floor 95"
+                },
+                {
+                  "name": "Floor 96"
+                },
+                {
+                  "name": "Floor 97"
+                },
+                {
+                  "name": "Floor 98"
+                },
+                {
+                  "name": "Floor 99"
+                },
+                {
+                  "name": "Floor 100"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "Eureka Orthos",
+      "summary": "An Allagan deep dungeon beneath the Crystal Tower with 100 floors, modern mechanics, and high-end solo challenge routes.",
+      "jobs": [
+        {
+          "id": "deep-eo",
+          "label": "Floor Sets",
+          "sections": [
+            {
+              "id": "deep-eo-001-010",
+              "title": "Floors 1-10",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 1"
+                },
+                {
+                  "name": "Floor 2"
+                },
+                {
+                  "name": "Floor 3"
+                },
+                {
+                  "name": "Floor 4"
+                },
+                {
+                  "name": "Floor 5"
+                },
+                {
+                  "name": "Floor 6"
+                },
+                {
+                  "name": "Floor 7"
+                },
+                {
+                  "name": "Floor 8"
+                },
+                {
+                  "name": "Floor 9"
+                },
+                {
+                  "name": "Floor 10"
+                }
+              ]
+            },
+            {
+              "id": "deep-eo-011-020",
+              "title": "Floors 11-20",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 11"
+                },
+                {
+                  "name": "Floor 12"
+                },
+                {
+                  "name": "Floor 13"
+                },
+                {
+                  "name": "Floor 14"
+                },
+                {
+                  "name": "Floor 15"
+                },
+                {
+                  "name": "Floor 16"
+                },
+                {
+                  "name": "Floor 17"
+                },
+                {
+                  "name": "Floor 18"
+                },
+                {
+                  "name": "Floor 19"
+                },
+                {
+                  "name": "Floor 20"
+                }
+              ]
+            },
+            {
+              "id": "deep-eo-021-030",
+              "title": "Floors 21-30",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 21"
+                },
+                {
+                  "name": "Floor 22"
+                },
+                {
+                  "name": "Floor 23"
+                },
+                {
+                  "name": "Floor 24"
+                },
+                {
+                  "name": "Floor 25"
+                },
+                {
+                  "name": "Floor 26"
+                },
+                {
+                  "name": "Floor 27"
+                },
+                {
+                  "name": "Floor 28"
+                },
+                {
+                  "name": "Floor 29"
+                },
+                {
+                  "name": "Floor 30"
+                }
+              ]
+            },
+            {
+              "id": "deep-eo-031-040",
+              "title": "Floors 31-40",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 31"
+                },
+                {
+                  "name": "Floor 32"
+                },
+                {
+                  "name": "Floor 33"
+                },
+                {
+                  "name": "Floor 34"
+                },
+                {
+                  "name": "Floor 35"
+                },
+                {
+                  "name": "Floor 36"
+                },
+                {
+                  "name": "Floor 37"
+                },
+                {
+                  "name": "Floor 38"
+                },
+                {
+                  "name": "Floor 39"
+                },
+                {
+                  "name": "Floor 40"
+                }
+              ]
+            },
+            {
+              "id": "deep-eo-041-050",
+              "title": "Floors 41-50",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 41"
+                },
+                {
+                  "name": "Floor 42"
+                },
+                {
+                  "name": "Floor 43"
+                },
+                {
+                  "name": "Floor 44"
+                },
+                {
+                  "name": "Floor 45"
+                },
+                {
+                  "name": "Floor 46"
+                },
+                {
+                  "name": "Floor 47"
+                },
+                {
+                  "name": "Floor 48"
+                },
+                {
+                  "name": "Floor 49"
+                },
+                {
+                  "name": "Floor 50"
+                }
+              ]
+            },
+            {
+              "id": "deep-eo-051-060",
+              "title": "Floors 51-60",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 51"
+                },
+                {
+                  "name": "Floor 52"
+                },
+                {
+                  "name": "Floor 53"
+                },
+                {
+                  "name": "Floor 54"
+                },
+                {
+                  "name": "Floor 55"
+                },
+                {
+                  "name": "Floor 56"
+                },
+                {
+                  "name": "Floor 57"
+                },
+                {
+                  "name": "Floor 58"
+                },
+                {
+                  "name": "Floor 59"
+                },
+                {
+                  "name": "Floor 60"
+                }
+              ]
+            },
+            {
+              "id": "deep-eo-061-070",
+              "title": "Floors 61-70",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 61"
+                },
+                {
+                  "name": "Floor 62"
+                },
+                {
+                  "name": "Floor 63"
+                },
+                {
+                  "name": "Floor 64"
+                },
+                {
+                  "name": "Floor 65"
+                },
+                {
+                  "name": "Floor 66"
+                },
+                {
+                  "name": "Floor 67"
+                },
+                {
+                  "name": "Floor 68"
+                },
+                {
+                  "name": "Floor 69"
+                },
+                {
+                  "name": "Floor 70"
+                }
+              ]
+            },
+            {
+              "id": "deep-eo-071-080",
+              "title": "Floors 71-80",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 71"
+                },
+                {
+                  "name": "Floor 72"
+                },
+                {
+                  "name": "Floor 73"
+                },
+                {
+                  "name": "Floor 74"
+                },
+                {
+                  "name": "Floor 75"
+                },
+                {
+                  "name": "Floor 76"
+                },
+                {
+                  "name": "Floor 77"
+                },
+                {
+                  "name": "Floor 78"
+                },
+                {
+                  "name": "Floor 79"
+                },
+                {
+                  "name": "Floor 80"
+                }
+              ]
+            },
+            {
+              "id": "deep-eo-081-090",
+              "title": "Floors 81-90",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 81"
+                },
+                {
+                  "name": "Floor 82"
+                },
+                {
+                  "name": "Floor 83"
+                },
+                {
+                  "name": "Floor 84"
+                },
+                {
+                  "name": "Floor 85"
+                },
+                {
+                  "name": "Floor 86"
+                },
+                {
+                  "name": "Floor 87"
+                },
+                {
+                  "name": "Floor 88"
+                },
+                {
+                  "name": "Floor 89"
+                },
+                {
+                  "name": "Floor 90"
+                }
+              ]
+            },
+            {
+              "id": "deep-eo-091-100",
+              "title": "Floors 91-100",
+              "note": "Track each cleared floor",
+              "quests": [
+                {
+                  "name": "Floor 91"
+                },
+                {
+                  "name": "Floor 92"
+                },
+                {
+                  "name": "Floor 93"
+                },
+                {
+                  "name": "Floor 94"
+                },
+                {
+                  "name": "Floor 95"
+                },
+                {
+                  "name": "Floor 96"
+                },
+                {
+                  "name": "Floor 97"
+                },
+                {
+                  "name": "Floor 98"
+                },
+                {
+                  "name": "Floor 99"
+                },
+                {
+                  "name": "Floor 100"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "roleQuests": [
+    {
+      "role": "Tank",
+      "jobs": [
+        {
+          "id": "tank-role",
+          "label": "All Tanks",
+          "sections": [
+            {
+              "id": "role-tank-shb",
+              "title": "Tank Role Quests - Shadowbringers",
+              "note": "Lv 70-80",
+              "quests": [
+                {
+                  "name": "The Man with Too Many Scars",
+                  "tag": "Lv 70 - PLD/WAR/DRK/GNB"
+                },
+                {
+                  "name": "Shaped by Tragedy",
+                  "tag": "Lv 72 - PLD/WAR/DRK/GNB"
+                },
+                {
+                  "name": "Defined by Loss",
+                  "tag": "Lv 74 - PLD/WAR/DRK/GNB"
+                },
+                {
+                  "name": "The Princess and Her Knight",
+                  "tag": "Lv 76 - PLD/WAR/DRK/GNB"
+                },
+                {
+                  "name": "The Hardened Heart",
+                  "tag": "Lv 78 - PLD/WAR/DRK/GNB"
+                },
+                {
+                  "name": "To Have Loved and Lost",
+                  "tag": "Lv 80 - PLD/WAR/DRK/GNB"
+                }
+              ]
+            },
+            {
+              "id": "role-tank-ew",
+              "title": "Tank Role Quests - Endwalker",
+              "note": "Lv 85-90",
+              "quests": [
+                {
+                  "name": "Shrouded in Peril",
+                  "tag": "Lv 85 - PLD/WAR/DRK/GNB"
+                },
+                {
+                  "name": "To Give Voice",
+                  "tag": "Lv 86 - PLD/WAR/DRK/GNB"
+                },
+                {
+                  "name": "A Gift Undone",
+                  "tag": "Lv 87 - PLD/WAR/DRK/GNB"
+                },
+                {
+                  "name": "A Pact Proven",
+                  "tag": "Lv 88 - PLD/WAR/DRK/GNB"
+                },
+                {
+                  "name": "Hearts True",
+                  "tag": "Lv 89 - PLD/WAR/DRK/GNB"
+                },
+                {
+                  "name": "A Path Unveiled",
+                  "tag": "Lv 90 - PLD/WAR/DRK/GNB"
+                }
+              ]
+            },
+            {
+              "id": "role-tank-dt",
+              "title": "Tank Role Quests - Dawntrail",
+              "note": "Lv 90-100",
+              "quests": [
+                {
+                  "name": "The Narwhal Beckons",
+                  "tag": "Lv 90 - PLD/WAR/DRK/GNB"
+                },
+                {
+                  "name": "Sleepless in Ishgard",
+                  "tag": "Lv 92 - PLD/WAR/DRK/GNB"
+                },
+                {
+                  "name": "Between Sleep and Death",
+                  "tag": "Lv 94 - PLD/WAR/DRK/GNB"
+                },
+                {
+                  "name": "Beacon in the Darkness",
+                  "tag": "Lv 96 - PLD/WAR/DRK/GNB"
+                },
+                {
+                  "name": "Awakened, Not Stirred",
+                  "tag": "Lv 98 - PLD/WAR/DRK/GNB"
+                },
+                {
+                  "name": "Dreams of a New Day",
+                  "tag": "Lv 100 - PLD/WAR/DRK/GNB"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "Healer",
+      "jobs": [
+        {
+          "id": "healer-role",
+          "label": "All Healers",
+          "sections": [
+            {
+              "id": "role-healer-shb",
+              "title": "Healer Role Quests - Shadowbringers",
+              "note": "Lv 70-80",
+              "quests": [
+                {
+                  "name": "Traditions and Travails",
+                  "tag": "Lv 70 - WHM/SCH/AST/SGE"
+                },
+                {
+                  "name": "Affronts and Allies",
+                  "tag": "Lv 72 - WHM/SCH/AST/SGE"
+                },
+                {
+                  "name": "The Scientific Method",
+                  "tag": "Lv 74 - WHM/SCH/AST/SGE"
+                },
+                {
+                  "name": "The Lost and the Found",
+                  "tag": "Lv 76 - WHM/SCH/AST/SGE"
+                },
+                {
+                  "name": "Never to Return",
+                  "tag": "Lv 78 - WHM/SCH/AST/SGE"
+                },
+                {
+                  "name": "The Soul of Temperance",
+                  "tag": "Lv 80 - WHM/SCH/AST/SGE"
+                }
+              ]
+            },
+            {
+              "id": "role-healer-ew",
+              "title": "Healer Role Quests - Endwalker",
+              "note": "Lv 85-90",
+              "quests": [
+                {
+                  "name": "Far from Free",
+                  "tag": "Lv 85 - WHM/SCH/AST/SGE"
+                },
+                {
+                  "name": "The Butcher's Blade",
+                  "tag": "Lv 86 - WHM/SCH/AST/SGE"
+                },
+                {
+                  "name": "A New Battleground",
+                  "tag": "Lv 87 - WHM/SCH/AST/SGE"
+                },
+                {
+                  "name": "Laying the Past to Rest",
+                  "tag": "Lv 88 - WHM/SCH/AST/SGE"
+                },
+                {
+                  "name": "Trail of Skulls",
+                  "tag": "Lv 89 - WHM/SCH/AST/SGE"
+                },
+                {
+                  "name": "The Gift of Mercy",
+                  "tag": "Lv 90 - WHM/SCH/AST/SGE"
+                }
+              ]
+            },
+            {
+              "id": "role-healer-dt",
+              "title": "Healer Role Quests - Dawntrail",
+              "note": "Lv 90-100",
+              "quests": [
+                {
+                  "name": "In the Sting of Things",
+                  "tag": "Lv 90 - WHM/SCH/AST/SGE"
+                },
+                {
+                  "name": "Causing Problems on Purpose",
+                  "tag": "Lv 92 - WHM/SCH/AST/SGE"
+                },
+                {
+                  "name": "Living among the Deadly",
+                  "tag": "Lv 94 - WHM/SCH/AST/SGE"
+                },
+                {
+                  "name": "Taste of a Toxin Paradise",
+                  "tag": "Lv 96 - WHM/SCH/AST/SGE"
+                },
+                {
+                  "name": "Downed by the River",
+                  "tag": "Lv 98 - WHM/SCH/AST/SGE"
+                },
+                {
+                  "name": "An Antidote for Anarchy",
+                  "tag": "Lv 100 - WHM/SCH/AST/SGE"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "Melee DPS",
+      "jobs": [
+        {
+          "id": "melee-role",
+          "label": "All Melee DPS",
+          "sections": [
+            {
+              "id": "role-melee-shb",
+              "title": "Physical DPS Role Quests - Shadowbringers",
+              "note": "Lv 70-80",
+              "quests": [
+                {
+                  "name": "No Greater Sport",
+                  "tag": "Lv 70 - Physical DPS"
+                },
+                {
+                  "name": "Vengeance in Defeat",
+                  "tag": "Lv 72 - Physical DPS"
+                },
+                {
+                  "name": "Freedom from Privilege",
+                  "tag": "Lv 74 - Physical DPS"
+                },
+                {
+                  "name": "The Hunter's Legacy",
+                  "tag": "Lv 76 - Physical DPS"
+                },
+                {
+                  "name": "Fellowship Restored",
+                  "tag": "Lv 78 - Physical DPS"
+                },
+                {
+                  "name": "Courage Born of Fear",
+                  "tag": "Lv 80 - Physical DPS"
+                }
+              ]
+            },
+            {
+              "id": "role-melee-ew",
+              "title": "Melee DPS Role Quests - Endwalker",
+              "note": "Lv 85-90",
+              "quests": [
+                {
+                  "name": "Storm Clouds Brewing",
+                  "tag": "Lv 85 - MNK/DRG/NIN/SAM/RPR/VPR"
+                },
+                {
+                  "name": "The Crushing Tide",
+                  "tag": "Lv 86 - MNK/DRG/NIN/SAM/RPR/VPR"
+                },
+                {
+                  "name": "Old Heroes Never Die",
+                  "tag": "Lv 87 - MNK/DRG/NIN/SAM/RPR/VPR"
+                },
+                {
+                  "name": "A Mother's Suffering",
+                  "tag": "Lv 88 - MNK/DRG/NIN/SAM/RPR/VPR"
+                },
+                {
+                  "name": "Out of the Shadows",
+                  "tag": "Lv 89 - MNK/DRG/NIN/SAM/RPR/VPR"
+                },
+                {
+                  "name": "To Calmer Seas",
+                  "tag": "Lv 90 - MNK/DRG/NIN/SAM/RPR/VPR"
+                }
+              ]
+            },
+            {
+              "id": "role-melee-dt",
+              "title": "Melee DPS Role Quests - Dawntrail",
+              "note": "Lv 90-100",
+              "quests": [
+                {
+                  "name": "The Hunter and the Hunted",
+                  "tag": "Lv 90 - MNK/DRG/NIN/SAM/RPR/VPR"
+                },
+                {
+                  "name": "A Sea of Blood",
+                  "tag": "Lv 92 - MNK/DRG/NIN/SAM/RPR/VPR"
+                },
+                {
+                  "name": "Who's Who",
+                  "tag": "Lv 94 - MNK/DRG/NIN/SAM/RPR/VPR"
+                },
+                {
+                  "name": "Cornered Prey",
+                  "tag": "Lv 96 - MNK/DRG/NIN/SAM/RPR/VPR"
+                },
+                {
+                  "name": "Impostor Syndrome",
+                  "tag": "Lv 98 - MNK/DRG/NIN/SAM/RPR/VPR"
+                },
+                {
+                  "name": "A Hunter True",
+                  "tag": "Lv 100 - MNK/DRG/NIN/SAM/RPR/VPR"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "Ranged DPS",
+      "jobs": [
+        {
+          "id": "ranged-role",
+          "label": "All Ranged DPS",
+          "sections": [
+            {
+              "id": "role-ranged-shb",
+              "title": "Magical Ranged DPS Role Quests - Shadowbringers",
+              "note": "Lv 70-80",
+              "quests": [
+                {
+                  "name": "Hollow Pursuits",
+                  "tag": "Lv 70 - BLM/SMN/RDM/PCT"
+                },
+                {
+                  "name": "A Voice from the Void",
+                  "tag": "Lv 72 - BLM/SMN/RDM/PCT"
+                },
+                {
+                  "name": "Echoes of the Past",
+                  "tag": "Lv 74 - BLM/SMN/RDM/PCT"
+                },
+                {
+                  "name": "Nyelbert's Lament",
+                  "tag": "Lv 76 - BLM/SMN/RDM/PCT"
+                },
+                {
+                  "name": "Taynor's Training Day",
+                  "tag": "Lv 78 - BLM/SMN/RDM/PCT"
+                },
+                {
+                  "name": "A Tearful Reunion",
+                  "tag": "Lv 80 - BLM/SMN/RDM/PCT"
+                }
+              ]
+            },
+            {
+              "id": "role-ranged-ew",
+              "title": "Ranged DPS Role Quests - Endwalker",
+              "note": "Lv 85-90",
+              "quests": [
+                {
+                  "name": "Seeds of Disquiet",
+                  "tag": "Lv 85 - BRD/MCH/DNC (Physical Ranged)"
+                },
+                {
+                  "name": "Our Aching Souls",
+                  "tag": "Lv 85 - BLM/SMN/RDM/PCT (Magical Ranged)"
+                },
+                {
+                  "name": "When the Kami Answer",
+                  "tag": "Lv 86 - BRD/MCH/DNC (Physical Ranged)"
+                },
+                {
+                  "name": "No Forgiveness, No Deliverance",
+                  "tag": "Lv 86 - BLM/SMN/RDM/PCT (Magical Ranged)"
+                },
+                {
+                  "name": "Home No Longer",
+                  "tag": "Lv 87 - BRD/MCH/DNC (Physical Ranged)"
+                },
+                {
+                  "name": "Only Justice, Only Vengeance",
+                  "tag": "Lv 87 - BLM/SMN/RDM/PCT (Magical Ranged)"
+                },
+                {
+                  "name": "The Devoted Daughter",
+                  "tag": "Lv 88 - BRD/MCH/DNC (Physical Ranged)"
+                },
+                {
+                  "name": "Wills Unending, Faith Unbending",
+                  "tag": "Lv 88 - BLM/SMN/RDM/PCT (Magical Ranged)"
+                },
+                {
+                  "name": "A Singular Gift",
+                  "tag": "Lv 89 - BRD/MCH/DNC (Physical Ranged)"
+                },
+                {
+                  "name": "O Mighty Fury, Guide Us to Victory",
+                  "tag": "Lv 89 - BLM/SMN/RDM/PCT (Magical Ranged)"
+                },
+                {
+                  "name": "Laid to Rest",
+                  "tag": "Lv 90 - BRD/MCH/DNC (Physical Ranged)"
+                },
+                {
+                  "name": "Ever March Heavensward",
+                  "tag": "Lv 90 - BLM/SMN/RDM/PCT (Magical Ranged)"
+                }
+              ]
+            },
+            {
+              "id": "role-ranged-dt",
+              "title": "Ranged DPS Role Quests - Dawntrail",
+              "note": "Lv 90-100",
+              "quests": [
+                {
+                  "name": "To Steal a Steelhog",
+                  "tag": "Lv 90 - BRD/MCH/DNC (Physical Ranged)"
+                },
+                {
+                  "name": "Power Forgotten",
+                  "tag": "Lv 90 - BLM/SMN/RDM/PCT (Magical Ranged)"
+                },
+                {
+                  "name": "Bandits Abound",
+                  "tag": "Lv 92 - BRD/MCH/DNC (Physical Ranged)"
+                },
+                {
+                  "name": "A Brand of Justice",
+                  "tag": "Lv 92 - BLM/SMN/RDM/PCT (Magical Ranged)"
+                },
+                {
+                  "name": "Take Me to Your Leader",
+                  "tag": "Lv 94 - BRD/MCH/DNC (Physical Ranged)"
+                },
+                {
+                  "name": "The Seeds of Popularity",
+                  "tag": "Lv 94 - BLM/SMN/RDM/PCT (Magical Ranged)"
+                },
+                {
+                  "name": "The Milk of Mamool Ja Kindness",
+                  "tag": "Lv 96 - BRD/MCH/DNC (Physical Ranged)"
+                },
+                {
+                  "name": "Floundering Fame",
+                  "tag": "Lv 96 - BLM/SMN/RDM/PCT (Magical Ranged)"
+                },
+                {
+                  "name": "Ally in the Alley",
+                  "tag": "Lv 98 - BRD/MCH/DNC (Physical Ranged)"
+                },
+                {
+                  "name": "Behind the Helm",
+                  "tag": "Lv 98 - BLM/SMN/RDM/PCT (Magical Ranged)"
+                },
+                {
+                  "name": "The Mightiest Shield",
+                  "tag": "Lv 100 - BRD/MCH/DNC (Physical Ranged)"
+                },
+                {
+                  "name": "Heroes and Pretenders",
+                  "tag": "Lv 100 - BLM/SMN/RDM/PCT (Magical Ranged)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hildebrand": [
+    {
+      "role": "A Realm Reborn",
+      "jobs": [
+        {
+          "id": "hildi-arr",
+          "label": "Hildibrand Adventures",
+          "sections": [
+            {
+              "id": "hildi-arr-main",
+              "title": "A Realm Reborn (2.1–2.55)",
+              "note": "Core arc",
+              "quests": [
+                {
+                  "name": "The Rise and Fall of Gentlemen",
+                  "tag": "2.1 unlock"
+                },
+                {
+                  "name": "Back in the Saddle",
+                  "tag": "2.1"
+                },
+                {
+                  "name": "After Her Own Heart",
+                  "tag": "2.1"
+                },
+                {
+                  "name": "The Immaculate Deception",
+                  "tag": "2.1"
+                },
+                {
+                  "name": "The Science of Deduction",
+                  "tag": "2.2"
+                },
+                {
+                  "name": "The Hammer",
+                  "tag": "2.2"
+                },
+                {
+                  "name": "Manderville Men",
+                  "tag": "2.2"
+                },
+                {
+                  "name": "The Three Collectors",
+                  "tag": "2.2"
+                },
+                {
+                  "name": "The Business of Betrothal",
+                  "tag": "2.3"
+                },
+                {
+                  "name": "A Burst of Inspiration",
+                  "tag": "2.3"
+                },
+                {
+                  "name": "Seeds of Rebellion",
+                  "tag": "2.3"
+                },
+                {
+                  "name": "A Case of Indecency",
+                  "tag": "2.3"
+                },
+                {
+                  "name": "Eight-armed and Dangerous",
+                  "tag": "2.4"
+                },
+                {
+                  "name": "What Price Victory",
+                  "tag": "2.4"
+                },
+                {
+                  "name": "The Trouble with Truffles",
+                  "tag": "2.4"
+                },
+                {
+                  "name": "The Coliseum Conundrum",
+                  "tag": "2.4"
+                },
+                {
+                  "name": "Shades of Sil'dih",
+                  "tag": "2.5"
+                },
+                {
+                  "name": "Sibling Strife",
+                  "tag": "2.5"
+                },
+                {
+                  "name": "Beneath the Mask",
+                  "tag": "2.5"
+                },
+                {
+                  "name": "Truths Untold",
+                  "tag": "2.5"
+                },
+                {
+                  "name": "Her Last Vow",
+                  "tag": "2.5 conclusion"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "Heavensward",
+      "jobs": [
+        {
+          "id": "hildi-hw",
+          "label": "Further Hildibrand Adventures",
+          "sections": [
+            {
+              "id": "hildi-hw-main",
+              "title": "Heavensward (3.1–3.5)",
+              "note": "Core arc",
+              "quests": [
+                {
+                  "name": "A Gentleman Falls, Rather than Flies",
+                  "tag": "3.2 unlock"
+                },
+                {
+                  "name": "Don't Call It a Comeback",
+                  "tag": "3.2"
+                },
+                {
+                  "name": "The Gigi Situation",
+                  "tag": "3.3"
+                },
+                {
+                  "name": "The Measure of a Mammet",
+                  "tag": "3.3"
+                },
+                {
+                  "name": "A Gazebo to Call Our Own",
+                  "tag": "3.4"
+                },
+                {
+                  "name": "Don't Trust Anyone over Sixty",
+                  "tag": "3.4"
+                },
+                {
+                  "name": "The Proud and the Pointy-eyed",
+                  "tag": "3.5"
+                },
+                {
+                  "name": "If I Could Turn Back Time",
+                  "tag": "3.5 conclusion"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "Stormblood",
+      "jobs": [
+        {
+          "id": "hildi-sb",
+          "label": "Even Further Hildibrand Adventures",
+          "sections": [
+            {
+              "id": "hildi-sb-main",
+              "title": "Stormblood (4.1–4.56)",
+              "note": "Core arc",
+              "quests": [
+                {
+                  "name": "A Hingan Tale: Nashu Goes East",
+                  "tag": "4.1 unlock"
+                },
+                {
+                  "name": "Life Imitates Art Imitates Life",
+                  "tag": "4.25"
+                },
+                {
+                  "name": "Of Wolves and Gentlemen",
+                  "tag": "4.25"
+                },
+                {
+                  "name": "In the Eye of the Hingan",
+                  "tag": "4.35"
+                },
+                {
+                  "name": "The Blade Mislaid",
+                  "tag": "4.35"
+                },
+                {
+                  "name": "The Black Heart Beneath",
+                  "tag": "4.45"
+                },
+                {
+                  "name": "Good Swords, Good Dogs",
+                  "tag": "4.45"
+                },
+                {
+                  "name": "The Past Is Never Past",
+                  "tag": "4.56"
+                },
+                {
+                  "name": "Don't Do the Dewprism",
+                  "tag": "4.56 conclusion"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "Endwalker",
+      "jobs": [
+        {
+          "id": "hildi-ew",
+          "label": "Somehow Further Hildibrand Adventures",
+          "sections": [
+            {
+              "id": "hildi-ew-main",
+              "title": "Endwalker (6.15–6.55)",
+              "note": "Manderville weapons prerequisite",
+              "quests": [
+                {
+                  "name": "The Sleeping Gentleman",
+                  "tag": "Unlock"
+                },
+                {
+                  "name": "A Soulful Reunion",
+                  "tag": "6.15"
+                },
+                {
+                  "name": "Lunar Conspiracy",
+                  "tag": "6.25"
+                },
+                {
+                  "name": "The Imperfect Gentleman",
+                  "tag": "6.25"
+                },
+                {
+                  "name": "The Spectacle of Inspection",
+                  "tag": "6.35"
+                },
+                {
+                  "name": "Generational Bonding",
+                  "tag": "6.35"
+                },
+                {
+                  "name": "By Agents Unknown",
+                  "tag": "6.45"
+                },
+                {
+                  "name": "Not from Around Here",
+                  "tag": "6.45"
+                },
+                {
+                  "name": "Of Duplicity and Duplication",
+                  "tag": "6.55"
+                },
+                {
+                  "name": "Gentlemen at Heart",
+                  "tag": "6.55 conclusion"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "Dawntrail",
+      "jobs": [
+        {
+          "id": "hildi-dt",
+          "label": "Inconceivably Further Hildibrand Adventures",
+          "sections": [
+            {
+              "id": "hildi-dt-main",
+              "title": "Dawntrail (7.x)",
+              "note": "Ongoing",
+              "quests": [
+                {
+                  "name": "The Case of the Displaced Inspector",
+                  "tag": "7.15"
+                },
+                {
+                  "name": "Wizened Testimony",
+                  "tag": "7.25"
+                },
+                {
+                  "name": "The Case of the Fiendish Fugitives",
+                  "tag": "7.25"
+                },
+                {
+                  "name": "A Vandal in the Wild",
+                  "tag": "7.35"
+                },
+                {
+                  "name": "On the Trail of Destruction",
+                  "tag": "7.35"
+                },
+                {
+                  "name": "A Need for Speed",
+                  "tag": "7.45"
+                },
+                {
+                  "name": "Meteorites and Meteor-wrongs",
+                  "tag": "7.45"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relicWeapons": [
+    {
+      "role": "A Realm Reborn",
+      "jobs": [
+        {
+          "id": "relic-arr",
+          "label": "Zodiac Weapons",
+          "sections": [
+            {
+              "id": "relic-arr-main",
+              "title": "A Realm Reborn (2.x)",
+              "note": "Zodiac chain",
+              "quests": [
+                {
+                  "name": "The Weaponsmith of Legend",
+                  "tag": "Unlock"
+                },
+                {
+                  "name": "A Relic Reborn (job-specific)",
+                  "tag": "Base relic quest"
+                },
+                {
+                  "name": "Up in Arms",
+                  "tag": "Atma stage"
+                },
+                {
+                  "name": "Trials of the Braves",
+                  "tag": "Animus stage"
+                },
+                {
+                  "name": "Celestial Radiance",
+                  "tag": "Novus unlock"
+                },
+                {
+                  "name": "One Man's Trash",
+                  "tag": "Alexandrite maps"
+                },
+                {
+                  "name": "Morbid Motivation",
+                  "tag": "Repeatable maps"
+                },
+                {
+                  "name": "Star Light, Star Bright",
+                  "tag": "Novus stage"
+                },
+                {
+                  "name": "Mmmmmm, Soulglazed Relics",
+                  "tag": "Nexus stage"
+                },
+                {
+                  "name": "Wherefore Art Thou, Zodiac",
+                  "tag": "Zodiac Braves unlock"
+                },
+                {
+                  "name": "A Ponze of Flesh",
+                  "tag": "Zodiac Braves"
+                },
+                {
+                  "name": "Labor of Love",
+                  "tag": "Zodiac Braves"
+                },
+                {
+                  "name": "Method in His Malice",
+                  "tag": "Zodiac Braves"
+                },
+                {
+                  "name": "A Treasured Mother",
+                  "tag": "Zodiac Braves"
+                },
+                {
+                  "name": "His Dark Materia",
+                  "tag": "Zodiac Braves"
+                },
+                {
+                  "name": "Rise and Shine",
+                  "tag": "Zeta stage"
+                },
+                {
+                  "name": "The Vital Title",
+                  "tag": "ARR conclusion"
+                },
+                {
+                  "name": "Kettle to the Mettle",
+                  "tag": "Optional kettle relic"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "Heavensward",
+      "jobs": [
+        {
+          "id": "relic-hw",
+          "label": "Anima Weapons",
+          "sections": [
+            {
+              "id": "relic-hw-main",
+              "title": "Heavensward (3.x)",
+              "note": "Anima chain",
+              "quests": [
+                {
+                  "name": "An Unexpected Proposal",
+                  "tag": "Unlock"
+                },
+                {
+                  "name": "Soul without Life",
+                  "tag": "Animated stage"
+                },
+                {
+                  "name": "Toughening Up",
+                  "tag": "Awoken stage"
+                },
+                {
+                  "name": "Coming into Its Own",
+                  "tag": "Awoken stage"
+                },
+                {
+                  "name": "A Dream Fulfilled",
+                  "tag": "Hyperconductive stage"
+                },
+                {
+                  "name": "Future Proof",
+                  "tag": "Reconditioned stage"
+                },
+                {
+                  "name": "Cut from a Different Cloth",
+                  "tag": "Singing Cluster"
+                },
+                {
+                  "name": "Seeking Inspiration",
+                  "tag": "Singing Cluster"
+                },
+                {
+                  "name": "Born Again Anima",
+                  "tag": "Sharpened stage"
+                },
+                {
+                  "name": "Some Assembly Required",
+                  "tag": "Complete anima"
+                },
+                {
+                  "name": "Body and Soul",
+                  "tag": "Complete anima"
+                },
+                {
+                  "name": "Words of Wisdom",
+                  "tag": "Lux unlock"
+                },
+                {
+                  "name": "Best Friends Forever",
+                  "tag": "Lux stage"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "Stormblood",
+      "jobs": [
+        {
+          "id": "relic-sb",
+          "label": "Eureka Weapons",
+          "sections": [
+            {
+              "id": "relic-sb-main",
+              "title": "Stormblood (4.x)",
+              "note": "Eureka progression",
+              "quests": [
+                {
+                  "name": "And We Shall Call It Eureka",
+                  "tag": "Anemos unlock"
+                },
+                {
+                  "name": "And We Shall Call It Pagos",
+                  "tag": "Pagos unlock"
+                },
+                {
+                  "name": "And We Shall Call It Pyros",
+                  "tag": "Pyros unlock"
+                },
+                {
+                  "name": "And We Shall Call It Hydatos",
+                  "tag": "Hydatos unlock"
+                },
+                {
+                  "name": "Eureka / Physeos weapon stage complete",
+                  "tag": "Final weapon step"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "Shadowbringers",
+      "jobs": [
+        {
+          "id": "relic-shb",
+          "label": "Resistance Weapons",
+          "sections": [
+            {
+              "id": "relic-shb-main",
+              "title": "Shadowbringers (5.x)",
+              "note": "Bozja progression",
+              "quests": [
+                {
+                  "name": "Hail to the Queen",
+                  "tag": "Unlock path"
+                },
+                {
+                  "name": "Path to the Past",
+                  "tag": "Gangos unlock"
+                },
+                {
+                  "name": "The Bozja Incident",
+                  "tag": "Story"
+                },
+                {
+                  "name": "Fire in the Forge",
+                  "tag": "Base resistance weapon"
+                },
+                {
+                  "name": "Resistance Is (Not) Futile",
+                  "tag": "Repeatable base"
+                },
+                {
+                  "name": "Where Eagles Nest",
+                  "tag": "Bozjan Southern Front"
+                },
+                {
+                  "name": "An Expected Engagement",
+                  "tag": "Bozja story"
+                },
+                {
+                  "name": "Lost No Longer",
+                  "tag": "Bozja story"
+                },
+                {
+                  "name": "On the Offensive",
+                  "tag": "Bozja story"
+                },
+                {
+                  "name": "Time to Focus",
+                  "tag": "Bozja story"
+                },
+                {
+                  "name": "Third Time's the Charm",
+                  "tag": "Bozja story"
+                },
+                {
+                  "name": "Pressing Forward",
+                  "tag": "Bozja story"
+                },
+                {
+                  "name": "Signature Acquired",
+                  "tag": "Bozja story"
+                },
+                {
+                  "name": "Picking Up the Trail",
+                  "tag": "Bozja story"
+                },
+                {
+                  "name": "The Lady of Blades",
+                  "tag": "Bozja story"
+                },
+                {
+                  "name": "A Sober Proposal",
+                  "tag": "Resistance upgrade"
+                },
+                {
+                  "name": "For Want of a Memory",
+                  "tag": "Recollection stage"
+                },
+                {
+                  "name": "The Will to Resist",
+                  "tag": "Recollection stage"
+                },
+                {
+                  "name": "A Sign of What's to Come",
+                  "tag": "Bozja story"
+                },
+                {
+                  "name": "Fit for a Queen",
+                  "tag": "Delubrum Reginae"
+                },
+                {
+                  "name": "A New Playing Field",
+                  "tag": "Zadnor unlock"
+                },
+                {
+                  "name": "One Man's Relic",
+                  "tag": "Repeatable"
+                },
+                {
+                  "name": "Let Me Holster That for You",
+                  "tag": "Bozja story"
+                },
+                {
+                  "name": "In the Queen's Image",
+                  "tag": "Law's Order unlock"
+                },
+                {
+                  "name": "Change of Arms",
+                  "tag": "Law's Order stage"
+                },
+                {
+                  "name": "The Resistance Remembers",
+                  "tag": "Augmented Law's Order"
+                },
+                {
+                  "name": "A New Path of Resistance",
+                  "tag": "Augmented Law's Order"
+                },
+                {
+                  "name": "Resolve Unshaken",
+                  "tag": "Zadnor story"
+                },
+                {
+                  "name": "Where Eagles Roost",
+                  "tag": "Zadnor story"
+                },
+                {
+                  "name": "Reaching Out",
+                  "tag": "Zadnor story"
+                },
+                {
+                  "name": "In Their Shadow",
+                  "tag": "Zadnor story"
+                },
+                {
+                  "name": "Renewed Focus",
+                  "tag": "Zadnor story"
+                },
+                {
+                  "name": "March of the Bloody Queen",
+                  "tag": "Zadnor story"
+                },
+                {
+                  "name": "A Ruined Opportunity",
+                  "tag": "Repeatable"
+                },
+                {
+                  "name": "What Dreams Are Made Of",
+                  "tag": "Final stages"
+                },
+                {
+                  "name": "Spare Parts",
+                  "tag": "Final stages"
+                },
+                {
+                  "name": "Tell Me a Story",
+                  "tag": "Final stages"
+                },
+                {
+                  "name": "A Fond Memory",
+                  "tag": "Final stages"
+                },
+                {
+                  "name": "A Done Deal",
+                  "tag": "Final stages"
+                },
+                {
+                  "name": "Irresistible",
+                  "tag": "Blade's stage"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "Endwalker",
+      "jobs": [
+        {
+          "id": "relic-ew",
+          "label": "Manderville Weapons",
+          "sections": [
+            {
+              "id": "relic-ew-main",
+              "title": "Endwalker (6.x)",
+              "note": "Requires Hildibrand",
+              "quests": [
+                {
+                  "name": "Make It a Manderville",
+                  "tag": "Unlock"
+                },
+                {
+                  "name": "Make Another Manderville",
+                  "tag": "Repeatable base"
+                },
+                {
+                  "name": "Well-oiled",
+                  "tag": "Amazing stage"
+                },
+                {
+                  "name": "The Next Mander-level",
+                  "tag": "Repeatable Amazing"
+                },
+                {
+                  "name": "A Spirited Reforging",
+                  "tag": "Majestic stage"
+                },
+                {
+                  "name": "In Need of Adjustment",
+                  "tag": "Repeatable Majestic"
+                },
+                {
+                  "name": "Resonating with Perfection",
+                  "tag": "Mandervillous stage"
+                },
+                {
+                  "name": "Positively Mandervillous",
+                  "tag": "Repeatable Mandervillous"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "Dawntrail",
+      "jobs": [
+        {
+          "id": "relic-dt",
+          "label": "Phantom Weapons",
+          "sections": [
+            {
+              "id": "relic-dt-main",
+              "title": "Dawntrail (7.x)",
+              "note": "Ongoing",
+              "quests": [
+                {
+                  "name": "Arcane Artistry",
+                  "tag": "Penumbrae stage"
+                },
+                {
+                  "name": "Forging the Phantasmal",
+                  "tag": "Penumbrae stage"
+                },
+                {
+                  "name": "Keeping the Old Ways Alive",
+                  "tag": "Umbrae stage"
+                },
+                {
+                  "name": "Aether, Aether, Everywhere",
+                  "tag": "Umbrae stage"
+                },
+                {
+                  "name": "Wrought by Hands Phantasmal",
+                  "tag": "Umbrae stage"
+                },
+                {
+                  "name": "Timeworn Techniques",
+                  "tag": "Obscurum stage"
+                },
+                {
+                  "name": "In Pursuit of Perfection",
+                  "tag": "Obscurum stage"
+                },
+                {
+                  "name": "A Phantom Reborn",
+                  "tag": "Obscurum stage"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dailyTasks": [
+    {
+      "id": "daily-roul-lev",
+      "label": "Duty Roulette",
+      "note": "Leveling"
+    },
+    {
+      "id": "daily-roul-msq",
+      "label": "Duty Roulette",
+      "note": "Main Scenario"
+    },
+    {
+      "id": "daily-roul-exp",
+      "label": "Duty Roulette",
+      "note": "Expert"
+    },
+    {
+      "id": "daily-roul-trial",
+      "label": "Duty Roulette",
+      "note": "Trials"
+    },
+    {
+      "id": "daily-roul-front",
+      "label": "Duty Roulette",
+      "note": "Frontline"
+    },
+    {
+      "id": "daily-roul-ally",
+      "label": "Duty Roulette",
+      "note": "Alliance Raids"
+    },
+    {
+      "id": "daily-hunt",
+      "label": "Daily Hunt Marks",
+      "note": "A-rank & B-rank"
+    },
+    {
+      "id": "daily-beast",
+      "label": "Beast Tribe Quests",
+      "note": "3 allowances"
+    },
+    {
+      "id": "daily-custom",
+      "label": "Custom Deliveries",
+      "note": "if applicable"
+    }
+  ],
+  "weeklyTasks": [
+    {
+      "id": "weekly-challenge",
+      "label": "Challenge Log",
+      "note": "all categories"
+    },
+    {
+      "id": "weekly-tails",
+      "label": "Wondrous Tails",
+      "note": "9 seals"
+    },
+    {
+      "id": "weekly-hunt",
+      "label": "Elite Hunts",
+      "note": "S-rank & SS-rank"
+    },
+    {
+      "id": "weekly-raid-norm",
+      "label": "Normal Raid",
+      "note": "weekly lockout"
+    },
+    {
+      "id": "weekly-raid-sav",
+      "label": "Savage Raid",
+      "note": "weekly lockout"
+    },
+    {
+      "id": "weekly-custom",
+      "label": "Custom Deliveries",
+      "note": "12 allowances"
+    },
+    {
+      "id": "weekly-jumbo",
+      "label": "Jumbo Cactpot",
+      "note": "Gold Saucer"
+    },
+    {
+      "id": "weekly-mini",
+      "label": "Mini Cactpot",
+      "note": "3 tickets"
+    },
+    {
+      "id": "weekly-ocean",
+      "label": "Ocean Fishing",
+      "note": "if available"
+    }
+  ],
+  "aetherCurrents": [
+    {
+      "id": "ac-hw",
+      "label": "Heavensward",
+      "accent": "hw",
+      "zones": [
+        {
+          "id": "ac-hw-cwh",
+          "name": "Coerthas Western Highlands",
+          "exploration": 4,
+          "quests": [
+            "Bridge Over Frozen Water",
+            "For All the Nights to Come",
+            "Baby Steps",
+            "Protecting What's Important",
+            "Purple Flame, Purple Flame"
+          ]
+        },
+        {
+          "id": "ac-hw-df",
+          "name": "The Dravanian Forelands",
+          "exploration": 4,
+          "quests": [
+            "Some Bad News",
+            "Stolen Munitions",
+            "A Lesson in Humility",
+            "The Hunter Becomes the Kweh",
+            "Mourn in Passing"
+          ]
+        },
+        {
+          "id": "ac-hw-sc",
+          "name": "The Sea of Clouds",
+          "exploration": 4,
+          "quests": [
+            "Clipped Wings",
+            "Honoring the Past",
+            "Sleepless in Ok' Zundu",
+            "Flying the Nest",
+            "Bolt, Chain, and Island"
+          ]
+        },
+        {
+          "id": "ac-hw-cm",
+          "name": "The Churning Mists",
+          "exploration": 4,
+          "quests": [
+            "The Bathing Bully",
+            "Waiting to Inhale",
+            "Road Kill",
+            "Hide Your Moogles",
+            "Into the Aery"
+          ]
+        },
+        {
+          "id": "ac-hw-dh",
+          "name": "The Dravanian Hinterlands",
+          "exploration": 4,
+          "quests": [
+            "Louder than Words",
+            "Ebb and Aetherflow",
+            "Taking Stock",
+            "Saro Roggo's Common Life",
+            "Forbidden Knowledge"
+          ]
+        },
+        {
+          "id": "ac-hw-az",
+          "name": "Azys Lla",
+          "exploration": 0,
+          "quests": [
+            "Systematic Exploration",
+            "In Node We Trust",
+            "Chimerical Maintenance",
+            "Close Encounters of the VIth Kind",
+            "Fetters of Lament"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ac-sb",
+      "label": "Stormblood",
+      "accent": "sb",
+      "zones": [
+        {
+          "id": "ac-sb-pk",
+          "name": "The Peaks",
+          "exploration": 4,
+          "quests": [
+            "Saint Sayer",
+            "A Hunger for Trade",
+            "Out of Sight",
+            "Closing Up Shop",
+            "Liberty or Death"
+          ]
+        },
+        {
+          "id": "ac-sb-fr",
+          "name": "The Fringes",
+          "exploration": 4,
+          "quests": [
+            "Magiteknical Failure",
+            "The Hidden Truth",
+            "Eyes Bigger Than Her Stomach",
+            "Unexpected Guests",
+            "The Silence of the Gods"
+          ]
+        },
+        {
+          "id": "ac-sb-lo",
+          "name": "The Lochs",
+          "exploration": 4,
+          "quests": [
+            "Are They Ill-Tempered",
+            "If I Were a Fish",
+            "A Rite to Rest",
+            "It's a Zu Out There",
+            "Stormblood"
+          ]
+        },
+        {
+          "id": "ac-sb-rs",
+          "name": "The Ruby Sea",
+          "exploration": 4,
+          "quests": [
+            "The Price of Betrayal",
+            "Pulling Double Booty",
+            "The Sword in the Stone",
+            "The Palace of Lost Souls",
+            "Tide Goes in, Imperials Go Out"
+          ]
+        },
+        {
+          "id": "ac-sb-as",
+          "name": "The Azim Steppe",
+          "exploration": 4,
+          "quests": [
+            "Mauci of the Seven Worries",
+            "Forty Years and Counting",
+            "Sheep Snatcher",
+            "Words Are Very Unnecessary",
+            "Glory to the Khagan"
+          ]
+        },
+        {
+          "id": "ac-sb-ya",
+          "name": "Yanxia",
+          "exploration": 4,
+          "quests": [
+            "Wolves and Weeds",
+            "Whacking Day",
+            "Fly, My Pretties",
+            "Something Smells",
+            "All the Little Angels"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ac-shb",
+      "label": "Shadowbringers",
+      "accent": "shb",
+      "zones": [
+        {
+          "id": "ac-shb-lk",
+          "name": "Lakeland",
+          "exploration": 4,
+          "quests": [
+            "An Unreasonable Request",
+            "The Astute Amaro",
+            "Imperative Repairs",
+            "A Jobb Well Done",
+            "Logistics of War"
+          ]
+        },
+        {
+          "id": "ac-shb-aa",
+          "name": "Amh Araeng",
+          "exploration": 4,
+          "quests": [
+            "A Vein Pursuit",
+            "Charmless Man",
+            "Scavengers Assemble",
+            "Work to Live or Live to Work",
+            "A Fresh Start"
+          ]
+        },
+        {
+          "id": "ac-shb-il",
+          "name": "Il Mheg",
+          "exploration": 4,
+          "quests": [
+            "A New Amaro",
+            "The Path to Popularity",
+            "Delightful Decorations",
+            "The Forbidden Lran",
+            "Acht-la Ormh Inn"
+          ]
+        },
+        {
+          "id": "ac-shb-kh",
+          "name": "Kholusia",
+          "exploration": 4,
+          "quests": [
+            "A Plankless Task",
+            "Fugitive of Fear",
+            "Village of Woe",
+            "A Disagreeable Dwarf",
+            "Extinguishing the Last Light"
+          ]
+        },
+        {
+          "id": "ac-shb-rg",
+          "name": "The Rak'tika Greatwood",
+          "exploration": 4,
+          "quests": [
+            "Stand on Ceremony",
+            "Suit Up",
+            "The Great Deceiver",
+            "What We Do for Family",
+            "The Burden of Knowledge"
+          ]
+        },
+        {
+          "id": "ac-shb-te",
+          "name": "The Tempest",
+          "exploration": 4,
+          "quests": [
+            "Community Cohesion",
+            "Debate and Discourse",
+            "Responsible Creation",
+            "Koal of the Cups",
+            "A Greater Purpose"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ac-ew",
+      "label": "Endwalker",
+      "accent": "ew",
+      "zones": [
+        {
+          "id": "ac-ew-lb",
+          "name": "Labyrinthos",
+          "exploration": 4,
+          "quests": [
+            "Lost Little Troll",
+            "Let the Good Times Troll",
+            "The Lad in Labyrinthos",
+            "Gleaner's Wish",
+            "Bonds of Adamant(ite)"
+          ]
+        },
+        {
+          "id": "ac-ew-th",
+          "name": "Thavnair",
+          "exploration": 4,
+          "quests": [
+            "Steppe Child",
+            "Alchemist or Dancer",
+            "Radiant Patrol",
+            "In Agama's Footsteps",
+            "Simple Pleasures"
+          ]
+        },
+        {
+          "id": "ac-ew-ga",
+          "name": "Garlemald",
+          "exploration": 4,
+          "quests": [
+            "In Pursuit of Power",
+            "Children Are Our Future",
+            "Best Delivered Cold",
+            "Stranded at the Station",
+            "Gateway of the Gods"
+          ]
+        },
+        {
+          "id": "ac-ew-ml",
+          "name": "Mare Lamentorum",
+          "exploration": 4,
+          "quests": [
+            "True Carrot Crimes",
+            "Carrots: It's What's for Dinner",
+            "Alluring Allag",
+            "Name That Way",
+            "Heart of the Matter"
+          ]
+        },
+        {
+          "id": "ac-ew-el",
+          "name": "Elpis",
+          "exploration": 4,
+          "quests": [
+            "Touring Anagnorisis, Part I",
+            "You and the Ailouros",
+            "The Perks of Being a Lost Flower",
+            "An Expected Guest",
+            "Caging the Messenger"
+          ]
+        },
+        {
+          "id": "ac-ew-ut",
+          "name": "Ultima Thule",
+          "exploration": 4,
+          "quests": [
+            "A Most Stimulating Discussion",
+            "Ending as One",
+            "Combat Evolved",
+            "Learn to Love",
+            "You're Not Alone"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ac-dt",
+      "label": "Dawntrail",
+      "accent": "dt",
+      "zones": [
+        {
+          "id": "ac-dt-uq",
+          "name": "Urqopacha",
+          "exploration": 10,
+          "quests": [
+            "A Crisis of Corruption",
+            "A Traveler to the Rescue",
+            "The Feat of Ice",
+            "The Flame Burns No More",
+            "An Illuminating Ritual"
+          ]
+        },
+        {
+          "id": "ac-dt-ko",
+          "name": "Kozama'uka",
+          "exploration": 10,
+          "quests": [
+            "Rite of the Wind's Chosen",
+            "Ripe for the Offering",
+            "All Good Potpacts Must Come to an End",
+            "Divine Inspiration",
+            "Sibling Rescue"
+          ]
+        },
+        {
+          "id": "ac-dt-yt",
+          "name": "Yak T'el",
+          "exploration": 10,
+          "quests": [
+            "Aiming High",
+            "Secrets in the Cinderfield",
+            "Road to the Golden City",
+            "Beast of the Heartland",
+            "Lost and Powerless"
+          ]
+        },
+        {
+          "id": "ac-dt-sh",
+          "name": "Shaaloani",
+          "exploration": 10,
+          "quests": [
+            "When the Bill Comes Due",
+            "Meeting of the Spirits",
+            "Rroneek Seeker",
+            "A Bad Case of the Blue Devils",
+            "A Hot Commodity"
+          ]
+        },
+        {
+          "id": "ac-dt-hf",
+          "name": "Heritage Found",
+          "exploration": 10,
+          "quests": [
+            "Stressed Testing",
+            "Aunty Knows Best",
+            "He Who Remembers",
+            "Phyt for Survival"
+          ]
+        },
+        {
+          "id": "ac-dt-lm",
+          "name": "Living Memory",
+          "exploration": 10,
+          "quests": [
+            "Well-wishing at the Wishing Well",
+            "Perplexing Puzzles, Endless Fun",
+            "Volcanic Disruptions",
+            "Blueprint Protocol",
+            "A Journey Neverending"
+          ]
+        }
+      ]
+    }
+  ],
+  "aetherCurrentMsqQuests": [
+    "Purple Flame, Purple Flame",
+    "Mourn in Passing",
+    "Bolt, Chain, and Island",
+    "Into the Aery",
+    "Forbidden Knowledge",
+    "Systematic Exploration",
+    "In Node We Trust",
+    "Chimerical Maintenance",
+    "Close Encounters of the VIth Kind",
+    "Fetters of Lament",
+    "The Silence of the Gods",
+    "Liberty or Death",
+    "Stormblood",
+    "Tide Goes in, Imperials Go Out",
+    "Glory to the Khagan",
+    "All the Little Angels",
+    "Logistics of War",
+    "A Fresh Start",
+    "Acht-la Ormh Inn",
+    "Extinguishing the Last Light",
+    "The Burden of Knowledge",
+    "A Greater Purpose",
+    "Gateway of the Gods",
+    "Heart of the Matter",
+    "Caging the Messenger",
+    "Bonds of Adamant(ite)",
+    "You're Not Alone",
+    "Simple Pleasures",
+    "The Feat of Ice",
+    "Sibling Rescue",
+    "Road to the Golden City",
+    "A Hot Commodity",
+    "A Journey Neverending"
+  ],
+  "aetherUnlockMsqQuests": [
+    "Disclosure",
+    "Where the Chocobos Roam",
+    "Black and the White",
+    "The Wyrm's Lair",
+    "Matoya's Cave",
+    "Raubahn's Invitation",
+    "The Lure of the Dream",
+    "Upon the Great Loch's Shore",
+    "Forever and Ever Apart",
+    "A Season for War",
+    "The Stubborn Remainder",
+    "A Dirty Job",
+    "A Resounding Roar",
+    "A Fickle Existence",
+    "In Good Faith",
+    "The End of a World",
+    "The Full Report, Warts and All",
+    "A Fisherman's Friend",
+    "Strange Bedfellows",
+    "Styled a Hero",
+    "Their Greatest Contribution",
+    "Where Kn∞wledge Leads",
+    "Knowing the Pelupelu",
+    "Knowing the Hanuhanu",
+    "Taking a Stand",
+    "Law of the Land",
+    "Embracing Oblivion",
+    "In Serenity and Sorrow"
+  ],
+  "gcRanks": [
+    {
+      "name": "Private Third Class",
+      "cap": 10000
+    },
+    {
+      "name": "Private Second Class",
+      "cap": 15000
+    },
+    {
+      "name": "Private First Class",
+      "cap": 20000
+    },
+    {
+      "name": "Corporal",
+      "cap": 25000
+    },
+    {
+      "name": "Sergeant Third Class",
+      "cap": 30000
+    },
+    {
+      "name": "Sergeant Second Class",
+      "cap": 35000
+    },
+    {
+      "name": "Sergeant First Class",
+      "cap": 40000
+    },
+    {
+      "name": "Chief Sergeant",
+      "cap": 45000
+    },
+    {
+      "name": "Second Lieutenant",
+      "cap": 50000
+    },
+    {
+      "name": "First Lieutenant",
+      "cap": 80000
+    },
+    {
+      "name": "Captain",
+      "cap": 90000
+    }
+  ],
+  "msqUnlockMarkers": {
+    "A Fresh Start": [
+      "Malikah's Well"
+    ],
+    "A Grand Adventure": [
+      "The Grand Cosmos"
+    ],
+    "A Grave Presentiment": [
+      "The Unmaking"
+    ],
+    "A Knight's Calling": [
+      "The Vault"
+    ],
+    "A Terminal Invitation": [
+      "The Meso Terminal",
+      "The Ageless Necropolis"
+    ],
+    "Abyssal Dark": [
+      "The Voidcast Dais"
+    ],
+    "Acht-la Ormh Inn": [
+      "The Dancing Plague"
+    ],
+    "All Aboard": [
+      "Vanguard"
+    ],
+    "Alzadaal's Legacy": [
+      "Alzadaal's Legacy"
+    ],
+    "An End to the Song": [
+      "The Final Steps of Faith"
+    ],
+    "An Uninvited Ascian": [
+      "The Chrysalis"
+    ],
+    "Beneath the Surface": [
+      "Anamnesis Anyder"
+    ],
+    "Beyond the Mountains": [
+      "Mistwake"
+    ],
+    "Bolt, Chain, and Island": [
+      "The Limitless Blue (Hard)"
+    ],
+    "Caging the Messenger": [
+      "Ktisis Hyperboreia"
+    ],
+    "Dawntrail": [
+      "Alexandria",
+      "The Interphos"
+    ],
+    "Descent to the Foundation": [
+      "The Underkeep",
+      "Recollection"
+    ],
+    "Desires Untold": [
+      "Mount Ordeals"
+    ],
+    "Down in the Dark": [
+      "The Lunar Subterrane",
+      "The Abyssal Fracture"
+    ],
+    "Endwalker": [
+      "The Dead Ends",
+      "The Final Day"
+    ],
+    "Extinguishing the Last Light": [
+      "Mt. Gulg",
+      "The Crown of the Immaculate"
+    ],
+    "Feel the Burn": [
+      "The Burn"
+    ],
+    "Fire in the Gloom": [
+      "The Tam-Tara Deepcroft"
+    ],
+    "For All Turali": [
+      "Ihuykatumu"
+    ],
+    "Forbidden Knowledge": [
+      "The Great Gubal Library"
+    ],
+    "Gateway of the Gods": [
+      "The Tower of Babil"
+    ],
+    "Going Haam": [
+      "The Aetherfont"
+    ],
+    "Griffin, Griffin on the Wall": [
+      "Baelsar's Wall"
+    ],
+    "Heavensward": [
+      "The Aetherochemical Research Facility",
+      "The Singularity Reactor"
+    ],
+    "Her Children, One and All": [
+      "The Mothercrystal",
+      "The Aitiascope"
+    ],
+    "Hope's Confluence": [
+      "The Seat of Sacrifice"
+    ],
+    "In Pursuit of the Past": [
+      "The Stone Vigil"
+    ],
+    "In Search of Azdaja": [
+      "The Fell Court of Troia"
+    ],
+    "In Search of the Past": [
+      "Yuweyawata Field Station"
+    ],
+    "In the Dark of the Tower": [
+      "The Tower of Zot"
+    ],
+    "In the Footsteps of Bardam the Brave": [
+      "Bardam's Mettle"
+    ],
+    "Into a Copper Hell": [
+      "Copperbell Mines"
+    ],
+    "Into the Aery": [
+      "The Aery"
+    ],
+    "Into the Beast's Maw": [
+      "The Thousand Maws of Toto-Rak"
+    ],
+    "It's Probably Pirates": [
+      "Sastasha"
+    ],
+    "King of the Mountain": [
+      "Lapis Manalis"
+    ],
+    "Lady of the Vortex": [
+      "The Howling Eye"
+    ],
+    "Levin an Impression": [
+      "The Striking Tree (Hard)"
+    ],
+    "Like Master, Like Pupil": [
+      "Matoya's Relict"
+    ],
+    "Lord of Crags": [
+      "The Navel"
+    ],
+    "Lord of the Hive": [
+      "Thok ast Thok (Hard)"
+    ],
+    "Lord of the Inferno": [
+      "The Bowl of Embers"
+    ],
+    "Lord of the Whorl": [
+      "The Whorleater (Hard)"
+    ],
+    "Mourn in Passing": [
+      "Sohm Al"
+    ],
+    "Not without Incident": [
+      "The Sirensong Sea"
+    ],
+    "Road to the Golden City": [
+      "The Skydeep Cenote"
+    ],
+    "Rock the Castrum": [
+      "Castrum Meridianum"
+    ],
+    "Shadowbringers": [
+      "Amaurot",
+      "The Dying Gasp"
+    ],
+    "Shadows of the First": [
+      "Xelphatol"
+    ],
+    "Skeletons in Her Closet": [
+      "Haukke Manor"
+    ],
+    "Skies Aflame": [
+      "Vanaspati"
+    ],
+    "Stormblood": [
+      "Ala Mhigo",
+      "The Royal Menagerie"
+    ],
+    "The Burden of Knowledge": [
+      "The Qitana Ravel"
+    ],
+    "The Converging Light": [
+      "The Heroes' Gauntlet"
+    ],
+    "The Die Is Cast": [
+      "Doma Castle"
+    ],
+    "The Face of War": [
+      "The Ghimlyt Dark"
+    ],
+    "The Flames of War": [
+      "Paglth'an"
+    ],
+    "The High Luminary": [
+      "Worqor Zormor"
+    ],
+    "The Instruments of Our Deliverance": [
+      "The Akh Afah Amphitheatre (Hard)"
+    ],
+    "The Key to the Castle": [
+      "Dohn Mheg"
+    ],
+    "The Lady of Bliss": [
+      "Emanation"
+    ],
+    "The Lightwardens": [
+      "Holminster Switch"
+    ],
+    "The Lord of the Revel": [
+      "The Pool of Tribute"
+    ],
+    "The Mad King's Trove": [
+      "The Drowned City of Skalla"
+    ],
+    "The Martyr": [
+      "The Dark Inside"
+    ],
+    "The Path of the Righteous": [
+      "Snowcloak"
+    ],
+    "The Price of Freedom": [
+      "Castrum Abania"
+    ],
+    "The Primary Agreement": [
+      "Castrum Fluminis"
+    ],
+    "The Resilient Son": [
+      "Origenics",
+      "Everkeep"
+    ],
+    "The Rising Chorus": [
+      "The Keeper of the Lake"
+    ],
+    "The Skyruin": [
+      "Worqor Lar Dor"
+    ],
+    "The Things We Do for Cheese": [
+      "Brayflox's Longstop"
+    ],
+    "The Ultimate Weapon": [
+      "The Praetorium",
+      "The Porta Decumana"
+    ],
+    "The Wind Rises": [
+      "Storm's Crown"
+    ],
+    "The Word of the Mother": [
+      "The Antitower"
+    ],
+    "Two Worlds Entwined": [
+      "The Clyteum"
+    ],
+    "Where We Call Home": [
+      "Hell on Rails"
+    ],
+    "Winning Over the Wyrm": [
+      "Sohr Khai"
+    ],
+    "You Have Selected Regicide": [
+      "Thornmarch (Hard)"
+    ]
+  },
+  "classUnlockMarkers": {
+    "Way of the Gladiator": [
+      {
+        "name": "Gladiator Hunting Log",
+        "type": "hunt"
+      }
+    ],
+    "Way of the Marauder": [
+      {
+        "name": "Marauder Hunting Log",
+        "type": "hunt"
+      }
+    ],
+    "Way of the Pugilist": [
+      {
+        "name": "Pugilist Hunting Log",
+        "type": "hunt"
+      }
+    ],
+    "Way of the Lancer": [
+      {
+        "name": "Lancer Hunting Log",
+        "type": "hunt"
+      }
+    ],
+    "Way of the Rogue": [
+      {
+        "name": "Rogue Hunting Log",
+        "type": "hunt"
+      }
+    ],
+    "Way of the Archer": [
+      {
+        "name": "Archer Hunting Log",
+        "type": "hunt"
+      }
+    ],
+    "Way of the Conjurer": [
+      {
+        "name": "Conjurer Hunting Log",
+        "type": "hunt"
+      }
+    ],
+    "Way of the Thaumaturge": [
+      {
+        "name": "Thaumaturge Hunting Log",
+        "type": "hunt"
+      }
+    ],
+    "Way of the Arcanist": [
+      {
+        "name": "Arcanist Hunting Log",
+        "type": "hunt"
+      }
+    ]
+  },
+  "msqFeatureMarkers": {
+    "The Ul'dahn Envoy": [
+      {
+        "name": "Gold Saucer",
+        "type": "feature"
+      }
+    ],
+    "The Scions of the Seventh Dawn": [
+      {
+        "name": "Retainers",
+        "type": "feature"
+      }
+    ],
+    "A Hero in the Making": [
+      {
+        "name": "Grand Company",
+        "type": "feature"
+      }
+    ],
+    "The Company You Keep": [
+      {
+        "name": "Chocobo Mount",
+        "type": "feature"
+      }
+    ],
+    "Divine Intervention": [
+      {
+        "name": "Flying Mounts",
+        "type": "feature"
+      }
+    ],
+    "Litany of Peace": [
+      {
+        "name": "Ishgardian Restoration",
+        "type": "feature"
+      }
+    ],
+    "Elation and Trepidation": [
+      {
+        "name": "Doman Enclave",
+        "type": "feature"
+      }
+    ],
+    "Endwalker": [
+      {
+        "name": "Island Sanctuary",
+        "type": "feature"
+      }
+    ]
+  }
+};
