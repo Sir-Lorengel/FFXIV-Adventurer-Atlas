@@ -31,6 +31,208 @@
     --recur:   #3d6b8a;
   }
 
+  /* ─── Hydaelyn Night dark mode ─── */
+  body.hydaelyn-night {
+    --bg:          #0a0d1a;
+    --bg-deep:     #0e1224;
+    --card:        rgba(26, 31, 58, 0.85);
+    --card-border: rgba(79, 195, 247, 0.12);
+    --text:        #e8eaf6;
+    --text-soft:   #9fa8da;
+    --text-dim:    #5c6bc0;
+    --rule:        rgba(79, 195, 247, 0.10);
+    --arr:         #4fc3f7;
+    --hw:          #64b5f6;
+    --sb:          #ce93d8;
+    --shb:         #b39ddb;
+    --ew:          #4fc3f7;
+    --dt:          #80cbc4;
+    --crimson:     #ef9a9a;
+    --tank:        #64b5f6;
+    --healer:      #a5d6a7;
+    --dps:         #ef9a9a;
+    --dol:         #80cbc4;
+    --doh:         #ffcc80;
+    --recur:       #4fc3f7;
+  }
+
+  body.hydaelyn-night {
+    background-image:
+      radial-gradient(ellipse 80% 60% at 20% 10%, rgba(45, 27, 78, 0.55), transparent 55%),
+      radial-gradient(ellipse 60% 50% at 80% 90%, rgba(10, 29, 60, 0.6), transparent 55%),
+      radial-gradient(ellipse 40% 40% at 50% 50%, rgba(79, 195, 247, 0.04), transparent 70%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400'><filter id='stars'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='1' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.22  0 0 0 0 0.25  0 0 0 0 0.45  0 0 0 0.18 0'/></filter><rect width='100%25' height='100%25' filter='url(%23stars)'/></svg>");
+  }
+
+  body.hydaelyn-night .sidebar {
+    background: #0e1224;
+    border-right-color: rgba(79, 195, 247, 0.12);
+    box-shadow: 2px 0 18px rgba(79, 195, 247, 0.06);
+  }
+
+  body.hydaelyn-night .sidebar-link:hover {
+    background: rgba(79, 195, 247, 0.07);
+    color: var(--text);
+  }
+
+  body.hydaelyn-night .sidebar-link.active {
+    background: rgba(79, 195, 247, 0.06);
+  }
+
+  body.hydaelyn-night .sidebar-guide-title:hover {
+    background: rgba(79, 195, 247, 0.07);
+  }
+
+  body.hydaelyn-night .sidebar-btn {
+    border-color: rgba(79, 195, 247, 0.25);
+    color: var(--text-soft);
+  }
+
+  body.hydaelyn-night .sidebar-btn:hover {
+    background: rgba(79, 195, 247, 0.15);
+    color: var(--text);
+    border-color: rgba(79, 195, 247, 0.5);
+  }
+
+  body.hydaelyn-night .expansion {
+    box-shadow: 0 1px 8px rgba(79, 195, 247, 0.06), 0 0 0 1px rgba(79, 195, 247, 0.04);
+  }
+
+  body.hydaelyn-night .overall {
+    box-shadow: 0 1px 6px rgba(79, 195, 247, 0.06);
+  }
+
+  body.hydaelyn-night li.quest:hover {
+    background: rgba(79, 195, 247, 0.06);
+  }
+
+  body.hydaelyn-night .check {
+    background: rgba(14, 18, 36, 0.7);
+    border-color: rgba(79, 195, 247, 0.3);
+  }
+
+  body.hydaelyn-night #settings-panel {
+    background: #1a1f3a;
+    border-left-color: #4fc3f7;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7), 0 0 24px rgba(79, 195, 247, 0.08);
+  }
+
+  body.hydaelyn-night #settings-overlay {
+    background: rgba(5, 7, 18, 0.65);
+  }
+
+  body.hydaelyn-night .sidebar-search {
+    background: rgba(10, 13, 26, 0.7);
+    border-color: rgba(79, 195, 247, 0.2);
+    color: var(--text);
+  }
+
+  body.hydaelyn-night .sidebar-search::placeholder {
+    color: rgba(92, 107, 192, 0.7);
+  }
+
+  body.hydaelyn-night .sidebar-search:focus {
+    border-color: rgba(79, 195, 247, 0.5);
+    box-shadow: 0 0 8px rgba(79, 195, 247, 0.12);
+  }
+
+  body.hydaelyn-night .sidebar-search-wrap::before {
+    color: rgba(79, 195, 247, 0.5);
+  }
+
+  body.hydaelyn-night .progress-bar,
+  body.hydaelyn-night .exp-progress-bar {
+    background: rgba(79, 195, 247, 0.08);
+  }
+
+  body.hydaelyn-night .unlock-dungeon { color: #4fc3f7; background: rgba(79,195,247,0.1); border-color: rgba(79,195,247,0.3); }
+  body.hydaelyn-night .unlock-trial   { color: #ce93d8; background: rgba(206,147,216,0.1); border-color: rgba(206,147,216,0.3); }
+  body.hydaelyn-night .unlock-raid    { color: #ef9a9a; background: rgba(239,154,154,0.1); border-color: rgba(239,154,154,0.3); }
+  body.hydaelyn-night .unlock-feature { color: #64b5f6; background: rgba(100,181,246,0.1); border-color: rgba(100,181,246,0.3); }
+  body.hydaelyn-night .unlock-hunt    { color: #a5d6a7; background: rgba(165,214,167,0.1); border-color: rgba(165,214,167,0.3); }
+  body.hydaelyn-night .unlock-aether  { color: #80cbc4; background: rgba(128,203,196,0.1); border-color: rgba(128,203,196,0.3); }
+
+  /* ─── Sidebar search bar ─── */
+  .sidebar-search-wrap {
+    position: relative;
+    padding: 8px 14px 6px;
+    flex-shrink: 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .sidebar-search-wrap::before {
+    content: '⌕';
+    position: absolute;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: var(--text-dim);
+    pointer-events: none;
+    line-height: 1;
+    margin-top: 1px;
+  }
+  .sidebar-search {
+    width: 100%;
+    padding: 5px 8px 5px 26px;
+    background: rgba(42, 29, 16, 0.06);
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    color: var(--text);
+    outline: none;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .sidebar-search::placeholder {
+    color: var(--text-dim);
+    font-style: italic;
+  }
+  .sidebar-search:focus {
+    border-color: var(--ew);
+    box-shadow: 0 0 0 2px rgba(177, 136, 42, 0.10);
+  }
+  .sidebar-link.search-hidden,
+  .sidebar-link-stub.search-hidden,
+  .sidebar-section-label.search-hidden,
+  .sidebar-guide-group.search-hidden {
+    display: none;
+  }
+  .sidebar-search-empty {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12px;
+    font-style: italic;
+    color: var(--text-dim);
+    padding: 6px 20px 2px;
+    display: none;
+  }
+  .sidebar-search-empty.visible { display: block; }
+  .sidebar-link mark {
+    background: rgba(177, 136, 42, 0.25);
+    color: inherit;
+    border-radius: 1px;
+    padding: 0 1px;
+  }
+  body.hydaelyn-night .sidebar-link mark {
+    background: rgba(79, 195, 247, 0.2);
+  }
+  li.quest.search-hidden,
+  .section.search-hidden,
+  .category.search-hidden,
+  .expansion.search-hidden,
+  .guide-dungeon.search-hidden,
+  .boss-row.search-hidden {
+    display: none;
+  }
+  #atlas-body mark {
+    background: rgba(177, 136, 42, 0.25);
+    color: inherit;
+    border-radius: 1px;
+    padding: 0 1px;
+  }
+  body.hydaelyn-night #atlas-body mark {
+    background: rgba(79, 195, 247, 0.2);
+  }
+
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
   html, body { background: var(--bg); color: var(--text); font-family: 'Lora', Georgia, serif; font-size: 16px; line-height: 1.55; min-height: 100vh; }
@@ -44,7 +246,7 @@
   }
 
   .main-content {
-    margin-left: 220px;
+    margin-left: 245px;
     flex: 1;
     padding: 56px 24px 80px;
     min-width: 0;
@@ -303,7 +505,7 @@
   .sidebar {
     position: fixed;
     top: 0; left: 0;
-    width: 220px;
+    width: 245px;
     height: 100vh;
     background: var(--bg-deep);
     border-right: 1px solid var(--card-border);
@@ -551,8 +753,8 @@
   .note { text-align: center; margin-top: 24px; font-size: 13px; font-style: italic; color: var(--text-dim); font-family: 'Cormorant Garamond', serif; }
 
   @media (max-width: 900px) {
-    .sidebar { width: 180px; }
-    .main-content { margin-left: 180px; }
+    .sidebar { width: 205px; }
+    .main-content { margin-left: 205px; }
   }
   @media (max-width: 600px) {
     .sidebar { display: none; }
@@ -651,8 +853,12 @@
   <div class="sidebar-header">
     <div class="sidebar-logo">The Adventurer's Atlas</div>
   </div>
+  <div class="sidebar-search-wrap">
+    <input class="sidebar-search" id="sidebar-search" type="search" placeholder="Search content…" autocomplete="off" spellcheck="false" />
+  </div>
   <div class="sidebar-nav" id="sidebar-nav">
     <div class="sidebar-section-label">Expansions</div>
+    <div class="sidebar-search-empty" id="sidebar-search-empty">No matches found</div>
   </div>
   <div class="sidebar-controls">
     <div class="autosave-status" id="autosave-status">✦ Autosaved</div>
@@ -710,6 +916,10 @@
   </div>
   <div class="settings-body">
     <p class="settings-note">Manage app controls and maintenance actions.</p>
+    <label class="settings-option" for="settings-dark-mode">
+      <span class="settings-option-label">Hydaelyn Night Mode</span>
+      <input id="settings-dark-mode" type="checkbox" />
+    </label>
     <label class="settings-option" for="settings-show-all-quests">
       <span class="settings-option-label">Show all MSQ quests</span>
       <input id="settings-show-all-quests" type="checkbox" />
@@ -8087,6 +8297,8 @@ document.getElementById('settings-load').onclick = () => loadFromFile();
 function openSettingsPanel() {
   const revealToggle = document.getElementById('settings-show-all-quests');
   if (revealToggle) revealToggle.checked = !!ui.showAllQuests;
+  const darkToggle = document.getElementById('settings-dark-mode');
+  if (darkToggle) darkToggle.checked = document.body.classList.contains('hydaelyn-night');
   document.getElementById('settings-overlay').classList.add('open');
   document.getElementById('settings-panel').classList.add('open');
   document.getElementById('settings-overlay').setAttribute('aria-hidden', 'false');
@@ -8111,6 +8323,212 @@ document.getElementById('settings-show-all-quests').addEventListener('change', a
   await saveUI();
   render();
 });
+
+// ═══════════════════════════════════════════════════════════════════════════
+// HYDAELYN NIGHT DARK MODE
+// ═══════════════════════════════════════════════════════════════════════════
+const DARK_MODE_KEY = 'ffxiv-atlas-dark-mode';
+
+function applyDarkMode(on) {
+  document.body.classList.toggle('hydaelyn-night', on);
+  const toggle = document.getElementById('settings-dark-mode');
+  if (toggle) toggle.checked = on;
+  localStorage.setItem(DARK_MODE_KEY, on ? '1' : '0');
+}
+
+(function initDarkMode() {
+  const saved = localStorage.getItem(DARK_MODE_KEY);
+  if (saved === '1') applyDarkMode(true);
+})();
+
+document.getElementById('settings-dark-mode').addEventListener('change', e => {
+  applyDarkMode(e.target.checked);
+});
+
+// ═══════════════════════════════════════════════════════════════════════════
+// SIDEBAR SEARCH
+// ═══════════════════════════════════════════════════════════════════════════
+function initSidebarSearch() {
+  const input = document.getElementById('sidebar-search');
+  const nav   = document.getElementById('sidebar-nav');
+  const empty = document.getElementById('sidebar-search-empty');
+  if (!input || !nav) return;
+
+  input.addEventListener('input', () => {
+    filterMainBody(input.value.trim().toLowerCase());
+  });
+
+  input.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      input.value = '';
+      filterMainBody('');
+    }
+  });
+}
+
+function filterSidebarNav(q, nav, empty) {
+  let anyVisible = false;
+
+  nav.querySelectorAll('.sidebar-section-label').forEach(el => {
+    el.classList.toggle('search-hidden', !!q);
+  });
+
+  nav.querySelectorAll('.sidebar-link').forEach(link => {
+    if (!q) {
+      link.classList.remove('search-hidden');
+      return;
+    }
+    const text = link.textContent.toLowerCase();
+    const match = text.includes(q);
+    link.classList.toggle('search-hidden', !match);
+    if (match) anyVisible = true;
+  });
+
+  nav.querySelectorAll('.sidebar-guide-group').forEach(group => {
+    if (!q) {
+      group.classList.remove('search-hidden');
+      return;
+    }
+    const childLinks = group.querySelectorAll('.sidebar-link');
+    let groupHasMatch = false;
+    childLinks.forEach(link => {
+      if (!link.classList.contains('search-hidden')) groupHasMatch = true;
+    });
+    const titleEl = group.querySelector('.sidebar-guide-title');
+    if (titleEl) {
+      const titleText = titleEl.textContent.toLowerCase();
+      if (titleText.includes(q)) {
+        groupHasMatch = true;
+        childLinks.forEach(link => link.classList.remove('search-hidden'));
+      }
+    }
+    group.classList.toggle('search-hidden', !groupHasMatch);
+    if (groupHasMatch) {
+      group.classList.add('open');
+      anyVisible = true;
+    }
+  });
+
+  if (empty) empty.classList.toggle('visible', !!q && !anyVisible);
+}
+
+function filterMainBody(q) {
+  const body = document.getElementById('atlas-body');
+  if (!body) return;
+
+  if (!q) {
+    // Clear all highlights and restore visibility
+    body.querySelectorAll('mark').forEach(m => {
+      m.parentNode.replaceChild(document.createTextNode(m.textContent), m);
+    });
+    body.normalize();
+    body.querySelectorAll('.search-hidden').forEach(e => e.classList.remove('search-hidden'));
+    body.querySelectorAll('.section[data-section]').forEach(sec => {
+      sec.classList.toggle('open', !!ui.open[sec.dataset.section]);
+    });
+    body.querySelectorAll('.guide-dungeon[data-guide]').forEach(gd => {
+      gd.classList.toggle('open', !!ui.open[gd.dataset.guide]);
+    });
+    return;
+  }
+
+  // 1. Filter individual quests by title
+  body.querySelectorAll('li.quest').forEach(quest => {
+    const titleEl = quest.querySelector('.quest-title');
+    if (!titleEl) { quest.classList.add('search-hidden'); return; }
+    applyHighlight(titleEl, ''); // clear any old mark first
+    const match = titleEl.textContent.toLowerCase().includes(q);
+    quest.classList.toggle('search-hidden', !match);
+    if (match) applyHighlight(titleEl, q);
+  });
+
+  // 2. Filter sections: show (expanded) if title matches or has visible quests
+  body.querySelectorAll('.section[data-section]').forEach(sec => {
+    const titleEl = sec.querySelector('.section-title');
+    if (titleEl) applyHighlight(titleEl, '');
+    const titleMatch = titleEl && titleEl.textContent.toLowerCase().includes(q);
+    if (titleMatch) {
+      sec.querySelectorAll('li.quest').forEach(quest => {
+        quest.classList.remove('search-hidden');
+        const tEl = quest.querySelector('.quest-title');
+        if (tEl) applyHighlight(tEl, q);
+      });
+      sec.classList.remove('search-hidden');
+      sec.classList.add('open');
+      applyHighlight(titleEl, q);
+    } else {
+      const hasVisible = [...sec.querySelectorAll('li.quest')].some(item => !item.classList.contains('search-hidden'));
+      sec.classList.toggle('search-hidden', !hasVisible);
+      if (hasVisible) sec.classList.add('open');
+    }
+  });
+
+  // 3. Filter boss rows in guide dungeons
+  body.querySelectorAll('.boss-row').forEach(row => {
+    const nameEl = row.querySelector('.boss-name');
+    if (!nameEl) { row.classList.add('search-hidden'); return; }
+    applyHighlight(nameEl, '');
+    const match = nameEl.textContent.toLowerCase().includes(q);
+    row.classList.toggle('search-hidden', !match);
+    if (match) applyHighlight(nameEl, q);
+  });
+
+  // 4. Filter guide dungeons: show (expanded) if name or any boss matches
+  body.querySelectorAll('.guide-dungeon').forEach(gd => {
+    const nameEl = gd.querySelector('.guide-dungeon-name');
+    if (nameEl) applyHighlight(nameEl, '');
+    const nameMatch = nameEl && nameEl.textContent.toLowerCase().includes(q);
+    if (nameMatch) {
+      gd.querySelectorAll('.boss-row').forEach(r => r.classList.remove('search-hidden'));
+      gd.classList.remove('search-hidden');
+      gd.classList.add('open');
+      applyHighlight(nameEl, q);
+    } else {
+      const hasVisible = [...gd.querySelectorAll('.boss-row')].some(r => !r.classList.contains('search-hidden'));
+      gd.classList.toggle('search-hidden', !hasVisible);
+      if (hasVisible) gd.classList.add('open');
+    }
+  });
+
+  // 5. Filter categories: show if any child section, guide-dungeon, or quest is visible
+  body.querySelectorAll('.category').forEach(cat => {
+    const visibleSection = [...cat.querySelectorAll('.section')].some(s => !s.classList.contains('search-hidden'));
+    const visibleGuide   = [...cat.querySelectorAll('.guide-dungeon')].some(g => !g.classList.contains('search-hidden'));
+    const visibleQuest   = [...cat.querySelectorAll('li.quest')].some(item => !item.classList.contains('search-hidden'));
+    cat.classList.toggle('search-hidden', !visibleSection && !visibleGuide && !visibleQuest);
+  });
+
+  // 6. Filter expansion cards: show if any category is visible
+  body.querySelectorAll('.expansion').forEach(exp => {
+    const hasVisible = [...exp.querySelectorAll('.category')].some(c => !c.classList.contains('search-hidden'));
+    exp.classList.toggle('search-hidden', !hasVisible);
+  });
+}
+
+function applyHighlight(el, q) {
+  // Strip any existing marks and normalize back to plain text nodes
+  el.querySelectorAll('mark').forEach(m => {
+    m.parentNode.replaceChild(document.createTextNode(m.textContent), m);
+  });
+  el.normalize();
+  if (!q) return;
+  // Find the first direct child text node that contains q
+  for (let i = 0; i < el.childNodes.length; i++) {
+    const n = el.childNodes[i];
+    if (n.nodeType !== 3) continue;
+    const idx = n.nodeValue.toLowerCase().indexOf(q);
+    if (idx === -1) continue;
+    const val = n.nodeValue;
+    const mark = document.createElement('mark');
+    mark.textContent = val.slice(idx, idx + q.length);
+    const frag = document.createDocumentFragment();
+    frag.appendChild(document.createTextNode(val.slice(0, idx)));
+    frag.appendChild(mark);
+    frag.appendChild(document.createTextNode(val.slice(idx + q.length)));
+    el.replaceChild(frag, n);
+    break;
+  }
+}
 
 document.getElementById('settings-reset').onclick = async () => {
   if (!confirm('Reset all progress? This cannot be undone — consider saving first.')) return;
@@ -8467,6 +8885,7 @@ function initScrollSpy() {
   scheduleWeeklyReset();
   build();
   buildSidebarNav();
+  initSidebarSearch();
   syncDates();
   render();
   renderActivityGraph();
