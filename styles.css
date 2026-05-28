@@ -194,6 +194,15 @@ body.hydaelyn-night .unlock-aether  { color: #80cbc4; background: rgba(128,203,1
 .sidebar-guide-group.search-hidden {
   display: none;
 }
+.search-result-count {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 11px;
+  font-style: italic;
+  color: var(--text-dim);
+  padding: 3px 0 0;
+  opacity: 0.75;
+}
 .sidebar-search-empty {
   font-family: 'Cormorant Garamond', serif;
   font-size: 12px;
@@ -648,9 +657,16 @@ li.quest[data-checked="true"] .quest-title { color: var(--text-soft); text-decor
   background: var(--link-accent); flex-shrink: 0; opacity: 0.6;
 }
 .sidebar-link.active .sidebar-dot { opacity: 1; }
-.sidebar-link-value {
+.sidebar-link-count {
   margin-left: auto; font-family: 'Cormorant Garamond', serif;
+  font-size: 11px; color: var(--text-dim); letter-spacing: 0.04em; opacity: 0.7;
+}
+.sidebar-link-value {
+  font-family: 'Cormorant Garamond', serif;
   font-size: 11px; color: var(--text-dim); letter-spacing: 0.04em;
+}
+.sidebar-link:not(:has(.sidebar-link-count)) .sidebar-link-value {
+  margin-left: auto;
 }
 .sidebar-link-stub {
   display: flex; align-items: center; gap: 10px;
@@ -688,6 +704,7 @@ li.quest[data-checked="true"] .quest-title { color: var(--text-soft); text-decor
 .sidebar-guide-group.open .sidebar-guide-title { border-left-color: var(--guide-accent); }
 .sidebar-guide-children { display: none; }
 .sidebar-guide-group.open .sidebar-guide-children { display: block; }
+.sidebar-group-pct { margin-left: auto; font-size: 11px; color: var(--text-soft); opacity: 0.75; font-family: 'Cormorant Garamond', serif; font-weight: 500; }
 .sidebar-guide-children .sidebar-link {
   padding-left: 34px;
   font-size: 13px;

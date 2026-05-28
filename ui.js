@@ -465,6 +465,12 @@ function buildQuestGroupCard(cardId, accentVar, titleHtml, tagline, roleGroups, 
     )
   );
   card.appendChild(header);
+  card.appendChild(el('div', { class: 'exp-progress-row' },
+    el('div', { class: 'exp-progress-bar' },
+      el('div', { class: 'exp-progress-fill', 'data-card-fill': cardId })
+    ),
+    el('span', { class: 'exp-pct', 'data-card-pct': cardId }, '0%')
+  ));
   card.appendChild(el('p', { class: 'exp-tagline' }, tagline));
 
   const content = el('div', { class: 'exp-content' });
@@ -668,6 +674,12 @@ function buildAetherCurrentsCards() {
       )
     );
     card.appendChild(header);
+    card.appendChild(el('div', { class: 'exp-progress-row' },
+      el('div', { class: 'exp-progress-bar' },
+        el('div', { class: 'exp-progress-fill', 'data-card-fill': `aether-${exp.id}` })
+      ),
+      el('span', { class: 'exp-pct', 'data-card-pct': `aether-${exp.id}` }, '0%')
+    ));
     card.appendChild(el('p', { class: 'exp-tagline' },
       'Find all aether currents in each zone to unlock flying. Exploration currents are hidden in the field; quest currents are awarded by completing side quests.'
     ));
@@ -1100,6 +1112,213 @@ function buildPvpCard() {
   return card;
 }
 
+// ─── Side Quests card ─────────────────────────────────────────────────────
+
+const SQ_EXP_LABELS = {
+  arr: 'A Realm Reborn',
+  hw:  'Heavensward',
+  sb:  'Stormblood',
+  shb: 'Shadowbringers',
+  ew:  'Endwalker',
+  dt:  'Dawntrail',
+};
+
+function buildSideQuestsCard() {
+  const card = el('div', { class: 'expansion', id: 'exp-sidequests', 'data-exp': 'sidequests', style: '--accent: var(--recur);' });
+  card.appendChild(
+    el('div', { class: 'exp-header' },
+      el('div', { class: 'exp-title' },
+        el('div', { class: 'exp-num' }, 'Side Content'),
+        el('div', { class: 'exp-name', html: 'Side <em>Quests</em>' })
+      )
+    )
+  );
+  card.appendChild(el('div', { class: 'exp-progress-row' },
+    el('div', { class: 'exp-progress-bar' },
+      el('div', { class: 'exp-progress-fill', 'data-card-fill': 'sidequests' })
+    ),
+    el('span', { class: 'exp-pct', 'data-card-pct': 'sidequests' }, '0%')
+  ));
+  card.appendChild(el('p', { class: 'exp-tagline' },
+    'Side quest chains from across the realm, organized by expansion, region, and sub-area.'
+  ));
+
+  const content = el('div', { class: 'exp-content exp-content-stack' });
+
+  for (const [expKey, expLabel] of Object.entries(SQ_EXP_LABELS)) {
+    const secs = SIDE_QUESTS_DATA ? SIDE_QUESTS_DATA[expKey] : null;
+    const total = secs ? secs.reduce((s, sec) => s + sec.quests.length, 0) : 0;
+    const id = `sq-exp-${expKey}`;
+
+    const wrap = el('div', { class: 'section', id, 'data-section': id });
+    const head = el('div', { class: 'section-head' });
+    const chev  = el('span', { class: 'chev' }, '▶');
+    const title = el('span', { class: 'section-title' }, expLabel);
+    const count = el('span', { class: 'section-count', 'data-sq-exp-count': expKey },
+      '0', el('span', { class: 'total' }, ` / ${total}`));
+    head.append(chev, title, count);
+    head.onclick = () => toggleSection(id, wrap);
+    wrap.appendChild(head);
+
+    const body = el('div', { class: 'section-body' });
+    if (secs) {
+      secs.forEach(sec => {
+        const structured = sec.quests.length > 0 && typeof sec.quests[0] === 'object';
+        body.appendChild(buildSection(sec, structured));
+      });
+    } else {
+      body.appendChild(el('p', { class: 'future-note' }, `${expLabel} side quest tracking coming soon.`));
+    }
+    wrap.appendChild(body);
+    content.appendChild(wrap);
+    if (ui.open[id]) wrap.classList.add('open');
+  }
+
+  card.appendChild(content);
+  return card;
+}
+
+function renderSideQuestCounts() {
+  if (!SIDE_QUESTS_DATA) return;
+  let grandDone = 0, grandTotal = 0;
+
+  for (const expKey of Object.keys(SQ_EXP_LABELS)) {
+    const secs = SIDE_QUESTS_DATA[expKey];
+    if (!secs) continue;
+    let expDone = 0, expTotal = 0;
+    secs.forEach(sec => {
+      const ids = sec.quests.map((_, i) => `${sec.id}-${i}`);
+      const done = ids.filter(id => checked[id]).length;
+      expDone += done; expTotal += ids.length;
+      const sc = document.querySelector(`[data-section-count="${sec.id}"]`);
+      if (sc) sc.firstChild.nodeValue = `${done}`;
+      const mb = document.querySelector(`[data-mass-btn="${sec.id}"]`);
+      if (mb) mb.textContent = (done === ids.length && ids.length) ? 'Clear section' : 'Mark all complete';
+    });
+    const cc = document.querySelector(`[data-sq-exp-count="${expKey}"]`);
+    if (cc) { cc.firstChild.nodeValue = `${expDone}`; }
+    const sbPct = document.querySelector(`[data-sidebar-pct="sq-exp-${expKey}"]`);
+    if (sbPct) sbPct.textContent = expTotal ? `${Math.round((expDone / expTotal) * 100)}%` : '0%';
+    grandDone += expDone; grandTotal += expTotal;
+  }
+
+  const pct = grandTotal ? Math.round((grandDone / grandTotal) * 100) : 0;
+  const fill = document.querySelector('[data-card-fill="sidequests"]');
+  if (fill) fill.style.width = `${pct}%`;
+  const pctEl = document.querySelector('[data-card-pct="sidequests"]');
+  if (pctEl) pctEl.textContent = `${pct}%`;
+  const sbPct = document.querySelector('[data-sidebar-pct="sidequests"]');
+  if (sbPct) sbPct.textContent = `${pct}%`;
+}
+
+// ─── Achievements card ────────────────────────────────────────────────────
+
+function buildAchievementsCard() {
+  const card = el('div', { class: 'expansion', id: 'exp-achievements', 'data-exp': 'achievements', style: '--accent: var(--recur);' });
+  card.appendChild(
+    el('div', { class: 'exp-header' },
+      el('div', { class: 'exp-title' },
+        el('div', { class: 'exp-num' }, 'Side Content'),
+        el('div', { class: 'exp-name', html: '<em>Achievements</em>' })
+      )
+    )
+  );
+  card.appendChild(el('div', { class: 'exp-progress-row' },
+    el('div', { class: 'exp-progress-bar' },
+      el('div', { class: 'exp-progress-fill', 'data-card-fill': 'achievements' })
+    ),
+    el('span', { class: 'exp-pct', 'data-card-pct': 'achievements' }, '0%')
+  ));
+  card.appendChild(el('p', { class: 'exp-tagline' },
+    'Track your progress across all achievement categories.'
+  ));
+
+  const content = el('div', { class: 'exp-content exp-content-stack' });
+
+  const achCategories = [
+    { id: 'ach-battle',      label: 'Battle',              dataKey: 'battle' },
+    { id: 'ach-pvp',         label: 'PvP',                 dataKey: 'pvp' },
+    { id: 'ach-character',   label: 'Character',           dataKey: 'character' },
+    { id: 'ach-items',       label: 'Items',               dataKey: 'items' },
+    { id: 'ach-crafting',    label: 'Crafting & Gathering', dataKey: 'crafting' },
+    { id: 'ach-quests',      label: 'Quests',               dataKey: 'quests' },
+    { id: 'ach-exploration', label: 'Exploration',          dataKey: 'exploration' },
+    { id: 'ach-gc',          label: 'Grand Company',        dataKey: 'gc' },
+  ];
+
+  achCategories.forEach(({ id, label, dataKey }) => {
+    const subs = dataKey && ACHIEVEMENTS_DATA ? ACHIEVEMENTS_DATA[dataKey] : null;
+    const total = subs ? subs.reduce((s, sec) => s + sec.quests.length, 0) : 0;
+
+    const wrap = el('div', { class: 'section', id, 'data-section': id });
+    const head = el('div', { class: 'section-head' });
+    const chev  = el('span', { class: 'chev' }, '▶');
+    const title = el('span', { class: 'section-title' }, label);
+    const count = subs
+      ? el('span', { class: 'section-count', 'data-ach-cat-count': id }, `0 / ${total}`)
+      : el('span', { class: 'section-count' }, 'Coming soon');
+    head.append(chev, title, count);
+    head.onclick = () => toggleSection(id, wrap);
+    wrap.appendChild(head);
+
+    const body = el('div', { class: 'section-body' });
+    if (subs) {
+      subs.forEach(sec => body.appendChild(buildSection(sec, true)));
+    } else {
+      body.appendChild(el('p', { class: 'future-note' }, `${label} achievement tracking coming soon.`));
+    }
+    wrap.appendChild(body);
+    content.appendChild(wrap);
+    if (ui.open[id]) wrap.classList.add('open');
+  });
+
+  card.appendChild(content);
+  return card;
+}
+
+function renderAchievementCounts() {
+  if (!ACHIEVEMENTS_DATA) return;
+  let grandDone = 0, grandTotal = 0;
+  for (const [dataKey, catId] of [
+    ['battle', 'ach-battle'],
+    ['pvp', 'ach-pvp'],
+    ['character', 'ach-character'],
+    ['items', 'ach-items'],
+    ['crafting', 'ach-crafting'],
+    ['quests', 'ach-quests'],
+    ['exploration', 'ach-exploration'],
+    ['gc', 'ach-gc'],
+  ]) {
+    const subs = ACHIEVEMENTS_DATA[dataKey];
+    if (!subs) continue;
+    let catDone = 0, catTotal = 0;
+    subs.forEach(sec => {
+      const ids = sec.quests.map((_, i) => `${sec.id}-${i}`);
+      const done = ids.filter(id => checked[id]).length;
+      catDone += done; catTotal += ids.length;
+      const sc = document.querySelector(`[data-section-count="${sec.id}"]`);
+      if (sc) sc.firstChild.nodeValue = `${done}`;
+      const mb = document.querySelector(`[data-mass-btn="${sec.id}"]`);
+      if (mb) mb.textContent = (done === ids.length && ids.length) ? 'Clear section' : 'Mark all complete';
+    });
+    const cc = document.querySelector(`[data-ach-cat-count="${catId}"]`);
+    if (cc) cc.textContent = `${catDone} / ${catTotal}`;
+    const catPct = catTotal ? Math.round((catDone / catTotal) * 100) : 0;
+    const sbCatPct = document.querySelector(`[data-sidebar-pct="${catId}"]`);
+    if (sbCatPct) sbCatPct.textContent = `${catPct}%`;
+    const sbCatCount = document.querySelector(`[data-sidebar-count="${catId}"]`);
+    if (sbCatCount) sbCatCount.textContent = `${catDone}/${catTotal}`;
+    grandDone += catDone; grandTotal += catTotal;
+  }
+  const pct = grandTotal ? Math.round((grandDone / grandTotal) * 100) : 0;
+  const fill = document.querySelector('[data-card-fill="achievements"]');
+  if (fill) fill.style.width = `${pct}%`;
+  const pctEl = document.querySelector('[data-card-pct="achievements"]');
+  if (pctEl) pctEl.textContent = `${pct}%`;
+  const sbPct = document.querySelector('[data-sidebar-pct="ach"]');
+  if (sbPct) sbPct.textContent = `${pct}%`;
+}
+
 // ─── Main build ───────────────────────────────────────────────────────────
 
 function build() {
@@ -1126,6 +1345,8 @@ function build() {
     RELIC_WEAPONS,
     (rg, idx) => idx % 2 === 0
   ));
+  root.appendChild(buildSideQuestsCard());
+  root.appendChild(buildAchievementsCard());
   root.appendChild(buildTankCard());
   root.appendChild(buildHealerCard());
   root.appendChild(buildDpsCard());
@@ -1192,7 +1413,7 @@ function build() {
 // ─── Render (update counts, progress bars, checked states) ────────────────
 
 function renderQuestGroupCounts(cardId, roleGroups) {
-  let totalDone = 0;
+  let totalDone = 0, totalItems = 0;
   roleGroups.forEach(rg => {
     rg.jobs.forEach(job => {
       let jobDone = 0, jobTotal = 0;
@@ -1206,13 +1427,24 @@ function renderQuestGroupCounts(cardId, roleGroups) {
         const mb = document.querySelector(`[data-mass-btn="${sec.id}"]`);
         if (mb) mb.textContent = (done === ids.length && ids.length) ? 'Clear section' : 'Mark all complete';
       });
-      totalDone += jobDone;
+      totalDone += jobDone; totalItems += jobTotal;
       const jc = document.getElementById(`${cardId}-${job.id}-count`);
       if (jc) jc.textContent = `${jobDone} / ${jobTotal}`;
+      const jobPct = jobTotal ? Math.round((jobDone / jobTotal) * 100) : 0;
+      const sbJobPct = document.querySelector(`[data-sidebar-pct="${job.id}"]`);
+      if (sbJobPct) sbJobPct.textContent = `${jobPct}%`;
     });
   });
   const tc = document.getElementById(`${cardId}-total-count`);
   if (tc) tc.firstChild.nodeValue = `${totalDone}`;
+  const pct = totalItems ? Math.round((totalDone / totalItems) * 100) : 0;
+  const fill = document.querySelector(`[data-card-fill="${cardId}"]`);
+  if (fill) fill.style.width = `${pct}%`;
+  const pctEl = document.querySelector(`[data-card-pct="${cardId}"]`);
+  if (pctEl) pctEl.textContent = `${pct}%`;
+  const sbPct = document.querySelector(`[data-sidebar-pct="${cardId}"]`);
+  if (sbPct) sbPct.textContent = `${pct}%`;
+  return { done: totalDone, total: totalItems };
 }
 
 function updateMsqProgressiveReveal() {
@@ -1314,6 +1546,8 @@ function render() {
     if (ef) ef.style.width = `${ePct}%`;
     const ep = document.querySelector(`[data-exp-pct="${exp.id}"]`);
     if (ep) ep.textContent = `${ePct}%`;
+    const eSb = document.querySelector(`[data-sidebar-pct="${exp.id}"]`);
+    if (eSb) eSb.textContent = `${ePct}%`;
     if (eMsqTotal > 0) expSegData.push({ exp, eMsqDone, eMsqTotal });
   });
 
@@ -1345,6 +1579,23 @@ function render() {
   renderQuestGroupCounts('hildi',  HILDEBRAND_QUESTS);
   renderQuestGroupCounts('relic',  RELIC_WEAPONS);
 
+  let roleDone = 0, roleTotal = 0;
+  for (const [id, filter] of [
+    ['role-tank',   'Tank'],
+    ['role-healer', 'Healer'],
+    ['role-melee',  'Melee DPS'],
+    ['role-ranged', 'Ranged DPS'],
+  ]) {
+    const r = renderQuestGroupCounts(id, ROLE_QUESTS.filter(rg => rg.role === filter));
+    roleDone += r.done; roleTotal += r.total;
+  }
+  const rolePct = roleTotal ? Math.round((roleDone / roleTotal) * 100) : 0;
+  const roleSb = document.querySelector('[data-sidebar-pct="role"]');
+  if (roleSb) roleSb.textContent = `${rolePct}%`;
+
+  renderSideQuestCounts();
+  renderAchievementCounts();
+
   const dailyDone  = DAILY_TASKS.filter(t => checked[t.id]).length;
   const weeklyDone = WEEKLY_TASKS.filter(t => checked[t.id]).length;
   const dc = document.getElementById('daily-cat-count');
@@ -1354,9 +1605,10 @@ function render() {
   const rc = document.getElementById('recur-total-count');
   if (rc) rc.firstChild.nodeValue = `${dailyDone + weeklyDone}`;
 
-  let acTotalDone = 0;
+  let acTotalDone = 0, acGrandTotal = 0;
   AETHER_CURRENTS_DATA.forEach(exp => {
     let expDone = 0;
+    const expTotal = exp.zones.reduce((s, z) => s + z.exploration + z.quests.length, 0);
     exp.zones.forEach(zone => {
       let zoneDone = 0, zoneTotal = zone.exploration + zone.quests.length;
       for (let i = 0; i < zone.exploration; i++) {
@@ -1372,7 +1624,18 @@ function render() {
     });
     const ec = document.getElementById(`aether-exp-${exp.id}-count`);
     if (ec) ec.firstChild.nodeValue = `${expDone}`;
+    acGrandTotal += expTotal;
+    const expPct = expTotal ? Math.round((expDone / expTotal) * 100) : 0;
+    const expFill = document.querySelector(`[data-card-fill="aether-${exp.id}"]`);
+    if (expFill) expFill.style.width = `${expPct}%`;
+    const expPctEl = document.querySelector(`[data-card-pct="aether-${exp.id}"]`);
+    if (expPctEl) expPctEl.textContent = `${expPct}%`;
+    const expSbPct = document.querySelector(`[data-sidebar-pct="aether-${exp.id}"]`);
+    if (expSbPct) expSbPct.textContent = `${expPct}%`;
   });
+  const acPct = acGrandTotal ? Math.round((acTotalDone / acGrandTotal) * 100) : 0;
+  const acSbPct = document.querySelector('[data-sidebar-pct="aether"]');
+  if (acSbPct) acSbPct.textContent = `${acPct}%`;
 
   syncDates();
 }

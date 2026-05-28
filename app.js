@@ -13,9 +13,11 @@ let ATLAS,
     DT_DUNGEON_GUIDES,  DT_TRIAL_GUIDES,  DT_RAID_GUIDES,
     TANK_QUESTS, HEALER_QUESTS, DPS_QUESTS, DOL_QUESTS, DOH_QUESTS,
     DEEP_DUNGEON_QUESTS, ROLE_QUESTS, HILDEBRAND_QUESTS, RELIC_WEAPONS,
+    SIDE_QUESTS_DATA,
     DAILY_TASKS, WEEKLY_TASKS,
     AETHER_CURRENTS_DATA, AETHER_CURRENT_MSQ_QUESTS, AETHER_UNLOCK_MSQ_QUESTS,
-    GC_RANKS, MSQ_UNLOCK_MARKERS, CLASS_UNLOCK_MARKERS, MSQ_FEATURE_MARKERS;
+    GC_RANKS, MSQ_UNLOCK_MARKERS, CLASS_UNLOCK_MARKERS, MSQ_FEATURE_MARKERS,
+    ACHIEVEMENTS_DATA;
 
 function loadData() {
   const d = FFXIV_DATA; // injected by data.js (generated via: node build.js)
@@ -51,6 +53,7 @@ function loadData() {
   ROLE_QUESTS         = d.roleQuests;
   HILDEBRAND_QUESTS   = d.hildebrand;
   RELIC_WEAPONS       = d.relicWeapons;
+  SIDE_QUESTS_DATA    = d.sideQuests;
   DAILY_TASKS         = d.dailyTasks;
   WEEKLY_TASKS        = d.weeklyTasks;
 
@@ -62,6 +65,7 @@ function loadData() {
   MSQ_UNLOCK_MARKERS   = d.msqUnlockMarkers;
   CLASS_UNLOCK_MARKERS = d.classUnlockMarkers;
   MSQ_FEATURE_MARKERS  = d.msqFeatureMarkers;
+  ACHIEVEMENTS_DATA    = d.achievements;
 }
 
 const root = document.getElementById('atlas-body');
@@ -168,7 +172,7 @@ document.getElementById('collapse-all-btn').onclick = async () => {
 })();
 
 // ─── Sidebar nav ──────────────────────────────────────────────────────────
-function makeSidebarLink(href, accentVar, label) {
+function makeSidebarLink(href, accentVar, label, pctId, countId) {
   const link = document.createElement('a');
   link.className = 'sidebar-link';
   link.href = href;
@@ -177,6 +181,19 @@ function makeSidebarLink(href, accentVar, label) {
   dot.className = 'sidebar-dot';
   link.appendChild(dot);
   link.appendChild(document.createTextNode(label));
+  if (pctId) {
+    if (countId) {
+      const cnt = document.createElement('span');
+      cnt.className = 'sidebar-link-count';
+      cnt.setAttribute('data-sidebar-count', countId);
+      link.appendChild(cnt);
+    }
+    const pct = document.createElement('span');
+    pct.className = 'sidebar-link-value';
+    pct.setAttribute('data-sidebar-pct', pctId);
+    pct.textContent = '0%';
+    link.appendChild(pct);
+  }
   link.addEventListener('click', e => {
     e.preventDefault();
     const target = document.getElementById(href.slice(1));
@@ -189,9 +206,39 @@ function buildSidebarNav() {
   const nav = document.getElementById('sidebar-nav');
   if (!nav) return;
 
+  const makeCollapsibleGroup = (label, accent, children, pctId) => {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'sidebar-guide-group';
+    wrapper.style.cssText = `--guide-accent: var(${accent})`;
+    const title = document.createElement('div');
+    title.className = 'sidebar-guide-title';
+    const chev = document.createElement('span');
+    chev.className = 'guide-chev';
+    chev.textContent = '▶';
+    title.appendChild(chev);
+    const labelSpan = document.createElement('span');
+    labelSpan.style.flex = '1';
+    labelSpan.textContent = label;
+    title.appendChild(labelSpan);
+    if (pctId) {
+      const pctSpan = document.createElement('span');
+      pctSpan.className = 'sidebar-group-pct';
+      pctSpan.setAttribute('data-sidebar-pct', pctId);
+      pctSpan.textContent = '0%';
+      title.appendChild(pctSpan);
+    }
+    title.addEventListener('click', () => wrapper.classList.toggle('open'));
+    const childWrap = document.createElement('div');
+    childWrap.className = 'sidebar-guide-children';
+    children.forEach(c => childWrap.appendChild(c));
+    wrapper.appendChild(title);
+    wrapper.appendChild(childWrap);
+    return wrapper;
+  };
+
   // Expansion links
   ATLAS.forEach(exp => {
-    nav.appendChild(makeSidebarLink('#exp-' + exp.id, `--${exp.accent}`, EXP_NAMES[exp.id] || exp.id));
+    nav.appendChild(makeSidebarLink('#exp-' + exp.id, `--${exp.accent}`, EXP_NAMES[exp.id] || exp.id, exp.id));
   });
 
   const sep = document.createElement('div');
@@ -202,20 +249,20 @@ function buildSidebarNav() {
 
   // Role/class groups
   const roleGroups = [
-    { label: 'Tank Quests', accent: '--tank', jobs: [
+    { label: 'Tank Quests', accent: '--tank', cardId: 'tank', jobs: [
       { href: '#job-pld', text: 'Paladin' },
       { href: '#job-war', text: 'Warrior' },
       { href: '#job-drk', text: 'Dark Knight' },
       { href: '#job-gnb', text: 'Gunbreaker' },
     ]},
-    { label: 'Healer Quests', accent: '--healer', jobs: [
+    { label: 'Healer Quests', accent: '--healer', cardId: 'healer', jobs: [
       { href: '#job-whm', text: 'White Mage' },
       { href: '#job-acn', text: 'Arcanist' },
       { href: '#job-sch', text: 'Scholar' },
       { href: '#job-ast', text: 'Astrologian' },
       { href: '#job-sge', text: 'Sage' },
     ]},
-    { label: 'DPS Quests', accent: '--dps', jobs: [
+    { label: 'DPS Quests', accent: '--dps', cardId: 'dps', jobs: [
       { href: '#job-mnk', text: 'Monk' },
       { href: '#job-drg', text: 'Dragoon' },
       { href: '#job-nin', text: 'Ninja' },
@@ -233,40 +280,21 @@ function buildSidebarNav() {
     ]},
   ];
 
-  const makeCollapsibleGroup = (label, accent, children) => {
-    const wrapper = document.createElement('div');
-    wrapper.className = 'sidebar-guide-group';
-    wrapper.style.cssText = `--guide-accent: var(${accent})`;
-    const title = document.createElement('div');
-    title.className = 'sidebar-guide-title';
-    const chev = document.createElement('span');
-    chev.className = 'guide-chev';
-    chev.textContent = '▶';
-    title.appendChild(chev);
-    title.appendChild(document.createTextNode(label));
-    title.addEventListener('click', () => wrapper.classList.toggle('open'));
-    const childWrap = document.createElement('div');
-    childWrap.className = 'sidebar-guide-children';
-    children.forEach(c => childWrap.appendChild(c));
-    wrapper.appendChild(title);
-    wrapper.appendChild(childWrap);
-    return wrapper;
-  };
-
   roleGroups.forEach(group => {
     nav.appendChild(makeCollapsibleGroup(
       group.label, group.accent,
-      group.jobs.map(j => makeSidebarLink(j.href, group.accent, j.text))
+      group.jobs.map(j => makeSidebarLink(j.href, group.accent, j.text, j.href.replace('#job-', ''))),
+      group.cardId
     ));
   });
 
   const discipleGroups = [
-    { label: 'Disciple of the Land', accent: '--dol', jobs: [
+    { label: 'Disciple of the Land', accent: '--dol', cardId: 'dol', jobs: [
       { href: '#job-min', text: 'Miner' },
       { href: '#job-btn', text: 'Botanist' },
       { href: '#job-fsh', text: 'Fisher' },
     ]},
-    { label: 'Disciple of the Hand', accent: '--doh', jobs: [
+    { label: 'Disciple of the Hand', accent: '--doh', cardId: 'doh', jobs: [
       { href: '#job-crp', text: 'Carpenter' },
       { href: '#job-bsm', text: 'Blacksmith' },
       { href: '#job-arm', text: 'Armorer' },
@@ -281,28 +309,64 @@ function buildSidebarNav() {
   discipleGroups.forEach(group => {
     nav.appendChild(makeCollapsibleGroup(
       group.label, group.accent,
-      group.jobs.map(j => makeSidebarLink(j.href, group.accent, j.text))
+      group.jobs.map(j => makeSidebarLink(j.href, group.accent, j.text, j.href.replace('#job-', ''))),
+      group.cardId
     ));
   });
 
   // Role Quests group
   nav.appendChild(makeCollapsibleGroup('Role Quests', '--dps', [
-    makeSidebarLink('#exp-role-tank',   '--tank',   'Tank Role Quests'),
-    makeSidebarLink('#exp-role-healer', '--healer', 'Healer Role Quests'),
-    makeSidebarLink('#exp-role-melee',  '--dps',    'Melee DPS Role Quests'),
-    makeSidebarLink('#exp-role-ranged', '--dps',    'Ranged DPS Role Quests'),
-  ]));
+    makeSidebarLink('#exp-role-tank',   '--tank',   'Tank Role Quests',      'role-tank'),
+    makeSidebarLink('#exp-role-healer', '--healer', 'Healer Role Quests',    'role-healer'),
+    makeSidebarLink('#exp-role-melee',  '--dps',    'Melee DPS Role Quests', 'role-melee'),
+    makeSidebarLink('#exp-role-ranged', '--dps',    'Ranged DPS Role Quests','role-ranged'),
+  ], 'role'));
 
   // Aether Currents group — built after data is loaded so AETHER_CURRENTS_DATA is available
   nav.appendChild(makeCollapsibleGroup(
     'Aether Currents', '--dt',
-    AETHER_CURRENTS_DATA.map(exp => makeSidebarLink(`#exp-aether-${exp.accent}`, `--${exp.accent}`, exp.label))
+    AETHER_CURRENTS_DATA.map(exp => makeSidebarLink(`#exp-aether-${exp.accent}`, `--${exp.accent}`, exp.label, `aether-${exp.id}`)),
+    'aether'
   ));
 
-  nav.appendChild(makeSidebarLink('#exp-deep',  '--recur', 'Deep Dungeons'));
-  nav.appendChild(makeSidebarLink('#exp-hildi', '--recur', 'Hildebrand Quests'));
-  nav.appendChild(makeSidebarLink('#exp-relic', '--recur', 'Relic Weapons'));
-  nav.appendChild(makeSidebarLink('#exp-recur', '--recur', 'Task Log'));
+  nav.appendChild(makeCollapsibleGroup('Deep Dungeons', '--recur', [
+    makeSidebarLink('#job-deep-potd', '--recur', 'Palace of the Dead', 'deep-potd'),
+    makeSidebarLink('#job-deep-hoh',  '--recur', 'Heaven-on-High',     'deep-hoh'),
+    makeSidebarLink('#job-deep-eo',   '--recur', 'Eureka Orthos',      'deep-eo'),
+  ], 'deep'));
+  nav.appendChild(makeCollapsibleGroup('Hildebrand Quests', '--recur', [
+    makeSidebarLink('#job-hildi-arr', '--recur', 'A Realm Reborn', 'hildi-arr'),
+    makeSidebarLink('#job-hildi-hw',  '--recur', 'Heavensward',    'hildi-hw'),
+    makeSidebarLink('#job-hildi-sb',  '--recur', 'Stormblood',     'hildi-sb'),
+    makeSidebarLink('#job-hildi-ew',  '--recur', 'Endwalker',      'hildi-ew'),
+    makeSidebarLink('#job-hildi-dt',  '--recur', 'Dawntrail',      'hildi-dt'),
+  ], 'hildi'));
+  nav.appendChild(makeCollapsibleGroup('Relic Weapons', '--recur', [
+    makeSidebarLink('#job-relic-arr', '--recur', 'Zodiac Weapons',      'relic-arr'),
+    makeSidebarLink('#job-relic-hw',  '--recur', 'Anima Weapons',       'relic-hw'),
+    makeSidebarLink('#job-relic-sb',  '--recur', 'Eureka Weapons',      'relic-sb'),
+    makeSidebarLink('#job-relic-shb', '--recur', 'Resistance Weapons',  'relic-shb'),
+    makeSidebarLink('#job-relic-ew',  '--recur', 'Manderville Weapons', 'relic-ew'),
+    makeSidebarLink('#job-relic-dt',  '--recur', 'Phantom Weapons',     'relic-dt'),
+  ], 'relic'));
+  nav.appendChild(makeCollapsibleGroup('Side Quests', '--recur', [
+    makeSidebarLink('#exp-sidequests', '--recur', 'A Realm Reborn',  'sq-exp-arr'),
+    makeSidebarLink('#exp-sidequests', '--recur', 'Heavensward',     'sq-exp-hw'),
+    makeSidebarLink('#exp-sidequests', '--recur', 'Stormblood',      'sq-exp-sb'),
+    makeSidebarLink('#exp-sidequests', '--recur', 'Shadowbringers',  'sq-exp-shb'),
+    makeSidebarLink('#exp-sidequests', '--recur', 'Endwalker',       'sq-exp-ew'),
+    makeSidebarLink('#exp-sidequests', '--recur', 'Dawntrail',       'sq-exp-dt'),
+  ], 'sidequests'));
+  nav.appendChild(makeCollapsibleGroup('Achievements', '--recur', [
+    makeSidebarLink('#ach-battle',      '--recur', 'Battle',              'ach-battle',      'ach-battle'),
+    makeSidebarLink('#ach-pvp',         '--recur', 'PvP',                 'ach-pvp',         'ach-pvp'),
+    makeSidebarLink('#ach-character',   '--recur', 'Character',           'ach-character',   'ach-character'),
+    makeSidebarLink('#ach-items',       '--recur', 'Items',               'ach-items',       'ach-items'),
+    makeSidebarLink('#ach-crafting',    '--recur', 'Crafting & Gathering', 'ach-crafting',    'ach-crafting'),
+    makeSidebarLink('#ach-quests',      '--recur', 'Quests',               'ach-quests',      'ach-quests'),
+    makeSidebarLink('#ach-exploration', '--recur', 'Exploration',          'ach-exploration', 'ach-exploration'),
+    makeSidebarLink('#ach-gc',          '--recur', 'Grand Company',        'ach-gc',          'ach-gc'),
+  ], 'ach'));
 
   const sep2 = document.createElement('div');
   sep2.className = 'sidebar-section-label';
@@ -356,8 +420,15 @@ function buildRightSidebarCurrency() {
   const wrap = document.getElementById('right-sidebar-currency');
   if (!wrap) return;
 
+  const taskLabel = document.createElement('div');
+  taskLabel.className = 'sidebar-section-label right-sidebar-section-label';
+  taskLabel.textContent = 'Task Log';
+  wrap.appendChild(taskLabel);
+  wrap.appendChild(makeSidebarLink('#exp-recur', '--recur', 'Task Log'));
+
   const label = document.createElement('div');
   label.className = 'sidebar-section-label right-sidebar-section-label';
+  label.style.marginTop = '8px';
   label.textContent = 'Currency Tracker';
   wrap.appendChild(label);
 

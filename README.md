@@ -2,6 +2,26 @@
 
 ---
 
+## v1.4.0 — 28 May 2026
+
+### New
+
+#### Achievement Tracking
+Achievements are now tracked across all categories. Each achievement entry can be checked off individually, with progress tracked per group and timestamps recorded on completion.
+
+#### Side Quest Tracking Per Location
+Side quests are now broken down by location rather than listed as a flat global list. Each area displays its own set of side quests, making it easy to see at a glance what remains in a given zone without having to scan the entire list.
+
+#### Completion Percentage Display in the Side Menu
+Each category in the side menu now shows a percentage indicating how much of that category has been completed. The percentage updates live as items are checked and unchecked, giving an at-a-glance sense of overall progress without needing to open each section.
+
+### Under the Hood
+
+- Search function rebuilt from the ground up — faster, more accurate, and better handles edge cases across all content types.
+- General optimisations across rendering and state management for improved responsiveness.
+
+---
+
 ## v1.3.0 — 24 May 2026
 
 ### New
